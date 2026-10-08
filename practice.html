@@ -224,7 +224,7 @@
             Thực hành Kinh tế chính trị Mác - Lênin<br /><span class="text-philo-gold italic font-normal">(Học phần MLN131 chuẩn 2021)</span>
           </h1>
           <p class="text-philo-ivory/70 max-w-2xl text-sm leading-relaxed">
-            Chào mừng bạn đến với <strong class="text-philo-ivory">Phòng thực hành & Ôn thi MLN131 Tương tác</strong>. Tại đây, các quy luật kinh tế thị trường, cơ chế giá trị thặng dư và ngân hàng 60+ câu hỏi ôn thi FE bám sát giáo trình chuẩn Bộ GD&ĐT giúp bạn nắm vững kiến thức và bứt phá điểm số.
+            Chào mừng bạn đến với <strong class="text-philo-ivory">Phòng thực hành & Ôn thi MLN131 Tương tác</strong>. Ngân hàng 66 câu hỏi theo 6 chương giúp bạn luyện tập kiến thức và tự đánh giá trước kỳ thi.
           </p>
         </div>
         <a href="Overview.html">
@@ -238,7 +238,7 @@
     </section>
 
     <!-- Interactive Dashboard Cards -->
-    <section class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+    <section class="hidden grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10" aria-hidden="true">
       <div class="philo-card p-6 flex items-center gap-4">
         <div class="size-12 rounded-xl bg-philo-gold/10 text-philo-gold flex items-center justify-center flex-shrink-0">
           <span class="material-symbols-outlined text-2xl">eco</span>
@@ -276,17 +276,17 @@
         1. Ôn thi FE (Ngân hàng MLN131)
       </button>
       <button onclick="switchTab('sandbox')" id="tab-sandbox"
-        class="tab-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm text-philo-ivory/80 hover:text-philo-gold hover:bg-philo-gold/5 border border-transparent transition-all">
+        class="tab-btn hidden flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm text-philo-ivory/80 hover:text-philo-gold hover:bg-philo-gold/5 border border-transparent transition-all">
         <span class="material-symbols-outlined text-[20px]">science</span>
         2. Hộp cát Mô phỏng Quy luật
       </button>
       <button onclick="switchTab('compass')" id="tab-compass"
-        class="tab-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm text-philo-ivory/80 hover:text-philo-gold hover:bg-philo-gold/5 border border-transparent transition-all">
+        class="tab-btn hidden flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm text-philo-ivory/80 hover:text-philo-gold hover:bg-philo-gold/5 border border-transparent transition-all">
         <span class="material-symbols-outlined text-[20px]">explore</span>
         3. Bản đồ Thế giới quan
       </button>
       <button onclick="switchTab('greenhouse')" id="tab-greenhouse"
-        class="tab-btn flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm text-philo-ivory/80 hover:text-philo-gold hover:bg-philo-gold/5 border border-transparent transition-all">
+        class="tab-btn hidden flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm text-philo-ivory/80 hover:text-philo-gold hover:bg-philo-gold/5 border border-transparent transition-all">
         <span class="material-symbols-outlined text-[20px]">yard</span>
         4. Vườn ươm Phản tư
       </button>
@@ -796,7 +796,7 @@
               <span class="material-symbols-outlined text-amber-400">timer</span>
               Thi thử
             </h3>
-            <p class="text-[11px] text-slate-300 mb-4 leading-relaxed">50 câu ngẫu nhiên · 60 phút · giống hệt format thi thật, không lặp câu giữa các lượt.</p>
+            <p class="text-[11px] text-slate-300 mb-4 leading-relaxed">50 câu ngẫu nhiên · 60 phút · mô phỏng để tự ôn tập.</p>
             <button onclick="openExamMode()"
  class="w-full py-2.5 bg-amber-400 hover:bg-amber-300 text-philo-ivory rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-2">
               <span class="material-symbols-outlined text-base">play_arrow</span>
@@ -915,10 +915,10 @@
       </button>
       <div class="text-5xl mb-2">📝</div>
       <h2 class="text-2xl font-heading font-bold text-philo-ivory">Thi thử FE</h2>
-      <p class="text-sm text-philo-ivory/70 mt-1 mb-6">Tư tưởng Hồ Chí Minh · 50 câu · 60 phút</p>
+      <p class="text-sm text-philo-ivory/70 mt-1 mb-6">Kinh tế chính trị Mác - Lênin · 50 câu · 60 phút</p>
       <div class="flex gap-3 mb-6 flex-wrap justify-center">
         <div class="bg-philo-blackBurgundy  border border-philo-warmGold/30 rounded-xl px-6 py-3.5">
-          <div class="text-2xl font-extrabold text-philo-warmGold" id="exam-stat-total">423</div>
+          <div class="text-2xl font-extrabold text-philo-warmGold" id="exam-stat-total">66</div>
           <div class="text-[11px] text-philo-ivory/50 /50 mt-0.5">Câu hỏi</div>
         </div>
         <div class="bg-philo-blackBurgundy  border border-philo-warmGold/30 rounded-xl px-6 py-3.5">

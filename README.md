@@ -1,30 +1,41 @@
-# Dòng Mực Lịch Sử
+# PhiloVerse MLN131
 
-Game web gồm 5 màn tìm sai lệch trên các tờ báo Việt Nam cũ và 1 màn bonus Bản đồ tư tưởng bằng keyword ngẫu nhiên.
+Website học tập tương tác cho môn **Kinh tế chính trị Mác - Lênin (MLN131)**.
 
-## Cách mở game
+## Tính năng
 
-1. Giải nén toàn bộ thư mục.
-2. Giữ tất cả tệp trong cùng một thư mục.
-3. Nhấp đúp `index.html` để bắt đầu từ màn 1.
-4. Hoàn thành mỗi màn và chọn **Mở số báo tiếp theo** để chơi liên tục đến màn 5.
-5. Hoàn thành màn 5 để mở **Bản đồ tư tưởng**.
+- Sáu chương bài học tại `Overview.html` và `module1.html` đến `module6.html`.
+- Ôn thi FE với 66 câu trong `js/quiz-fe-review.js`, mỗi đề thi thử chọn 50 câu.
+- Bốn game ở `games.html`: giải mã thuật ngữ, bản đồ tư duy, ô chữ và Ghế nóng.
+- Trợ lý hỏi đáp tại `ai-assistants.html`; API trong `server.js` tra dữ liệu ở `data/mln131-curriculum.json`.
+- Tiến độ một số hoạt động được lưu trong `localStorage` của trình duyệt.
 
-Không cần cài npm, Node.js hoặc phần mềm lập trình.
+## Chạy trên máy
 
-## Các màn
+Yêu cầu Node.js và npm. Nếu Terminal đang ở thư mục workspace `D:\SPST MLN131`, vào thư mục dự án trước:
 
-1. `index.html` — Mùa thu độc lập, 1941–1945.
-2. `issue2.html` — Chín năm kháng chiến, 1946–1954.
-3. `issue3.html` — Miền Nam đứng dậy, 1954–1968.
-4. `issue4.html` — Ngày toàn thắng, 1969–1975.
-5. `issue5.html` — Chuyên đề con người, Chương VI.
-6. `keyword-map.html` — Bản đồ tư tưởng: mỗi lượt chọn ngẫu nhiên 4 chủ đề và 12 keyword.
+```powershell
+cd .\MLN131
+```
 
-## Nguyên tắc dữ liệu
+Sau đó chạy:
 
-- `historical-data*.js`: dữ kiện, đáp án, giải thích và thông tin nguồn của từng màn.
-- `game.js`: trạng thái và luật chơi; không chứa đáp án lịch sử.
-- `index.html`: nội dung hiển thị của số báo.
+```bash
+npm ci
+copy .env.example .env
+npm start
+```
 
-Số 01 chỉ sử dụng các mốc đã được đối chiếu trong giáo trình người dùng cung cấp. Không thêm dữ kiện lịch sử mới nếu chưa có nguồn kiểm chứng.
+Mở `http://localhost:3000/`. Điền key vào `.env` nếu muốn gọi mô hình AI. Không đưa key vào mã frontend hoặc commit `.env`. Xem `SETUP_GUIDE.md` để biết biến môi trường nào cần dùng.
+
+## Giới hạn học liệu hiện tại
+
+`data/mln131-curriculum.json` có **16 mục tóm tắt** thuộc sáu chương. Repo chưa có PDF giáo trình Kinh tế chính trị Mác - Lênin của lớp; các số trang trong bài học, câu hỏi và dữ liệu AI **chưa được đối chiếu với PDF đó**. Trợ lý chỉ nên dùng để ôn tập và gợi ý tra cứu, không dùng làm nguồn trích dẫn học thuật cuối cùng.
+
+Các file trong `game-hcm/`, `quiz1.html` đến `quiz5.html` và một số nội dung Triết học/Tư tưởng Hồ Chí Minh là phần kế thừa của phiên bản trước. Trang `games.html` chỉ dẫn tới game Ghế nóng MLN131 trong `game-hcm/game2/`; các game lịch sử cũ không nằm trong luồng học MLN131.
+
+## Việc còn cần làm trước khi nộp
+
+1. Nhận PDF giáo trình MLN131 của lớp và đối chiếu từng số trang, đáp án, giải thích và bài viết.
+2. Kiểm thử toàn bộ luồng trên máy tính và điện thoại, đặc biệt game, thi thử và AI khi có key.
+3. Gỡ hoặc chuyển riêng nội dung của môn học cũ nếu muốn bàn giao repo chỉ chứa MLN131.

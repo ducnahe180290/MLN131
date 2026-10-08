@@ -225,9 +225,9 @@
           <div class="inline-flex self-start items-center gap-2 rounded-full border border-philo-gold/40 bg-philo-gold/10 px-3.5 py-1.5 text-xs font-bold tracking-widest text-philo-gold mb-5 shadow-sm">
             <span class="material-symbols-outlined text-base">account_tree</span> GAME 02 · KEYWORD MAP
           </div>
-          <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-philo-ivory leading-tight">Bản đồ<br><span class="text-philo-gold">tư tưởng</span></h1>
+          <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-philo-ivory leading-tight">Bản đồ<br><span class="text-philo-gold">tư duy</span></h1>
           <p class="mt-5 text-philo-ivory/80 text-base md:text-lg leading-relaxed">
-            Nhận diện các từ khóa trong Tư tưởng Hồ Chí Minh và đưa chúng vào đúng nhóm kiến thức.
+            Nhận diện thuật ngữ Kinh tế chính trị Mác - Lênin và đưa vào đúng chương kiến thức.
           </p>
           <div class="mt-6 rounded-2xl border border-philo-gold/25 p-4 bg-philo-blackBurgundy/60 backdrop-blur-sm shadow-sm">
             <div class="font-bold text-philo-ivory text-sm mb-3 flex items-center gap-2">
