@@ -6,7 +6,7 @@ window.QUESTION_BANK=window.QUESTION_BANK.filter((item,index)=>{
   const invalidAnswers=!Array.isArray(item.a)||item.a.length!==4||!Number.isInteger(item.k)||item.k<0||item.k>3;
   const invalidSource=!Number.isInteger(item.c)||item.c<1||item.c>6||!Number.isInteger(item.p)||item.p<1;
   if(missing.length||invalidAnswers||invalidSource){rejectedQuestions.push({index,missing,invalidAnswers,invalidSource});return false}
-  item.source=`Giáo trình Tư tưởng Hồ Chí Minh - Chương ${item.c}, trang ${item.p}`;
+  item.source=`Kinh tế chính trị Mác - Lênin - Chương ${item.c}, trang ${item.p} (cần đối chiếu giáo trình)`;
   return true;
 });
 if(rejectedQuestions.length)console.warn("Các câu bị loại vì thiếu căn cứ:",rejectedQuestions);

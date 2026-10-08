@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-const fs = require("fs/promises");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const crosswordRoutes = require("./routes/crossword.routes");
 const wordleRoutes = require("./routes/wordle.routes");
@@ -12,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
-app.use(express.json({ limit: "50mb" }));
+app.use(express.json({ limit: "1mb" }));
 // Serve static files with absolute path for better compatibility
 app.use(express.static(path.join(__dirname))); // Serve static files
 app.use("/api/crossword", crosswordRoutes);
@@ -23,22 +22,17 @@ const genAI = new GoogleGenerativeAI(
   process.env.GEMINI_API_KEY
 );
 
-const CURRICULUM_PATH = path.join(__dirname, "data", "mln131-curriculum.json");
 let cachedCurriculum = null;
 
 async function loadCurriculum() {
   if (cachedCurriculum) return cachedCurriculum;
   
   try {
-    try {
-      cachedCurriculum = require("./data/mln131-curriculum.json");
-    } catch (e1) {
-      cachedCurriculum = require("./data/hcm-curriculum.json");
-    }
+    cachedCurriculum = require("./data/mln131-curriculum.json");
     return cachedCurriculum;
   } catch (err) {
     console.error("Không thể load giáo trình JSON:", err);
-    return { title: "Giáo trình Kinh tế chính trị Mác - Lênin", pages: [] };
+    return [];
   }
 }
 
@@ -54,13 +48,14 @@ function findRelevantPages(question, pages) {
   // Normalize and extract keywords
   const normalizedQuestion = removeVietnameseTones(question.toLowerCase());
   const rawKeywords = normalizedQuestion.split(/[^a-z0-9]+/);
-  const keywords = rawKeywords.filter(k => k.length > 0 && !stopWords.includes(k));
+  const keywords = rawKeywords.filter(k => k.length >= 3 && !stopWords.includes(k));
   
-  if (keywords.length === 0) return pages.slice(0, 5); // Fallback
+  if (keywords.length === 0) return [];
 
   const scoredPages = pages.map(page => {
     let score = 0;
     const contentLower = removeVietnameseTones((page.content || '').toLowerCase());
+    const titleLower = removeVietnameseTones(`${page.chapter_title || ''} ${page.title || ''}`.toLowerCase());
     
     // Exact phrase match bonus
     if (contentLower.includes(normalizedQuestion)) {
@@ -70,20 +65,22 @@ function findRelevantPages(question, pages) {
     // Keyword match
     for (const kw of keywords) {
       if (contentLower.includes(kw)) score += 1;
+      if (titleLower.includes(kw)) score += 3;
     }
     
     // Bonus for consecutive words (bi-grams)
     for (let i = 0; i < keywords.length - 1; i++) {
         const bigram = keywords[i] + ' ' + keywords[i+1];
         if (contentLower.includes(bigram)) score += 3;
+        if (titleLower.includes(bigram)) score += 5;
     }
 
     return { ...page, score };
   });
 
-  // Sort by score descending and take top 10 relevant pages
+  // Prefer matching chapter titles and send only a small, relevant context.
   scoredPages.sort((a, b) => b.score - a.score);
-  return scoredPages.filter(p => p.score > 0).slice(0, 10);
+  return scoredPages.filter(p => p.score > 0).slice(0, 5);
 }
 
 // Function to handle MLN131 AI question
@@ -91,25 +88,25 @@ async function handleAskMLN131(req, res) {
   try {
     const { question } = req.body;
 
-    if (!question) {
-      return res.status(400).json({ error: "Question is required" });
+    if (typeof question !== "string" || !question.trim() || question.length > 1000) {
+      return res.status(400).json({ error: "Câu hỏi phải là chuỗi từ 1 đến 1000 ký tự." });
     }
 
     const curriculum = await loadCurriculum();
     const pagesArray = Array.isArray(curriculum) ? curriculum : (curriculum.pages || []);
     const relevantPages = findRelevantPages(question, pagesArray);
+    if (relevantPages.length === 0) {
+      return res.json({ answer: "Dữ liệu tóm tắt MLN131 hiện chưa có nội dung đủ liên quan để trả lời câu hỏi này. Hãy thử hỏi cụ thể hơn hoặc tra giáo trình của lớp.", mode: "no_match" });
+    }
     
     // Gộp nội dung các trang thành context
-    const contextText = relevantPages.map(p => `--- Trang ${p.page_num} (${p.chapter_title || ''}) ---\n${p.content}`).join("\n\n");
+    const contextText = relevantPages.map(p => `--- Chương ${p.chapter}: ${p.chapter_title || ''}; trang tham chiếu ${p.page_num} (chưa đối chiếu PDF) ---\n${p.content}`).join("\n\n");
 
     const systemPrompt = `
-Bạn là "Trợ lý AI Học thuật PhiloVerse" - chuyên gia cố vấn môn Kinh tế chính trị Mác - Lênin (mã học phần MLN131), dựa trên Giáo trình Kinh tế chính trị Mác - Lênin (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, Hà Nội - 2021).
-Tính cách: Học thuật, thông tuệ, nhiệt tình, chuẩn xác theo giáo trình chuẩn quốc gia.
-Nhiệm vụ: 
-1. Sử dụng thông tin chính xác từ Giáo trình Kinh tế chính trị Mác - Lênin 2021 (gồm 6 chương cốt lõi: Đối tượng & Chức năng; Hàng hóa & Thị trường; Giá trị thặng dư; Cạnh tranh & Độc quyền; Kinh tế thị trường định hướng XHCN; Công nghiệp hóa, hiện đại hóa & Hội nhập).
-2. Khi dẫn chứng, luôn trích dẫn rõ Chương và số Trang tương ứng từ giáo trình (ví dụ: "[Giáo trình MLN131 - Trang X]").
-3. Giải thích tường minh các công thức toán học kinh tế chính trị: G = c + (v+m), k = c + v, m' = (m/v)*100%, M = m'*V, p' = [p/(c+v)]*100%, n = CH/ch, v.v.
-4. Trình bày bằng Markdown đẹp mắt với tiêu đề, gạch đầu dòng, công thức rõ ràng.
+Bạn là trợ lý ôn tập môn Kinh tế chính trị Mác - Lênin (MLN131).
+Chỉ trả lời bằng thông tin có trong các mục tóm tắt được cung cấp. Nếu dữ liệu không đủ, nói rõ là chưa đủ căn cứ; không tự thêm kiến thức, công thức hoặc số trang.
+Đây là dữ liệu tóm tắt do dự án biên soạn, chưa được đối chiếu với PDF giáo trình của lớp. Nếu nhắc tới chương hoặc trang, ghi rõ đó là tham chiếu cần kiểm chứng, không khẳng định đã trích từ giáo trình gốc.
+Trả lời bằng tiếng Việt, ngắn gọn và dễ hiểu.
 `;
 
     const openRouterKey = process.env.OPENROUTER_API_KEY;
@@ -193,13 +190,13 @@ Nhiệm vụ:
     // 3. Fallback sang cơ sở dữ liệu Giáo trình nếu chưa có API key hoặc API lỗi
     if (!answer && relevantPages.length > 0) {
       const top = relevantPages[0];
-      answer = `### 📚 Phân tích từ Giáo trình Kinh tế chính trị Mác - Lênin (Bộ GD&ĐT 2021)
+      answer = `### Mục tóm tắt liên quan trong dữ liệu MLN131
 
-**Căn cứ lý luận [Chương ${top.chapter || 6}: ${top.chapter_title || ''} - Trang ${top.page_num}]:**
+**Chương ${top.chapter}: ${top.chapter_title || ''} — trang tham chiếu ${top.page_num} (chưa đối chiếu PDF):**
 ${top.content}
 
 ---
-> 💡 *Ghi chú: Phản hồi này được tra cứu tự động từ cơ sở dữ liệu Giáo trình chuẩn MLN131 (262 trang). Để kích hoạt mô hình AI Gemini đàm thoại tự do, hãy thêm \`GEMINI_API_KEY\` vào file \`.env\`.*`;
+> *Đây là bản tóm tắt do dự án biên soạn, chưa phải trích dẫn từ giáo trình gốc. Cấu hình API key để bật giải thích bằng AI.*`;
     }
 
     if (answer) {
@@ -219,11 +216,8 @@ ${top.content}
 app.post("/api/ask-mln131", handleAskMLN131);
 app.post("/api/ask-hcm", handleAskMLN131);
 
-// Alias for backward compatibility if needed
-app.post("/api/ask-gemini", (req, res) => {
-  req.url = '/api/ask-mln131';
-  app.handle(req, res);
-});
+// Legacy endpoint kept for older page links.
+app.post("/api/ask-gemini", handleAskMLN131);
 
 // AI helper for the "Ôn thi FE" quiz tab - explains quiz questions and answers follow-ups via Gemini
 app.post("/api/ask-quiz", async (req, res) => {
@@ -275,11 +269,6 @@ Phong cách: ngắn gọn, sư phạm, thân thiện, có thể dùng emoji vừ
       details: error.message,
     });
   }
-});
-
-app.get("/api/clear-pdf-cache", (req, res) => {
-  cachedPdfData = null;
-  res.json({ ok: true });
 });
 
 // Serve component HTML files explicitly

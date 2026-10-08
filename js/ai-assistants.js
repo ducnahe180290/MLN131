@@ -1,7 +1,9 @@
 // Backend API endpoint resolution
 function getApiEndpoint() {
-  // If running on custom live server ports (e.g. 5500, 5501, 8080) or file protocol, point to backend server
-  if (window.location.protocol === "file:" || (window.location.port && window.location.port !== "3000")) {
+  // Local static preview needs the API server; deployed sites use their own origin.
+  const localPreview = ["localhost", "127.0.0.1"].includes(window.location.hostname) &&
+    window.location.port && window.location.port !== "3000";
+  if (window.location.protocol === "file:" || localPreview) {
     return "http://localhost:3000/api/ask-mln131";
   }
   return "/api/ask-mln131";
@@ -142,7 +144,7 @@ async function fallbackLocalTextbookAnswer(userQuestion) {
   if (typeof FE_REVIEW_QUESTIONS !== 'undefined' && Array.isArray(FE_REVIEW_QUESTIONS)) {
     const match = FE_REVIEW_QUESTIONS.find(item => {
       const qText = norm(item.question);
-      return qNorm.includes(qText) || qText.includes(qNorm) || (qText.length > 25 && qNorm.includes(qText.slice(0, 30)));
+      return qNorm === qText || (qText.length > 25 && qNorm.includes(qText));
     });
 
     if (match) {
@@ -155,13 +157,8 @@ async function fallbackLocalTextbookAnswer(userQuestion) {
 * **Căn cứ lý luận trong giáo trình:**
   > ${match.explanation}
 
-#### 📖 Phân tích sâu & Bối cảnh thực tiễn:
-- **Chiến lược "Đi tắt đón đầu":** Theo Giáo trình *Kinh tế chính trị Mác - Lênin 2021* (Bộ GD&ĐT, Chương 6, trang 219 - 220), mô hình CNH của Nhật Bản và các nước NICs (Hàn Quốc, Singapore) đặc biệt thành công nhờ không lặp lại tuần tự 60 - 80 năm của phương Tây mà rút ngắn còn **20 - 30 năm**.
-- **Phương thức thực hiện:** Kết hợp giữa nghiên cứu chế tạo trong nước với nhập khẩu và chuyển giao công nghệ cao từ nước ngoài, hướng mạnh về xuất khẩu để tích lũy ngoại tệ và nâng cao năng lực cạnh tranh quốc tế.
-- **Ý nghĩa đối với Việt Nam:** Là bài học trực tiếp cho Việt Nam trong đẩy mạnh CNH, HĐH gắn với phát triển kinh tế tri thức và thích ứng Cách mạng công nghiệp lần thứ tư (CMCN 4.0).
-
 ---
-> ℹ️ *Ghi chú: Phản hồi này được trích xuất từ cơ sở dữ liệu **Giáo trình MLN131 2021** (chế độ phản hồi nhanh). Để kích hoạt mô hình AI Gemini phân tích tương tác tự do, bạn hãy mở Terminal trong VS Code và chạy lệnh: \`npm start\` (hoặc \`node server.js\`).*`;
+> ℹ️ *Ghi chú: Đây là giải thích có sẵn trong ngân hàng câu hỏi, chưa được đối chiếu với bản PDF giáo trình của lớp. Để dùng AI, hãy chạy máy chủ và cấu hình API key.*`;
     }
   }
 
@@ -186,7 +183,7 @@ async function fallbackLocalTextbookAnswer(userQuestion) {
 ${top.content}
 
 ---
-> ℹ️ *Ghi chú: Phản hồi này được tra cứu tự động từ cơ sở dữ liệu Giáo trình. Để đặt câu hỏi đào sâu hoặc nhận giải thích trực tiếp từ AI Gemini, bạn hãy mở Terminal và chạy lệnh: \`npm start\`.*`;
+> ℹ️ *Ghi chú: Đây là mục tóm tắt trong dữ liệu MLN131; số trang chưa được đối chiếu với PDF giáo trình của lớp. Để dùng AI, hãy chạy máy chủ và cấu hình API key.*`;
       }
     }
   } catch (e) {
@@ -222,22 +219,8 @@ async function askPhilosophyGemini(userQuestion) {
       }),
     });
   } catch (netErr) {
-    // If relative endpoint failed, try localhost:3000 fallback
-    try {
-      response = await fetch("http://localhost:3000/api/ask-mln131", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          question: userQuestion,
-        }),
-      });
-    } catch (fallbackErr) {
-      // Backend server is offline -> gracefully provide local curriculum answer
-      console.warn("Backend server offline, falling back to local textbook database...");
-      return await fallbackLocalTextbookAnswer(userQuestion);
-    }
+    console.warn("Không kết nối được máy chủ; đang tra dữ liệu cục bộ.", netErr);
+    return await fallbackLocalTextbookAnswer(userQuestion);
   }
 
   if (!response.ok) {
@@ -379,7 +362,7 @@ const incomingQuestion = new URLSearchParams(window.location.search).get("q");
 
 if (!incomingQuestion) {
   appendMessage(
-    formatAnswer("Yo! Mình là Minh 👋 Mình rành Tư tưởng HCM lắm. Thắc mắc gì cứ hỏi nhé, nhưng nhớ là mình chỉ biết trong **giáo trình** thôi đó! 📚"),
+    formatAnswer("Chào bạn! Mình hỗ trợ ôn tập Kinh tế chính trị Mác - Lênin (MLN131). Hãy hỏi về một khái niệm hoặc chương học. Dữ liệu tra cứu hiện là bản tóm tắt và cần đối chiếu với giáo trình gốc."),
     "ai",
     true
   );

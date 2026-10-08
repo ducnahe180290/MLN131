@@ -1,270 +1,62 @@
 <!DOCTYPE html>
 <html class="dark" lang="vi">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Góc nhìn & Bài viết Chuyên sâu - Kinh tế Chính trị Mác - Lênin | MLN131</title>
-    <meta name="description" content="Khám phá các bài viết phân tích chuyên sâu về Kinh tế chính trị Mác - Lênin (MLN131): Lịch sử học thuyết, Giá trị thặng dư & AI, Độc quyền Big Tech, Kinh tế thị trường định hướng XHCN, Cách mạng 4.0 và Hài hòa lợi ích kinh tế." />
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="js/tailwind-config-global.js"></script>
-    <link rel="stylesheet" href="css/philoverse-ui.css" />
-    <style>
-        html { scroll-behavior: smooth; }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .article-card {
-            animation: fadeInUp 0.5s ease forwards;
-            background: rgba(58,5,5,0.75) !important;
-            border: 1px solid rgba(217,166,46,0.2) !important;
-        }
-        .article-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(217,166,46,0.5) !important;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 25px rgba(217,166,46,0.12);
-        }
-        .article-card:nth-child(1) { animation-delay: 0.05s; }
-        .article-card:nth-child(2) { animation-delay: 0.15s; }
-        .article-card:nth-child(3) { animation-delay: 0.25s; }
-
-        /* Articles page hero */
-        .articles-hero {
-            position: relative;
-            background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%);
-            padding: 4rem 2rem 3rem;
-            margin-bottom: 3rem;
-            border-radius: 1.5rem;
-            overflow: hidden;
-        }
-        .articles-hero::before {
-            content: '';
-            position: absolute; inset: 0;
-            background-image: url('assets/images/shared/module-hero-bg.jpg');
-            background-size: cover; background-position: center;
-            opacity: 0.12;
-        }
-        .articles-hero > * { position: relative; z-index: 1; }
-        .articles-hero::after {
-            content: '';
-            position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(217,166,46,0.4), transparent);
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bài viết Kinh tế chính trị Mác - Lênin | PhiloVerse MLN131</title>
+  <meta name="description" content="Sáu bài đọc thêm về Kinh tế chính trị Mác - Lênin, từ lịch sử môn học đến kinh tế số và hội nhập." />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config-global.js"></script>
+  <link rel="stylesheet" href="css/philoverse-ui.css" />
 </head>
-
-<body class="bg-philo-blackBurgundy relative font-heading min-h-screen flex flex-col transition-colors duration-500">
-    <!-- Header Placeholder -->
-    <div id="header-placeholder"></div>
-
-    <!-- Main Content -->
-    <main class="flex-grow py-16 px-4 md:px-10 max-w-7xl mx-auto w-full relative">
-        <div class="absolute inset-0 bg-[radial-gradient(#8B6F47_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.03] dark:opacity-[0.01] pointer-events-none"></div>
-
-        <!-- Page Hero -->
-        <div class="articles-hero mb-16 text-center relative z-10">
-            <div class="philo-breadcrumb justify-center mb-4">
-                <span class="material-symbols-outlined text-[14px]">auto_stories</span>
-                CHUYÊN ĐỀ LÝ LUẬN TRIẾT HỌC &amp; KINH TẾ CHÍNH TRỊ MÁC - LÊNIN — MLN131
-            </div>
-            <h1 class="text-4xl md:text-5xl font-heading font-bold text-philo-ivory mb-4">Góc nhìn Học thuật Triết học &amp; Mác - Lênin</h1>
-            <p class="text-philo-ivory/70 max-w-3xl mx-auto text-xs md:text-sm leading-relaxed">
-                Khám phá các góc nhìn học thuật chuyên sâu, phân tích thế giới quan duy vật biện chứng, phương pháp luận triết học và các quy luật kinh tế chính trị cốt lõi của C. Mác, Ph. Ăngghen và V.I. Lênin, gắn liền với dòng chảy thời đại và thực tiễn phát triển của Việt Nam.
-            </p>
-        </div>
-
-        <!-- GROUP 1: NỀN TẢNG LÝ LUẬN & SỰ VẬN ĐỘNG CỦA CHỦ NGHĨA TƯ BẢN -->
-        <div class="mb-16 relative z-10">
-            <h2 class="philo-heading-gold text-xl md:text-2xl mb-8 flex items-center gap-3 border-b border-[#D4A017]/25 pb-3">
-                <span class="material-symbols-outlined text-philo-gold">explore</span>
-                Chuyên đề I: Nền tảng Triết học &amp; Học thuyết Giá trị Thặng dư
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Article 1: Nguồn gốc KTCT & Triết học Mác -->
-                <article class="article-card rounded-2xl overflow-hidden shadow-cinematic border border-philo-warmGold/30 hover-lift flex flex-col h-full relative group">
-                    <a href="articles/nguon-goc-kinh-te-chinh-tri.html" class="absolute inset-0 z-0"></a>
-                    <div class="h-48 relative overflow-hidden z-10 pointer-events-none">
-                        <img src="images/articles/marx_engels_study.jpg" alt="C. Mác và Ph. Ăngghen nghiên cứu lý luận"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 px-2.5 py-1 bg-philo-blackBurgundy/80 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider border border-philo-gold/20">Triết học Mác - Lênin</span>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow z-10 pointer-events-none">
-                        <h3 class="text-sm font-bold text-philo-ivory mb-3 group-hover:text-philo-gold transition-colors line-clamp-2 leading-snug">
-                            Từ Antoine de Montchretien đến C. Mác: Hành trình khoa học và bước ngoặt cách mạng trong tư tưởng nhân loại
-                        </h3>
-                        <p class="text-philo-ivory/70 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">
-                            Khám phá bước chuyển từ Chủ nghĩa Trọng thương sang trường phái Cổ điển Anh của Adam Smith, David Ricardo và bước ngoặt vĩ đại của C. Mác: xây dựng phép biện chứng duy vật và phương pháp trừu tượng hóa khoa học.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-philo-warmGold/30 flex items-center justify-between pointer-events-auto">
-                            <a href="articles/nguon-goc-kinh-te-chinh-tri.html" class="text-xs font-bold text-philo-gold hover:text-philo-lightGold transition-colors flex items-center gap-1">
-                                Đọc chuyên sâu <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                            <span class="text-[10px] text-philo-ivory/50 flex items-center gap-1 font-mono">
-                                <span class="material-symbols-outlined text-xs">menu_book</span> Chương 1 (Tr. 8-32)
-                            </span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 2: Tư bản & Giá trị thặng dư -->
-                <article class="article-card rounded-2xl overflow-hidden shadow-cinematic border border-philo-warmGold/30 hover-lift flex flex-col h-full relative group">
-                    <a href="articles/gia-tri-thang-du-va-ai.html" class="absolute inset-0 z-0"></a>
-                    <div class="h-48 relative overflow-hidden z-10 pointer-events-none">
-                        <img src="images/articles/marx_das_kapital.jpg" alt="C. Mác và kiệt tác Tư bản Das Kapital"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 px-2.5 py-1 bg-philo-blackBurgundy/80 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider border border-philo-gold/20">Học thuyết Giá trị Thặng dư</span>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow z-10 pointer-events-none">
-                        <h3 class="text-sm font-bold text-philo-ivory mb-3 group-hover:text-philo-gold transition-colors line-clamp-2 leading-snug">
-                            Bộ 'Tư bản' (Das Kapital) &amp; Học thuyết Giá trị Thặng dư: Vì sao chỉ Lao động Sống mới tạo ra Giá trị?
-                        </h3>
-                        <p class="text-philo-ivory/70 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">
-                            Dưới ánh sáng phân tích về tư bản bất biến (c) và tư bản khả biến (v), làm sáng tỏ luận điểm của C. Mác: máy móc công nghệ chỉ là tư liệu sản xuất, chỉ có lao động sống của con người mới là cội nguồn tạo ra giá trị mới và giá trị thặng dư.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-philo-warmGold/30 flex items-center justify-between pointer-events-auto">
-                            <a href="articles/gia-tri-thang-du-va-ai.html" class="text-xs font-bold text-philo-gold hover:text-philo-lightGold transition-colors flex items-center gap-1">
-                                Đọc chuyên sâu <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                            <span class="text-[10px] text-philo-ivory/50 flex items-center gap-1 font-mono">
-                                <span class="material-symbols-outlined text-xs">menu_book</span> Chương 2 &amp; 3 (Tr. 33-98)
-                            </span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 3: Lênin & Độc quyền -->
-                <article class="article-card rounded-2xl overflow-hidden shadow-cinematic border border-philo-warmGold/30 hover-lift flex flex-col h-full relative group">
-                    <a href="articles/doc-quyen-va-big-tech.html" class="absolute inset-0 z-0"></a>
-                    <div class="h-48 relative overflow-hidden z-10 pointer-events-none">
-                        <img src="images/articles/lenin_speech.jpg" alt="V.I. Lênin diễn thuyết về chủ nghĩa đế quốc"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 px-2.5 py-1 bg-philo-blackBurgundy/80 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider border border-philo-gold/20">Chủ nghĩa Tư bản Độc quyền</span>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow z-10 pointer-events-none">
-                        <h3 class="text-sm font-bold text-philo-ivory mb-3 group-hover:text-philo-gold transition-colors line-clamp-2 leading-snug">
-                            V.I. Lênin &amp; Học thuyết về Chủ nghĩa Tư bản Độc quyền trong Thời đại Toàn cầu hóa
-                        </h3>
-                        <p class="text-philo-ivory/70 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">
-                            Vận dụng 5 đặc điểm kinh tế của CNTB độc quyền theo Lênin để phân tích sự chi phối của tài phiệt tài chính, xuất khẩu tư bản và các liên minh độc quyền xuyên quốc gia thống trị thị trường thế giới.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-philo-warmGold/30 flex items-center justify-between pointer-events-auto">
-                            <a href="articles/doc-quyen-va-big-tech.html" class="text-xs font-bold text-philo-gold hover:text-philo-lightGold transition-colors flex items-center gap-1">
-                                Đọc chuyên sâu <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                            <span class="text-[10px] text-philo-ivory/50 flex items-center gap-1 font-mono">
-                                <span class="material-symbols-outlined text-xs">menu_book</span> Chương 4 (Tr. 99-138)
-                            </span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-
-        <!-- GROUP 2: KINH TẾ THỊ TRƯỜNG ĐỊNH HƯỚNG XHCN & ĐỔI MỚI Ở VIỆT NAM -->
-        <div class="mb-16 relative z-10">
-            <h2 class="text-2xl font-heading font-bold text-philo-ivory mb-8 flex items-center gap-3 border-b border-[#D4A017]/25 pb-3">
-                <span class="material-symbols-outlined text-philo-gold">account_balance</span>
-                Chuyên đề II: Duy vật Lịch sử &amp; Đổi mới Thể chế Kinh tế tại Việt Nam
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Article 4: KTTT định hướng XHCN -->
-                <article class="article-card rounded-2xl overflow-hidden shadow-cinematic border border-philo-warmGold/30 hover-lift flex flex-col h-full relative group">
-                    <a href="articles/kinh-te-thi-truong-dinh-huong-xhcn.html" class="absolute inset-0 z-0"></a>
-                    <div class="h-48 relative overflow-hidden z-10 pointer-events-none">
-                        <img src="images/articles/con_duong_xhcn.png" alt="Con đường đi lên Chủ nghĩa Xã hội"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 px-2.5 py-1 bg-philo-blackBurgundy/80 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider border border-philo-gold/20">Thể chế Kinh tế &amp; Quá độ</span>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow z-10 pointer-events-none">
-                        <h3 class="text-sm font-bold text-philo-ivory mb-3 group-hover:text-philo-gold transition-colors line-clamp-2 leading-snug">
-                            Kinh tế thị trường Định hướng XHCN: Đột phá Lý luận Mác - Lênin tại Việt Nam
-                        </h3>
-                        <p class="text-philo-ivory/70 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">
-                            Đột phá tư duy của Đảng Cộng sản Việt Nam qua gần 40 năm Đổi mới: Kết hợp sức mạnh thị trường với sự quản lý của Nhà nước pháp quyền XHCN vì mục tiêu dân giàu, nước mạnh, dân chủ, công bằng, văn minh.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-philo-warmGold/30 flex items-center justify-between pointer-events-auto">
-                            <a href="articles/kinh-te-thi-truong-dinh-huong-xhcn.html" class="text-xs font-bold text-philo-gold hover:text-philo-lightGold transition-colors flex items-center gap-1">
-                                Đọc chuyên sâu <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                            <span class="text-[10px] text-philo-ivory/50 flex items-center gap-1 font-mono">
-                                <span class="material-symbols-outlined text-xs">menu_book</span> Chương 5 (Tr. 139-176)
-                            </span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 5: CNH & LLSX -->
-                <article class="article-card rounded-2xl overflow-hidden shadow-cinematic border border-philo-warmGold/30 hover-lift flex flex-col h-full relative group">
-                    <a href="articles/cong-nghiep-hoa-va-doc-lap-tu-chu.html" class="absolute inset-0 z-0"></a>
-                    <div class="h-48 relative overflow-hidden z-10 pointer-events-none">
-                        <img src="assets/images/modules/module6-development.jpg" alt="Lực lượng sản xuất trong công nghiệp hóa và hiện đại hóa"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 px-2.5 py-1 bg-philo-blackBurgundy/80 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider border border-philo-gold/20">Biện chứng LLSX &amp; QHSX</span>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow z-10 pointer-events-none">
-                        <h3 class="text-sm font-bold text-philo-ivory mb-3 group-hover:text-philo-gold transition-colors line-clamp-2 leading-snug">
-                            Quy luật Quan hệ Sản xuất phù hợp Trình độ Phát triển của Lực lượng Sản xuất trong CNH, HĐH
-                        </h3>
-                        <p class="text-philo-ivory/70 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">
-                            Vận dụng quy luật cơ bản của chủ nghĩa duy vật lịch sử vào công cuộc công nghiệp hóa, hiện đại hóa và hội nhập quốc tế: phát triển kinh tế tri thức gắn liền với bảo đảm độc lập tự chủ kinh tế quốc gia.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-philo-warmGold/30 flex items-center justify-between pointer-events-auto">
-                            <a href="articles/cong-nghiep-hoa-va-doc-lap-tu-chu.html" class="text-xs font-bold text-philo-gold hover:text-philo-lightGold transition-colors flex items-center gap-1">
-                                Đọc chuyên sâu <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                            <span class="text-[10px] text-philo-ivory/50 flex items-center gap-1 font-mono">
-                                <span class="material-symbols-outlined text-xs">menu_book</span> Chương 6 (Tr. 177-226)
-                            </span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article 6: Quan hệ lợi ích & Ăngghen -->
-                <article class="article-card rounded-2xl overflow-hidden shadow-cinematic border border-philo-warmGold/30 hover-lift flex flex-col h-full relative group">
-                    <a href="articles/hai-hoa-loi-ich-kinh-te.html" class="absolute inset-0 z-0"></a>
-                    <div class="h-48 relative overflow-hidden z-10 pointer-events-none">
-                        <img src="images/articles/engels_warm_masterpiece.jpg" alt="Friedrich Engels - Nhà lý luận triết học lỗi lạc"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-4 left-4 px-2.5 py-1 bg-philo-blackBurgundy/80 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider border border-philo-gold/20">Biện chứng Lợi ích Xã hội</span>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow z-10 pointer-events-none">
-                        <h3 class="text-sm font-bold text-philo-ivory mb-3 group-hover:text-philo-gold transition-colors line-clamp-2 leading-snug">
-                            Học thuyết Mác - Ăngghen về Lợi ích Kinh tế: Động lực Xã hội và Bài toán Điều hòa Lợi ích
-                        </h3>
-                        <p class="text-philo-ivory/70 text-xs mb-4 flex-grow line-clamp-3 leading-relaxed">
-                            "Một khi tư tưởng tách rời khỏi lợi ích thì nhất định nó sẽ làm trò cười cho thiên hạ" (Hệ tư tưởng Đức). Phân tích bản chất quan hệ lợi ích kinh tế, giải quyết hài hòa mâu thuẫn để tạo động lực đồng thuận xã hội.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-philo-warmGold/30 flex items-center justify-between pointer-events-auto">
-                            <a href="articles/hai-hoa-loi-ich-kinh-te.html" class="text-xs font-bold text-philo-gold hover:text-philo-lightGold transition-colors flex items-center gap-1">
-                                Đọc chuyên sâu <span class="material-symbols-outlined text-xs">arrow_forward</span>
-                            </a>
-                            <span class="text-[10px] text-philo-ivory/50 flex items-center gap-1 font-mono">
-                                <span class="material-symbols-outlined text-xs">menu_book</span> Chương 5 (Tr. 227-257)
-                            </span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
-
-    <!-- Scripts -->
-    <script src="js/search-data-global.js"></script>
-    <script src="js/load-components.js"></script>
-    <script src="js/search-init.js"></script>
-    <script src="js/tet-effect.js"></script>
+<body class="bg-philo-blackBurgundy text-philo-ivory min-h-screen flex flex-col">
+  <div id="header-placeholder"></div>
+  <main class="flex-1 px-4 md:px-10 pt-28 pb-20">
+    <div class="max-w-6xl mx-auto">
+      <header class="mb-10">
+        <p class="text-philo-gold text-xs font-bold uppercase tracking-widest mb-3">Góc đọc thêm · MLN131</p>
+        <h1 class="font-heading text-3xl md:text-5xl font-bold mb-4">Kinh tế chính trị trong đời sống</h1>
+        <p class="text-philo-ivory/70 max-w-3xl">Sáu bài viết liên hệ nội dung học phần với các vấn đề kinh tế hiện nay. Các số trang trong bài viết cần đối chiếu với giáo trình của lớp trước khi trích dẫn.</p>
+      </header>
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <a class="block rounded-2xl border border-philo-gold/30 bg-white/5 p-6 hover:bg-white/10 transition-colors" href="articles/nguon-goc-kinh-te-chinh-tri.html">
+          <span class="text-xs font-bold text-philo-gold">CHƯƠNG 1</span>
+          <h2 class="font-heading text-xl font-bold mt-3 mb-2">Nguồn gốc Kinh tế chính trị</h2>
+          <p class="text-sm text-philo-ivory/70">Từ các trường phái kinh tế đầu tiên đến Kinh tế chính trị Mác - Lênin.</p>
+        </a>
+        <a class="block rounded-2xl border border-philo-gold/30 bg-white/5 p-6 hover:bg-white/10 transition-colors" href="articles/gia-tri-thang-du-va-ai.html">
+          <span class="text-xs font-bold text-philo-gold">CHƯƠNG 3</span>
+          <h2 class="font-heading text-xl font-bold mt-3 mb-2">Giá trị thặng dư và AI</h2>
+          <p class="text-sm text-philo-ivory/70">Đặt học thuyết giá trị thặng dư trong bối cảnh robot và kinh tế số.</p>
+        </a>
+        <a class="block rounded-2xl border border-philo-gold/30 bg-white/5 p-6 hover:bg-white/10 transition-colors" href="articles/doc-quyen-va-big-tech.html">
+          <span class="text-xs font-bold text-philo-gold">CHƯƠNG 4</span>
+          <h2 class="font-heading text-xl font-bold mt-3 mb-2">Độc quyền và Big Tech</h2>
+          <p class="text-sm text-philo-ivory/70">Liên hệ lý luận cạnh tranh, độc quyền với thị trường công nghệ.</p>
+        </a>
+        <a class="block rounded-2xl border border-philo-gold/30 bg-white/5 p-6 hover:bg-white/10 transition-colors" href="articles/kinh-te-thi-truong-dinh-huong-xhcn.html">
+          <span class="text-xs font-bold text-philo-gold">CHƯƠNG 5</span>
+          <h2 class="font-heading text-xl font-bold mt-3 mb-2">Kinh tế thị trường định hướng XHCN</h2>
+          <p class="text-sm text-philo-ivory/70">Mô hình kinh tế, các thành phần kinh tế và vai trò của Nhà nước.</p>
+        </a>
+        <a class="block rounded-2xl border border-philo-gold/30 bg-white/5 p-6 hover:bg-white/10 transition-colors" href="articles/hai-hoa-loi-ich-kinh-te.html">
+          <span class="text-xs font-bold text-philo-gold">CHƯƠNG 5</span>
+          <h2 class="font-heading text-xl font-bold mt-3 mb-2">Hài hòa lợi ích kinh tế</h2>
+          <p class="text-sm text-philo-ivory/70">Các quan hệ lợi ích và cách giải quyết xung đột lợi ích.</p>
+        </a>
+        <a class="block rounded-2xl border border-philo-gold/30 bg-white/5 p-6 hover:bg-white/10 transition-colors" href="articles/cong-nghiep-hoa-va-doc-lap-tu-chu.html">
+          <span class="text-xs font-bold text-philo-gold">CHƯƠNG 6</span>
+          <h2 class="font-heading text-xl font-bold mt-3 mb-2">Công nghiệp hóa và độc lập tự chủ</h2>
+          <p class="text-sm text-philo-ivory/70">Đổi mới công nghệ, hội nhập và năng lực tự chủ của nền kinh tế.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="js/search-data-global.js"></script>
+  <script src="js/load-components.js"></script>
+  <script src="js/search-init.js"></script>
 </body>
-
 </html>
