@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz 4: Hình thái kinh tế - xã hội | PhiloVerse</title>
+    <title>Quiz 4: Kháng Chiến Chống Mỹ Cứu Nước, Thống Nhất Đất Nước (1954 - 1975) | VNR202</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,7 +58,7 @@
         .correct-answer label {
             color: #ffffff !important;
             font-weight: 700 !important;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
         }
 
         .wrong-answer {
@@ -72,7 +72,17 @@
         .wrong-answer label {
             color: #ffffff !important;
             font-weight: 700 !important;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+        }
+
+        .correct-answer .radio-circle {
+            border-color: #10b981;
+            background-color: #10b981;
+        }
+
+        .wrong-answer .radio-circle {
+            border-color: #ef4444;
+            background-color: #ef4444;
         }
 
         .correct-icon,
@@ -81,54 +91,43 @@
         }
 
         .correct-answer .correct-icon {
-            display: block;
+            display: inline-block;
         }
 
         .wrong-answer .wrong-icon {
-            display: block;
+            display: inline-block;
         }
-            /* Quiz hero */
-        .quiz-hero {
-            position: relative; overflow: hidden;
-            background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%);
-            padding: 2.5rem 2rem 2rem; margin-bottom: 2.5rem; border-radius: 1.5rem;
-        }
-        .quiz-hero::after {
-            content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(217,166,46,0.5), transparent);
-        }
-        /* Quiz option dark theme fix */
-        .correct-answer { border-color: #10b981 !important; background-color: rgba(16,185,129,0.12) !important; }
-        .wrong-answer { border-color: #ef4444 !important; background-color: rgba(239,68,68,0.12) !important; }
-        /* Radio button gold selected */
-        input[type="radio"]:checked+div { border-color: #FFD34E !important; background-color: rgba(255,211,78,0.08) !important; }
-        input[type="radio"]:checked+div .radio-circle { background-color: #FFD34E !important; border-color: #FFD34E !important; }</style>
+    </style>
 </head>
 
-<body class="bg-philo-blackBurgundy relative text-philo-ivory dark:text-gray-200 min-h-screen flex flex-col">
+<body class="bg-philo-darkBg text-philo-ivory min-h-screen flex flex-col font-body antialiased selection:bg-philo-warmGold selection:text-white">
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
-    <main class="flex-grow w-full max-w-4xl mx-auto px-4 py-10">
+    <!-- Main Content -->
+    <main class="flex-grow pt-24 px-4 max-w-4xl mx-auto w-full">
         <!-- Breadcrumb -->
-        <div class="mb-6">
-            <div
- class="inline-flex items-center px-4 py-1.5 rounded-full bg-philo-warmGold/10/60 border border-philo-warmGold/30/80 dark:bg-amber-950/20 dark:border-amber-900/30 text-secondary text-xs font-bold uppercase tracking-wider gap-2">
-                <a href="home.html" class="hover:underline hover:text-secondary transition-colors">TRANG CHỦ</a>
-                <span class="opacity-60">/</span>
-                <a href="practice.html" class="hover:underline hover:text-secondary transition-colors">THỰC HÀNH</a>
+        <div class="mb-6 flex items-center justify-between text-sm text-philo-ivory/80 dark:text-gray-400">
+            <div class="flex items-center gap-2">
+                <a href="practice.html" class="hover:text-philo-gold transition-colors">Ôn tập VNR202</a>
                 <span class="opacity-60">/</span>
                 <span>QUIZ 4</span>
             </div>
+            <a href="practice.html" class="inline-flex items-center gap-1 text-philo-gold hover:underline text-xs font-bold">
+                <span class="material-symbols-outlined text-sm">arrow_back</span> Về trang Thực hành
+            </a>
         </div>
         <!-- Quiz Intro -->
         <div class="text-center mb-10" id="quiz-intro">
-            <h1 class="text-3xl md:text-4xl font-heading font-bold text-philo-gold font-heading mb-4">
-                Chủ nghĩa duy vật lịch sử
+            <div class="inline-block px-3 py-1 bg-philo-gold/20 text-philo-gold text-xs font-bold uppercase rounded-full mb-3 tracking-wider">
+                Lịch sử Đảng Cộng sản Việt Nam (VNR202)
+            </div>
+            <h1 class="text-2xl md:text-3xl font-heading font-bold text-philo-gold font-heading mb-3">
+                Quiz 4: Kháng Chiến Chống Mỹ Cứu Nước, Thống Nhất Đất Nước (1954 - 1975)
             </h1>
-            <p class="text-lg text-philo-ivory/70 dark:text-gray-400 max-w-2xl mx-auto">
-                Hình thái kinh tế - xã hội: Cơ sở hạ tầng và Kiến trúc thượng tầng. <br>
-                Hãy chọn đáp án đúng nhất cho 7 câu hỏi dưới đây.
+            <p class="text-sm md:text-base text-philo-ivory/80 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Khảo sát đường lối cách mạng hai miền, các giai đoạn đánh bại 4 chiến lược chiến tranh của Mỹ và Đại thắng mùa Xuân 1975. <br>
+                Hãy chọn đáp án đúng nhất cho 8 câu hỏi dưới đây.
             </p>
         </div>
 
@@ -140,38 +139,37 @@
         <!-- Submit Action -->
         <div class="mt-12 flex justify-center pb-20">
             <button onclick="submitQuiz()" id="submit-btn"
- class="px-8 py-3 bg-philo-warmGold hover:bg-philo-warmGold/90 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                class="px-8 py-3.5 philo-btn-gold text-philo-black font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
                 Nộp bài & Xem kết quả
             </button>
             <div id="result-actions" class="hidden flex gap-4">
                 <button onclick="location.reload()"
- class="px-6 py-3 philo-btn-ghost text-philo-ivory font-bold rounded-xl transition-colors">
+                    class="px-6 py-3 philo-btn-ghost text-philo-ivory font-bold rounded-xl transition-colors">
                     Làm lại
                 </button>
                 <a href="practice.html"
- class="px-6 py-3 bg-philo-black/40 hover:bg-philo-black/60 border border-philo-gold/30 text-philo-ivory font-bold rounded-xl transition-colors">
-                    Quay về Thực hành
+                    class="px-6 py-3 bg-philo-gold/20 hover:bg-philo-gold/30 border border-philo-gold/40 text-philo-gold font-bold rounded-xl transition-colors">
+                    Quay về Ôn tập FE
                 </a>
             </div>
         </div>
 
-        <!-- Score Modal (Hidden initially) -->
+        <!-- Score Modal -->
         <div id="score-modal"
- class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300">
-            <div
- class="philo-card rounded-3xl p-8 max-w-md w-full transform scale-90 transition-transform duration-300">
+            class="hidden fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+            <div class="philo-card rounded-3xl p-8 max-w-md w-full transform scale-90 transition-transform duration-300 border border-philo-gold/40">
                 <div class="text-center">
-                    <div
- class="size-20 bg-philo-warmGold/10 dark:bg-amber-900/30 rounded-full flex items-center justify-center mx-auto mb-4 text-secondary">
+                    <div class="size-20 bg-philo-warmGold/20 rounded-full flex items-center justify-center mx-auto mb-4 text-philo-gold">
                         <span class="material-symbols-outlined text-4xl">emoji_events</span>
                     </div>
                     <h2 class="text-2xl font-bold text-philo-gold font-heading mb-2">Kết quả của bạn</h2>
-                    <div class="text-5xl font-black text-secondary mb-4" id="final-score">0/7</div>
-                    <p class="text-philo-ivory/70 dark:text-gray-400 mb-8" id="feedback-text">Hãy xem lại các câu sai để hiểu
-                        rõ hơn nhé!</p>
+                    <div class="text-5xl font-black text-philo-warmGold mb-4" id="final-score">0/8</div>
+                    <p class="text-philo-ivory/80 dark:text-gray-400 mb-8" id="feedback-text">
+                        Hãy xem lại các câu sai để hiểu rõ hơn nhé!
+                    </p>
                     <button onclick="closeModal()"
- class="w-full py-3 bg-philo-warmGold text-white font-bold rounded-xl hover:bg-philo-warmGold/90 transition-colors">
-                        Xem chi tiết đáp án
+                        class="w-full py-3 bg-philo-warmGold text-black font-bold rounded-xl hover:bg-amber-400 transition-colors">
+                        Xem chi tiết đáp án & giải thích
                     </button>
                 </div>
             </div>
@@ -186,100 +184,112 @@
     <script>
         const quizData = [
             {
-                id: 1,
-                question: "Theo quan điểm của C. Mác và Ph. Ăngghen, hoạt động nào là cơ sở của sự tồn tại và phát triển của xã hội loài người, và là tiền đề của mọi hoạt động lịch sử khác?",
-                options: [
-                    "A. Hoạt động chính trị.",
-                    "B. Sản xuất vật chất.",
-                    "C. Nghiên cứu khoa học.",
-                    "D. Sáng tạo nghệ thuật."
-                ],
-                correct: 1, // Index of B
-                explanation: "Giáo trình khẳng định sản xuất vật chất là cơ sở của sự tồn tại và phát triển xã hội loài người. Ph. Ăngghen đã chỉ ra một sự thật hiển nhiên là \"trước hết con người cần phải ăn, uống, ở và mặc, nghĩa là phải lao động, trước khi có thể đấu tranh để giành quyền thống trị, trước khi có thể hoạt động chính trị, tôn giáo, triết học\". Nếu xã hội ngừng lao động sản xuất thì sẽ diệt vong. (Nguồn: Chương 3, Mục I, 1)"
+                        "id": 1,
+                        "question": "Nghị quyết Trung ương 15 (tháng 1/1959) đã mở đường cho cao trào nào bùng nổ khắp miền Nam?",
+                        "options": [
+                                    "A. Phong trào Ba sẵn sàng",
+                                    "B. Phong trào Năm xung phong",
+                                    "C. Phong trào Đồng Khởi (1959 - 1960)",
+                                    "D. Phong trào Tiếng hát át tiếng bom"
+                        ],
+                        "correct": 2,
+                        "explanation": "Nghị quyết Trung ương 15 (1/1959) xác định con đường bạo lực cách mạng, thổi bùng ngọn lửa phong trào Đồng Khởi tiêu biểu ở Bến Tre (Session 15)."
             },
             {
-                id: 2,
-                question: "Trong mối quan hệ giữa Cơ sở hạ tầng (kinh tế) và Kiến trúc thượng tầng (chính trị, văn hóa...), yếu tố nào giữ vai trò quyết định xét đến cùng?",
-                options: [
-                    "A. Kiến trúc thượng tầng quyết định Cơ sở hạ tầng.",
-                    "B. Hai yếu tố tác động ngang nhau, không cái nào quyết định cái nào.",
-                    "C. Cơ sở hạ tầng quyết định Kiến trúc thượng tầng.",
-                    "D. Ý thức xã hội quyết định Cơ sở hạ tầng."
-                ],
-                correct: 2, // Index of C
-                explanation: "Theo chủ nghĩa duy vật lịch sử, quan hệ vật chất quyết định quan hệ tinh thần; tính tất yếu kinh tế xét đến cùng quyết định tính tất yếu chính trị - xã hội. Cơ sở hạ tầng quyết định nguồn gốc, cơ cấu, tính chất và sự vận động phát triển của kiến trúc thượng tầng. Khi cơ sở kinh tế thay đổi thì toàn bộ kiến trúc thượng tầng đồ sộ cũng bị đảo lộn ít nhiều nhanh chóng. (Nguồn: Chương 3, Mục I, 3.b)"
+                        "id": 2,
+                        "question": "Đại hội lần thứ III của Đảng (tháng 9/1960 tại Hà Nội) xác định vai trò của cách mạng miền Bắc là gì?",
+                        "options": [
+                                    "A. Giữ vai trò quyết định trực tiếp đánh đổ đế quốc Mỹ",
+                                    "B. Giữ vai trò quyết định nhất đối với sự phát triển cách mạng cả nước",
+                                    "C. Chỉ hỗ trợ về mặt ngoại giao",
+                                    "D. Tập trung xây dựng kinh tế tư bản tư nhân"
+                        ],
+                        "correct": 1,
+                        "explanation": "Đại hội III xác định: Cách mạng XHCN ở miền Bắc giữ vai trò quyết định nhất đối với sự phát triển của toàn bộ cách mạng cả nước (Session 15)."
             },
             {
-                id: 3,
-                question: "Khái niệm \"Kiến trúc thượng tầng\" dùng để chỉ điều gì?",
-                options: [
-                    "A. Toàn bộ hệ thống kết cấu hạ tầng kỹ thuật (đường sá, cầu cống, nhà cửa).",
-                    "B. Toàn bộ những quan hệ sản xuất hợp thành cơ cấu kinh tế của xã hội.",
-                    "C. Toàn bộ những quan điểm, tư tưởng xã hội cùng những thiết chế xã hội tương ứng hình thành trên một cơ sở hạ tầng nhất định.",
-                    "D. Toàn bộ điều kiện tự nhiên và dân số của xã hội."
-                ],
-                correct: 2, // Index of C
-                explanation: "Kiến trúc thượng tầng là toàn bộ những quan điểm tư tưởng về chính trị, pháp quyền, đạo đức, tôn giáo, nghệ thuật, triết học... cùng những thiết chế xã hội tương ứng như nhà nước, đảng phái, giáo hội, các đoàn thể... hình thành trên cơ sở hạ tầng. (Lưu ý: Đừng nhầm lẫn với cơ sở hạ tầng kỹ thuật trong xây dựng). (Nguồn: Chương 3, Mục I, 3.a)"
+                        "id": 3,
+                        "question": "Chiến thắng quân sự mở đầu phá sản chiến thuật 'trực thăng vận, thiết xa vận' trong Chiến tranh đặc biệt là:",
+                        "options": [
+                                    "A. Chiến thắng Ấp Bắc (2/1/1963)",
+                                    "B. Chiến thắng Vạn Tường",
+                                    "C. Chiến thắng Núi Thành",
+                                    "D. Chiến thắng Ba Gia"
+                        ],
+                        "correct": 0,
+                        "explanation": "Chiến thắng Ấp Bắc (Mỹ Tho, ngày 2/1/1963) khẳng định quân dân miền Nam hoàn toàn có thể đánh bại chiến thuật tác chiến mới của Mỹ (Session 16)."
             },
             {
-                id: 4,
-                question: "Mối quan hệ giữa Tồn tại xã hội và Ý thức xã hội được khái quát như thế nào trong chủ nghĩa duy vật lịch sử?",
-                options: [
-                    "A. Ý thức xã hội quyết định tồn tại xã hội.",
-                    "B. Tồn tại xã hội quyết định ý thức xã hội, nhưng ý thức xã hội có tính độc lập tương đối.",
-                    "C. Tồn tại xã hội và ý thức xã hội phát triển song song và không tác động lẫn nhau.",
-                    "D. Ý thức xã hội luôn luôn lạc hậu hơn tồn tại xã hội."
-                ],
-                correct: 1, // Index of B
-                explanation: "C. Mác viết: \"Không phải ý thức của con người quyết định tồn tại của họ; trái lại, tồn tại xã hội của họ quyết định ý thức của họ\". Tuy nhiên, ý thức xã hội không thụ động mà có tính độc lập tương đối, thể hiện qua việc nó có thể lạc hậu hơn, vượt trước, có tính kế thừa và tác động ngược trở lại tồn tại xã hội. (Nguồn: Chương 3, Mục IV, 1.b và Mục IV, 3)"
+                        "id": 4,
+                        "question": "Đặc trưng cốt lõi của chiến lược 'Chiến tranh cục bộ' (1965 - 1968) của Mỹ ở miền Nam là:",
+                        "options": [
+                                    "A. Đưa quân viễn chinh Mỹ và chư hầu vào tham chiến trực tiếp với quy mô lớn, giữ vai trò chủ yếu trên chiến trường",
+                                    "B. Rút hết lính Mỹ, chỉ dùng lính đánh thuê Thái Lan",
+                                    "C. Chỉ phong tỏa đường biển Đông",
+                                    "D. Chuyển quyền chỉ huy cho quân đội Sài Gòn"
+                        ],
+                        "correct": 0,
+                        "explanation": "'Chiến tranh cục bộ' là chiến lược dùng quân Mỹ và đồng minh làm lực lượng nòng cốt, phối hợp không quân đánh phá miền Bắc (Session 16)."
             },
             {
-                id: 5,
-                question: "Tại sao trong xã hội, nhiều khi điều kiện kinh tế đã thay đổi nhưng những phong tục, tập quán, thói quen cũ vẫn tồn tại dai dẳng?",
-                options: [
-                    "A. Do tính kế thừa của ý thức xã hội.",
-                    "B. Do ý thức xã hội có thể vượt trước tồn tại xã hội.",
-                    "C. Do ý thức xã hội thường lạc hậu hơn tồn tại xã hội.",
-                    "D. Do sự tác động của kiến trúc thượng tầng."
-                ],
-                correct: 2, // Index of C
-                explanation: "Một trong những biểu hiện của tính độc lập tương đối là ý thức xã hội thường lạc hậu hơn tồn tại xã hội. Nhiều khi xã hội cũ đã mất đi, nhưng ý thức xã hội (truyền thống, thói quen, tập quán) do xã hội đó sản sinh ra vẫn tiếp tục tồn tại. V.I. Lênin từng nhận định: \"sức mạnh của tập quán ở hàng triệu và hàng chục triệu người là một sức mạnh ghê gớm nhất\". (Nguồn: Chương 3, Mục IV, 3)"
+                        "id": 5,
+                        "question": "Cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968 có ý nghĩa chiến lược xoay chuyển cục diện chiến tranh như thế nào?",
+                        "options": [
+                                    "A. Làm sụp đổ ngay chế độ Sài Gòn",
+                                    "B. Đập tan ý chí xâm lược của Mỹ, buộc Mỹ tuyên bố phi Mỹ hóa chiến tranh và chấp nhận ngồi vào bàn đàm phán Paris",
+                                    "C. Giải phóng toàn bộ các tỉnh đồng bằng sông Cửu Long",
+                                    "D. Kết thúc cuộc kháng chiến chống Mỹ"
+                        ],
+                        "correct": 1,
+                        "explanation": "Đòn tiến công Tết Mậu Thân 1968 buộc Tổng thống Johnson phải ngừng ném bom miền Bắc và chấp nhận đàm phán tại Paris (Session 16)."
             },
             {
-                id: 6,
-                question: "Theo Ph. Ăngghen, sự tác động trở lại của nhà nước (quyền lực chính trị) đối với kinh tế (cơ sở hạ tầng) diễn ra theo những chiều hướng nào?",
-                options: [
-                    "A. Luôn luôn thúc đẩy kinh tế phát triển.",
-                    "B. Luôn luôn kìm hãm kinh tế phát triển.",
-                    "C. Chỉ có tác dụng bảo vệ an ninh trật tự, không ảnh hưởng đến kinh tế.",
-                    "D. Nếu tác động cùng chiều sẽ thúc đẩy kinh tế; nếu tác động ngược chiều sẽ kìm hãm kinh tế."
-                ],
-                correct: 3, // Index of D
-                explanation: "Ph. Ăngghen chỉ rõ tác động ngược lại của quyền lực nhà nước đối với kinh tế theo hai hướng cơ bản: nếu tác động cùng hướng với sự phát triển kinh tế sẽ thúc đẩy kinh tế phát triển nhanh hơn; nếu tác động ngược lại hướng phát triển kinh tế sẽ kìm hãm sự phát triển của kinh tế. (Nguồn: Chương 3, Mục I, 3.b)"
+                        "id": 6,
+                        "question": "Chiến thắng 12 ngày đêm cuối năm 1972 đập tan cuộc tập kích B.52 của Mỹ vào Hà Nội, Hải Phòng được gọi là:",
+                        "options": [
+                                    "A. Trận Khe Sanh trên không",
+                                    "B. Trận 'Điện Biên Phủ trên không'",
+                                    "C. Chiến dịch Lam Sơn",
+                                    "D. Chiến dịch Tây Nguyên"
+                        ],
+                        "correct": 1,
+                        "explanation": "Trận 'Điện Biên Phủ trên không' cuối tháng 12/1972 bắn rơi 81 máy bay (34 chiếc B.52), buộc Mỹ phải ký Hiệp định Paris (Session 17)."
             },
             {
-                id: 7,
-                question: "Quan điểm \"Chính trị là sự biểu hiện tập trung của kinh tế\" là của ai và mang ý nghĩa gì?",
-                options: [
-                    "A. Của C. Mác, nhằm khẳng định chính trị không quan trọng bằng kinh tế.",
-                    "B. Của V.I. Lênin, nhằm khẳng định kinh tế quyết định chính trị nhưng chính trị có vai trò hàng đầu trong việc giải quyết các vấn đề kinh tế.",
-                    "C. Của Ph. Ăngghen, nhằm khẳng định chính trị và kinh tế là một.",
-                    "D. Của Hồ Chí Minh, nhằm khẳng định vai trò của văn hóa."
-                ],
-                correct: 1, // Index of B
-                explanation: "Quy luật về mối quan hệ biện chứng giữa cơ sở hạ tầng và kiến trúc thượng tầng là cơ sở khoa học để nhận thức mối quan hệ giữa kinh tế và chính trị. V.I. Lênin cho rằng: \"Chính trị là sự biểu hiện tập trung của kinh tế... Chính trị không thể không chiếm địa vị hàng đầu so với kinh tế\". Điều này có nghĩa là giải quyết các vấn đề kinh tế phải thông qua con đường chính trị, và chính trị đúng đắn là điều kiện tiên quyết để xây dựng kinh tế. (Nguồn: Chương 3, Mục I, 3.b)"
+                        "id": 7,
+                        "question": "Hiệp định Paris được ký ngày 27/1/1973 đã hoàn thành mục tiêu chiến lược nào theo lời dạy của Bác Hồ?",
+                        "options": [
+                                    "A. 'Đánh cho Mỹ cút'",
+                                    "B. 'Đánh cho Ngụy nhào'",
+                                    "C. Xây dựng chủ nghĩa xã hội",
+                                    "D. Gia nhập khối ASEAN"
+                        ],
+                        "correct": 0,
+                        "explanation": "Hiệp định Paris buộc quân viễn chinh Mỹ rút hoàn toàn khỏi miền Nam, hoàn thành mục tiêu chiến lược 'Đánh cho Mỹ cút' (Session 17)."
+            },
+            {
+                        "id": 8,
+                        "question": "Chiến dịch đỉnh cao giải phóng hoàn toàn miền Nam ngày 30/4/1975 được mang tên ai?",
+                        "options": [
+                                    "A. Chiến dịch Tây Nguyên",
+                                    "B. Chiến dịch Huế - Đà Nẵng",
+                                    "C. Chiến dịch Hồ Chí Minh",
+                                    "D. Chiến dịch Quang Trung"
+                        ],
+                        "correct": 2,
+                        "explanation": "Bộ Chính trị quyết định đặt tên chiến dịch giải phóng Sài Gòn là 'Chiến dịch Hồ Chí Minh', toàn thắng trưa ngày 30/4/1975 (Session 18)."
             }
-        ];
+];
 
         function renderQuiz() {
             const container = document.getElementById('quiz-container');
             container.innerHTML = quizData.map((item, index) => `
                 <div class="philo-card p-6 md:p-8 question-block" id="question-${index}">
                     <div class="flex items-start gap-4 mb-6">
-                        <span class="flex-shrink-0 size-8 bg-philo-warmGold/10 dark:bg-amber-950/40 text-secondary font-bold rounded-lg flex items-center justify-center text-sm">
+                        <span class="flex-shrink-0 size-8 bg-philo-warmGold/20 text-philo-gold font-bold rounded-lg flex items-center justify-center text-sm border border-philo-gold/30">
                             ${index + 1}
                         </span>
-                        <h3 class="text-lg font-bold text-philo-gold font-heading leading-relaxed pt-1">
+                        <h3 class="text-base md:text-lg font-bold text-philo-gold font-heading leading-relaxed pt-1">
                             ${item.question}
                         </h3>
                     </div>
@@ -288,29 +298,25 @@
                             <label class="cursor-pointer group block relative">
                                 <input type="radio" name="q${index}" value="${optIndex}" class="peer sr-only">
                                 <div class="p-4 rounded-xl border border-philo-gold/20 hover:bg-philo-gold/5 hover:border-philo-gold/40 transition-all flex items-center gap-3">
-                                    <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300 dark:border-gray-500 relative flex items-center justify-center transition-colors">
-                                        <div class="w-2.5 h-2.5 bg-philo-blackBurgundy  rounded-full opacity-0 transform scale-50 transition-all duration-200"></div>
+                                    <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center transition-colors shrink-0">
+                                        <div class="w-2.5 h-2.5 bg-philo-gold rounded-full opacity-0 transform scale-50 transition-all duration-200"></div>
                                     </div>
                                     <span class="text-philo-ivory/90 font-medium">${opt}</span>
                                     
                                     <!-- Icons for result -->
-                                    <span class="material-symbols-outlined text-green-500 ml-auto correct-icon">check_circle</span>
-                                    <span class="material-symbols-outlined text-red-500 ml-auto wrong-icon">cancel</span>
+                                    <span class="material-symbols-outlined text-green-400 ml-auto correct-icon">check_circle</span>
+                                    <span class="material-symbols-outlined text-red-400 ml-auto wrong-icon">cancel</span>
                                 </div>
                             </label>
                         `).join('')}
                     </div>
-                    <!-- Explanation (Hidden) -->
-                    <div class="explanation hidden mt-6 p-4 bg-philo-gold/5 rounded-xl border border-philo-gold/20">
-                        <div class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-secondary mt-1">lightbulb</span>
-                            <div>
-                                <h4 class="font-bold text-secondary text-sm uppercase mb-1">Giải thích chi tiết</h4>
-                                <p class="text-sm text-philo-ivory/90 leading-relaxed">
-                                    ${item.explanation}
-                                </p>
-                            </div>
+                    <!-- Explanation (hidden initially) -->
+                    <div class="explanation-box hidden mt-6 p-4 rounded-xl bg-philo-gold/10 border border-philo-gold/30 ml-0 md:ml-12 text-sm">
+                        <div class="flex items-center gap-2 font-bold text-philo-gold mb-1">
+                            <span class="material-symbols-outlined text-base">lightbulb</span>
+                            Giải thích chi tiết:
                         </div>
+                        <p class="text-philo-ivory/90 font-sans leading-relaxed">${item.explanation}</p>
                     </div>
                 </div>
             `).join('');
@@ -318,47 +324,37 @@
 
         function submitQuiz() {
             let score = 0;
-            let answered = 0;
+            const answers = [];
 
             quizData.forEach((item, index) => {
                 const selected = document.querySelector(`input[name="q${index}"]:checked`);
                 const questionBlock = document.getElementById(`question-${index}`);
-                const explanation = questionBlock.querySelector('.explanation');
-                const inputs = questionBlock.querySelectorAll(`input[name="q${index}"]`);
+                const explanationBox = questionBlock.querySelector('.explanation-box');
+                const labels = questionBlock.querySelectorAll('label');
 
-                // Disable inputs
-                inputs.forEach(input => input.disabled = true);
-
-                // Remove previous formatting
-                questionBlock.querySelectorAll('label > div').forEach(div => {
-                    div.classList.remove('correct-answer', 'wrong-answer');
-                });
+                explanationBox.classList.remove('hidden');
 
                 if (selected) {
-                    answered++;
-                    const val = parseInt(selected.value);
-                    const selectedDiv = selected.nextElementSibling;
+                    const answerIndex = parseInt(selected.value);
+                    answers.push(answerIndex);
 
-                    if (val === item.correct) {
+                    if (answerIndex === item.correct) {
                         score++;
-                        selectedDiv.classList.add('correct-answer');
+                        labels[answerIndex].querySelector('div').classList.add('correct-answer');
                     } else {
-                        selectedDiv.classList.add('wrong-answer');
-                        // Highlight correct answer
-                        const correctInput = questionBlock.querySelector(`input[value="${item.correct}"]`);
-                        correctInput.nextElementSibling.classList.add('correct-answer');
+                        labels[answerIndex].querySelector('div').classList.add('wrong-answer');
+                        labels[item.correct].querySelector('div').classList.add('correct-answer');
                     }
                 } else {
-                    // If not answered, just highlight correct
-                    const correctInput = questionBlock.querySelector(`input[value="${item.correct}"]`);
-                    correctInput.nextElementSibling.classList.add('correct-answer');
+                    answers.push(null);
+                    labels[item.correct].querySelector('div').classList.add('correct-answer');
                 }
 
-                // Show explanation
-                explanation.classList.remove('hidden');
+                // Disable all radios
+                questionBlock.querySelectorAll('input').forEach(input => input.disabled = true);
             });
 
-            // Show Result
+            // Show Score Modal
             const modal = document.getElementById('score-modal');
             const scoreDisplay = document.getElementById('final-score');
             const feedback = document.getElementById('feedback-text');
@@ -369,17 +365,17 @@
 
             if (score === quizData.length) {
                 feedback.innerText = "Xuất sắc! Bạn đã nắm vững toàn bộ kiến thức!";
-            } else if (score >= 5) {
-                feedback.innerText = "Làm tốt lắm! Chỉ còn vài lỗi nhỏ thôi.";
+            } else if (score >= quizData.length * 0.7) {
+                feedback.innerText = "Làm tốt lắm! Bạn đã nắm chắc phần lớn kiến thức bài học.";
             } else {
-                feedback.innerText = "Cần cố gắng thêm nhé! Hãy xem lại kiến thức.";
+                feedback.innerText = "Cần cố gắng thêm nhé! Hãy xem lại các câu sai và ôn lại bài giảng.";
             }
 
             // Animation
             modal.classList.remove('hidden');
             setTimeout(() => {
                 modal.classList.remove('opacity-0');
-                modal.querySelector('div').classList.remove('scale-90', 'scale-100');
+                modal.querySelector('div').classList.remove('scale-90');
                 modal.querySelector('div').classList.add('scale-100');
             }, 10);
 
@@ -387,7 +383,6 @@
             submitBtn.classList.add('hidden');
             resultActions.classList.remove('hidden');
 
-            // Scroll to top to see modal clearly
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 

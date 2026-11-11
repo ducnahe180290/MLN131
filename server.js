@@ -28,7 +28,11 @@ async function loadCurriculum() {
   if (cachedCurriculum) return cachedCurriculum;
   
   try {
-    cachedCurriculum = require("./data/mln131-curriculum.json");
+    try {
+      cachedCurriculum = require("./data/vnr202-curriculum.json");
+    } catch (e) {
+      cachedCurriculum = require("./data/mln131-curriculum.json");
+    }
     return cachedCurriculum;
   } catch (err) {
     console.error("Không thể load giáo trình JSON:", err);

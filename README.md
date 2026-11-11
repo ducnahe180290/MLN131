@@ -1,41 +1,52 @@
-# PhiloVerse MLN131
+# PhiloVerse VNR202 — Lịch Sử Đảng Cộng Sản Việt Nam
 
-Website học tập tương tác cho môn **Kinh tế chính trị Mác - Lênin (MLN131)**.
+Website học tập và luyện thi trắc nghiệm tương tác cho môn **Lịch sử Đảng Cộng sản Việt Nam (VNR202)** bám sát bài giảng **29 Sessions** (Đại học FPT) và Giáo trình chuẩn Bộ Giáo dục & Đào tạo.
 
-## Tính năng
+---
 
-- Sáu chương bài học tại `Overview.html` và `module1.html` đến `module6.html`.
-- Ôn thi FE với 66 câu trong `js/quiz-fe-review.js`, mỗi đề thi thử chọn 50 câu.
-- Bốn game ở `games.html`: giải mã thuật ngữ, bản đồ tư duy, ô chữ và Ghế nóng.
-- Trợ lý hỏi đáp tại `ai-assistants.html`; API trong `server.js` tra dữ liệu ở `data/mln131-curriculum.json`.
-- Tiến độ một số hoạt động được lưu trong `localStorage` của trình duyệt.
+## 🚀 Tính năng nổi bật
 
-## Chạy trên máy
+1. **Phòng Ôn thi FE & Thi thử trắc nghiệm (`practice.html`)**:
+   - **Ngân hàng 72+ câu hỏi** bao quát toàn bộ 29 Sessions.
+   - **6 Modules phân loại chi tiết**:
+     - **M1**: Chương Nhập Môn — Đối tượng, chức năng & phương pháp nghiên cứu Lịch sử Đảng
+     - **M2**: Chương 1 — Sự ra đời của Đảng & Cương lĩnh chính trị đầu tiên (1920 - 1930)
+     - **M3**: Chương 1 — Lãnh đạo giành chính quyền & Cách mạng Tháng Tám (1930 - 1945)
+     - **M4**: Chương 2 — Kháng chiến chống thực dân Pháp và can thiệp Mỹ (1945 - 1954)
+     - **M5**: Chương 2 — Xây dựng miền Bắc & Kháng chiến chống Mỹ cứu nước (1954 - 1975)
+     - **M6**: Chương 3 — Thời kỳ quá độ lên CNXH & Công cuộc Đổi mới toàn diện (1975 - nay)
+   - **Chế độ Thi thử FE (Exam Mode)**: Tự động bốc ngẫu nhiên **50 câu hỏi** trong 60 phút, chấm điểm tự động, xem lại câu sai/đúng và giải thích cặn kẽ.
 
-Yêu cầu Node.js và npm. Nếu Terminal đang ở thư mục workspace `D:\SPST MLN131`, vào thư mục dự án trước:
+2. **5 Bài Quiz chuyên đề theo từng thời kỳ lịch sử**:
+   - `quiz1.html`: **Quiz 1** — Nhập môn & Sự ra đời của Đảng (1920 - 1930)
+   - `quiz2.html`: **Quiz 2** — Giành chính quyền & Cách mạng Tháng Tám (1930 - 1945)
+   - `quiz3.html`: **Quiz 3** — Kháng chiến chống thực dân Pháp (1945 - 1954)
+   - `quiz4.html`: **Quiz 4** — Kháng chiến chống Mỹ cứu nước (1954 - 1975)
+   - `quiz5.html`: **Quiz 5** — Thời kỳ Đổi mới & Hội nhập quốc tế (1975 - nay)
 
+3. **Cơ sở dữ liệu 29 Sessions (`data/vnr202-curriculum.json`)**:
+   - Trích xuất toàn văn nội dung slide từ bộ bài giảng gốc 29 Sessions PPTX/PDF.
+   - Phục vụ tra cứu học phần và kết nối Trợ lý AI hỏi đáp.
+
+---
+
+## 💻 Cách chạy ứng dụng
+
+### Cách 1: Mở trực tiếp (Không cần cài đặt)
+Bạn có thể mở trực tiếp các file HTML bằng trình duyệt web bất kỳ (Chrome, Edge, Cốc Cốc, v.v.):
+- Mở `home.html` để vào Trang chủ.
+- Mở `practice.html` để vào Phòng Ôn thi FE & Thi thử.
+- Mở `quiz1.html` đến `quiz5.html` để làm từng bài Quiz chuyên đề.
+
+### Cách 2: Chạy qua Node.js Web Server (Khuyên dùng)
 ```powershell
-cd .\MLN131
-```
+# Di chuyển vào thư mục dự án
+cd "C:\Users\brave\Downloads\VNR202_Quiz"
 
-Sau đó chạy:
+# Cài đặt thư viện (nếu cần dùng server & AI)
+npm install
 
-```bash
-npm ci
-copy .env.example .env
+# Khởi động máy chủ
 npm start
 ```
-
-Mở `http://localhost:3000/`. Điền key vào `.env` nếu muốn gọi mô hình AI. Không đưa key vào mã frontend hoặc commit `.env`. Xem `SETUP_GUIDE.md` để biết biến môi trường nào cần dùng.
-
-## Giới hạn học liệu hiện tại
-
-`data/mln131-curriculum.json` có **16 mục tóm tắt** thuộc sáu chương. Repo chưa có PDF giáo trình Kinh tế chính trị Mác - Lênin của lớp; các số trang trong bài học, câu hỏi và dữ liệu AI **chưa được đối chiếu với PDF đó**. Trợ lý chỉ nên dùng để ôn tập và gợi ý tra cứu, không dùng làm nguồn trích dẫn học thuật cuối cùng.
-
-Các file trong `game-hcm/`, `quiz1.html` đến `quiz5.html` và một số nội dung Triết học/Tư tưởng Hồ Chí Minh là phần kế thừa của phiên bản trước. Trang `games.html` chỉ dẫn tới game Ghế nóng MLN131 trong `game-hcm/game2/`; các game lịch sử cũ không nằm trong luồng học MLN131.
-
-## Việc còn cần làm trước khi nộp
-
-1. Nhận PDF giáo trình MLN131 của lớp và đối chiếu từng số trang, đáp án, giải thích và bài viết.
-2. Kiểm thử toàn bộ luồng trên máy tính và điện thoại, đặc biệt game, thi thử và AI khi có key.
-3. Gỡ hoặc chuyển riêng nội dung của môn học cũ nếu muốn bàn giao repo chỉ chứa MLN131.
+Truy cập: `http://localhost:3000/home.html` hoặc `http://localhost:3000/practice.html`.

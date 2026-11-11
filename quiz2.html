@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz 2: Phép biện chứng duy vật | PhiloVerse</title>
+    <title>Quiz 2: Đấu Tranh Giành Chính Quyền & Cách Mạng Tháng Tám (1930 - 1945) | VNR202</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,7 +58,7 @@
         .correct-answer label {
             color: #ffffff !important;
             font-weight: 700 !important;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
         }
 
         .wrong-answer {
@@ -72,7 +72,17 @@
         .wrong-answer label {
             color: #ffffff !important;
             font-weight: 700 !important;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+        }
+
+        .correct-answer .radio-circle {
+            border-color: #10b981;
+            background-color: #10b981;
+        }
+
+        .wrong-answer .radio-circle {
+            border-color: #ef4444;
+            background-color: #ef4444;
         }
 
         .correct-icon,
@@ -81,54 +91,43 @@
         }
 
         .correct-answer .correct-icon {
-            display: block;
+            display: inline-block;
         }
 
         .wrong-answer .wrong-icon {
-            display: block;
+            display: inline-block;
         }
-            /* Quiz hero */
-        .quiz-hero {
-            position: relative; overflow: hidden;
-            background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%);
-            padding: 2.5rem 2rem 2rem; margin-bottom: 2.5rem; border-radius: 1.5rem;
-        }
-        .quiz-hero::after {
-            content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(217,166,46,0.5), transparent);
-        }
-        /* Quiz option dark theme fix */
-        .correct-answer { border-color: #10b981 !important; background-color: rgba(16,185,129,0.12) !important; }
-        .wrong-answer { border-color: #ef4444 !important; background-color: rgba(239,68,68,0.12) !important; }
-        /* Radio button gold selected */
-        input[type="radio"]:checked+div { border-color: #FFD34E !important; background-color: rgba(255,211,78,0.08) !important; }
-        input[type="radio"]:checked+div .radio-circle { background-color: #FFD34E !important; border-color: #FFD34E !important; }</style>
+    </style>
 </head>
 
-<body class="bg-philo-blackBurgundy relative text-philo-ivory dark:text-gray-200 min-h-screen flex flex-col">
+<body class="bg-philo-darkBg text-philo-ivory min-h-screen flex flex-col font-body antialiased selection:bg-philo-warmGold selection:text-white">
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
-    <main class="flex-grow w-full max-w-4xl mx-auto px-4 py-10">
+    <!-- Main Content -->
+    <main class="flex-grow pt-24 px-4 max-w-4xl mx-auto w-full">
         <!-- Breadcrumb -->
-        <div class="mb-6">
-            <div
- class="inline-flex items-center px-4 py-1.5 rounded-full bg-philo-warmGold/10/60 border border-philo-warmGold/30/80 dark:bg-amber-950/20 dark:border-amber-900/30 text-secondary text-xs font-bold uppercase tracking-wider gap-2">
-                <a href="home.html" class="hover:underline hover:text-secondary transition-colors">TRANG CHỦ</a>
-                <span class="opacity-60">/</span>
-                <a href="practice.html" class="hover:underline hover:text-secondary transition-colors">THỰC HÀNH</a>
+        <div class="mb-6 flex items-center justify-between text-sm text-philo-ivory/80 dark:text-gray-400">
+            <div class="flex items-center gap-2">
+                <a href="practice.html" class="hover:text-philo-gold transition-colors">Ôn tập VNR202</a>
                 <span class="opacity-60">/</span>
                 <span>QUIZ 2</span>
             </div>
+            <a href="practice.html" class="inline-flex items-center gap-1 text-philo-gold hover:underline text-xs font-bold">
+                <span class="material-symbols-outlined text-sm">arrow_back</span> Về trang Thực hành
+            </a>
         </div>
         <!-- Quiz Intro -->
         <div class="text-center mb-10" id="quiz-intro">
-            <h1 class="text-3xl md:text-4xl font-heading font-bold text-philo-gold font-heading mb-4">
-                Phép biện chứng duy vật – Quy luật của sự phát triển
+            <div class="inline-block px-3 py-1 bg-philo-gold/20 text-philo-gold text-xs font-bold uppercase rounded-full mb-3 tracking-wider">
+                Lịch sử Đảng Cộng sản Việt Nam (VNR202)
+            </div>
+            <h1 class="text-2xl md:text-3xl font-heading font-bold text-philo-gold font-heading mb-3">
+                Quiz 2: Đấu Tranh Giành Chính Quyền & Cách Mạng Tháng Tám (1930 - 1945)
             </h1>
-            <p class="text-lg text-philo-ivory/70 dark:text-gray-400 max-w-2xl mx-auto">
-                Kiểm tra hiểu biết của bạn về ba quy luật cơ bản của phép biện chứng duy vật. <br>
-                Hãy chọn đáp án đúng nhất cho 7 câu hỏi dưới đây.
+            <p class="text-sm md:text-base text-philo-ivory/80 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Khảo sát các cao trào cách mạng 1930-1931, 1936-1939, chuyển hướng chiến lược và thắng lợi Tổng khởi nghĩa Tháng Tám 1945. <br>
+                Hãy chọn đáp án đúng nhất cho 8 câu hỏi dưới đây.
             </p>
         </div>
 
@@ -140,38 +139,37 @@
         <!-- Submit Action -->
         <div class="mt-12 flex justify-center pb-20">
             <button onclick="submitQuiz()" id="submit-btn"
- class="px-8 py-3 bg-philo-warmGold hover:bg-philo-warmGold/90 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                class="px-8 py-3.5 philo-btn-gold text-philo-black font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
                 Nộp bài & Xem kết quả
             </button>
             <div id="result-actions" class="hidden flex gap-4">
                 <button onclick="location.reload()"
- class="px-6 py-3 philo-btn-ghost text-philo-ivory font-bold rounded-xl transition-colors">
+                    class="px-6 py-3 philo-btn-ghost text-philo-ivory font-bold rounded-xl transition-colors">
                     Làm lại
                 </button>
                 <a href="practice.html"
- class="px-6 py-3 bg-philo-black/40 hover:bg-philo-black/60 border border-philo-gold/30 text-philo-ivory font-bold rounded-xl transition-colors">
-                    Quay về Thực hành
+                    class="px-6 py-3 bg-philo-gold/20 hover:bg-philo-gold/30 border border-philo-gold/40 text-philo-gold font-bold rounded-xl transition-colors">
+                    Quay về Ôn tập FE
                 </a>
             </div>
         </div>
 
-        <!-- Score Modal (Hidden initially) -->
+        <!-- Score Modal -->
         <div id="score-modal"
- class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300">
-            <div
- class="philo-card rounded-3xl p-8 max-w-md w-full transform scale-90 transition-transform duration-300">
+            class="hidden fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+            <div class="philo-card rounded-3xl p-8 max-w-md w-full transform scale-90 transition-transform duration-300 border border-philo-gold/40">
                 <div class="text-center">
-                    <div
- class="size-20 bg-philo-warmGold/10 dark:bg-amber-900/30 rounded-full flex items-center justify-center mx-auto mb-4 text-secondary">
+                    <div class="size-20 bg-philo-warmGold/20 rounded-full flex items-center justify-center mx-auto mb-4 text-philo-gold">
                         <span class="material-symbols-outlined text-4xl">emoji_events</span>
                     </div>
                     <h2 class="text-2xl font-bold text-philo-gold font-heading mb-2">Kết quả của bạn</h2>
-                    <div class="text-5xl font-black text-secondary mb-4" id="final-score">0/7</div>
-                    <p class="text-philo-ivory/70 dark:text-gray-400 mb-8" id="feedback-text">Hãy xem lại các câu sai để hiểu
-                        rõ hơn nhé!</p>
+                    <div class="text-5xl font-black text-philo-warmGold mb-4" id="final-score">0/8</div>
+                    <p class="text-philo-ivory/80 dark:text-gray-400 mb-8" id="feedback-text">
+                        Hãy xem lại các câu sai để hiểu rõ hơn nhé!
+                    </p>
                     <button onclick="closeModal()"
- class="w-full py-3 bg-philo-warmGold text-white font-bold rounded-xl hover:bg-philo-warmGold/90 transition-colors">
-                        Xem chi tiết đáp án
+                        class="w-full py-3 bg-philo-warmGold text-black font-bold rounded-xl hover:bg-amber-400 transition-colors">
+                        Xem chi tiết đáp án & giải thích
                     </button>
                 </div>
             </div>
@@ -186,100 +184,112 @@
     <script>
         const quizData = [
             {
-                id: 1,
-                question: "Theo quan điểm của Phép biện chứng duy vật, sự phát triển của sự vật, hiện tượng diễn ra theo khuynh hướng nào?",
-                options: [
-                    "A. Theo đường thẳng đi lên.",
-                    "B. Theo vòng tròn khép kín, lặp lại y hệt cái cũ.",
-                    "C. Theo đường xoáy ốc (trôn ốc).",
-                    "D. Theo đường dích dắc không có định hướng."
-                ],
-                correct: 2, // Index of C
-                explanation: "Phép biện chứng duy vật khẳng định sự phát triển không diễn ra theo đường thẳng mà theo đường xoáy ốc. Điều này thể hiện tính kế thừa, tính lặp lại nhưng trên cơ sở cao hơn của sự vật mới so với sự vật cũ. Quá trình này bao hàm cả những bước quanh co, thụt lùi tạm thời. (Nguồn: Chương 2, Mục II, 2.a và 2.c)"
+                        "id": 1,
+                        "question": "Hội nghị Ban Chấp hành Trung ương Đảng tháng 10 năm 1930 đã bầu ai làm Tổng Bí thư đầu tiên của Đảng?",
+                        "options": [
+                                    "A. Nguyễn Ái Quốc",
+                                    "B. Trần Phú",
+                                    "C. Lê Hồng Phong",
+                                    "D. Hà Huy Tập"
+                        ],
+                        "correct": 1,
+                        "explanation": "Hội nghị Trung ương tháng 10/1930 đã cử Ban Chấp hành Trung ương chính thức và bầu đồng chí Trần Phú làm Tổng Bí thư (Session 6)."
             },
             {
-                id: 2,
-                question: "Trong Quy luật Lượng - Chất, khoảng giới hạn mà tại đó sự thay đổi về lượng chưa dẫn đến sự thay đổi căn bản về chất được gọi là gì?",
-                options: [
-                    "A. Điểm nút.",
-                    "B. Độ.",
-                    "C. Bước nhảy.",
-                    "D. Phủ định."
-                ],
-                correct: 1, // Index of B
-                explanation: "Khái niệm \"Độ\" dùng để chỉ mối liên hệ thống nhất và quy định lẫn nhau giữa chất với lượng; là giới hạn tồn tại của sự vật, hiện tượng mà trong đó sự thay đổi về lượng chưa dẫn đến sự thay đổi về chất. (Nguồn: Chương 2, Mục II, 2.c)"
+                        "id": 2,
+                        "question": "Đỉnh cao của phong trào cách mạng 1930 - 1931 là sự kiện nào?",
+                        "options": [
+                                    "A. Cuộc bãi công Ba Son",
+                                    "B. Sự ra đời của chính quyền Xô Viết Nghệ - Tĩnh",
+                                    "C. Khởi nghĩa Nam Kỳ",
+                                    "D. Khởi nghĩa Đô Lương"
+                        ],
+                        "correct": 1,
+                        "explanation": "Chính quyền Xô Viết Nghệ - Tĩnh ra đời trong cao trào 1930-1931 là đỉnh cao, bước tập dượt đầu tiên cho Cách mạng Tháng Tám (Session 5)."
             },
             {
-                id: 3,
-                question: "Một người muốn đạt được thành công ngay lập tức (thay đổi về Chất) mà không chịu bỏ thời gian học tập, rèn luyện (tích lũy về Lượng). Theo triết học Mác - Lênin, người này đang mắc phải sai lầm gì?",
-                options: [
-                    "A. Bảo thủ, trì trệ.",
-                    "B. Nôn nóng, tả khuynh.",
-                    "C. Chiết trung.",
-                    "D. Ngụy biện."
-                ],
-                correct: 1, // Index of B
-                explanation: "Quy luật Lượng - Chất chỉ ra rằng sự thay đổi về chất chỉ xảy ra khi lượng đã tích lũy đến điểm nút. Tư tưởng nôn nóng biểu hiện ở chỗ không chú ý thỏa đáng đến sự tích lũy về lượng mà chỉ muốn thực hiện những bước nhảy liên tục (đốt cháy giai đoạn). (Nguồn: Chương 2, Mục II, 2.c)"
+                        "id": 3,
+                        "question": "Hạn chế căn bản của bản Luận cương chính trị tháng 10/1930 so với Cương lĩnh tháng 2/1930 là gì?",
+                        "options": [
+                                    "A. Chưa đề cập đến phong trào công nhân",
+                                    "B. Nặng về đấu tranh giai cấp và thổ địa, chưa đặt nhiệm vụ giải phóng dân tộc lên hàng đầu; đánh giá hẹp hòi các tầng lớp trung gian",
+                                    "C. Không thừa nhận vai trò của Quốc tế Cộng sản",
+                                    "D. Hòa hoãn vô nguyên tắc với phong kiến"
+                        ],
+                        "correct": 1,
+                        "explanation": "Luận cương 10/1930 xem vấn đề thổ địa là cái cốt của cách mạng tư sản dân quyền, xem nhẹ nhiệm vụ chống đế quốc giải phóng dân tộc (Session 6)."
             },
             {
-                id: 4,
-                question: "Theo Quy luật Mâu thuẫn, động lực và nguồn gốc bên trong của sự vận động, phát triển là gì?",
-                options: [
-                    "A. Sự tác động của các lực lượng siêu nhiên.",
-                    "B. Sự thỏa hiệp và điều hòa giữa các mặt đối lập.",
-                    "C. Sự thống nhất và đấu tranh giữa các mặt đối lập.",
-                    "D. Sự tác động qua lại giữa các sự vật hiện tượng bên ngoài."
-                ],
-                correct: 2, // Index of C
-                explanation: "Mâu thuẫn là hiện tượng khách quan. Sự thống nhất và đấu tranh giữa các mặt đối lập trong chính bản thân sự vật là nguyên nhân, động lực bên trong của sự vận động và phát triển. Đấu tranh giữa các mặt đối lập làm cái cũ mất đi và cái mới ra đời. (Nguồn: Chương 2, Mục II, 2.c)"
+                        "id": 4,
+                        "question": "Mục tiêu đấu tranh chủ yếu của Đảng trong phong trào Dân chủ 1936 - 1939 là:",
+                        "options": [
+                                    "A. Tịch thu toàn bộ ruộng đất chia cho dân cày",
+                                    "B. Đòi tự do, dân chủ, cơm áo, hòa bình; kết hợp đấu tranh công khai và bí mật",
+                                    "C. Khởi nghĩa vũ trang lật đổ chính quyền thực dân",
+                                    "D. Cải cách thuế khóa theo mô hình châu Âu"
+                        ],
+                        "correct": 1,
+                        "explanation": "Thời kỳ 1936-1939, Đảng chủ trương đấu tranh đòi quyền dân sinh, dân chủ, chống phát xít và bảo vệ hòa bình (Session 7)."
             },
             {
-                id: 5,
-                question: "Để giải quyết mâu thuẫn và thúc đẩy sự phát triển, phương pháp nào sau đây là đúng đắn theo quan điểm triết học Mác - Lênin?",
-                options: [
-                    "A. Né tránh mâu thuẫn để giữ ổn định.",
-                    "B. Điều hòa mâu thuẫn, dĩ hòa vi quý.",
-                    "C. Đấu tranh giữa các mặt đối lập.",
-                    "D. Xóa bỏ hoàn toàn cả hai mặt đối lập ngay lập tức."
-                ],
-                correct: 2, // Index of C
-                explanation: "Mâu thuẫn chỉ được giải quyết bằng con đường đấu tranh giữa các mặt đối lập, không được điều hòa mâu thuẫn. Đấu tranh là tuyệt đối, là phương thức để phá vỡ thế ổn định cũ, thiết lập cái mới. (Nguồn: Chương 2, Mục II, 2.c)"
+                        "id": 5,
+                        "question": "Hội nghị nào của Trung ương Đảng đã hoàn thành chuyển hướng chỉ đạo chiến lược, đặt giải phóng dân tộc lên hàng đầu và lập Mặt trận Việt Minh?",
+                        "options": [
+                                    "A. Hội nghị Trung ương 6 (11/1939)",
+                                    "B. Hội nghị Trung ương 7 (11/1940)",
+                                    "C. Hội nghị Trung ương 8 (5/1941) tại Pác Bó do Nguyễn Ái Quốc chủ trì",
+                                    "D. Hội nghị toàn quốc Tân Trào (8/1945)"
+                        ],
+                        "correct": 2,
+                        "explanation": "Hội nghị Trung ương 8 (5/1941) tại Pác Bó (Cao Bằng) quyết định đặt quyền lợi dân tộc lên trên hết và thành lập Mặt trận Việt Minh (Session 8)."
             },
             {
-                id: 6,
-                question: "\"Phủ định biện chứng\" khác với \"phủ định sạch trơn\" (siêu hình) ở đặc điểm cơ bản nào?",
-                options: [
-                    "A. Xóa bỏ hoàn toàn cái cũ.",
-                    "B. Có tính kế thừa những yếu tố tích cực của cái cũ.",
-                    "C. Do tác động từ bên ngoài tiêu diệt sự vật.",
-                    "D. Chấm dứt sự phát triển."
-                ],
-                correct: 1, // Index of B
-                explanation: "Phủ định biện chứng là tiền đề cho sự phát triển, mang tính khách quan và tính kế thừa. Nó không xóa bỏ sạch trơn mà loại bỏ các yếu tố tiêu cực, lỗi thời và giữ lại, cải tạo các yếu tố tích cực của cái cũ để đưa vào cái mới. (Nguồn: Chương 2, Mục II, 2.c)"
+                        "id": 6,
+                        "question": "Chỉ thị 'Nhật - Pháp bắn nhau và hành động của chúng ta' ra đời vào thời gian nào sau ngày Nhật đảo chính Pháp?",
+                        "options": [
+                                    "A. Ngày 9/3/1945",
+                                    "B. Ngày 12/3/1945",
+                                    "C. Ngày 15/4/1945",
+                                    "D. Ngày 19/8/1945"
+                        ],
+                        "correct": 1,
+                        "explanation": "Ngày 12/3/1945, Ban Thường vụ Trung ương Đảng ra bản Chỉ thị lịch sử xác định phát xít Nhật là kẻ thù chính, cụ thể trước mắt (Session 9)."
             },
             {
-                id: 7,
-                question: "Nam đã tích lũy đủ kinh nghiệm và kỹ năng (Lượng đã đến Điểm nút) nhưng vẫn do dự, không dám nhận nhiệm vụ mới cao hơn vì sợ thất bại. Theo Quy luật Lượng - Chất, Nam đang rơi vào trạng thái nào?",
-                options: [
-                    "A. Nôn nóng.",
-                    "B. Bảo thủ.",
-                    "C. Biện chứng.",
-                    "D. Sáng tạo."
-                ],
-                correct: 1, // Index of B
-                explanation: "Khi lượng đã tích lũy đủ đến điểm nút, việc thực hiện bước nhảy là yêu cầu khách quan. Tư tưởng bảo thủ biểu hiện ở chỗ không dám thực hiện bước nhảy, ngại thay đổi, coi sự phát triển chỉ là sự thay đổi đơn thuần về lượng. (Nguồn: Chương 2, Mục II, 2.c)"
+                        "id": 7,
+                        "question": "Khẩu hiệu nào trong cao trào kháng Nhật cứu nước đã đáp ứng cấp bách nhất nguyện vọng của quần chúng nhân dân năm 1945?",
+                        "options": [
+                                    "A. 'Giảm tô, giảm tức'",
+                                    "B. 'Phá kho thóc Nhật, giải quyết nạn đói'",
+                                    "C. 'Toàn dân bầu cử'",
+                                    "D. 'Tịch thu ruộng đất phong kiến'"
+                        ],
+                        "correct": 1,
+                        "explanation": "Khẩu hiệu 'Phá kho thóc của Nhật, giải quyết nạn đói' đã biến sự căm phẫn thành hành động khởi nghĩa từng phần trên khắp cả nước (Session 9)."
+            },
+            {
+                        "id": 8,
+                        "question": "Ngày 2/9/1945, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập tại Quảng trường Ba Đình khai sinh nước gì?",
+                        "options": [
+                                    "A. Nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+                                    "B. Nước Việt Nam Dân chủ Cộng hòa",
+                                    "C. Liên bang Đông Dương Dân chủ",
+                                    "D. Nước Việt Nam Độc lập"
+                        ],
+                        "correct": 1,
+                        "explanation": "Ngày 2/9/1945, nước Việt Nam Dân chủ Cộng hòa - Nhà nước công nông đầu tiên ở Đông Nam Á ra đời (Session 10)."
             }
-        ];
+];
 
         function renderQuiz() {
             const container = document.getElementById('quiz-container');
             container.innerHTML = quizData.map((item, index) => `
                 <div class="philo-card p-6 md:p-8 question-block" id="question-${index}">
                     <div class="flex items-start gap-4 mb-6">
-                        <span class="flex-shrink-0 size-8 bg-philo-warmGold/10 dark:bg-amber-950/40 text-secondary font-bold rounded-lg flex items-center justify-center text-sm">
+                        <span class="flex-shrink-0 size-8 bg-philo-warmGold/20 text-philo-gold font-bold rounded-lg flex items-center justify-center text-sm border border-philo-gold/30">
                             ${index + 1}
                         </span>
-                        <h3 class="text-lg font-bold text-philo-gold font-heading leading-relaxed pt-1">
+                        <h3 class="text-base md:text-lg font-bold text-philo-gold font-heading leading-relaxed pt-1">
                             ${item.question}
                         </h3>
                     </div>
@@ -288,29 +298,25 @@
                             <label class="cursor-pointer group block relative">
                                 <input type="radio" name="q${index}" value="${optIndex}" class="peer sr-only">
                                 <div class="p-4 rounded-xl border border-philo-gold/20 hover:bg-philo-gold/5 hover:border-philo-gold/40 transition-all flex items-center gap-3">
-                                    <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300 dark:border-gray-500 relative flex items-center justify-center transition-colors">
-                                        <div class="w-2.5 h-2.5 bg-philo-blackBurgundy  rounded-full opacity-0 transform scale-50 transition-all duration-200"></div>
+                                    <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center transition-colors shrink-0">
+                                        <div class="w-2.5 h-2.5 bg-philo-gold rounded-full opacity-0 transform scale-50 transition-all duration-200"></div>
                                     </div>
                                     <span class="text-philo-ivory/90 font-medium">${opt}</span>
                                     
                                     <!-- Icons for result -->
-                                    <span class="material-symbols-outlined text-green-500 ml-auto correct-icon">check_circle</span>
-                                    <span class="material-symbols-outlined text-red-500 ml-auto wrong-icon">cancel</span>
+                                    <span class="material-symbols-outlined text-green-400 ml-auto correct-icon">check_circle</span>
+                                    <span class="material-symbols-outlined text-red-400 ml-auto wrong-icon">cancel</span>
                                 </div>
                             </label>
                         `).join('')}
                     </div>
-                    <!-- Explanation (Hidden) -->
-                    <div class="explanation hidden mt-6 p-4 bg-philo-gold/5 rounded-xl border border-philo-gold/20">
-                        <div class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-secondary mt-1">lightbulb</span>
-                            <div>
-                                <h4 class="font-bold text-secondary text-sm uppercase mb-1">Giải thích chi tiết</h4>
-                                <p class="text-sm text-philo-ivory/90 leading-relaxed">
-                                    ${item.explanation}
-                                </p>
-                            </div>
+                    <!-- Explanation (hidden initially) -->
+                    <div class="explanation-box hidden mt-6 p-4 rounded-xl bg-philo-gold/10 border border-philo-gold/30 ml-0 md:ml-12 text-sm">
+                        <div class="flex items-center gap-2 font-bold text-philo-gold mb-1">
+                            <span class="material-symbols-outlined text-base">lightbulb</span>
+                            Giải thích chi tiết:
                         </div>
+                        <p class="text-philo-ivory/90 font-sans leading-relaxed">${item.explanation}</p>
                     </div>
                 </div>
             `).join('');
@@ -318,47 +324,37 @@
 
         function submitQuiz() {
             let score = 0;
-            let answered = 0;
+            const answers = [];
 
             quizData.forEach((item, index) => {
                 const selected = document.querySelector(`input[name="q${index}"]:checked`);
                 const questionBlock = document.getElementById(`question-${index}`);
-                const explanation = questionBlock.querySelector('.explanation');
-                const inputs = questionBlock.querySelectorAll(`input[name="q${index}"]`);
+                const explanationBox = questionBlock.querySelector('.explanation-box');
+                const labels = questionBlock.querySelectorAll('label');
 
-                // Disable inputs
-                inputs.forEach(input => input.disabled = true);
-
-                // Remove previous formatting
-                questionBlock.querySelectorAll('label > div').forEach(div => {
-                    div.classList.remove('correct-answer', 'wrong-answer');
-                });
+                explanationBox.classList.remove('hidden');
 
                 if (selected) {
-                    answered++;
-                    const val = parseInt(selected.value);
-                    const selectedDiv = selected.nextElementSibling;
+                    const answerIndex = parseInt(selected.value);
+                    answers.push(answerIndex);
 
-                    if (val === item.correct) {
+                    if (answerIndex === item.correct) {
                         score++;
-                        selectedDiv.classList.add('correct-answer');
+                        labels[answerIndex].querySelector('div').classList.add('correct-answer');
                     } else {
-                        selectedDiv.classList.add('wrong-answer');
-                        // Highlight correct answer
-                        const correctInput = questionBlock.querySelector(`input[value="${item.correct}"]`);
-                        correctInput.nextElementSibling.classList.add('correct-answer');
+                        labels[answerIndex].querySelector('div').classList.add('wrong-answer');
+                        labels[item.correct].querySelector('div').classList.add('correct-answer');
                     }
                 } else {
-                    // If not answered, just highlight correct
-                    const correctInput = questionBlock.querySelector(`input[value="${item.correct}"]`);
-                    correctInput.nextElementSibling.classList.add('correct-answer');
+                    answers.push(null);
+                    labels[item.correct].querySelector('div').classList.add('correct-answer');
                 }
 
-                // Show explanation
-                explanation.classList.remove('hidden');
+                // Disable all radios
+                questionBlock.querySelectorAll('input').forEach(input => input.disabled = true);
             });
 
-            // Show Result
+            // Show Score Modal
             const modal = document.getElementById('score-modal');
             const scoreDisplay = document.getElementById('final-score');
             const feedback = document.getElementById('feedback-text');
@@ -369,17 +365,17 @@
 
             if (score === quizData.length) {
                 feedback.innerText = "Xuất sắc! Bạn đã nắm vững toàn bộ kiến thức!";
-            } else if (score >= 5) {
-                feedback.innerText = "Làm tốt lắm! Chỉ còn vài lỗi nhỏ thôi.";
+            } else if (score >= quizData.length * 0.7) {
+                feedback.innerText = "Làm tốt lắm! Bạn đã nắm chắc phần lớn kiến thức bài học.";
             } else {
-                feedback.innerText = "Cần cố gắng thêm nhé! Hãy xem lại kiến thức.";
+                feedback.innerText = "Cần cố gắng thêm nhé! Hãy xem lại các câu sai và ôn lại bài giảng.";
             }
 
             // Animation
             modal.classList.remove('hidden');
             setTimeout(() => {
                 modal.classList.remove('opacity-0');
-                modal.querySelector('div').classList.remove('scale-90', 'scale-100');
+                modal.querySelector('div').classList.remove('scale-90');
                 modal.querySelector('div').classList.add('scale-100');
             }, 10);
 
@@ -387,7 +383,6 @@
             submitBtn.classList.add('hidden');
             resultActions.classList.remove('hidden');
 
-            // Scroll to top to see modal clearly
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 

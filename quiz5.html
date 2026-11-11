@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz 5: Triết học về con người | PhiloVerse</title>
+    <title>Quiz 5: Thời Kỳ Quá Độ Lên CNXH & Công Cuộc Đổi Mới Toàn Diện (1975 - nay) | VNR202</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,7 +58,7 @@
         .correct-answer label {
             color: #ffffff !important;
             font-weight: 700 !important;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
         }
 
         .wrong-answer {
@@ -72,7 +72,17 @@
         .wrong-answer label {
             color: #ffffff !important;
             font-weight: 700 !important;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
+        }
+
+        .correct-answer .radio-circle {
+            border-color: #10b981;
+            background-color: #10b981;
+        }
+
+        .wrong-answer .radio-circle {
+            border-color: #ef4444;
+            background-color: #ef4444;
         }
 
         .correct-icon,
@@ -81,54 +91,43 @@
         }
 
         .correct-answer .correct-icon {
-            display: block;
+            display: inline-block;
         }
 
         .wrong-answer .wrong-icon {
-            display: block;
+            display: inline-block;
         }
-            /* Quiz hero */
-        .quiz-hero {
-            position: relative; overflow: hidden;
-            background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%);
-            padding: 2.5rem 2rem 2rem; margin-bottom: 2.5rem; border-radius: 1.5rem;
-        }
-        .quiz-hero::after {
-            content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(217,166,46,0.5), transparent);
-        }
-        /* Quiz option dark theme fix */
-        .correct-answer { border-color: #10b981 !important; background-color: rgba(16,185,129,0.12) !important; }
-        .wrong-answer { border-color: #ef4444 !important; background-color: rgba(239,68,68,0.12) !important; }
-        /* Radio button gold selected */
-        input[type="radio"]:checked+div { border-color: #FFD34E !important; background-color: rgba(255,211,78,0.08) !important; }
-        input[type="radio"]:checked+div .radio-circle { background-color: #FFD34E !important; border-color: #FFD34E !important; }</style>
+    </style>
 </head>
 
-<body class="bg-philo-blackBurgundy relative text-philo-ivory dark:text-gray-200 min-h-screen flex flex-col">
+<body class="bg-philo-darkBg text-philo-ivory min-h-screen flex flex-col font-body antialiased selection:bg-philo-warmGold selection:text-white">
     <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
-    <main class="flex-grow w-full max-w-4xl mx-auto px-4 py-10">
+    <!-- Main Content -->
+    <main class="flex-grow pt-24 px-4 max-w-4xl mx-auto w-full">
         <!-- Breadcrumb -->
-        <div class="mb-6">
-            <div
- class="inline-flex items-center px-4 py-1.5 rounded-full bg-philo-warmGold/10/60 border border-philo-warmGold/30/80 dark:bg-amber-950/20 dark:border-amber-900/30 text-secondary text-xs font-bold uppercase tracking-wider gap-2">
-                <a href="home.html" class="hover:underline hover:text-secondary transition-colors">TRANG CHỦ</a>
-                <span class="opacity-60">/</span>
-                <a href="practice.html" class="hover:underline hover:text-secondary transition-colors">THỰC HÀNH</a>
+        <div class="mb-6 flex items-center justify-between text-sm text-philo-ivory/80 dark:text-gray-400">
+            <div class="flex items-center gap-2">
+                <a href="practice.html" class="hover:text-philo-gold transition-colors">Ôn tập VNR202</a>
                 <span class="opacity-60">/</span>
                 <span>QUIZ 5</span>
             </div>
+            <a href="practice.html" class="inline-flex items-center gap-1 text-philo-gold hover:underline text-xs font-bold">
+                <span class="material-symbols-outlined text-sm">arrow_back</span> Về trang Thực hành
+            </a>
         </div>
         <!-- Quiz Intro -->
         <div class="text-center mb-10" id="quiz-intro">
-            <h1 class="text-3xl md:text-4xl font-heading font-bold text-philo-gold font-heading mb-4">
-                Triết học Mác – Lênin về con người
+            <div class="inline-block px-3 py-1 bg-philo-gold/20 text-philo-gold text-xs font-bold uppercase rounded-full mb-3 tracking-wider">
+                Lịch sử Đảng Cộng sản Việt Nam (VNR202)
+            </div>
+            <h1 class="text-2xl md:text-3xl font-heading font-bold text-philo-gold font-heading mb-3">
+                Quiz 5: Thời Kỳ Quá Độ Lên CNXH & Công Cuộc Đổi Mới Toàn Diện (1975 - nay)
             </h1>
-            <p class="text-lg text-philo-ivory/70 dark:text-gray-400 max-w-2xl mx-auto">
-                Bản chất, giải phóng và vai trò của con người trong lịch sử. <br>
-                Hãy chọn đáp án đúng nhất cho 7 câu hỏi dưới đây.
+            <p class="text-sm md:text-base text-philo-ivory/80 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Khảo sát các đột phá tìm đường đổi mới, Đại hội VI (1986), Cương lĩnh 1991, 2011 và các kỳ Đại hội của Đảng. <br>
+                Hãy chọn đáp án đúng nhất cho 8 câu hỏi dưới đây.
             </p>
         </div>
 
@@ -140,38 +139,37 @@
         <!-- Submit Action -->
         <div class="mt-12 flex justify-center pb-20">
             <button onclick="submitQuiz()" id="submit-btn"
- class="px-8 py-3 bg-philo-warmGold hover:bg-philo-warmGold/90 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                class="px-8 py-3.5 philo-btn-gold text-philo-black font-bold rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
                 Nộp bài & Xem kết quả
             </button>
             <div id="result-actions" class="hidden flex gap-4">
                 <button onclick="location.reload()"
- class="px-6 py-3 philo-btn-ghost text-philo-ivory font-bold rounded-xl transition-colors">
+                    class="px-6 py-3 philo-btn-ghost text-philo-ivory font-bold rounded-xl transition-colors">
                     Làm lại
                 </button>
                 <a href="practice.html"
- class="px-6 py-3 bg-philo-black/40 hover:bg-philo-black/60 border border-philo-gold/30 text-philo-ivory font-bold rounded-xl transition-colors">
-                    Quay về Thực hành
+                    class="px-6 py-3 bg-philo-gold/20 hover:bg-philo-gold/30 border border-philo-gold/40 text-philo-gold font-bold rounded-xl transition-colors">
+                    Quay về Ôn tập FE
                 </a>
             </div>
         </div>
 
-        <!-- Score Modal (Hidden initially) -->
+        <!-- Score Modal -->
         <div id="score-modal"
- class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300">
-            <div
- class="philo-card rounded-3xl p-8 max-w-md w-full transform scale-90 transition-transform duration-300">
+            class="hidden fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+            <div class="philo-card rounded-3xl p-8 max-w-md w-full transform scale-90 transition-transform duration-300 border border-philo-gold/40">
                 <div class="text-center">
-                    <div
- class="size-20 bg-philo-warmGold/10 dark:bg-amber-900/30 rounded-full flex items-center justify-center mx-auto mb-4 text-secondary">
+                    <div class="size-20 bg-philo-warmGold/20 rounded-full flex items-center justify-center mx-auto mb-4 text-philo-gold">
                         <span class="material-symbols-outlined text-4xl">emoji_events</span>
                     </div>
                     <h2 class="text-2xl font-bold text-philo-gold font-heading mb-2">Kết quả của bạn</h2>
-                    <div class="text-5xl font-black text-secondary mb-4" id="final-score">0/7</div>
-                    <p class="text-philo-ivory/70 dark:text-gray-400 mb-8" id="feedback-text">Hãy xem lại các câu sai để hiểu
-                        rõ hơn nhé!</p>
+                    <div class="text-5xl font-black text-philo-warmGold mb-4" id="final-score">0/8</div>
+                    <p class="text-philo-ivory/80 dark:text-gray-400 mb-8" id="feedback-text">
+                        Hãy xem lại các câu sai để hiểu rõ hơn nhé!
+                    </p>
                     <button onclick="closeModal()"
- class="w-full py-3 bg-philo-warmGold text-white font-bold rounded-xl hover:bg-philo-warmGold/90 transition-colors">
-                        Xem chi tiết đáp án
+                        class="w-full py-3 bg-philo-warmGold text-black font-bold rounded-xl hover:bg-amber-400 transition-colors">
+                        Xem chi tiết đáp án & giải thích
                     </button>
                 </div>
             </div>
@@ -186,100 +184,112 @@
     <script>
         const quizData = [
             {
-                id: 1,
-                question: "Theo quan điểm của triết học Mác - Lênin, luận điểm nào sau đây xác định đúng nhất về bản chất con người?",
-                options: [
-                    "A. Con người là một thực thể sinh học có tư duy và ngôn ngữ.",
-                    "B. Bản chất con người là thiện, do trời phú cho.",
-                    "C. Trong tính hiện thực của nó, bản chất con người là tổng hòa những quan hệ xã hội.",
-                    "D. Bản chất con người là sự thống nhất giữa linh hồn và thể xác."
-                ],
-                correct: 2, // Index of C
-                explanation: "C. Mác phê phán quan niệm trừu tượng của Feuerbach và khẳng định bản chất con người không phải là cái gì trừu tượng, bẩm sinh hay bất biến bên trong cá nhân riêng biệt. Bản chất này được hình thành và quy định bởi các quan hệ xã hội cụ thể (kinh tế, chính trị, giai cấp, dân tộc...). Các quan hệ xã hội thay đổi thì bản chất con người cũng thay đổi. (Nguồn: Chương 3, Mục V, 1.đ)"
+                        "id": 1,
+                        "question": "Chỉ thị 100-CT/TW (tháng 1/1981) của Ban Bí thư là bước đột phá đầu tiên về cơ chế quản lý trong ngành nào?",
+                        "options": [
+                                    "A. Công nghiệp nặng",
+                                    "B. Nông nghiệp (khoán sản phẩm đến nhóm và người lao động)",
+                                    "C. Thương nghiệp xuất nhập khẩu",
+                                    "D. Giáo dục đại học"
+                        ],
+                        "correct": 1,
+                        "explanation": "Chỉ thị 100 (Khoán 100) đưa ra cách khoán sản phẩm đến nhóm và người lao động trong nông nghiệp, giải phóng sức sản xuất (Session 20)."
             },
             {
-                id: 2,
-                question: "Yếu tố quyết định nào khiến con người ngay từ đầu đã tự phân biệt mình với loài vật?",
-                options: [
-                    "A. Biết tư duy và có ngôn ngữ.",
-                    "B. Biết sản xuất ra những tư liệu sinh hoạt của mình.",
-                    "C. Biết sống thành bầy đàn có tổ chức.",
-                    "D. Có đời sống tâm linh và tôn giáo."
-                ],
-                correct: 1, // Index of B
-                explanation: "Mặc dù có thể phân biệt con người bằng ý thức hay tôn giáo, nhưng C. Mác và Ph. Ăngghen khẳng định: \"Bản thân con người bắt đầu bằng tự phân biệt với súc vật ngay khi con người bắt đầu sản xuất ra những tư liệu sinh hoạt của mình\". Đây là điểm khác biệt căn bản nhất: loài vật may mắn lắm chỉ hái lượm, còn con người lại sản xuất. (Nguồn: Chương 3, Mục V, 1.b)"
+                        "id": 2,
+                        "question": "Đại hội lần thứ VI của Đảng (tháng 12/1986) do ai làm Tổng Bí thư đã khởi xướng công cuộc Đổi mới toàn diện?",
+                        "options": [
+                                    "A. Lê Duẩn",
+                                    "B. Trường Chinh",
+                                    "C. Nguyễn Văn Linh",
+                                    "D. Đỗ Mười"
+                        ],
+                        "correct": 2,
+                        "explanation": "Đại hội VI (12/1986) bầu đồng chí Nguyễn Văn Linh làm Tổng Bí thư, chính thức phát động công cuộc Đổi mới toàn diện đất nước (Session 21)."
             },
             {
-                id: 3,
-                question: "Chọn nhận định đúng nhất về mối quan hệ giữa con người và lịch sử theo quan điểm duy vật biện chứng?",
-                options: [
-                    "A. Con người hoàn toàn thụ động trước sự sắp đặt của lịch sử.",
-                    "B. Con người sáng tạo ra lịch sử theo ý muốn tùy tiện của mình.",
-                    "C. Con người vừa là chủ thể của lịch sử, vừa là sản phẩm của lịch sử.",
-                    "D. Lịch sử phát triển độc lập, không liên quan đến hoạt động của con người."
-                ],
-                correct: 2, // Index of C
-                explanation: "Con người là chủ thể vì thông qua lao động và hoạt động thực tiễn, con người sáng tạo ra lịch sử xã hội. Tuy nhiên, con người không sáng tạo lịch sử theo ý muốn tùy tiện mà phải dựa trên những điều kiện do quá khứ để lại. Đồng thời, con người là sản phẩm của lịch sử vì chính điều kiện lịch sử, xã hội đã hun đúc nên bản chất con người. \"Lịch sử sản xuất ra con người như thế nào thì tương ứng, con người cũng sáng tạo ra lịch sử như thế ấy\". (Nguồn: Chương 3, Mục V, 1.d)"
+                        "id": 3,
+                        "question": "Ba chương trình kinh tế lớn được xác định trọng tâm tại Đại hội VI (12/1986) là:",
+                        "options": [
+                                    "A. Lương thực - thực phẩm, Hàng tiêu dùng, Hàng xuất khẩu",
+                                    "B. Dầu khí, Than khoáng sản, Luyện kim",
+                                    "C. Cơ khí chế tạo, Nông cụ, Giao thông",
+                                    "D. Thủy điện, Xây dựng, Hóa chất"
+                        ],
+                        "correct": 0,
+                        "explanation": "Ba chương trình kinh tế lớn gồm: Lương thực - thực phẩm, Hàng tiêu dùng và Hàng xuất khẩu nhằm đáp ứng nhu cầu thiết yếu (Session 21)."
             },
             {
-                id: 4,
-                question: "Theo C. Mác, thực chất (nguyên nhân sâu xa) của hiện tượng tha hóa con người là gì?",
-                options: [
-                    "A. Sự suy đồi về đạo đức và lối sống.",
-                    "B. Lao động của con người bị tha hóa.",
-                    "C. Sự phát triển quá nhanh của khoa học công nghệ.",
-                    "D. Sự xung đột giữa các nền văn minh."
-                ],
-                correct: 1, // Index of B
-                explanation: "C. Mác chỉ ra rằng thực chất của tha hóa con người là lao động bị tha hóa. Trong chế độ tư hữu (đặc biệt là tư bản chủ nghĩa), sản phẩm của lao động và chính hoạt động lao động (vốn là bản chất sáng tạo của con người) quay lại nô dịch, thống trị con người. Người lao động cảm thấy bị cưỡng bức, chỉ thực hiện chức năng con vật khi lao động, đánh mất bản chất người của mình. (Nguồn: Chương 3, Mục V, 2.a)"
+                        "id": 4,
+                        "question": "Bản Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH lần đầu tiên được Đại hội nào thông qua?",
+                        "options": [
+                                    "A. Đại hội VI (1986)",
+                                    "B. Đại hội VII (1991)",
+                                    "C. Đại hội VIII (1996)",
+                                    "D. Đại hội IX (2001)"
+                        ],
+                        "correct": 1,
+                        "explanation": "Cương lĩnh năm 1991 được thông qua tại Đại hội VII, nêu 6 đặc trưng của CNXH ở nước ta và khẳng định chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh là kim chỉ nam (Session 22)."
             },
             {
-                id: 5,
-                question: "Luận điểm nổi tiếng nào trong \"Tuyên ngôn của Đảng Cộng sản\" thể hiện mục tiêu cao cả về sự tự do của con người trong xã hội cộng sản?",
-                options: [
-                    "A. Người cày có ruộng, người làm có công.",
-                    "B. Làm theo năng lực, hưởng theo nhu cầu.",
-                    "C. Sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người.",
-                    "D. Vô sản toàn thế giới, đoàn kết lại."
-                ],
-                correct: 2, // Index of C
-                explanation: "Đây là tư tưởng cốt lõi về mối quan hệ giữa cá nhân và xã hội trong tiến trình giải phóng con người. Khi chế độ tư hữu và sự tha hóa bị xóa bỏ, xã hội sẽ là một sự liên hiệp của các cá nhân, nơi mà tự do của cá nhân là tiền đề cho tự do của cộng đồng và ngược lại. (Nguồn: Chương 3, Mục V, 2.c)"
+                        "id": 5,
+                        "question": "Hội nghị giữa nhiệm kỳ khóa VII (1/1994) đã cảnh báo 4 nguy cơ lớn nào đối với Đảng và cách mạng nước ta?",
+                        "options": [
+                                    "A. Tụt hậu xa hơn về kinh tế; chệch hướng XHCN; nạn tham nhũng và tệ quan liêu; 'diễn biến hòa bình'",
+                                    "B. Cạn kiệt tài nguyên; bùng nổ dân số; ô nhiễm môi trường; thiên tai",
+                                    "C. Tranh chấp lãnh thổ; khủng bố quốc tế; biến đổi khí hậu; nợ công",
+                                    "D. Lạm phát phi mã; suy thoái tài chính; đình trệ công nghiệp; thiếu lương thực"
+                        ],
+                        "correct": 0,
+                        "explanation": "Bốn nguy cơ lớn đan xen tác động lẫn nhau: Tụt hậu kinh tế; Chệch hướng XHCN; Nạn tham nhũng, quan liêu; 'Diễn biến hòa bình' (Session 22)."
             },
             {
-                id: 6,
-                question: "Để giải quyết đúng đắn mối quan hệ giữa cá nhân và xã hội, cần tránh những khuynh hướng sai lầm nào?",
-                options: [
-                    "A. Đề cao lợi ích kinh tế hơn lợi ích chính trị.",
-                    "B. Tuyệt đối hóa cá nhân (chủ nghĩa cá nhân cực đoan) hoặc tuyệt đối hóa xã hội (coi nhẹ cá nhân).",
-                    "C. Coi trọng truyền thống mà bỏ qua hiện đại.",
-                    "D. Chỉ tập trung vào phát triển cá nhân mà bỏ qua cộng đồng."
-                ],
-                correct: 1, // Index of B
-                explanation: "Mối quan hệ cá nhân - xã hội là biện chứng, không tách rời. Sai lầm sẽ xảy ra nếu đặt cá nhân lên trên xã hội (dẫn đến chủ nghĩa cá nhân, vị kỷ) hoặc chỉ đề cao xã hội mà bỏ quên, coi nhẹ vai trò và lợi ích chính đáng của cá nhân (kìm hãm động lực phát triển). Cần kết hợp hài hòa lợi ích cá nhân và xã hội. (Nguồn: Chương 3, Mục V, 3.a)"
+                        "id": 6,
+                        "question": "Mô hình kinh tế thị trường định hướng XHCN chính thức được xác định là mô hình kinh tế tổng quát tại Đại hội nào?",
+                        "options": [
+                                    "A. Đại hội VI (1986)",
+                                    "B. Đại hội VIII (1996)",
+                                    "C. Đại hội IX (2001)",
+                                    "D. Đại hội XI (2011)"
+                        ],
+                        "correct": 2,
+                        "explanation": "Đại hội IX (4/2001) chính thức khẳng định kinh tế thị trường định hướng XHCN là mô hình kinh tế tổng quát trong thời kỳ quá độ lên CNXH (Session 24)."
             },
             {
-                id: 7,
-                question: "Trong sự nghiệp đổi mới ở Việt Nam hiện nay, Đảng ta xác định vai trò của con người như thế nào?",
-                options: [
-                    "A. Con người là công cụ để tăng trưởng kinh tế.",
-                    "B. Con người chỉ là đối tượng cần được quản lý.",
-                    "C. Con người vừa là mục tiêu, vừa là động lực của sự phát triển.",
-                    "D. Con người là sản phẩm thụ động của cơ chế thị trường."
-                ],
-                correct: 2, // Index of C
-                explanation: "Tư tưởng Hồ Chí Minh và Đảng Cộng sản Việt Nam khẳng định: Con người được đặt vào vị trí trung tâm. Là mục tiêu: Phấn đấu vì độc lập, tự do, hạnh phúc, dân giàu nước mạnh. Là động lực: Con người là nguồn lực quan trọng nhất, quyết định sự thành công của sự nghiệp đổi mới thông qua tính tích cực, tự giác và sáng tạo. (Nguồn: Chương 3, Mục V, 4)"
+                        "id": 7,
+                        "question": "Đại hội XI (2011) thông qua Cương lĩnh bổ sung, phát triển năm 2011 xác định bao nhiêu đặc trưng của CNXH ở Việt Nam?",
+                        "options": [
+                                    "A. 6 đặc trưng",
+                                    "B. 7 đặc trưng",
+                                    "C. 8 đặc trưng",
+                                    "D. 10 đặc trưng"
+                        ],
+                        "correct": 2,
+                        "explanation": "Cương lĩnh bổ sung, phát triển năm 2011 bổ sung và hoàn thiện thành 8 đặc trưng của xã hội xã hội chủ nghĩa mà nhân dân ta xây dựng (Session 26)."
+            },
+            {
+                        "id": 8,
+                        "question": "Mục tiêu phát triển đất nước đến năm 2045 được Đại hội XIII của Đảng (2021) xác định là gì?",
+                        "options": [
+                                    "A. Trở thành nước đang phát triển có thu nhập trung bình thấp",
+                                    "B. Trở thành nước phát triển, có thu nhập cao theo định hướng xã hội chủ nghĩa",
+                                    "C. Trở thành cường quốc công nghiệp quốc phòng",
+                                    "D. Hoàn thành phổ cập giáo dục sau đại học"
+                        ],
+                        "correct": 1,
+                        "explanation": "Đại hội XIII đặt ra mục tiêu đến năm 2045 (kỷ niệm 100 năm thành lập nước): Trở thành nước phát triển, thu nhập cao theo định hướng XHCN (Session 28)."
             }
-        ];
+];
 
         function renderQuiz() {
             const container = document.getElementById('quiz-container');
             container.innerHTML = quizData.map((item, index) => `
                 <div class="philo-card p-6 md:p-8 question-block" id="question-${index}">
                     <div class="flex items-start gap-4 mb-6">
-                        <span class="flex-shrink-0 size-8 bg-philo-warmGold/10 dark:bg-amber-950/40 text-secondary font-bold rounded-lg flex items-center justify-center text-sm">
+                        <span class="flex-shrink-0 size-8 bg-philo-warmGold/20 text-philo-gold font-bold rounded-lg flex items-center justify-center text-sm border border-philo-gold/30">
                             ${index + 1}
                         </span>
-                        <h3 class="text-lg font-bold text-philo-gold font-heading leading-relaxed pt-1">
+                        <h3 class="text-base md:text-lg font-bold text-philo-gold font-heading leading-relaxed pt-1">
                             ${item.question}
                         </h3>
                     </div>
@@ -288,29 +298,25 @@
                             <label class="cursor-pointer group block relative">
                                 <input type="radio" name="q${index}" value="${optIndex}" class="peer sr-only">
                                 <div class="p-4 rounded-xl border border-philo-gold/20 hover:bg-philo-gold/5 hover:border-philo-gold/40 transition-all flex items-center gap-3">
-                                    <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-300 dark:border-gray-500 relative flex items-center justify-center transition-colors">
-                                        <div class="w-2.5 h-2.5 bg-philo-blackBurgundy  rounded-full opacity-0 transform scale-50 transition-all duration-200"></div>
+                                    <div class="radio-circle w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center transition-colors shrink-0">
+                                        <div class="w-2.5 h-2.5 bg-philo-gold rounded-full opacity-0 transform scale-50 transition-all duration-200"></div>
                                     </div>
                                     <span class="text-philo-ivory/90 font-medium">${opt}</span>
                                     
                                     <!-- Icons for result -->
-                                    <span class="material-symbols-outlined text-green-500 ml-auto correct-icon">check_circle</span>
-                                    <span class="material-symbols-outlined text-red-500 ml-auto wrong-icon">cancel</span>
+                                    <span class="material-symbols-outlined text-green-400 ml-auto correct-icon">check_circle</span>
+                                    <span class="material-symbols-outlined text-red-400 ml-auto wrong-icon">cancel</span>
                                 </div>
                             </label>
                         `).join('')}
                     </div>
-                    <!-- Explanation (Hidden) -->
-                    <div class="explanation hidden mt-6 p-4 bg-philo-gold/5 rounded-xl border border-philo-gold/20">
-                        <div class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-secondary mt-1">lightbulb</span>
-                            <div>
-                                <h4 class="font-bold text-secondary text-sm uppercase mb-1">Giải thích chi tiết</h4>
-                                <p class="text-sm text-philo-ivory/90 leading-relaxed">
-                                    ${item.explanation}
-                                </p>
-                            </div>
+                    <!-- Explanation (hidden initially) -->
+                    <div class="explanation-box hidden mt-6 p-4 rounded-xl bg-philo-gold/10 border border-philo-gold/30 ml-0 md:ml-12 text-sm">
+                        <div class="flex items-center gap-2 font-bold text-philo-gold mb-1">
+                            <span class="material-symbols-outlined text-base">lightbulb</span>
+                            Giải thích chi tiết:
                         </div>
+                        <p class="text-philo-ivory/90 font-sans leading-relaxed">${item.explanation}</p>
                     </div>
                 </div>
             `).join('');
@@ -318,47 +324,37 @@
 
         function submitQuiz() {
             let score = 0;
-            let answered = 0;
+            const answers = [];
 
             quizData.forEach((item, index) => {
                 const selected = document.querySelector(`input[name="q${index}"]:checked`);
                 const questionBlock = document.getElementById(`question-${index}`);
-                const explanation = questionBlock.querySelector('.explanation');
-                const inputs = questionBlock.querySelectorAll(`input[name="q${index}"]`);
+                const explanationBox = questionBlock.querySelector('.explanation-box');
+                const labels = questionBlock.querySelectorAll('label');
 
-                // Disable inputs
-                inputs.forEach(input => input.disabled = true);
-
-                // Remove previous formatting
-                questionBlock.querySelectorAll('label > div').forEach(div => {
-                    div.classList.remove('correct-answer', 'wrong-answer');
-                });
+                explanationBox.classList.remove('hidden');
 
                 if (selected) {
-                    answered++;
-                    const val = parseInt(selected.value);
-                    const selectedDiv = selected.nextElementSibling;
+                    const answerIndex = parseInt(selected.value);
+                    answers.push(answerIndex);
 
-                    if (val === item.correct) {
+                    if (answerIndex === item.correct) {
                         score++;
-                        selectedDiv.classList.add('correct-answer');
+                        labels[answerIndex].querySelector('div').classList.add('correct-answer');
                     } else {
-                        selectedDiv.classList.add('wrong-answer');
-                        // Highlight correct answer
-                        const correctInput = questionBlock.querySelector(`input[value="${item.correct}"]`);
-                        correctInput.nextElementSibling.classList.add('correct-answer');
+                        labels[answerIndex].querySelector('div').classList.add('wrong-answer');
+                        labels[item.correct].querySelector('div').classList.add('correct-answer');
                     }
                 } else {
-                    // If not answered, just highlight correct
-                    const correctInput = questionBlock.querySelector(`input[value="${item.correct}"]`);
-                    correctInput.nextElementSibling.classList.add('correct-answer');
+                    answers.push(null);
+                    labels[item.correct].querySelector('div').classList.add('correct-answer');
                 }
 
-                // Show explanation
-                explanation.classList.remove('hidden');
+                // Disable all radios
+                questionBlock.querySelectorAll('input').forEach(input => input.disabled = true);
             });
 
-            // Show Result
+            // Show Score Modal
             const modal = document.getElementById('score-modal');
             const scoreDisplay = document.getElementById('final-score');
             const feedback = document.getElementById('feedback-text');
@@ -369,17 +365,17 @@
 
             if (score === quizData.length) {
                 feedback.innerText = "Xuất sắc! Bạn đã nắm vững toàn bộ kiến thức!";
-            } else if (score >= 5) {
-                feedback.innerText = "Làm tốt lắm! Chỉ còn vài lỗi nhỏ thôi.";
+            } else if (score >= quizData.length * 0.7) {
+                feedback.innerText = "Làm tốt lắm! Bạn đã nắm chắc phần lớn kiến thức bài học.";
             } else {
-                feedback.innerText = "Cần cố gắng thêm nhé! Hãy xem lại kiến thức.";
+                feedback.innerText = "Cần cố gắng thêm nhé! Hãy xem lại các câu sai và ôn lại bài giảng.";
             }
 
             // Animation
             modal.classList.remove('hidden');
             setTimeout(() => {
                 modal.classList.remove('opacity-0');
-                modal.querySelector('div').classList.remove('scale-90', 'scale-100');
+                modal.querySelector('div').classList.remove('scale-90');
                 modal.querySelector('div').classList.add('scale-100');
             }, 10);
 
@@ -387,7 +383,6 @@
             submitBtn.classList.add('hidden');
             resultActions.classList.remove('hidden');
 
-            // Scroll to top to see modal clearly
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
