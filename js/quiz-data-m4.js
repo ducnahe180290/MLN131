@@ -1,7 +1,7 @@
 // =============================================
 // MODULE 4 — QUY LUẬT THỐNG NHẤT & ĐẤU TRANH
 // CỦA CÁC MẶT ĐỐI LẬP (MÂU THUẪN BIỆN CHỨNG)
-// sourceRef: Giáo trình Triết học Mác-Lênin 2021, Chương 3 — dòng 752–767
+// sourceRef: Giáo trình Lịch sử Đảng 2021, Chương 3 — dòng 752–767
 // =============================================
 
 const FORMATIVE_QUIZZES_M4 = {

@@ -4,9 +4,9 @@ function getApiEndpoint() {
   const localPreview = ["localhost", "127.0.0.1"].includes(window.location.hostname) &&
     window.location.port && window.location.port !== "3000";
   if (window.location.protocol === "file:" || localPreview) {
-    return "http://localhost:3000/api/ask-mln131";
+    return "http://localhost:3000/api/ask-vnr202";
   }
-  return "/api/ask-mln131";
+  return "/api/ask-vnr202";
 }
 
 const API_ENDPOINT = getApiEndpoint();
@@ -149,7 +149,7 @@ async function fallbackLocalTextbookAnswer(userQuestion) {
 
     if (match) {
       const correctOptText = match.options[match.correct] || "";
-      return `### 💡 Phân tích & Trả lời từ Giáo trình MLN131
+      return `### 💡 Phân tích & Trả lời từ Giáo trình VNR202
 
 **Câu hỏi:** ${match.question}
 
@@ -162,9 +162,9 @@ async function fallbackLocalTextbookAnswer(userQuestion) {
     }
   }
 
-  // 2. Try loading data/mln131-curriculum.json directly if available
+  // 2. Try loading data/vnr202-curriculum.json directly if available
   try {
-    const res = await fetch("data/mln131-curriculum.json");
+    const res = await fetch("data/vnr202-curriculum.json");
     if (res.ok) {
       const data = await res.json();
       const pages = Array.isArray(data) ? data : (data.pages || []);
@@ -183,7 +183,7 @@ async function fallbackLocalTextbookAnswer(userQuestion) {
 ${top.content}
 
 ---
-> ℹ️ *Ghi chú: Đây là mục tóm tắt trong dữ liệu MLN131; số trang chưa được đối chiếu với PDF giáo trình của lớp. Để dùng AI, hãy chạy máy chủ và cấu hình API key.*`;
+> ℹ️ *Ghi chú: Đây là mục tóm tắt trong dữ liệu VNR202; số trang chưa được đối chiếu với PDF giáo trình của lớp. Để dùng AI, hãy chạy máy chủ và cấu hình API key.*`;
       }
     }
   } catch (e) {
@@ -362,7 +362,7 @@ const incomingQuestion = new URLSearchParams(window.location.search).get("q");
 
 if (!incomingQuestion) {
   appendMessage(
-    formatAnswer("Chào bạn! Mình hỗ trợ ôn tập Kinh tế chính trị Mác - Lênin (MLN131). Hãy hỏi về một khái niệm hoặc chương học. Dữ liệu tra cứu hiện là bản tóm tắt và cần đối chiếu với giáo trình gốc."),
+    formatAnswer("Chào bạn! Mình hỗ trợ ôn tập Kinh tế chính trị Mác - Lênin (VNR202). Hãy hỏi về một khái niệm hoặc chương học. Dữ liệu tra cứu hiện là bản tóm tắt và cần đối chiếu với giáo trình gốc."),
     "ai",
     true
   );

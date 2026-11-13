@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi" class="dark">
-
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Module 5: KTTT định hướng XHCN và các quan hệ lợi ích kinh tế ở Việt Nam — PhiloVerse MLN131</title>
-    <meta name="description" content="Chương 5 Giáo trình Kinh tế chính trị Mác - Lênin 2021: Tính tất yếu, đặc trưng nền kinh tế thị trường định hướng XHCN, hoàn thiện thể chế và bảo đảm hài hòa quan hệ lợi ích." />
+    <title>Chương 5: Xây Dựng CNXH & Bước Ngoặt Đổi Mới (1975 - 1996) — PhiloVerse VNR202</title>
+    <meta name="description" content="Chương 5 Giáo trình Lịch sử Đảng Cộng sản Việt Nam (VNR202): Cả nước bước vào thời kỳ quá độ, Đại hội IV & V, những bước đột phá tìm tòi đổi mới (Chỉ thị 100, Nghị định 25-CP), Đại hội VI (1986) khởi xướng Đổi mới toàn diện, Cương lĩnh 1991 và thoát khỏi khủng hoảng." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
@@ -20,76 +19,49 @@
             font-size: 24px;
             display: inline-block;
             line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
             direction: ltr;
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-
-        #m5-progress-bar {
-            transition: width 0.6s ease;
-        }
-
+        #m5-progress-bar { transition: width 0.6s ease; }
         .reflection-answer {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease, opacity 0.3s;
             opacity: 0;
         }
-
         .reflection-answer.open {
-            max-height: 500px;
+            max-height: 800px;
             opacity: 1;
         }
-
-        @keyframes badge-pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-        }
-
-        .achievement-earned {
-            animation: badge-pulse 0.6s ease 2;
-        }
-
         .hidden-panel {
             transform: translateX(100%);
             transition: transform 0.3s ease;
         }
-
         .lesson-tab.active-tab {
             border-color: #FFD34E !important;
-            background: rgba(217, 166, 46, 0.12) !important;
-            box-shadow: 0 0 20px rgba(217, 166, 46, 0.2);
+            background: rgba(217, 166, 46, 0.15) !important;
+            box-shadow: 0 0 20px rgba(217, 166, 46, 0.25);
         }
-
         .lesson-tab.active-tab .tab-label {
             color: #FFD34E !important;
         }
-
         .lesson-dot.completed {
             background-color: #D9A62E !important;
         }
-
         .lesson-header-academic {
             padding: 2rem 2rem 1.5rem;
             background: linear-gradient(135deg, rgba(20, 3, 3, 0.95) 0%, rgba(101, 7, 7, 0.85) 100%);
             border-bottom: 1px solid rgba(217, 166, 46, 0.2);
         }
-
         .module-page-hero {
             position: relative;
             padding: 3rem 2rem 2.5rem;
             overflow: hidden;
             background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%);
         }
-
         .module-page-hero > * {
             position: relative;
             z-index: 1;
         }
-
         .module-page-hero::after {
             content: '';
             position: absolute;
@@ -106,7 +78,6 @@
     <div id="header-placeholder"></div>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-
         <!-- ===== MODULE HERO HEADER ===== -->
         <div class="module-page-hero -mx-4 sm:-mx-6 lg:-mx-8 mb-10">
             <div class="absolute inset-0 z-0 overflow-hidden">
@@ -118,19 +89,18 @@
                 <div class="philo-breadcrumb mb-5">
                     <a href="home.html">TRANG CHỦ</a>
                     <span class="sep">/</span>
-                    <a href="Overview.html">GIÁO TRÌNH MLN131</a>
+                    <a href="Overview.html">GIÁO TRÌNH VNR202</a>
                     <span class="sep">/</span>
-                    <span>CHƯƠNG 5 • KTTT ĐỊNH HƯỚNG XHCN TẠI VIỆT NAM</span>
+                    <span>CHƯƠNG 5 • QUÁ ĐỘ LÊN CNXH & BƯỚC NGOẶT ĐỔI MỚI (1975 - 1996)</span>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                     <div>
-                        <span class="philo-badge mb-3 inline-flex"><span class="material-symbols-outlined text-[14px]">balance</span> MODULE 05 • GIÁO TRÌNH CHUẨN 2021 (TRANG 152 - 200)</span>
+                        <span class="philo-badge mb-3 inline-flex"><span class="material-symbols-outlined text-[14px]">autorenew</span> CHƯƠNG 05 • SESSIONS 19 - 23</span>
                         <h1 class="font-heading text-3xl md:text-5xl font-bold leading-tight text-philo-ivory mt-2">
-                            Kinh tế thị trường định hướng XHCN &<br class="hidden md:block" />
-                            <span class="text-philo-gold font-serif italic">Các quan hệ lợi ích kinh tế ở Việt Nam</span>
+                            Cả Nước Quá Độ Lên CNXH &amp;<br class="hidden md:block" /> <span class="text-philo-gold font-serif italic">Bước Ngoặt Đổi Mới (1975 - 1996)</span>
                         </h1>
                         <p class="font-heading italic text-base md:text-lg text-philo-gold/80 mt-3 max-w-3xl leading-relaxed">
-                            Mô hình kinh tế tổng quát trong thời kỳ quá độ lên CNXH ở nước ta — Mục tiêu dân giàu, nước mạnh, dân chủ, công bằng, văn minh, thể chế đồng bộ và sự hài hòa các quan hệ lợi ích.
+                            "Nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật!" — Quá trình tìm tòi gian nan, phá bỏ bao cấp, Đại hội VI (1986) khởi xướng Đổi mới toàn diện và thành tựu đưa đất nước thoát khỏi khủng hoảng.
                         </p>
                         <div class="flex flex-wrap items-center gap-4 mt-4 text-xs text-philo-ivory/60">
                             <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-philo-gold">menu_book</span> 6 bài học chuẩn</span>
@@ -173,558 +143,512 @@
 
         <!-- 6 Lesson Navigation Tabs -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-8">
-            <button onclick="showLesson('M5-L1')" id="tab-M5-L1" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            
+            <button onclick="showLesson('M5-L1')" id="tab-M5-L1" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all active-tab">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 5.1</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Khái niệm & Tính tất yếu</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Xây dựng CNXH & Bảo vệ Tổ quốc (1975 - 1981)</span>
             </button>
-            <button onclick="showLesson('M5-L2')" id="tab-M5-L2" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M5-L2')" id="tab-M5-L2" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 5.2</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Mục tiêu, Sở hữu & Quản lý</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đại hội V (1982) & Những bước tìm tòi đổi mới</span>
             </button>
-            <button onclick="showLesson('M5-L3')" id="tab-M5-L3" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M5-L3')" id="tab-M5-L3" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 5.3</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Phân phối & Công bằng xã hội</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Các bước đột phá: Chỉ thị 100 & Nghị định 25-CP</span>
             </button>
-            <button onclick="showLesson('M5-L4')" id="tab-M5-L4" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M5-L4')" id="tab-M5-L4" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 5.4</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Hoàn thiện Thể chế KTTT</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đại hội VI (1986) - Đổi mới toàn diện đất nước</span>
             </button>
-            <button onclick="showLesson('M5-L5')" id="tab-M5-L5" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M5-L5')" id="tab-M5-L5" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 5.5</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Quan hệ lợi ích kinh tế</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đại hội VII (1991) & Cương lĩnh năm 1991</span>
             </button>
-            <button onclick="showLesson('M5-L6')" id="tab-M5-L6" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M5-L6')" id="tab-M5-L6" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 5.6</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Vai trò Nhà nước điều hòa lợi ích</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Thoát khỏi khủng hoảng kinh tế - xã hội (1991 - 1996)</span>
             </button>
         </div>
 
-        <!-- ======================================================== -->
-        <!-- LESSON 5.1: KHÁI NIỆM & TÍNH TẤT YẾU KTTT ĐỊNH HƯỚNG XHCN -->
-        <!-- ======================================================== -->
-        <article id="lesson-M5-L1" class="lesson-content space-y-6">
+        <!-- LESSON ARTICLES -->
+        
+        <!-- LESSON 5.1: Xây dựng CNXH & Bảo vệ Tổ quốc (1975 - 1981) -->
+        <article id="lesson-M5-L1" class="lesson-content space-y-6 ">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.1 • GIÁO TRÌNH TRANG 152 - 159</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.1 • SESSION 19 CHƯƠNG 5</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Khái niệm & Tính tất yếu khách quan của KTTT định hướng XHCN
+                        Xây dựng CNXH và Bảo vệ biên giới Tổ quốc (1975 - 1981)
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Định nghĩa chuẩn của Đại hội Đảng, quá trình phát triển tư duy lý luận và 3 lý do khách quan phát triển KTTT ở nước ta</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Hoàn thành thống nhất về mặt nhà nước, Đại hội IV của Đảng và hai cuộc chiến tranh bảo vệ biên giới</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
-                    <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm leading-relaxed">
-                        <h4 class="font-bold text-philo-gold mb-1">Khái niệm chuẩn xác (Trang 153):</h4>
-                        <p>
-                            Kinh tế thị trường định hướng xã hội chủ nghĩa là <strong>nền kinh tế vận hành theo các quy luật của thị trường</strong>, đồng thời góp phần hướng tới từng bước xác lập một xã hội mà ở đó <strong>dân giàu, nước mạnh, dân chủ, công bằng, văn minh</strong>; có sự <strong>điều tiết của Nhà nước do Đảng Cộng sản Việt Nam lãnh đạo</strong>.
+                    
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <strong class="text-philo-gold block mb-1">Thống nhất non sông về mặt Nhà nước (1975 - 1976):</strong>
+                    <p class="leading-relaxed">
+                        Ngày 25/4/1976, Tổng tuyển cử bầu Quốc hội khóa VI chung của cả nước thành công rực rỡ. Kỳ họp thứ nhất (7/1976) quyết định đổi tên nước thành <strong>Cộng hòa Xã hội Chủ nghĩa Việt Nam</strong>, Thủ đô là Hà Nội, đổi tên thành phố Sài Gòn - Gia Định thành Thành phố Hồ Chí Minh.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">Đại hội IV của Đảng (12/1976):</strong>
+                        <p class="text-philo-ivory/80 leading-relaxed">
+                            Đổi tên Đảng Lao động Việt Nam thành <strong>Đảng Cộng sản Việt Nam</strong>; bầu đồng chí <strong>Lê Duẩn</strong> làm Tổng Bí thư; đề ra đường lối cách mạng XHCN trên phạm vi cả nước với mục tiêu xây dựng chế độ làm chủ tập thể XHCN.
                         </p>
                     </div>
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">Chiến đấu bảo vệ vững chắc Tổ quốc:</strong>
+                        <p class="text-philo-ivory/80 leading-relaxed">
+                            Đánh bại tập đoàn diệt chủng Pol Pot - Ieng Sary ở biên giới Tây Nam, giúp nhân dân Campuchia hồi sinh; kiên cường đánh lui cuộc chiến tranh xâm lược ở biên giới phía Bắc (2/1979), bảo vệ toàn vẹn biên cương Tổ quốc.
+                        </p>
+                    </div>
+                </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">history_edu</span>
-                            Quá trình hình thành nhận thức của Đảng (Hộp 5.1, trang 154 - 155)
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 5.1
                         </h3>
-                        <div class="space-y-2 text-xs md:text-sm">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>Đại hội VI (1986):</strong> Bắt đầu đổi mới, thừa nhận kinh tế hàng hóa có những mặt tích cực cần vận dụng để xây dựng CNXH.
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>Đại hội IX (2001):</strong> Khẳng định: Kinh tế thị trường định hướng XHCN là <em>mô hình kinh tế tổng quát</em> của thời kỳ quá độ lên chủ nghĩa xã hội ở nước ta.
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>Đại hội XII (2016) & XIII (2021):</strong> Là nền kinh tế thị trường hiện đại, hội nhập quốc tế, vận hành đầy đủ, đồng bộ theo quy luật thị trường, có sự quản lý của Nhà nước pháp quyền XHCN do ĐCSVN lãnh đạo, bảo đảm định hướng XHCN vì mục tiêu dân giàu, nước mạnh, dân chủ, công bằng, văn minh.
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Ý nghĩa của việc hoàn thành thống nhất đất nước về mặt nhà nước (1975 - 1976)?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Tạo nên cơ sở chính trị - pháp lý vững chắc để phát huy toàn diện sức mạnh của hơn 50 triệu đồng bào cả nước trong sự nghiệp xây dựng và bảo vệ Tổ quốc XHCN.
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">check_circle</span>
-                            Ba lý do khách quan phát triển KTTT định hướng XHCN ở Việt Nam
-                        </h3>
-                        <div class="space-y-3 text-sm">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>1. Phù hợp với xu hướng phát triển khách quan trong bối cảnh thế giới:</strong> Kinh tế thị trường là sản phẩm của văn minh nhân loại. Các điều kiện cho sự tồn tại kinh tế hàng hóa (phân công lao động xã hội và đa dạng hình thức sở hữu) đang tồn tại khách quan ở Việt Nam.
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>2. Do tính ưu việt của kinh tế thị trường trong thúc đẩy phát triển:</strong> KTTT là phương thức phân bổ nguồn lực hiệu quả nhất loài người từng có, kích thích đổi mới công nghệ, nâng cao năng suất lao động và xóa bỏ tình trạng tự cấp tự túc lạc hậu.
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>3. Phù hợp với nguyện vọng của nhân dân:</strong> Khát vọng thiết tha xây dựng một xã hội "dân giàu, nước mạnh, dân chủ, công bằng, văn minh".
-                            </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <div></div>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M5-FQ1')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M5-L1')" id="btn-complete-M5-L1" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
                         </div>
-                    </div>
-
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="toggleReflection('ref-M5-L1')" class="text-philo-gold hover:underline text-sm font-semibold flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">lightbulb</span> Câu hỏi tự suy ngẫm
-                        </button>
-                        <button id="btn-complete-M5-L1" onclick="completeLesson('M5-L1')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 5.1 ✓
-                        </button>
-                    </div>
-                    <div id="ref-M5-L1" class="reflection-answer p-4 rounded-xl border border-philo-gold/20 bg-white/5">
-                        <p class="text-xs text-philo-gold font-bold mb-1">Gợi ý suy ngẫm:</p>
-                        <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                            Có nền kinh tế thị trường "thuần túy", trừu tượng chung cho mọi quốc gia không? Giáo trình trang 156 khẳng định: Không thể có một nền kinh tế thị trường trừu tượng, chung chung. Mỗi nền kinh tế thị trường đều tồn tại trong một chế độ xã hội cụ thể, gắn bó hữu cơ và chịu sự chi phối của quan hệ sản xuất thống trị của xã hội đó.
-                        </p>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 5.2: MỤC TIÊU, SỞ HỮU & QUẢN LÝ                   -->
-        <!-- ======================================================== -->
+        <!-- LESSON 5.2: Đại hội V (1982) & Những bước tìm tòi đổi mới -->
         <article id="lesson-M5-L2" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.2 • GIÁO TRÌNH TRANG 159 - 165</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.2 • SESSION 20 CHƯƠNG 5</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Đặc trưng về Mục tiêu, Quan hệ Sở hữu và Quản lý nền kinh tế
+                        Đại hội V (1982) & Những bước tìm tòi đổi mới kinh tế
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Vai trò chủ đạo của kinh tế nhà nước, động lực của kinh tế tư nhân và sự lãnh đạo của Đảng</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Nhận thức chặng đường đầu tiên của thời kỳ quá độ, khủng hoảng kinh tế xã hội và sự bứt phá từ cơ sở</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
-                    <div class="space-y-4 text-sm">
-                        <!-- Về mục tiêu -->
-                        <div class="glass-panel p-4 rounded-xl border border-white/10">
-                            <h4 class="font-bold text-philo-gold mb-1 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-[18px]">flag</span>
-                                1. Đặc trưng về Mục tiêu phát triển
-                            </h4>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Phát triển lực lượng sản xuất, xây dựng cơ sở vật chất - kỹ thuật của chủ nghĩa xã hội; nâng cao đời sống nhân dân, thực hiện <em>"dân giàu, nước mạnh, dân chủ, công bằng, văn minh"</em>. Khác biệt căn bản với KTTT tư bản chủ nghĩa vốn chỉ nhằm mục đích tối đa hóa lợi nhuận cho thiểu số giai cấp tư sản.
-                            </p>
-                        </div>
+                    
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                        <strong class="text-philo-gold block mb-1">Bối cảnh khủng hoảng kinh tế - xã hội đầu những năm 1980:</strong>
+                        <p class="leading-relaxed">
+                            Do khuyết điểm chủ quan nóng vội, duy ý chí trong cải tạo XHCN, duy trì quá lâu cơ chế tập trung quan liêu bao cấp, kết hợp với hậu quả chiến tranh và bao vây cấm vận của Mỹ, đất nước lâm vào khủng hoảng gay gắt: lạm phát phi mã, thiếu lương thực, hàng tiêu dùng trầm trọng.
+                        </p>
+                    </div>
+                    <div class="p-5 bg-black/40 border border-philo-warmGold/20 rounded-xl space-y-2 text-xs">
+                        <h4 class="font-heading font-bold text-philo-gold text-sm">Đại hội V của Đảng (3/1982):</h4>
+                        <p class="text-philo-ivory/80 leading-relaxed">
+                            Lần đầu tiên xác định: nước ta đang ở <strong>chặng đường đầu tiên của thời kỳ quá độ lên chủ nghĩa xã hội</strong>; xác định hai nhiệm vụ chiến lược: xây dựng thành công CNXH và sẵn sàng chiến đấu bảo vệ Tổ quốc. Coi <strong>nông nghiệp là mặt trận hàng đầu</strong>, điều chỉnh giảm quy mô công nghiệp nặng, ưu tiên hàng tiêu dùng và xuất khẩu.
+                        </p>
+                    </div>
+                </div>
 
-                        <!-- Về quan hệ sở hữu -->
-                        <div class="glass-panel p-4 rounded-xl border border-white/10">
-                            <h4 class="font-bold text-philo-gold mb-1 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-[18px]">domain</span>
-                                2. Đặc trưng về Quan hệ sở hữu và Thành phần kinh tế
-                            </h4>
-                            <p class="text-philo-ivory/80 leading-relaxed mb-2">
-                                Là nền kinh tế có <strong>nhiều hình thức sở hữu, nhiều thành phần kinh tế</strong>. Các thành phần kinh tế bình đẳng trước pháp luật, cùng hợp tác và cạnh tranh lành mạnh:
-                            </p>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                                <div class="p-3 bg-white/5 rounded-lg border border-philo-gold/30">
-                                    <strong class="text-philo-gold block mb-1">Kinh tế nhà nước: Giữ vai trò CHỦ ĐẠO</strong>
-                                    Là đòn bẩy thúc đẩy tăng trưởng, giữ vững ổn định kinh tế vĩ mô, tập trung vào những ngành then chốt, địa bàn chiến lược, quốc phòng, an ninh và cung ứng dịch vụ công cộng. Cùng với kinh tế tập thể tạo thành nền tảng vững chắc.
-                                </div>
-                                <div class="p-3 bg-white/5 rounded-lg border border-white/10">
-                                    <strong class="text-philo-gold block mb-1">Kinh tế tư nhân: Là ĐỘNG LỰC QUAN TRỌNG</strong>
-                                    Được khuyến khích phát triển ở tất cả các ngành nghề mà pháp luật không cấm. Thúc đẩy hình thành các tập đoàn kinh tế tư nhân lớn mạnh có năng lực cạnh tranh quốc tế.
-                                </div>
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 5.2
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Bước tiến trong tư duy lý luận của Đại hội V (1982) là gì?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Khắc phục một bước bệnh nóng vội muốn tiến nhanh lên CNXH, thừa nhận thời kỳ quá độ gồm nhiều chặng đường và nước ta đang ở chặng đường đầu tiên với nhiệm vụ trọng tâm ổn định kinh tế - xã hội.
                             </div>
-                        </div>
-
-                        <!-- Về quan hệ quản lý -->
-                        <div class="glass-panel p-4 rounded-xl border border-white/10">
-                            <h4 class="font-bold text-philo-gold mb-1 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-[18px]">shield</span>
-                                3. Đặc trưng về Quan hệ quản lý nền kinh tế
-                            </h4>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Nhà nước quản lý là <strong>Nhà nước pháp quyền XHCN của nhân dân, do nhân dân, vì nhân dân</strong> dưới sự <strong>lãnh đạo của Đảng Cộng sản Việt Nam</strong>. Đảng lãnh đạo thông qua cương lĩnh, đường lối, chủ trương lớn; Nhà nước quản lý bằng pháp luật, chiến lược, quy hoạch và các công cụ điều tiết kinh tế vĩ mô trên cơ sở tôn trọng các nguyên tắc thị trường.
-                            </p>
                         </div>
                     </div>
 
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="openFormativeQuiz('M5-FQ1')" class="philo-btn-secondary text-xs px-4 py-2 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">quiz</span> Làm Quiz Hình thành 5.1 & 5.2
-                        </button>
-                        <button id="btn-complete-M5-L2" onclick="completeLesson('M5-L2')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 5.2 ✓
-                        </button>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M5-L1')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M5-FQ2')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M5-L2')" id="btn-complete-M5-L2" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 5.3: PHÂN PHỐI & CÔNG BẰNG XÃ HỘI                 -->
-        <!-- ======================================================== -->
+        <!-- LESSON 5.3: Các bước đột phá: Chỉ thị 100 & Nghị định 25-CP -->
         <article id="lesson-M5-L3" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.3 • GIÁO TRÌNH TRANG 165 - 168</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.3 • SESSIONS 20 - 21</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Quan hệ phân phối & Gắn tăng trưởng kinh tế với Công bằng xã hội
+                        Các bước đột phá: Chỉ thị 100-CT/TW & Nghị định 25-CP
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Các hình thức phân phối, nguyên tắc thực hiện tiến bộ và công bằng xã hội trong từng bước phát triển</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Phong trào 'khoán chui' biến thành luồng gió mới giải phóng sức sản xuất trong nông nghiệp và công nghiệp</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">pie_chart</span>
-                            1. Quan hệ phân phối trong KTTT định hướng XHCN
-                        </h3>
-                        <p class="text-sm leading-relaxed mb-3">
-                            Quan hệ phân phối bị chi phối bởi quan hệ sở hữu. Do có nhiều hình thức sở hữu nên ở nước ta thực hiện nhiều hình thức phân phối:
-                        </p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong class="text-philo-gold block mb-1">Phân phối đầu vào:</strong>
-                                <span class="text-philo-ivory/80">Phân phối công bằng các yếu tố sản xuất, bảo đảm cho mọi chủ thể đều có cơ hội tiếp cận bình đẳng các nguồn lực và cơ hội phát triển.</span>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong class="text-philo-gold block mb-1">Phân phối kết quả (đầu ra):</strong>
-                                <span class="text-philo-ivory/80">Phân phối <strong>chủ yếu theo kết quả lao động và hiệu quả kinh tế</strong>; phân phối theo mức đóng góp vốn và các nguồn lực khác; và phân phối thông qua hệ thống an sinh xã hội, phúc lợi xã hội.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">balance</span>
-                            2. Gắn tăng trưởng kinh tế với tiến bộ và công bằng xã hội
-                        </h3>
-                        <div class="space-y-3 text-sm">
-                            <p class="leading-relaxed">
-                                Thực hiện tiến bộ và công bằng xã hội <strong>ngay trong từng chính sách, từng chiến lược, quy hoạch, kế hoạch và từng giai đoạn phát triển</strong> của kinh tế thị trường.
+                    
+                <div class="space-y-4">
+                    <p class="text-sm">
+                        Từ thực tiễn tháo gỡ khó khăn của các địa phương (khoán sản phẩm ở Vĩnh Phú, Hải Phòng; mô hình 'xé rào' công nghiệp tại TP. Hồ Chí Minh), Đảng đã tổng kết và ban hành các quyết sách đột phá:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                            <strong class="text-philo-gold block text-sm">Chỉ thị 100-CT/TW (1/1981):</strong>
+                            <p class="text-philo-ivory/80 leading-relaxed">
+                                Ban Bí thư ban hành Chỉ thị về "Cải tiến công tác khoán, mở rộng khoán sản phẩm đến nhóm và người lao động trong hợp tác xã nông nghiệp" (gọi là <strong>Khoán 100</strong>). Gắn trách nhiệm và lợi ích trực tiếp của người nông dân với sản phẩm cuối cùng, tạo động lực mạnh mẽ giải phóng sức sản xuất.
                             </p>
-                            <div class="p-4 rounded-xl border border-philo-gold/40 bg-philo-gold/5 space-y-2 text-xs md:text-sm">
-                                <p><strong>Nguyên tắc cốt lõi của Đảng và Nhà nước:</strong></p>
-                                <ul class="list-disc list-inside space-y-1 text-philo-ivory/80 pl-2">
-                                    <li>Không chờ đến khi kinh tế phát triển cao mới thực hiện công bằng xã hội.</li>
-                                    <li><strong>Tuyệt đối không "hy sinh" tiến bộ và công bằng xã hội để chạy theo tăng trưởng kinh tế đơn thuần.</strong></li>
-                                    <li>Công bằng xã hội không phải là cào bằng hay bình quân chủ nghĩa chia đều của cải, mà là tạo cơ hội bình đẳng cho mọi người dân tiếp cận các dịch vụ cơ bản (giáo dục, y tế, việc làm).</li>
-                                </ul>
+                        </div>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                            <strong class="text-philo-gold block text-sm">Nghị định 25-CP (1/1981):</strong>
+                            <p class="text-philo-ivory/80 leading-relaxed">
+                                Chính phủ ban hành chủ trương phát huy quyền chủ động sản xuất kinh doanh và tự chủ tài chính cho các xí nghiệp quốc doanh thông qua mô hình kế hoạch 3 phần (phần Nhà nước giao, phần xí nghiệp tự làm, phần sản xuất phụ).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-black/40 border border-philo-warmGold/20 rounded-xl text-xs space-y-1.5">
+                        <strong class="text-philo-gold block text-sm">Hội nghị Trung ương 8 khóa V (6/1985):</strong>
+                        <p class="text-philo-ivory/80">Quyết định dứt khoát xóa bỏ cơ chế tập trung quan liêu bao cấp về giá - lương - tiền, thừa nhận quy luật giá trị và cơ chế thị trường, tạo tiền đề tư tưởng trực tiếp cho Đại hội VI.</p>
+                    </div>
+                </div>
+
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 5.3
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Bản chất mang tính cách mạng của Khoán 100 trong nông nghiệp là gì?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Thừa nhận lợi ích thiết thân của người lao động; chuyển từ cách làm việc gõ kẻng tính điểm bình quân sang gắn kết quả lao động với thù lao, khơi dậy tinh thần say mê lao động của hàng triệu hộ nông dân.
                             </div>
                         </div>
                     </div>
 
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="toggleReflection('ref-M5-L3')" class="text-philo-gold hover:underline text-sm font-semibold flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">lightbulb</span> Câu hỏi tự suy ngẫm
-                        </button>
-                        <button id="btn-complete-M5-L3" onclick="completeLesson('M5-L3')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 5.3 ✓
-                        </button>
-                    </div>
-                    <div id="ref-M5-L3" class="reflection-answer p-4 rounded-xl border border-philo-gold/20 bg-white/5">
-                        <p class="text-xs text-philo-gold font-bold mb-1">Gợi ý suy ngẫm:</p>
-                        <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                            Tại sao nói phân phối theo lao động là hình thức phản ánh rõ nhất định hướng xã hội chủ nghĩa? Vì nó triệt tiêu nguồn gốc của bóc lột bất công: ai làm nhiều hưởng nhiều, làm ít hưởng ít, không làm không hưởng (trừ những người mất khả năng lao động được bảo trợ xã hội).
-                        </p>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M5-L2')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M5-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M5-L3')" id="btn-complete-M5-L3" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 5.4: HOÀN THIỆN THỂ CHẾ KTTT                     -->
-        <!-- ======================================================== -->
+        <!-- LESSON 5.4: Đại hội VI (1986) - Đổi mới toàn diện đất nước -->
         <article id="lesson-M5-L4" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.4 • GIÁO TRÌNH TRANG 168 - 176</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.4 • SESSION 22 CHƯƠNG 5</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Hoàn thiện thể chế kinh tế thị trường định hướng XHCN
+                        Đại hội lần thứ VI (1986) - Khởi xướng đường lối Đổi mới toàn diện
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Sự cần thiết khách quan và 4 nội dung trọng tâm hoàn thiện thể chế theo Nghị quyết Trung ương 5 khóa XII & Đại hội XIII</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Đại hội của đổi mới, phương châm nhìn thẳng sự thật, 4 bài học lớn và bước ngoặt chuyển đổi kinh tế</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-2 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">architecture</span>
-                            1. Sự cần thiết phải hoàn thiện thể chế kinh tế thị trường
+                    
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <strong class="text-philo-gold block mb-1">Mốc son Đại hội VI (12/1986):</strong>
+                    <p class="leading-relaxed">
+                        Họp tại Hà Nội từ 15 đến 18/12/1986. Đại hội bầu đồng chí <strong>Nguyễn Văn Linh</strong> làm Tổng Bí thư. Với tinh thần dũng cảm: <em>"Nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật"</em>, Đại hội đã chính thức khởi xướng công cuộc Đổi mới toàn diện đất nước.
+                    </p>
+                </div>
+                <div class="p-5 bg-black/40 border border-philo-warmGold/20 rounded-xl space-y-3">
+                    <h4 class="font-heading font-bold text-philo-gold text-base">4 Bài học kinh nghiệm quý báu được Đại hội VI đúc kết:</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                        <div class="p-3 bg-white/5 rounded-lg"><strong>Bài học 1:</strong> Trong toàn bộ hoạt động của mình, Đảng phải quán triệt sâu sắc tư tưởng <em>"Lấy dân làm gốc"</em>.</div>
+                        <div class="p-3 bg-white/5 rounded-lg"><strong>Bài học 2:</strong> Luôn xuất phát từ thực tế, tôn trọng và hành động theo quy luật khách quan.</div>
+                        <div class="p-3 bg-white/5 rounded-lg"><strong>Bài học 3:</strong> Biết kết hợp sức mạnh dân tộc với sức mạnh thời đại trong điều kiện mới.</div>
+                        <div class="p-3 bg-white/5 rounded-lg"><strong>Bài học 4:</strong> Chăm lo xây dựng Đảng ngang tầm với nhiệm vụ chính trị của một đảng cầm quyền.</div>
+                    </div>
+                </div>
+                <div class="p-4 bg-white/5 border border-white/10 rounded-xl text-xs space-y-1.5">
+                    <strong class="text-philo-gold block text-sm">Nội dung cốt lõi của đường lối đổi mới kinh tế:</strong>
+                    <p>• Tập trung thực hiện <strong>3 chương trình kinh tế lớn:</strong> Lương thực - thực phẩm, Hàng tiêu dùng và Hàng xuất khẩu.</p>
+                    <p>• Phát triển nền kinh tế nhiều thành phần, thừa nhận sự tồn tại khách quan của các thành phần kinh tế tư nhân, cá thể.</p>
+                    <p>• Xóa bỏ triệt để cơ chế tập trung quan liêu bao cấp, chuyển sang hạch toán kinh doanh XHCN.</p>
+                </div>
+
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 5.4
                         </h3>
-                        <p class="text-sm mb-3">
-                            Thể chế kinh tế thị trường là hệ thống đường lối, luật pháp, chính sách và cơ chế vận hành điều chỉnh hành vi của các chủ thể kinh tế. Lý do phải hoàn thiện thể chế:
-                        </p>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong class="text-philo-gold block mb-1">1. Chưa đồng bộ:</strong>
-                                <span class="text-philo-ivory/80">Hệ thống pháp luật và chính sách còn mâu thuẫn, chồng chéo, thiếu nhất quán giữa các ngành và địa phương.</span>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong class="text-philo-gold block mb-1">2. Chưa đầy đủ:</strong>
-                                <span class="text-philo-ivory/80">Nhiều loại thị trường mới (công nghệ, tài chính phái sinh, lao động chất lượng cao) còn ở trình độ sơ khai.</span>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong class="text-philo-gold block mb-1">3. Hiệu lực thực thi thấp:</strong>
-                                <span class="text-philo-ivory/80">Kỷ luật kỷ cương chưa nghiêm, môi trường kinh doanh chưa thực sự thông thoáng, minh bạch.</span>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Vì sao nói đổi mới kinh tế là trọng tâm nhưng đổi mới chính trị phải làm thận trọng, vững chắc?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Vì kinh tế quyết định đời sống vật chất của nhân dân và ổn định xã hội; đồng thời phải giữ vững ổn định chính trị, vai trò lãnh đạo của Đảng thì mới tạo môi trường hòa bình để phát triển kinh tế thành công.
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">build</span>
-                            2. Bốn nội dung trọng tâm hoàn thiện thể chế (Trang 171 - 176)
-                        </h3>
-                        <div class="space-y-3 text-sm">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <h4 class="font-bold text-philo-gold mb-1">1. Hoàn thiện thể chế về sở hữu, phát triển các thành phần kinh tế</h4>
-                                <p class="text-xs text-philo-ivory/80">Thể chế hóa đầy đủ quyền tài sản (sở hữu, sử dụng, định đoạt, hưởng lợi). Hoàn thiện pháp luật về đất đai, tài nguyên, sở hữu trí tuệ. Cơ cấu lại DNNN và tạo thuận lợi phát triển kinh tế tư nhân thực sự thành động lực quan trọng.</p>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <h4 class="font-bold text-philo-gold mb-1">2. Hoàn thiện thể chế phát triển đồng bộ các yếu tố và loại thị trường</h4>
-                                <p class="text-xs text-philo-ivory/80">Vận hành thông suốt thị trường hàng hóa - dịch vụ, thị trường vốn, thị trường công nghệ, thị trường bất động sản và thị trường sức lao động theo nguyên tắc thị trường cạnh tranh bình đẳng.</p>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <h4 class="font-bold text-philo-gold mb-1">3. Gắn kết phát triển kinh tế bền vững với tiến bộ, công bằng xã hội</h4>
-                                <p class="text-xs text-philo-ivory/80">Xây dựng thể chế an sinh xã hội vững chắc, giảm nghèo đa chiều bền vững, bảo vệ môi trường sinh thái và thích ứng biến đổi khí hậu.</p>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <h4 class="font-bold text-philo-gold mb-1">4. Nâng cao năng lực lãnh đạo của Đảng và quản lý của Nhà nước</h4>
-                                <p class="text-xs text-philo-ivory/80">Xóa bỏ cơ chế "xin - cho", phòng chống tham nhũng, lãng phí, "lợi ích nhóm", "sân sau" trong quản lý tài sản công, đất đai, cổ phần hóa (Hộp 5.4).</p>
-                            </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M5-L3')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M5-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M5-L4')" id="btn-complete-M5-L4" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
                         </div>
-                    </div>
-
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="openFormativeQuiz('M5-FQ2')" class="philo-btn-secondary text-xs px-4 py-2 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">quiz</span> Làm Quiz Hình thành 5.3 & 5.4
-                        </button>
-                        <button id="btn-complete-M5-L4" onclick="completeLesson('M5-L4')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 5.4 ✓
-                        </button>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 5.5: QUAN HỆ LỢI ÍCH KINH TẾ                     -->
-        <!-- ======================================================== -->
+        <!-- LESSON 5.5: Đại hội VII (1991) & Cương lĩnh năm 1991 -->
         <article id="lesson-M5-L5" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.5 • GIÁO TRÌNH TRANG 176 - 191</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.5 • SESSION 23 CHƯƠNG 5</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Lợi ích kinh tế và các quan hệ lợi ích kinh tế cơ bản ở Việt Nam
+                        Đại hội đại biểu toàn quốc lần thứ VII & Cương lĩnh năm 1991
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Bản chất lợi ích kinh tế là động lực trực tiếp, 4 quan hệ lợi ích cơ bản và vấn đề nhóm lợi ích</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Vững vàng trước biến cố Liên Xô sụp đổ, nền tảng Chủ nghĩa Mác - Lênin & Tư tưởng Hồ Chí Minh</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
                     <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
-                        <h4 class="font-bold text-philo-gold mb-1">Khái niệm Lợi ích kinh tế (Trang 177):</h4>
+                        <strong class="text-philo-gold block mb-1">Đại hội VII (6/1991) — Kiên định con đường XHCN:</strong>
                         <p class="leading-relaxed">
-                            Lợi ích kinh tế là <strong>lợi ích vật chất</strong>, lợi ích thu được khi thực hiện các hoạt động kinh tế của con người. Lợi ích kinh tế là <strong>động lực trực tiếp</strong> của các chủ thể và là cơ sở thúc đẩy sự phát triển của các lợi ích chính trị, văn hóa, xã hội khác.
+                            Bối cảnh lịch sử đầy sóng gió khi chủ nghĩa xã hội ở Liên Xô và Đông Âu khủng hoảng và tan rã. Đại hội bầu đồng chí <strong>Đỗ Mười</strong> làm Tổng Bí thư; khẳng định: Đảng lấy <strong>Chủ nghĩa Mác - Lênin và Tư tưởng Hồ Chí Minh</strong> làm nền tảng tư tưởng và kim chỉ nam cho hành động.
                         </p>
                     </div>
+                    <div class="p-5 bg-black/40 border border-philo-warmGold/20 rounded-xl space-y-3">
+                        <h4 class="font-heading font-bold text-philo-gold text-base">Cương lĩnh xây dựng đất nước thời kỳ quá độ (Cương lĩnh 1991):</h4>
+                        <p class="text-xs text-philo-ivory/80">Xác định 6 đặc trưng cơ bản của mô hình chủ nghĩa xã hội mà nhân dân ta xây dựng và 7 phương hướng lớn phát triển đất nước.</p>
+                        <div class="p-3 bg-white/5 rounded-lg text-xs space-y-1">
+                            <strong class="text-philo-gold">Đường lối đối ngoại rộng mở:</strong>
+                            <p class="text-philo-ivory/80 italic">"Việt Nam muốn là bạn với tất cả các nước trong cộng đồng thế giới, phấn đấu vì hòa bình, độc lập và phát triển".</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">groups</span>
-                            Bốn quan hệ lợi ích kinh tế cơ bản trong nền kinh tế thị trường
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 5.5
                         </h3>
-                        <div class="space-y-3 text-sm">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>1. Quan hệ lợi ích giữa người lao động và người sử dụng lao động:</strong>
-                                <p class="text-xs text-philo-ivory/80 mt-1">Vừa thống nhất (doanh nghiệp phát triển thì người lao động có việc làm, thu nhập ổn định) vừa mâu thuẫn (tiền lương của lao động và lợi nhuận của chủ doanh nghiệp có quan hệ tỷ lệ nghịch trong ngắn hạn). Giải quyết thông qua hợp đồng lao động và tổ chức Công đoàn.</p>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>2. Quan hệ lợi ích giữa những người sử dụng lao động:</strong>
-                                <p class="text-xs text-philo-ivory/80 mt-1">Vừa là đối tác hợp tác, liên kết thành cộng đồng doanh nhân, vừa là đối thủ cạnh tranh thị phần và tài nguyên trên thị trường.</p>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>3. Quan hệ lợi ích giữa những người lao động:</strong>
-                                <p class="text-xs text-philo-ivory/80 mt-1">Cạnh tranh vị trí việc làm và tiền lương; đồng thời có sự tương trợ, hợp tác đoàn kết để bảo vệ quyền lợi chung.</p>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>4. Quan hệ giữa lợi ích cá nhân, lợi ích nhóm và lợi ích xã hội:</strong>
-                                <p class="text-xs text-philo-ivory/80 mt-1">Lợi ích cá nhân là cơ sở, nền tảng của mọi lợi ích khác. "Lợi ích nhóm" và "nhóm lợi ích" tích cực (như liên kết 4 nhà trong nông nghiệp) cần được khuyến khích; nhưng "lợi ích nhóm" tiêu cực cấu kết với cán bộ thoái hóa biến chất để trục lợi chính sách thì phải kiên quyết loại trừ.</p>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Ý nghĩa bước ngoặt của việc Đảng chính thức đưa 'Tư tưởng Hồ Chí Minh' vào nền tảng tư tưởng tại Đại hội VII (1991)?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Khẳng định sự sáng tạo và độc lập tự chủ của Đảng; gắn kết lý luận phổ quát của chủ nghĩa Mác - Lênin với thực tiễn lịch sử và văn hóa Việt Nam, giữ vững ngọn cờ dẫn đường trước sự sụp đổ của phe XHCN ở Liên Xô.
                             </div>
                         </div>
                     </div>
 
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="toggleReflection('ref-M5-L5')" class="text-philo-gold hover:underline text-sm font-semibold flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">lightbulb</span> Câu hỏi tự suy ngẫm
-                        </button>
-                        <button id="btn-complete-M5-L5" onclick="completeLesson('M5-L5')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 5.5 ✓
-                        </button>
-                    </div>
-                    <div id="ref-M5-L5" class="reflection-answer p-4 rounded-xl border border-philo-gold/20 bg-white/5">
-                        <p class="text-xs text-philo-gold font-bold mb-1">Gợi ý suy ngẫm:</p>
-                        <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                            Chủ tịch Hồ Chí Minh đã căn dặn: "Nước độc lập mà dân không hưởng hạnh phúc, tự do thì độc lập cũng chẳng có nghĩa lý gì" (Toàn tập, T.4, tr.64). Trong thời kỳ đổi mới, Đảng ta xác định: Lợi ích kinh tế của người dân là trung tâm, tôn trọng lợi ích cá nhân chính đáng là động lực to lớn cho sự phát triển đất nước.
-                        </p>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M5-L4')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M5-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M5-L5')" id="btn-complete-M5-L5" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 5.6: VAI TRÒ NHÀ NƯỚC ĐIỀU HÒA LỢI ÍCH           -->
-        <!-- ======================================================== -->
+        <!-- LESSON 5.6: Thoát khỏi khủng hoảng kinh tế - xã hội (1991 - 1996) -->
         <article id="lesson-M5-L6" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.6 • GIÁO TRÌNH TRANG 192 - 200</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 5.6 • SESSION 23 TỔNG KẾT</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Vai trò của Nhà nước trong bảo đảm hài hòa các quan hệ lợi ích
+                        Đưa đất nước thoát khỏi khủng hoảng kinh tế - xã hội (1991 - 1996)
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">4 phương thức điều hòa lợi ích của Nhà nước pháp quyền XHCN Việt Nam</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Thực hiện Khoán 10, kiềm chế lạm phát, phá thế bao vây cấm vận và bước vào thời kỳ CNH, HĐH</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
                     <p class="text-sm">
-                        Chỉ có cơ chế thị trường thì không thể tự bảo đảm hài hòa các lợi ích vì lợi ích luôn vừa thống nhất vừa xung đột. Nhà nước pháp quyền XHCN đóng vai trò trọng tài tối cao thông qua 4 nội dung:
+                        Sau 10 năm kiên trì thực hiện đường lối đổi mới của Đại hội VI và VII, đất nước đã đạt được những thành tựu có ý nghĩa lịch sử vô cùng to lớn:
                     </p>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
-                        <div class="glass-panel p-4 rounded-xl border border-white/10">
-                            <h4 class="font-bold text-philo-gold mb-1">1. Bảo vệ lợi ích hợp pháp & tạo môi trường</h4>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Giữ vững ổn định chính trị - xã hội; xây dựng hệ thống pháp luật minh bạch, thông thoáng; đầu tư hạ tầng giao thông, điện, viễn thông và văn hóa kinh doanh trọng chữ tín.
-                            </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1.5">
+                            <strong class="text-philo-gold block text-sm">Kinh tế phát triển vượt bậc:</strong>
+                            <p>• Nghị quyết 10 của Bộ Chính trị (Khoán 10 năm 1988) giải phóng sức sản xuất, đưa Việt Nam từ nước đói ăn trở thành nước xuất khẩu gạo hàng đầu thế giới.</p>
+                            <p>• Lạm phát phi mã từ 774% (1986) được kiềm chế xuống còn 12,7% (1995) và 4,5% (1996).</p>
+                            <p>• Tốc độ tăng trưởng GDP bình quân giai đoạn 1991 - 1995 đạt 8,2%/năm.</p>
                         </div>
-
-                        <div class="glass-panel p-4 rounded-xl border border-white/10">
-                            <h4 class="font-bold text-philo-gold mb-1">2. Điều hòa lợi ích cá nhân - doanh nghiệp - xã hội</h4>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Thông qua chính sách phân phối thu nhập (thuế thu nhập cá nhân lũy tiến, mức lương tối thiểu vùng) nhằm ngăn ngừa tình trạng phân hóa giàu nghèo quá mức dẫn đến xung đột xã hội.
-                            </p>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1.5">
+                            <strong class="text-philo-gold block text-sm">Phá vỡ thế bao vây cô lập:</strong>
+                            <p>• Bình thường hóa quan hệ với Trung Quốc (1991).</p>
+                            <p>• Hoa Kỳ chính thức dỡ bỏ cấm vận (1994) và bình thường hóa quan hệ ngoại giao (1995).</p>
+                            <p>• Chính thức gia nhập Hiệp hội các quốc gia Đông Nam Á (ASEAN) vào tháng 7/1995.</p>
                         </div>
+                    </div>
+                    <div class="p-4 bg-philo-gold/10 border border-philo-gold/30 rounded-xl text-xs">
+                        <strong class="text-philo-gold block text-sm mb-1">Kết luận lịch sử của Đại hội VIII (1996):</strong>
+                        <p class="leading-relaxed">
+                            Nước ta đã <strong>thoát khỏi khủng hoảng kinh tế - xã hội</strong> kéo dài hơn 15 năm; nhiệm vụ đề ra cho chặng đường đầu tiên của thời kỳ quá độ cơ bản hoàn thành, mở ra thời kỳ mới: đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước.
+                        </p>
+                    </div>
+                </div>
 
-                        <div class="glass-panel p-4 rounded-xl border border-white/10">
-                            <h4 class="font-bold text-philo-gold mb-1">3. Kiểm soát, ngăn ngừa các lợi ích tiêu cực</h4>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Xây dựng bộ máy nhà nước liêm chính; kiểm soát tài sản, thu nhập của cán bộ, công chức; kiên quyết loại bỏ cơ chế "xin - cho", chống buôn lậu, trốn thuế, hàng giả và "nhóm lợi ích" tiêu cực.
-                            </p>
-                        </div>
-
-                        <div class="glass-panel p-4 rounded-xl border border-white/10">
-                            <h4 class="font-bold text-philo-gold mb-1">4. Giải quyết xung đột lợi ích</h4>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Kịp thời phát hiện và hòa giải các tranh chấp lao động, đình công, khiếu kiện đất đai dựa trên nguyên tắc: <strong>Phải có sự tham gia của các bên liên quan, có sự nhân nhượng và đặt lợi ích quốc gia - dân tộc lên trên hết</strong> (Trang 197).
-                            </p>
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 5.6
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Thành tựu mang tính bước ngoặt nào chứng minh đường lối Đổi mới của Đảng ta là hoàn toàn đúng đắn?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Đưa đất nước thoát khỏi khủng hoảng kinh tế - xã hội trầm trọng; bảo đảm an ninh lương thực quốc gia; giữ vững độc lập chủ quyền và phá vỡ hoàn toàn thế bị bao vây cô lập cấm vận.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="openFormativeQuiz('M5-FQ3')" class="philo-btn-secondary text-xs px-4 py-2 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">quiz</span> Làm Quiz Hình thành 5.5 & 5.6
-                        </button>
-                        <button id="btn-complete-M5-L6" onclick="completeLesson('M5-L6')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 5.6 ✓
-                        </button>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M5-L5')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M5-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M5-L6')" id="btn-complete-M5-L6" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
 
-        <!-- Banner thi trắc nghiệm cuối module -->
-        <div id="module-quiz-banner" class="hidden glass-panel p-8 rounded-2xl border-2 border-philo-gold/40 text-center my-10 bg-gradient-to-r from-philo-gold/10 via-philo-burgundy/40 to-philo-gold/10">
-            <span class="text-4xl mb-2 block">🎓</span>
-            <h3 class="font-heading text-2xl font-bold text-philo-gold mb-2">Hoàn thành cả 6 bài học Module 5!</h3>
-            <p class="text-sm text-philo-ivory/80 max-w-2xl mx-auto mb-5">
-                Bạn đã nắm vững mô hình kinh tế thị trường định hướng XHCN, thể chế kinh tế và phương thức hài hòa các quan hệ lợi ích ở Việt Nam. Hãy làm bài kiểm tra trắc nghiệm tổng kết để hoàn thiện kiến thức!
-            </p>
-            <button onclick="openModuleQuiz()" class="philo-btn-gold text-sm px-8 py-3.5 inline-flex items-center gap-2">
-                <span class="material-symbols-outlined text-[20px]">military_tech</span>
-                Làm bài thi trắc nghiệm Module 5 (12 câu)
-            </button>
+        <!-- MODULE FINAL EXAM BANNER -->
+        <div id="module-quiz-banner" class="hidden mt-8 p-6 rounded-2xl glass-panel border border-philo-gold/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <h3 class="font-heading text-xl font-bold text-philo-gold">Chúc mừng bạn đã hoàn thành 6 bài học Chương 5!</h3>
+                <p class="text-xs text-philo-ivory/80 mt-1">Hãy tham gia bài thi tổng kết để củng cố toàn diện kiến thức và mở khóa danh hiệu vinh dự.</p>
+            </div>
+            <button onclick="openModuleQuiz()" class="philo-btn-gold shrink-0">Bắt đầu thi tổng kết</button>
         </div>
-
     </main>
 
-    <!-- ===== QUIZ MODAL ===== -->
-    <div id="quiz-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm hidden">
-        <div class="glass-panel w-full max-w-2xl max-h-[90vh] flex flex-col rounded-2xl border border-philo-gold/30 shadow-2xl overflow-hidden bg-philo-blackBurgundy">
-            <div class="p-5 border-b border-white/10 flex items-center justify-between bg-philo-burgundy/50">
+    <!-- SLIDE-OVER AI PANEL -->
+    <aside id="ai-panel" class="fixed top-0 right-0 w-full sm:w-96 h-full bg-[#120202] border-l border-philo-gold/30 shadow-2xl z-50 p-6 flex flex-col hidden-panel">
+        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-philo-gold">smart_toy</span>
+                <h3 class="font-heading font-bold text-philo-ivory">Trợ Lý AI Chương 5</h3>
+            </div>
+            <button onclick="toggleAIPanel()" class="text-philo-ivory/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
+        </div>
+        <div class="py-3 flex flex-wrap gap-1.5 border-b border-white/10">
+            <button onclick="sendAIPrompt('Đại hội VI năm 1986 và đường lối Đổi mới?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Đại hội VI năm 1986 và đường lối Đổi mới?</button>
+<button onclick="sendAIPrompt('Khoán 100 và Khoán 10 trong nông nghiệp?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Khoán 100 và Khoán 10 trong nông nghiệp?</button>
+<button onclick="sendAIPrompt('Cương lĩnh xây dựng đất nước năm 1991?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Cương lĩnh xây dựng đất nước năm 1991?</button>
+<button onclick="sendAIPrompt('Thành tựu thoát khỏi khủng hoảng 1991 - 1996?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Thành tựu thoát khỏi khủng hoảng 1991 - 1996?</button>
+
+        </div>
+        <div id="ai-chat-history" class="flex-grow overflow-y-auto py-4 space-y-3 text-xs">
+            <div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20">
+                <p class="font-bold text-philo-gold mb-1">🤖 AI Giáo trình VNR202</p>
+                <p class="text-philo-ivory/80">Chào bạn! Tôi là trợ lý AI chuyên sâu môn Lịch sử Đảng Cộng sản Việt Nam (VNR202) Chương 5. Bạn cần giải đáp câu hỏi hay tài liệu nào?</p>
+            </div>
+        </div>
+        <div class="pt-3 border-t border-white/10 flex gap-2">
+            <input type="text" id="ai-input" placeholder="Hỏi AI về Chương 5..." class="flex-grow bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-philo-gold" onkeydown="if(event.key==='Enter') sendAIMessage()" />
+            <button onclick="sendAIMessage()" class="philo-btn-gold px-3 py-2 rounded-xl text-xs"><span class="material-symbols-outlined text-[16px]">send</span></button>
+        </div>
+    </aside>
+
+    <!-- QUIZ MODAL -->
+    <div id="quiz-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glass-panel border border-philo-gold/40 rounded-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden">
+            <div class="p-5 border-b border-white/10 flex items-center justify-between">
                 <div>
                     <h3 id="quiz-modal-title" class="font-heading font-bold text-lg text-philo-gold">Bài kiểm tra trắc nghiệm</h3>
-                    <p id="quiz-modal-sub" class="text-xs text-philo-ivory/60 mt-0.5">MLN131 — Giáo trình chuẩn 2021</p>
+                    <p id="quiz-modal-sub" class="text-xs text-philo-ivory/60 mt-0.5">VNR202 Lịch sử Đảng</p>
                 </div>
-                <button onclick="closeQuizModal()" class="text-philo-ivory/60 hover:text-white p-1 rounded-lg hover:bg-white/10">
-                    <span class="material-symbols-outlined text-[20px]">close</span>
-                </button>
+                <button onclick="closeQuizModal()" class="text-white/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
             </div>
-            <div id="quiz-modal-body" class="p-6 overflow-y-auto flex-grow space-y-6 text-sm">
-                <!-- Injected by JS -->
-            </div>
+            <div id="quiz-modal-body" class="p-6 overflow-y-auto space-y-6 flex-grow"></div>
         </div>
     </div>
 
-    <!-- ===== AI ASSISTANT SLIDE-OVER PANEL ===== -->
-    <div id="ai-panel" class="fixed top-0 right-0 h-full w-full sm:w-[420px] z-50 glass-panel border-l border-philo-gold/30 flex flex-col hidden-panel bg-[#140303]/95 backdrop-blur-xl shadow-2xl">
-        <div class="p-4 border-b border-white/10 flex items-center justify-between bg-philo-burgundy/70">
-            <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-philo-gold/20 flex items-center justify-center border border-philo-gold/40">
-                    <span class="material-symbols-outlined text-philo-gold text-[18px]">smart_toy</span>
-                </div>
-                <div>
-                    <h4 class="font-heading font-bold text-sm text-philo-gold">AI Gia sư MLN131</h4>
-                    <p class="text-[10px] text-philo-ivory/60">Chương 5: KTTT định hướng XHCN</p>
-                </div>
-            </div>
-            <button onclick="toggleAIPanel()" class="text-philo-ivory/60 hover:text-white p-1 rounded-lg hover:bg-white/10">
-                <span class="material-symbols-outlined text-[20px]">close</span>
-            </button>
-        </div>
-        <div id="ai-chat-history" class="flex-grow p-4 overflow-y-auto space-y-3 text-xs md:text-sm">
-            <div class="bg-philo-warmGold/10 rounded-xl p-3 border border-philo-warmGold/20">
-                <p class="font-bold text-philo-gold text-xs mb-1">💡 Trợ lý Giáo trình MLN131</p>
-                <p class="text-philo-ivory/80 leading-relaxed text-xs">
-                    Chào bạn! Tôi có thể giải đáp toàn bộ kiến thức Chương 5: Khái niệm KTTT định hướng XHCN, vai trò chủ đạo của KT nhà nước, động lực của KT tư nhân, các hình thức phân phối, hoàn thiện thể chế KTTT, và phương thức điều hòa quan hệ lợi ích kinh tế ở Việt Nam. Hãy hỏi tôi nhé!
-                </p>
-            </div>
-        </div>
-        <div class="p-3 border-t border-white/10 bg-black/40">
-            <div class="flex items-center gap-2">
-                <input type="text" id="ai-input" placeholder="Hỏi về vai trò kinh tế nhà nước, quan hệ lợi ích..." class="flex-grow bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-white/40 focus:outline-none focus:border-philo-gold" onkeydown="if(event.key==='Enter')sendAIMessage()" />
-                <button onclick="sendAIMessage()" class="p-2 rounded-xl bg-philo-gold text-black font-bold hover:bg-yellow-400 transition-all flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[18px]">send</span>
-                </button>
-            </div>
-            <div class="flex flex-wrap gap-1.5 mt-2">
-                <button onclick="sendAIPrompt('Vai trò của kinh tế nhà nước và kinh tế tư nhân ở Việt Nam?')" class="text-[10px] bg-white/5 hover:bg-white/10 px-2 py-1 rounded text-philo-ivory/70 border border-white/5">KT Nhà nước vs Tư nhân</button>
-                <button onclick="sendAIPrompt('Tại sao không hy sinh tiến bộ công bằng xã hội để chạy theo tăng trưởng?')" class="text-[10px] bg-white/5 hover:bg-white/10 px-2 py-1 rounded text-philo-ivory/70 border border-white/5">Công bằng xã hội</button>
-                <button onclick="sendAIPrompt('Nhà nước điều hòa mâu thuẫn lợi ích theo nguyên tắc nào?')" class="text-[10px] bg-white/5 hover:bg-white/10 px-2 py-1 rounded text-philo-ivory/70 border border-white/5">Điều hòa lợi ích</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement Toast Notification -->
-    <div id="achievement-toast" class="fixed bottom-6 right-6 z-50 glass-panel p-4 rounded-xl border border-philo-gold flex items-center gap-3 hidden bg-black/90 shadow-2xl">
-        <span class="text-3xl" id="achievement-icon">🏆</span>
+    <!-- ACHIEVEMENT TOAST -->
+    <div id="achievement-toast" class="fixed bottom-6 right-6 glass-panel border border-philo-gold p-4 rounded-2xl shadow-2xl flex items-center gap-4 z-50 hidden">
+        <span class="text-3xl" id="achievement-icon">🎖️</span>
         <div>
-            <h5 class="font-bold text-xs text-philo-gold uppercase tracking-wider" id="achievement-name">Thành tích mới!</h5>
-            <p class="text-xs text-philo-ivory/80" id="achievement-desc">Mô tả thành tích</p>
+            <h4 class="font-bold text-philo-gold text-sm" id="achievement-name">Mở khóa danh hiệu</h4>
+            <p class="text-xs text-philo-ivory/80" id="achievement-desc">Mô tả danh hiệu</p>
         </div>
     </div>
 
     <div id="footer-placeholder"></div>
 
+    <!-- Component Loaders -->
+    <script src="js/search-data-global.js"></script>
     <script src="js/load-components.js"></script>
+    <script src="js/search-init.js"></script>
+
     <script>
-        const M5_LESSONS = ['M5-L1', 'M5-L2', 'M5-L3', 'M5-L4', 'M5-L5', 'M5-L6'];
-        let M5_STATE = {
+        const M_LESSONS = ["M5-L1","M5-L2","M5-L3","M5-L4","M5-L5","M5-L6"];
+        let M_STATE = {
             completedLessons: new Set(),
             quizResults: {}
         };
 
-        function loadM5State() {
+        const STORAGE_KEY = 'vnr202_m5_state';
+
+        function loadMState() {
             try {
-                const raw = localStorage.getItem('philo_mln131_m5');
-                if (raw) {
-                    const parsed = JSON.parse(raw);
-                    M5_STATE.completedLessons = new Set(parsed.completedLessons || []);
-                    M5_STATE.quizResults = parsed.quizResults || {};
+                const s = localStorage.getItem(STORAGE_KEY);
+                if (s) {
+                    const parsed = JSON.parse(s);
+                    M_STATE.completedLessons = new Set(parsed.completedLessons || []);
+                    M_STATE.quizResults = parsed.quizResults || {};
                 }
-            } catch (e) { console.warn(e); }
+            } catch(e) {}
         }
 
-        function saveM5State() {
-            try {
-                localStorage.setItem('philo_mln131_m5', JSON.stringify({
-                    completedLessons: Array.from(M5_STATE.completedLessons),
-                    quizResults: M5_STATE.quizResults
-                }));
-            } catch (e) { console.warn(e); }
+        function saveMState() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                completedLessons: Array.from(M_STATE.completedLessons),
+                quizResults: M_STATE.quizResults
+            }));
         }
 
         function showLesson(id) {
-            M5_LESSONS.forEach(lId => {
-                const el = document.getElementById('lesson-' + lId);
-                const tab = document.getElementById('tab-' + lId);
+            M_LESSONS.forEach(l => {
+                const el = document.getElementById('lesson-' + l);
+                const tab = document.getElementById('tab-' + l);
                 if (el) el.classList.add('hidden');
                 if (tab) tab.classList.remove('active-tab');
             });
@@ -732,12 +656,12 @@
             const activeTab = document.getElementById('tab-' + id);
             if (activeEl) activeEl.classList.remove('hidden');
             if (activeTab) activeTab.classList.add('active-tab');
-            window.scrollTo({ top: 350, behavior: 'smooth' });
+            window.scrollTo({ top: 380, behavior: 'smooth' });
         }
 
         function completeLesson(id) {
-            M5_STATE.completedLessons.add(id);
-            saveM5State();
+            M_STATE.completedLessons.add(id);
+            saveMState();
             updateProgress();
             const btn = document.getElementById('btn-complete-' + id);
             if (btn) {
@@ -745,403 +669,314 @@
                 btn.classList.add('bg-emerald-600', 'text-white');
                 btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span> Đã hoàn thành ✓';
             }
-            const curIdx = M5_LESSONS.indexOf(id);
-            if (curIdx < M5_LESSONS.length - 1) {
-                showLesson(M5_LESSONS[curIdx + 1]);
-            } else {
-                const b = document.getElementById('module-quiz-banner');
-                if (b) b.classList.remove('hidden');
+            const idx = M_LESSONS.indexOf(id);
+            if (idx < M_LESSONS.length - 1) {
+                setTimeout(() => showLesson(M_LESSONS[idx + 1]), 400);
             }
         }
 
         function updateProgress() {
-            const count = M5_STATE.completedLessons.size;
+            const count = M_STATE.completedLessons.size;
             const pct = Math.round((count / 6) * 100);
             const bar = document.getElementById('m5-progress-bar');
             const txt = document.getElementById('m5-progress-text');
             if (bar) bar.style.width = pct + '%';
             if (txt) txt.textContent = count + ' / 6 bài (' + pct + '%)';
-
-            M5_LESSONS.forEach(id => {
-                const dot = document.getElementById('dot-' + id);
+            M_LESSONS.forEach(l => {
+                const dot = document.getElementById('dot-' + l);
                 if (dot) {
-                    if (M5_STATE.completedLessons.has(id)) {
-                        dot.classList.add('completed');
-                    } else {
-                        dot.classList.remove('completed');
-                    }
+                    if (M_STATE.completedLessons.has(l)) dot.classList.add('completed');
+                    else dot.classList.remove('completed');
                 }
             });
-        }
-
-        function toggleReflection(id) {
-            const el = document.getElementById(id);
-            if (el) el.classList.toggle('open');
-        }
-
-        /* FORMATIVE QUIZZES DATA (PP. 152 - 200) */
-        window.FORMATIVE_QUIZZES_M5 = {
-            'M5-FQ1': {
-                title: 'Kiểm tra nhanh — Bài 5.1 & 5.2: Khái niệm, Mục tiêu & Sở hữu',
-                passingScore: 75,
-                questions: [
-                    {
-                        id: 'fq5_1',
-                        text: 'Kinh tế thị trường định hướng XHCN được Đảng Cộng sản Việt Nam xác định lần đầu tiên là "mô hình kinh tế tổng quát" tại Đại hội nào?',
-                        options: [
-                            { id: 'a', text: 'Đại hội VI (1986)' },
-                            { id: 'b', text: 'Đại hội IX (2001)' },
-                            { id: 'c', text: 'Đại hội XI (2011)' },
-                            { id: 'd', text: 'Đại hội XIII (2021)' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 155 (Hộp 5.1): Đại hội IX của Đảng khẳng định: Kinh tế thị trường định hướng XHCN là mô hình kinh tế tổng quát của thời kỳ quá độ lên CNXH ở nước ta.'
-                    },
-                    {
-                        id: 'fq5_2',
-                        text: 'Trong nền kinh tế thị trường định hướng XHCN ở Việt Nam, thành phần kinh tế nào giữ vai trò "chủ đạo"?',
-                        options: [
-                            { id: 'a', text: 'Kinh tế tư nhân' },
-                            { id: 'b', text: 'Kinh tế có vốn đầu tư nước ngoài' },
-                            { id: 'c', text: 'Kinh tế nhà nước' },
-                            { id: 'd', text: 'Kinh tế cá thể tiểu chủ' }
-                        ],
-                        correctOptionId: 'c',
-                        rationale: 'Giáo trình trang 162-163: Trong nền kinh tế thị trường định hướng XHCN, kinh tế nhà nước giữ vai trò chủ đạo, cùng với kinh tế tập thể ngày càng trở thành nền tảng vững chắc.'
-                    },
-                    {
-                        id: 'fq5_3',
-                        text: 'Kinh tế tư nhân được xác định có vai trò gì trong nền kinh tế thị trường định hướng XHCN ở nước ta?',
-                        options: [
-                            { id: 'a', text: 'Là thành phần kinh tế giữ vai trò chủ đạo' },
-                            { id: 'b', text: 'Là một động lực quan trọng của nền kinh tế' },
-                            { id: 'c', text: 'Là khu vực cần bị thu hẹp dần để tiến lên công hữu' },
-                            { id: 'd', text: 'Chỉ được phép kinh doanh các mặt hàng nông nghiệp giản đơn' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 162, 174: Kinh tế tư nhân là một động lực quan trọng của nền kinh tế; khuyến khích phát triển thành các tập đoàn tư nhân mạnh.'
-                    },
-                    {
-                        id: 'fq5_4',
-                        text: 'Mục tiêu hàng đầu của phát triển kinh tế thị trường định hướng XHCN ở Việt Nam là gì?',
-                        options: [
-                            { id: 'a', text: 'Tối đa hóa lợi nhuận cho các doanh nghiệp xuất khẩu' },
-                            { id: 'b', text: 'Phát triển LLSX, xây dựng CSVC-KT của CNXH, thực hiện "dân giàu, nước mạnh, dân chủ, công bằng, văn minh"' },
-                            { id: 'c', text: 'Xóa bỏ ngay lập tức mọi hình thức tư hữu trong xã hội' },
-                            { id: 'd', text: 'Đạt mức tăng trưởng GDP cao nhất thế giới bằng mọi giá' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 160: Mục tiêu là hướng tới phát triển LLSX, xây dựng cơ sở vật chất kỹ thuật của CNXH, nâng cao đời sống nhân dân, thực hiện dân giàu, nước mạnh, dân chủ, công bằng, văn minh.'
-                    }
-                ]
-            },
-            'M5-FQ2': {
-                title: 'Kiểm tra nhanh — Bài 5.3 & 5.4: Phân phối & Hoàn thiện Thể chế',
-                passingScore: 75,
-                questions: [
-                    {
-                        id: 'fq5_1_2',
-                        text: 'Trong nền kinh tế thị trường định hướng XHCN ở Việt Nam, hình thức phân phối đầu ra nào giữ vai trò CHỦ YẾU?',
-                        options: [
-                            { id: 'a', text: 'Phân phối bình quân cào bằng theo đầu người' },
-                            { id: 'b', text: 'Phân phối theo kết quả lao động và hiệu quả kinh tế' },
-                            { id: 'c', text: 'Phân phối theo quyền lực và chức vụ công tác' },
-                            { id: 'd', text: 'Chỉ phân phối theo mức vốn góp của từng cá nhân' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 165: Phân phối kết quả làm ra (đầu ra) chủ yếu theo kết quả lao động, hiệu quả kinh tế, theo mức đóng góp vốn cùng các nguồn lực khác và qua an sinh xã hội.'
-                    },
-                    {
-                        id: 'fq5_2_2',
-                        text: 'Quan điểm nào sau đây thể hiện đúng bản chất của việc gắn tăng trưởng kinh tế với công bằng xã hội ở Việt Nam?',
-                        options: [
-                            { id: 'a', text: 'Chờ nền kinh tế phát triển thật giàu có rồi mới giải quyết công bằng xã hội' },
-                            { id: 'b', text: 'Có thể hy sinh tiến bộ và công bằng xã hội trong ngắn hạn để ưu tiên tăng trưởng GDP' },
-                            { id: 'c', text: 'Thực hiện tiến bộ và công bằng xã hội ngay trong từng bước và từng chính sách phát triển' },
-                            { id: 'd', text: 'Thực hiện phân phối cào bằng bình quân tất cả các nguồn lực của cải' }
-                        ],
-                        correctOptionId: 'c',
-                        rationale: 'Giáo trình trang 166-167: Thực hiện tiến bộ và công bằng xã hội ngay trong từng chính sách, chiến lược; không chờ kinh tế phát triển cao mới làm và càng không hy sinh công bằng xã hội để chạy theo tăng trưởng đơn thuần.'
-                    },
-                    {
-                        id: 'fq5_3_2',
-                        text: 'Một trong những nguyên nhân đòi hỏi phải hoàn thiện thể chế KTTT định hướng XHCN ở Việt Nam là:',
-                        options: [
-                            { id: 'a', text: 'Hệ thống thể chế đã hoàn thiện tuyệt đối không còn kẽ hở' },
-                            { id: 'b', text: 'Thể chế còn chưa đồng bộ, hệ thống thể chế chưa đầy đủ, hiệu lực thực thi chưa cao' },
-                            { id: 'c', text: 'Việt Nam muốn từ bỏ mô hình kinh tế thị trường' },
-                            { id: 'd', text: 'Các nước trên thế giới ép buộc Việt Nam phải thay đổi' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 169-170: Ba lý do khách quan: thể chế còn chưa đồng bộ, hệ thống thể chế chưa đầy đủ, và hệ thống thể chế còn kém hiệu lực, hiệu quả.'
-                    },
-                    {
-                        id: 'fq5_4_2',
-                        text: 'Nội dung nào sau đây là giải pháp quan trọng nhằm hoàn thiện thể chế về sở hữu ở Việt Nam?',
-                        options: [
-                            { id: 'a', text: 'Thể chế hóa đầy đủ quyền tài sản của Nhà nước, tổ chức và cá nhân' },
-                            { id: 'b', text: 'Cấm các doanh nghiệp tư nhân mua bán chuyển nhượng tài sản' },
-                            { id: 'c', text: 'Quốc hữu hóa toàn bộ các doanh nghiệp có vốn đầu tư nước ngoài' },
-                            { id: 'd', text: 'Xóa bỏ việc đăng ký quyền sử dụng đất đai' }
-                        ],
-                        correctOptionId: 'a',
-                        rationale: 'Giáo trình trang 171-172: Thể chế hóa đầy đủ quyền tài sản (sở hữu, sử dụng, định đoạt, hưởng lợi); hoàn thiện pháp luật đất đai, tài nguyên, sở hữu trí tuệ.'
-                    }
-                ]
-            },
-            'M5-FQ3': {
-                title: 'Kiểm tra nhanh — Bài 5.5 & 5.6: Lợi ích kinh tế & Vai trò của Nhà nước',
-                passingScore: 75,
-                questions: [
-                    {
-                        id: 'fq5_1_3',
-                        text: 'Trong các hình thức lợi ích kinh tế, lợi ích nào là cơ sở, nền tảng của các lợi ích khác?',
-                        options: [
-                            { id: 'a', text: 'Lợi ích nhóm' },
-                            { id: 'b', text: 'Lợi ích cá nhân' },
-                            { id: 'c', text: 'Lợi ích quốc tế' },
-                            { id: 'd', text: 'Lợi ích khu vực' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 183-184: Trong các hình thức lợi ích kinh tế, lợi ích cá nhân là cơ sở, nền tảng của các lợi ích khác vì nhu cầu cơ bản trước hết thuộc về cá nhân và cá nhân cấu thành nên xã hội.'
-                    },
-                    {
-                        id: 'fq5_2_3',
-                        text: 'Hiện tượng "lợi ích nhóm" và "nhóm lợi ích" tiêu cực xuất hiện khi nào?',
-                        options: [
-                            { id: 'a', text: 'Khi các doanh nghiệp liên kết nâng cao chất lượng sản phẩm' },
-                            { id: 'b', text: 'Khi có sự cấu kết với cán bộ thoái hóa biến chất, lạm dụng quyền lực nhà nước để trục lợi phi pháp' },
-                            { id: 'c', text: 'Khi nông dân liên kết với nhà khoa học trong sản xuất lúa gạo' },
-                            { id: 'd', text: 'Khi người lao động tham gia tổ chức công đoàn' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 191: Lợi ích nhóm tiêu cực có sự tham gia của công chức, viên chức lạm dụng quyền lực công quyền để trục lợi, gây tổn hại lợi ích quốc gia và xã hội.'
-                    },
-                    {
-                        id: 'fq5_3_3',
-                        text: 'Để điều hòa mâu thuẫn về lợi ích kinh tế giữa các chủ thể, nguyên tắc giải quyết của Nhà nước là gì?',
-                        options: [
-                            { id: 'a', text: 'Phải dùng biện pháp hành chính cưỡng chế một phía' },
-                            { id: 'b', text: 'Phải có sự tham gia của các bên liên quan, có nhân nhượng và đặt lợi ích đất nước lên trên hết' },
-                            { id: 'c', text: 'Để mặc thị trường tự điều chỉnh không can thiệp' },
-                            { id: 'd', text: 'Luôn ưu tiên tối đa cho lợi ích của người sử dụng lao động' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 197: Nguyên tắc giải quyết mâu thuẫn giữa các lợi ích kinh tế là phải có sự tham gia của các bên liên quan, có nhân nhượng và phải đặt lợi ích đất nước lên trên hết.'
-                    },
-                    {
-                        id: 'fq5_4_3',
-                        text: 'Tổ chức quan trọng nhất đại diện bảo vệ quyền và lợi ích hợp pháp của người lao động ở Việt Nam là:',
-                        options: [
-                            { id: 'a', text: 'Phòng Thương mại và Công nghiệp' },
-                            { id: 'b', text: 'Công đoàn' },
-                            { id: 'c', text: 'Hội Doanh nhân trẻ' },
-                            { id: 'd', text: 'Hiệp hội bất động sản' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 187: Công đoàn là tổ chức quan trọng nhất bảo vệ quyền lợi của người lao động.'
-                    }
-                ]
+            if (count === 6) {
+                const banner = document.getElementById('module-quiz-banner');
+                if (banner) banner.classList.remove('hidden');
             }
-        };
+        }
 
-        /* MODULE 5 QUIZ - 12 MCQs */
-        window.MODULE_QUIZ_M5 = {
-            title: 'Kiểm tra tổng kết Module 5 — KTTT định hướng XHCN & Quan hệ lợi ích',
-            passingScore: 75,
-            achievement: 'socialist-market-expert',
-            questions: [
-                {
-                    id: 'mq5_1',
-                    text: 'Nền kinh tế thị trường định hướng XHCN ở Việt Nam có sự điều tiết của Nhà nước dưới sự lãnh đạo của ai?',
-                    options: [
-                        { id: 'a', text: 'Quỹ Tiền tệ Quốc tế (IMF)' },
-                        { id: 'b', text: 'Đảng Cộng sản Việt Nam' },
-                        { id: 'c', text: 'Các hiệp hội doanh nghiệp lớn' },
-                        { id: 'd', text: 'Ngân hàng Thế giới (WB)' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 153: Nền KTTT định hướng XHCN có sự điều tiết của Nhà nước do Đảng Cộng sản Việt Nam lãnh đạo.'
-                },
-                {
-                    id: 'mq5_2',
-                    text: 'Đâu KHÔNG PHẢI là lý do khách quan phát triển kinh tế thị trường định hướng XHCN ở Việt Nam?',
-                    options: [
-                        { id: 'a', text: 'Phù hợp với xu thế phát triển khách quan của thời đại' },
-                        { id: 'b', text: 'Tính ưu việt của KTTT trong thúc đẩy phân bổ nguồn lực và tăng năng suất' },
-                        { id: 'c', text: 'Phù hợp với khát vọng dân giàu, nước mạnh, dân chủ, công bằng, văn minh của nhân dân' },
-                        { id: 'd', text: 'Nhằm mục đích khôi phục hoàn toàn trật tự bóc lột tư bản chủ nghĩa' }
-                    ],
-                    correctOptionId: 'd',
-                    rationale: 'Giáo trình trang 156-159: Phát triển KTTT là con đường để xây dựng thành công CNXH, không phải để khôi phục bóc lột TBCN.'
-                },
-                {
-                    id: 'mq5_3',
-                    text: 'Về quan hệ sở hữu, nền kinh tế thị trường định hướng XHCN ở Việt Nam có đặc trưng gì?',
-                    options: [
-                        { id: 'a', text: 'Chỉ tồn tại duy nhất một hình thức sở hữu toàn dân' },
-                        { id: 'b', text: 'Có nhiều hình thức sở hữu, nhiều thành phần kinh tế' },
-                        { id: 'c', text: 'Tuyệt đối cấm sở hữu tư nhân về tư liệu sản xuất' },
-                        { id: 'd', text: 'Chỉ có sở hữu của các nhà tư bản nước ngoài' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 162: Là nền kinh tế có nhiều hình thức sở hữu, nhiều thành phần kinh tế bình đẳng, cùng hợp tác và cạnh tranh lành mạnh.'
-                },
-                {
-                    id: 'mq5_4',
-                    text: 'Kinh tế nhà nước đóng vai trò gì trong nền kinh tế thị trường định hướng XHCN ở Việt Nam?',
-                    options: [
-                        { id: 'a', text: 'Động lực quan trọng duy nhất' },
-                        { id: 'b', text: 'Vai trò chủ đạo' },
-                        { id: 'c', text: 'Vai trò hỗ trợ tạm thời' },
-                        { id: 'd', text: 'Độc quyền toàn bộ mọi ngành sản xuất' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 162-163: Kinh tế nhà nước giữ vai trò chủ đạo, là đòn bẩy thúc đẩy tăng trưởng nhanh, bền vững và điều tiết kinh tế vĩ mô.'
-                },
-                {
-                    id: 'mq5_5',
-                    text: 'Điểm khác biệt căn bản về mục tiêu giữa KTTT định hướng XHCN với KTTT tư bản chủ nghĩa là:',
-                    options: [
-                        { id: 'a', text: 'KTTT tư bản chủ nghĩa vì sự giàu có của toàn dân' },
-                        { id: 'b', text: 'KTTT định hướng XHCN nhằm xây dựng CSVC-KT cho CNXH, vì mục tiêu "dân giàu, nước mạnh, dân chủ, công bằng, văn minh"' },
-                        { id: 'c', text: 'KTTT định hướng XHCN không cần tăng trưởng kinh tế' },
-                        { id: 'd', text: 'KTTT tư bản chủ nghĩa không quan tâm tới lợi nhuận' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 160: KTTT định hướng XHCN lấy mục tiêu phục vụ lợi ích nhân dân, dân giàu nước mạnh làm mục đích cao nhất.'
-                },
-                {
-                    id: 'mq5_6',
-                    text: 'Nguyên tắc phân phối đầu ra nào phản ánh rõ nét nhất định hướng xã hội chủ nghĩa ở Việt Nam?',
-                    options: [
-                        { id: 'a', text: 'Phân phối theo nhu cầu sinh hoạt không cần lao động' },
-                        { id: 'b', text: 'Phân phối theo kết quả lao động, hiệu quả kinh tế và qua hệ thống an sinh xã hội, phúc lợi xã hội' },
-                        { id: 'c', text: 'Phân phối theo số lượng cổ phần chiếm giữ' },
-                        { id: 'd', text: 'Phân phối theo thâm niên gia tộc' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 165-166: Phân phối theo lao động, hiệu quả kinh tế và phúc lợi xã hội phản ánh định hướng xã hội chủ nghĩa của nền kinh tế thị trường.'
-                },
-                {
-                    id: 'mq5_7',
-                    text: 'Khái niệm "Thể chế kinh tế thị trường định hướng XHCN" bao hàm những yếu tố cơ bản nào?',
-                    options: [
-                        { id: 'a', text: 'Chỉ gồm các quyết định xử phạt hành chính' },
-                        { id: 'b', text: 'Hệ thống đường lối, luật pháp, chính sách và cơ chế vận hành điều chỉnh các quan hệ lợi ích' },
-                        { id: 'c', text: 'Chỉ gồm điều lệ của các doanh nghiệp tư nhân' },
-                        { id: 'd', text: 'Chỉ gồm các hiệp định thương mại song phương' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 168-169: Thể chế KTTT định hướng XHCN là hệ thống đường lối, luật pháp, chính sách quy định cơ chế vận hành, điều chỉnh hành vi và quan hệ lợi ích.'
-                },
-                {
-                    id: 'mq5_8',
-                    text: 'Nội dung cốt lõi của việc hoàn thiện thể chế về sở hữu tại Việt Nam hiện nay là gì?',
-                    options: [
-                        { id: 'a', text: 'Thể chế hóa đầy đủ quyền tài sản, hoàn thiện pháp luật về đất đai và sở hữu trí tuệ' },
-                        { id: 'b', text: 'Tịch thu toàn bộ tài sản tư nhân đưa vào quốc doanh' },
-                        { id: 'c', text: 'Tư nhân hóa hoàn toàn đất đai thành sở hữu tư nhân tuyệt đối' },
-                        { id: 'd', text: 'Xóa bỏ tư bản có vốn đầu tư nước ngoài' }
-                    ],
-                    correctOptionId: 'a',
-                    rationale: 'Giáo trình trang 171-172: Trọng tâm là thể chế hóa quyền tài sản (sở hữu, sử dụng, định đoạt, hưởng lợi), hoàn thiện pháp luật đất đai, tài nguyên, sở hữu trí tuệ.'
-                },
-                {
-                    id: 'mq5_9',
-                    text: 'Lợi ích kinh tế được C. Mác và Ph. Ăngghen khẳng định có vai trò gì trong lịch sử?',
-                    options: [
-                        { id: 'a', text: 'Chỉ là hiện tượng phụ họa không đáng kể' },
-                        { id: 'b', text: 'Mọi vận động của lịch sử, dù dưới hình thức nào, xét đến cùng đều xoay quanh vấn đề lợi ích kinh tế' },
-                        { id: 'c', text: 'Lợi ích kinh tế chỉ có ý nghĩa trong xã hội cộng sản nguyên thủy' },
-                        { id: 'd', text: 'Lợi ích tinh thần luôn quyết định tuyệt đối trong mọi tình huống' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 180 trích dẫn C. Mác và Ph. Ăngghen: Động lực của toàn bộ lịch sử chính là cuộc đấu tranh của các giai cấp và xung đột về lợi ích kinh tế.'
-                },
-                {
-                    id: 'mq5_10',
-                    text: 'Tại sao việc theo đuổi lợi ích cá nhân chính đáng lại được coi là động lực phát triển kinh tế?',
-                    options: [
-                        { id: 'a', text: 'Vì vì lợi ích chính đáng, người lao động tích cực nâng cao tay nghề, doanh nghiệp cải tiến kỹ thuật hạ giá thành' },
-                        { id: 'b', text: 'Vì lợi ích cá nhân sẽ triệt tiêu hoàn toàn sự cạnh tranh' },
-                        { id: 'c', text: 'Vì Nhà nước không cần phải thu thuế nữa' },
-                        { id: 'd', text: 'Vì lợi ích cá nhân luôn tự động triệt tiêu nạn hàng giả hàng nhái' }
-                    ],
-                    correctOptionId: 'a',
-                    rationale: 'Giáo trình trang 179-180: Theo đuổi lợi ích chính đáng, người lao động tích cực sản xuất, chủ doanh nghiệp nâng cao chất lượng sản phẩm, thúc đẩy LLSX phát triển.'
-                },
-                {
-                    id: 'mq5_11',
-                    text: 'Mô hình liên kết "4 nhà" trong nông nghiệp (Nhà nông – Nhà doanh nghiệp – Nhà khoa học – Nhà nước) là ví dụ điển hình của loại lợi ích nào?',
-                    options: [
-                        { id: 'a', text: 'Nhóm lợi ích tiêu cực thao túng chính sách' },
-                        { id: 'b', text: 'Nhóm lợi ích tích cực, phù hợp với lợi ích quốc gia' },
-                        { id: 'c', text: 'Độc quyền tư nhân lũng đoạn' },
-                        { id: 'd', text: 'Quan hệ bóc lột phong kiến' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 190: Mô hình liên kết 4 nhà là ví dụ về "nhóm lợi ích" tích cực, liên kết hành động để nâng cao hiệu quả sản xuất, cần được tôn trọng và tạo điều kiện.'
-                },
-                {
-                    id: 'mq5_12',
-                    text: 'Để ngăn ngừa những quan hệ lợi ích tiêu cực, Hội nghị Trung ương 4 khóa XII chỉ đạo cần tập trung xóa bỏ điều gì?',
-                    options: [
-                        { id: 'a', text: 'Cơ chế thị trường tự do' },
-                        { id: 'b', text: 'Cơ chế "xin - cho", "duyệt - cấp", ngăn chặn "lợi ích nhóm" và "sân sau"' },
-                        { id: 'c', text: 'Xóa bỏ hợp đồng lao động' },
-                        { id: 'd', text: 'Xóa bỏ việc giám sát tài chính cán bộ công chức' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 196 (Hộp 5.4): Rà soát hoàn thiện quy định, bảo đảm công khai minh bạch, góp phần xóa bỏ cơ chế "xin - cho", "duyệt - cấp", đẩy lùi "sân sau", tham nhũng.'
-                }
-            ]
-        };
+        function toggleReflection(btn) {
+            const answer = btn.nextElementSibling;
+            if (answer) {
+                answer.classList.toggle('open');
+                const icon = btn.querySelector('.material-symbols-outlined');
+                if (icon) icon.textContent = answer.classList.contains('open') ? 'expand_less' : 'expand_more';
+            }
+        }
+
+        // QUIZ DATA
+        const FORMATIVE_QUIZZES = {
+  "M5-FQ1": {
+    "id": "M5-FQ1",
+    "title": "Trắc nghiệm nhanh: Đại hội IV & Các bước đột phá đổi mới",
+    "passingScore": 75,
+    "questions": [
+      {
+        "id": "fq5_1",
+        "text": "Kỳ họp thứ nhất Quốc hội khóa VI (7/1976) đã quyết định đổi tên nước ta thành gì?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Việt Nam Dân chủ Cộng hòa"
+          },
+          {
+            "id": "b",
+            "text": "Cộng hòa Xã hội Chủ nghĩa Việt Nam"
+          },
+          {
+            "id": "c",
+            "text": "Liên bang Đông Dương"
+          },
+          {
+            "id": "d",
+            "text": "Cộng hòa Miền Nam Việt Nam"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Tháng 7/1976, Quốc hội thống nhất quyết định đổi tên nước thành Cộng hòa Xã hội Chủ nghĩa Việt Nam."
+      },
+      {
+        "id": "fq5_2",
+        "text": "Chỉ thị số 100-CT/TW (Khoán 100) ban hành tháng 1/1981 áp dụng đột phá trong lĩnh vực nào?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nông nghiệp (khoán sản phẩm đến nhóm và người lao động)"
+          },
+          {
+            "id": "b",
+            "text": "Công nghiệp nặng"
+          },
+          {
+            "id": "c",
+            "text": "Tài chính ngân hàng"
+          },
+          {
+            "id": "d",
+            "text": "Giao thông vận tải"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "Chỉ thị 100 mở rộng khoán sản phẩm đến người lao động trong hợp tác xã nông nghiệp."
+      },
+      {
+        "id": "fq5_3",
+        "text": "Phương châm hành động mang tính bước ngoặt của Đại hội lần thứ VI (12/1986) là gì?",
+        "options": [
+          {
+            "id": "a",
+            "text": "\"Tiến nhanh, tiến mạnh, tiến vững chắc lên CNXH\""
+          },
+          {
+            "id": "b",
+            "text": "\"Nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật\""
+          },
+          {
+            "id": "c",
+            "text": "\"Đánh nhanh, thắng nhanh\""
+          },
+          {
+            "id": "d",
+            "text": "\"Dĩ bất biến, ứng vạn biến\""
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Phương châm nổi tiếng của Đại hội VI: Nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật."
+      }
+    ]
+  }
+};
+        const MODULE_QUIZ = {
+  "id": "MODULE_QUIZ_M5",
+  "title": "Kiểm tra Tổng kết Chương 5: Xây dựng CNXH & Bước ngoặt Đổi mới (1975 - 1996)",
+  "passingScore": 70,
+  "achievement": "m5-reformer",
+  "questions": [
+    {
+      "id": "mq5_1",
+      "text": "Ai được Đại hội lần thứ VI (12/1986) bầu làm Tổng Bí thư của Đảng, người tiên phong khởi xướng công cuộc Đổi mới?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lê Duẩn"
+        },
+        {
+          "id": "b",
+          "text": "Nguyễn Văn Linh"
+        },
+        {
+          "id": "c",
+          "text": "Trường Chinh"
+        },
+        {
+          "id": "d",
+          "text": "Đỗ Mười"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Đồng chí Nguyễn Văn Linh được bầu làm Tổng Bí thư tại Đại hội VI (1986)."
+    },
+    {
+      "id": "mq5_2",
+      "text": "Ba chương trình kinh tế lớn được Đại hội VI (1986) xác định là gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lương thực - thực phẩm, Hàng tiêu dùng và Hàng xuất khẩu"
+        },
+        {
+          "id": "b",
+          "text": "Công nghiệp nặng, Giao thông và Hóa chất"
+        },
+        {
+          "id": "c",
+          "text": "Điện lực, Than đá và Cơ khí"
+        },
+        {
+          "id": "d",
+          "text": "Xây dựng, Bất động sản và Dịch vụ"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Đại hội VI tập trung vào 3 chương trình: Lương thực - thực phẩm, Hàng tiêu dùng và Hàng xuất khẩu."
+    },
+    {
+      "id": "mq5_3",
+      "text": "Tại Đại hội VII (1991), Đảng ta khẳng định nền tảng tư tưởng và kim chỉ nam cho hành động là gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chủ nghĩa Mác - Lênin và Tư tưởng Hồ Chí Minh"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ có chủ nghĩa Mác - Lênin"
+        },
+        {
+          "id": "c",
+          "text": "Nho giáo và Phật giáo"
+        },
+        {
+          "id": "d",
+          "text": "Tư tưởng cải cách phương Tây"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Đại hội VII chính thức ghi nhận: Chủ nghĩa Mác - Lênin và Tư tưởng Hồ Chí Minh là nền tảng tư tưởng của Đảng."
+    },
+    {
+      "id": "mq5_4",
+      "text": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH được thông qua tại Đại hội nào?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đại hội VI (1986)"
+        },
+        {
+          "id": "b",
+          "text": "Đại hội VII (1991)"
+        },
+        {
+          "id": "c",
+          "text": "Đại hội V (1982)"
+        },
+        {
+          "id": "d",
+          "text": "Đại hội IV (1976)"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Cương lĩnh 1991 được Đại hội VII thông qua vào tháng 6/1991."
+    },
+    {
+      "id": "mq5_5",
+      "text": "Việt Nam chính thức gia nhập Hiệp hội các quốc gia Đông Nam Á (ASEAN) vào thời gian nào?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tháng 7/1995"
+        },
+        {
+          "id": "b",
+          "text": "Tháng 12/1986"
+        },
+        {
+          "id": "c",
+          "text": "Tháng 1/2007"
+        },
+        {
+          "id": "d",
+          "text": "Tháng 9/1991"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Việt Nam gia nhập ASEAN ngày 28/7/1995."
+    },
+    {
+      "id": "mq5_6",
+      "text": "Kết luận quan trọng của Đại hội VIII (1996) đối với tình hình kinh tế - xã hội nước ta là gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nước ta đã hoàn thành xong thời kỳ quá độ"
+        },
+        {
+          "id": "b",
+          "text": "Nước ta đã cơ bản thoát khỏi khủng hoảng kinh tế - xã hội"
+        },
+        {
+          "id": "c",
+          "text": "Nước ta đã trở thành nước công nghiệp phát triển"
+        },
+        {
+          "id": "d",
+          "text": "Khủng hoảng kinh tế tiếp tục trầm trọng hơn"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Đại hội VIII khẳng định nước ta đã cơ bản thoát khỏi khủng hoảng kinh tế - xã hội kéo dài hơn 15 năm."
+    }
+  ]
+};
+        const ACHIEVEMENT = {"id":"m5-reformer","name":"Nhà Đổi Mới Toàn Diện","desc":"Đạt kết quả xuất sắc bài thi tổng kết Chương 5 VNR202!"};
 
         let currentQuizData = null;
         let currentQuizAnswers = {};
-        let currentQuizSubmitted = false;
 
         function openFormativeQuiz(id) {
-            const q = window.FORMATIVE_QUIZZES_M5[id];
-            if (!q) return;
-            currentQuizData = { ...q, id };
-            currentQuizAnswers = {};
-            currentQuizSubmitted = false;
-            renderQuizModal(q);
-            document.getElementById('quiz-modal').classList.remove('hidden');
+            const q = FORMATIVE_QUIZZES[id] || FORMATIVE_QUIZZES['M5-FQ1'];
+            if (q) renderQuizModal(q);
         }
 
         function openModuleQuiz() {
-            currentQuizData = window.MODULE_QUIZ_M5;
-            currentQuizAnswers = {};
-            currentQuizSubmitted = false;
-            renderQuizModal(window.MODULE_QUIZ_M5);
-            document.getElementById('quiz-modal').classList.remove('hidden');
+            renderQuizModal(MODULE_QUIZ);
         }
 
         function renderQuizModal(quiz) {
+            currentQuizData = quiz;
+            currentQuizAnswers = {};
             document.getElementById('quiz-modal-title').textContent = quiz.title;
-            document.getElementById('quiz-modal-sub').textContent = 'Cần đạt ' + quiz.passingScore + '% • ' + quiz.questions.length + ' câu hỏi chuẩn giáo trình';
+            document.getElementById('quiz-modal-sub').textContent = 'Cần đạt ' + quiz.passingScore + '% • ' + quiz.questions.length + ' câu hỏi trắc nghiệm';
             let h = '<div class="space-y-6">';
             quiz.questions.forEach((q, i) => {
-                h += `<div class="quiz-question" data-qid="${q.id}">
-                    <p class="font-medium text-sm mb-3">${i + 1}. ${q.text}</p>
-                    <div class="space-y-2">`;
+                h += '<div class="quiz-question" data-qid="' + q.id + '">' +
+                    '<p class="font-medium text-sm mb-3">' + (i + 1) + '. ' + q.text + '</p>' +
+                    '<div class="space-y-2">';
                 q.options.forEach(o => {
-                    h += `<label class="quiz-option flex items-start gap-3 p-3 rounded-xl border border-white/10 cursor-pointer hover:border-philo-gold/50 hover:bg-white/5 transition-all">
-                        <input type="radio" name="q_${q.id}" value="${o.id}" onclick="selectAnswer('${q.id}','${o.id}')" class="mt-0.5 flex-shrink-0 text-philo-gold focus:ring-philo-gold">
-                        <span class="text-xs md:text-sm text-philo-ivory/90">${o.text}</span>
-                    </label>`;
+                    h += '<label class="quiz-option flex items-start gap-3 p-3 rounded-xl border border-white/10 cursor-pointer hover:border-philo-gold/50 hover:bg-white/5 transition-all">' +
+                        '<input type="radio" name="q_' + q.id + '" value="' + o.id + '" onclick="selectAnswer(\'' + q.id + '\',\'' + o.id + '\')" class="mt-0.5 flex-shrink-0 text-philo-gold focus:ring-philo-gold">' +
+                        '<span class="text-xs md:text-sm text-philo-ivory/90">' + o.text + '</span>' +
+                    '</label>';
                 });
-                h += `</div></div>`;
+                h += '</div></div>';
             });
-            h += `</div>
-            <div class="mt-6 flex justify-end gap-3 pt-4 border-t border-white/10">
-                <button onclick="closeQuizModal()" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5">Đóng</button>
-                <button onclick="submitQuiz()" id="btn-submit-quiz" class="bg-white/10 text-white/40 font-bold px-8 py-2.5 rounded-xl cursor-not-allowed text-xs" data-ready="false">Nộp bài</button>
-            </div>`;
+            h += '</div>' +
+            '<div class="mt-6 flex justify-end gap-3 pt-4 border-t border-white/10">' +
+                '<button onclick="closeQuizModal()" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5">Đóng</button>' +
+                '<button onclick="submitQuiz()" id="btn-submit-quiz" class="bg-white/10 text-white/40 font-bold px-8 py-2.5 rounded-xl cursor-not-allowed text-xs" data-ready="false">Nộp bài</button>' +
+            '</div>';
             document.getElementById('quiz-modal-body').innerHTML = h;
+            document.getElementById('quiz-modal').classList.remove('hidden');
         }
 
         function selectAnswer(q, o) {
@@ -1162,15 +997,13 @@
         function submitQuiz() {
             const b = document.getElementById('btn-submit-quiz');
             if (b && b.getAttribute('data-ready') !== 'true') return;
-            if (currentQuizSubmitted) return;
-            currentQuizSubmitted = true;
             const quiz = currentQuizData;
             let correct = 0;
 
             quiz.questions.forEach(q => {
                 const u = currentQuizAnswers[q.id], ok = u === q.correctOptionId;
                 if (ok) correct++;
-                const qEl = document.querySelector(`[data-qid="${q.id}"]`);
+                const qEl = document.querySelector('[data-qid="' + q.id + '"]');
                 if (!qEl) return;
                 qEl.querySelectorAll('.quiz-option').forEach(l => {
                     const r = l.querySelector('input');
@@ -1184,20 +1017,20 @@
                 });
                 const re = document.createElement('div');
                 re.className = 'mt-2 p-3 bg-philo-gold/10 border border-philo-gold/20 rounded-lg text-xs';
-                re.innerHTML = '<strong class="text-philo-gold">📖 Trích dẫn Giáo trình 2021:</strong> ' + q.rationale;
+                re.innerHTML = '<strong class="text-philo-gold">📖 Trích dẫn Giáo trình VNR202:</strong> ' + q.rationale;
                 qEl.appendChild(re);
             });
 
             const score = Math.round((correct / quiz.questions.length) * 100);
             const passed = score >= quiz.passingScore;
-            M5_STATE.quizResults[quiz.id || 'module_quiz'] = { score, correct, total: quiz.questions.length, passed, timestamp: Date.now() };
-            saveM5State();
+            M_STATE.quizResults[quiz.id || 'module_quiz'] = { score, correct, total: quiz.questions.length, passed, timestamp: Date.now() };
+            saveMState();
 
-            const rh = `<div class="mb-6 p-4 rounded-2xl text-center border ${passed ? 'bg-emerald-950/30 border-emerald-500/50' : 'bg-red-950/30 border-red-500/50'}">
-                <p class="text-3xl mb-1">${passed ? '🎉' : '📚'}</p>
-                <p class="text-xl font-bold ${passed ? 'text-emerald-400' : 'text-red-400'}">${score}% (${correct}/${quiz.questions.length} câu đúng)</p>
-                <p class="text-xs mt-1 ${passed ? 'text-emerald-400' : 'text-red-400'}">${passed ? '✅ Đạt yêu cầu chuẩn kiến thức!' : '❌ Chưa đạt (Yêu cầu ' + quiz.passingScore + '%). Hãy xem lại giải thích và thử lại!'}</p>
-            </div>`;
+            const rh = '<div class="mb-6 p-4 rounded-2xl text-center border ' + (passed ? 'bg-emerald-950/30 border-emerald-500/50' : 'bg-red-950/30 border-red-500/50') + '">' +
+                '<p class="text-3xl mb-1">' + (passed ? '🎉' : '📚') + '</p>' +
+                '<p class="text-xl font-bold ' + (passed ? 'text-emerald-400' : 'text-red-400') + '">' + score + '% (' + correct + '/' + quiz.questions.length + ' câu đúng)</p>' +
+                '<p class="text-xs mt-1 ' + (passed ? 'text-emerald-400' : 'text-red-400') + '">' + (passed ? '✅ Đạt yêu cầu kiến thức Chương 5!' : '❌ Chưa đạt (Yêu cầu ' + quiz.passingScore + '%). Hãy xem lại giải thích và thử lại!') + '</p>' +
+            '</div>';
             document.getElementById('quiz-modal-body').insertAdjacentHTML('afterbegin', rh);
 
             b.textContent = passed ? 'Hoàn tất ✓' : 'Làm lại';
@@ -1206,8 +1039,8 @@
                 setTimeout(() => openModuleQuiz(), 300);
             };
 
-            if (passed && quiz.achievement) {
-                showAchievement(quiz.achievement);
+            if (passed && ACHIEVEMENT) {
+                showAchievement(ACHIEVEMENT.name, ACHIEVEMENT.desc);
             }
         }
 
@@ -1215,17 +1048,10 @@
             document.getElementById('quiz-modal').classList.add('hidden');
         }
 
-        const M5_ACHIEVEMENTS = {
-            'socialist-market-expert': { name: 'Chuyên Gia KTTT Định Hướng XHCN', icon: '🇻🇳', desc: 'Đạt ≥75% bài kiểm tra tổng kết Chương 5 — +15 XP' }
-        };
-
-        function showAchievement(slug) {
-            const a = M5_ACHIEVEMENTS[slug];
-            if (!a) return;
-            document.getElementById('achievement-icon').textContent = a.icon;
-            document.getElementById('achievement-name').textContent = a.name;
-            document.getElementById('achievement-desc').textContent = a.desc;
+        function showAchievement(name, desc) {
             const t = document.getElementById('achievement-toast');
+            document.getElementById('achievement-name').textContent = name;
+            document.getElementById('achievement-desc').textContent = desc;
             t.classList.remove('hidden');
             setTimeout(() => t.classList.add('hidden'), 4000);
         }
@@ -1238,23 +1064,33 @@
             else p.classList.add('hidden-panel');
         }
 
-        const AI_M5 = {
-            'định nghĩa': { answer: 'KTTT định hướng XHCN là nền kinh tế vận hành theo các quy luật của thị trường, đồng thời góp phần hướng tới từng bước xác lập một xã hội dân giàu, nước mạnh, dân chủ, công bằng, văn minh; có sự điều tiết của Nhà nước do ĐCSVN lãnh đạo.', sourceRef: 'Chương 5, Mục I.1 — Giáo trình KTCT 2021 (tr. 153)' },
-            'chủ đạo': { answer: 'Kinh tế nhà nước giữ vai trò chủ đạo, là lực lượng vật chất quan trọng để Nhà nước ổn định kinh tế vĩ mô, điều tiết thị trường, mở đường dẫn dắt các thành phần kinh tế khác cùng phát triển.', sourceRef: 'Chương 5, Mục I.3.b — Giáo trình KTCT 2021 (tr. 162-163)' },
-            'động lực': { answer: 'Kinh tế tư nhân là một động lực quan trọng của nền kinh tế. Nhà nước khuyến khích hình thành các tập đoàn kinh tế tư nhân mạnh, có công nghệ cao và năng lực quản trị tiên tiến.', sourceRef: 'Chương 5, Mục I.3.b & II.2.a — Giáo trình KTCT 2021 (tr. 162, 174)' },
-            'phân phối': { answer: 'Quan hệ phân phối kết quả đầu ra chủ yếu theo kết quả lao động và hiệu quả kinh tế, theo mức đóng góp vốn và các nguồn lực khác, và qua hệ thống an sinh xã hội, phúc lợi xã hội.', sourceRef: 'Chương 5, Mục I.3.d — Giáo trình KTCT 2021 (tr. 165-166)' },
-            'công bằng xã hội': { answer: 'Việt Nam thực hiện tiến bộ và công bằng xã hội ngay trong từng bước và từng chính sách phát triển; không chờ kinh tế phát triển cao mới làm; và tuyệt đối không hy sinh tiến bộ và công bằng xã hội để chạy theo tăng trưởng kinh tế đơn thuần.', sourceRef: 'Chương 5, Mục I.3.đ — Giáo trình KTCT 2021 (tr. 166-167)' },
-            'nhóm lợi ích': { answer: 'Lợi ích cá nhân là cơ sở của các lợi ích khác. Nhóm lợi ích tích cực (như liên kết 4 nhà) cần được bảo vệ; nhóm lợi ích tiêu cực móc nối với cơ quan công quyền để trục lợi bất chính thì phải kiên quyết ngăn chặn và xóa bỏ cơ chế "xin - cho".', sourceRef: 'Chương 5, Mục III.1 & III.2 — Giáo trình KTCT 2021 (tr. 190-196)' }
-        };
+        const AI_RESPONSES = {
+  "đại hội vi": {
+    "answer": "Đại hội VI (12/1986) do Tổng Bí thư Nguyễn Văn Linh chủ trì đã khởi xướng đường lối Đổi mới toàn diện: đổi mới kinh tế làm trọng tâm, nhìn thẳng vào sự thật, phát triển kinh tế nhiều thành phần và thực hiện 3 chương trình kinh tế lớn.",
+    "sourceRef": "Giáo trình VNR202 — Chương 3, Mục I.2"
+  },
+  "khoán": {
+    "answer": "Khoán 100 (1981) và Nghị quyết 10 - Khoán 10 (1988) là các bước đột phá mang tính cách mạng trong nông nghiệp: công nhận hộ nông dân là đơn vị kinh tế tự chủ, gắn kết quả với lợi ích, đưa Việt Nam từ thiếu ăn thành nước xuất khẩu gạo.",
+    "sourceRef": "Giáo trình VNR202 — Chương 3, Mục I.1 & I.2"
+  },
+  "cương lĩnh 1991": {
+    "answer": "Cương lĩnh 1991 thông qua tại Đại hội VII khẳng định Chủ nghĩa Mác - Lênin và Tư tưởng Hồ Chí Minh là nền tảng tư tưởng, xác định 6 đặc trưng của CNXH và đường lối đối ngoại \"Việt Nam muốn là bạn với tất cả các nước\".",
+    "sourceRef": "Giáo trình VNR202 — Chương 3, Mục I.3"
+  },
+  "thoát khủng hoảng": {
+    "answer": "Giai đoạn 1991 - 1996, kinh tế tăng trưởng cao (8,2%/năm), lạm phát giảm từ 774% xuống dưới 5%, phá vỡ thế bao vây cấm vận (gia nhập ASEAN, bình thường hóa với Mỹ). Đại hội VIII (1996) tuyên bố nước ta đã thoát khỏi khủng hoảng.",
+    "sourceRef": "Giáo trình VNR202 — Chương 3, Mục I.4"
+  }
+};
 
         function getAIResponse(q) {
             const l = q.toLowerCase();
-            for (const [k, r] of Object.entries(AI_M5)) {
+            for (const [k, r] of Object.entries(AI_RESPONSES)) {
                 if (l.includes(k)) return r;
             }
             return {
-                answer: 'Module 5 trọng tâm: Khái niệm KTTT định hướng XHCN, tính tất yếu khách quan, vai trò chủ đạo của KT nhà nước, động lực KT tư nhân, các hình thức phân phối, hoàn thiện thể chế KTTT, và phương thức bảo đảm hài hòa các quan hệ lợi ích kinh tế ở Việt Nam. Bạn cần hỏi phần nào?',
-                sourceRef: 'Chương 5 — Giáo trình KTCT Mác - Lênin 2021'
+                answer: 'Trọng tâm Chương 5 VNR202 bám sát giáo trình Lịch sử Đảng: các kỳ Đại hội, đường lối chiến lược, các bước đột phá và bài học lịch sử cốt lõi.',
+                sourceRef: 'Giáo trình Lịch sử Đảng Cộng sản Việt Nam (VNR202) — Chương 5'
             };
         }
 
@@ -1268,40 +1104,23 @@
             if (!q) return;
             i.value = '';
             const h = document.getElementById('ai-chat-history');
-            h.insertAdjacentHTML('beforeend', `<div class="flex justify-end"><div class="bg-philo-gold text-black font-medium rounded-xl p-3 max-w-[85%] text-xs md:text-sm"><p>${q}</p></div></div>`);
+            h.insertAdjacentHTML('beforeend', '<div class="flex justify-end"><div class="bg-philo-gold text-black font-medium rounded-xl p-3 max-w-[85%] text-xs"><p>' + q + '</p></div></div>');
             const lid = 'l' + Date.now();
-            h.insertAdjacentHTML('beforeend', `<div id="${lid}" class="bg-white/5 rounded-xl p-3 text-xs"><p>⏳ Đang tra cứu Giáo trình 2021...</p></div>`);
+            h.insertAdjacentHTML('beforeend', '<div id="' + lid + '" class="bg-white/5 rounded-xl p-3 text-xs"><p>⏳ Đang tra cứu Giáo trình VNR202...</p></div>');
             h.scrollTop = h.scrollHeight;
             setTimeout(() => {
                 const r = getAIResponse(q);
                 const le = document.getElementById(lid);
-                if (le) le.outerHTML = `<div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20 text-xs md:text-sm"><p class="text-xs font-bold text-philo-gold mb-1">🤖 AI Giáo trình MLN131</p><p class="text-philo-ivory/90 leading-relaxed mb-2">${r.answer}</p><p class="text-[10px] text-philo-gold/70 border-t border-white/10 pt-1">📖 <em>${r.sourceRef}</em></p></div>`;
+                if (le) le.outerHTML = '<div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20 text-xs"><p class="text-xs font-bold text-philo-gold mb-1">🤖 AI Giáo trình VNR202</p><p class="text-philo-ivory/90 leading-relaxed mb-2">' + r.answer + '</p><p class="text-[10px] text-philo-gold/70 border-t border-white/10 pt-1">📖 <em>' + r.sourceRef + '</em></p></div>';
                 h.scrollTop = h.scrollHeight;
-            }, 600);
+            }, 500);
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadM5State();
+            loadMState();
             updateProgress();
-            if (M5_STATE.completedLessons.size > 0) {
-                showLesson(M5_LESSONS[Math.min(M5_STATE.completedLessons.size, 5)]);
-            } else {
-                showLesson('M5-L1');
-            }
-            if (M5_STATE.completedLessons.size === 6) {
-                const b = document.getElementById('module-quiz-banner');
-                if (b) b.classList.remove('hidden');
-            }
-            M5_STATE.completedLessons.forEach(id => {
-                const b = document.getElementById('btn-complete-' + id);
-                if (b) {
-                    b.classList.remove('philo-btn-gold');
-                    b.classList.add('bg-emerald-600', 'text-white');
-                    b.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span> Đã hoàn thành ✓';
-                }
-            });
+            showLesson('M5-L1');
         });
     </script>
 </body>
-
 </html>

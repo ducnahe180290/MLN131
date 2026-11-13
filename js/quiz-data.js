@@ -441,7 +441,7 @@ if (typeof window !== 'undefined') {
 // =============================================
 // MODULE 1 — VẬT CHẤT & VẬN ĐỘNG
 // Kiểm tra hình thành (Formative Quizzes)
-// sourceRef: Giáo trình Triết học Mác-Lênin 2021, Chương 2
+// sourceRef: Giáo trình Lịch sử Đảng 2021, Chương 2
 // =============================================
 
 const FORMATIVE_QUIZZES_M1 = {

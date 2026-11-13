@@ -66,21 +66,26 @@
         <!-- Layer 6: Doves -->
         <img src="assets/images/cinematic/hero_doves.png" alt="Chim bồ câu" class="absolute top-1/4 right-1/3 w-[35%] object-contain opacity-80 mix-blend-screen animate-pulse z-20 pointer-events-none" style="animation-duration: 8s; -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 90%); mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 90%);" />
         
+        <!-- Layer 5: Hero Subject Image (Z-10) placed on the right side -->
+        <div class="hidden md:flex absolute right-0 bottom-0 top-0 w-full md:w-[52%] lg:w-[48%] pointer-events-none z-10 items-end justify-end overflow-hidden">
+          <img src="assets/images/cinematic/hero_vnr202_cinematic.png" alt="Chủ tịch Hồ Chí Minh - Lịch sử Đảng Cộng sản Việt Nam" class="h-[95%] max-h-[820px] w-auto max-w-full object-contain object-right-bottom translate-y-4" style="-webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 10%, rgba(0,0,0,0.4) 28%, rgba(0,0,0,1) 55%), linear-gradient(to top, transparent 0%, rgba(0,0,0,1) 12%); -webkit-mask-composite: source-in; mask-composite: intersect;" />
+        </div>
+
         <!-- Dark Gradient behind text for readability -->
-        <div class="absolute inset-0 bg-gradient-to-r from-[#140303] via-[#3A0505]/60 to-transparent z-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#140303] via-[#140303]/95 via-45% md:via-50% to-transparent z-20 pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between relative z-30">
           
           <!-- LEFT CONTENT: Text (50% width) -->
-          <div class="w-full md:w-1/2 flex flex-col items-start gap-6 text-left animate-fade-in-up">
+          <div class="w-full md:w-1/2 lg:w-[52%] max-w-2xl flex flex-col items-start gap-6 text-left animate-fade-in-up">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 border border-[#D9A62E]/50 rounded-full text-xs font-semibold text-[#FFD34E] uppercase tracking-[0.2em] bg-[#140303]/50 backdrop-blur-sm">
               <span class="material-symbols-outlined text-sm">account_balance</span>
               Giáo trình Chuẩn Bộ GD&ĐT • VNR202 (29 Sessions)
             </div>
             
             <h1 class="text-5xl md:text-[68px] lg:text-[76px] font-bold font-heading leading-[1.1] text-[#FFF4DC] drop-shadow-2xl">
-              Kinh Tế <br />
-              <span class="bg-gradient-to-r from-[#FFD34E] to-[#D9A62E] bg-clip-text text-transparent filter drop-shadow-gold">Chính Trị Mác - Lênin</span>
+              Lịch Sử <br />
+              <span class="bg-gradient-to-r from-[#FFD34E] to-[#D9A62E] bg-clip-text text-transparent filter drop-shadow-gold">Đảng Cộng Sản Việt Nam</span>
             </h1>
             
             <p class="text-lg md:text-xl font-heading italic text-[#F5D98A] border-l-2 border-[#FFD34E] pl-4 my-2 opacity-90">
@@ -88,7 +93,7 @@
             </p>
             
             <p class="text-sm md:text-base text-[#FFF4DC]/80 leading-relaxed font-body max-w-lg font-light">
-              Nền tảng học tập tương tác theo 6 chương Kinh tế chính trị Mác - Lênin, với bài học, câu hỏi ôn tập, trò chơi và trợ lý tra cứu AI.
+              Nền tảng học tập tương tác bám sát chương trình Lịch sử Đảng Cộng sản Việt Nam (VNR202), với bài học, câu hỏi ôn tập, trò chơi và trợ lý tra cứu AI.
             </p>
             
             <div class="flex flex-wrap items-center justify-start gap-4 mt-4">
@@ -97,7 +102,7 @@
                 <span class="material-symbols-outlined text-base font-bold">arrow_forward</span>
               </a>
               <a href="ai-assistants.html" class="bg-[#3A0505]/40 backdrop-blur-md border border-[#FFD34E]/50 text-[#FFD34E] font-medium rounded-full px-6 py-3.5 hover:bg-[#FFD34E]/10 hover:border-[#FFD34E] transition-all duration-300 flex items-center justify-center gap-2 text-sm">
-                Hỏi Đáp AI MLN131
+                Hỏi Đáp AI VNR202
                 <span class="material-symbols-outlined text-base">auto_awesome</span>
               </a>
             </div>
@@ -113,11 +118,7 @@
             </div>
           </div>
           
-          <!-- RIGHT CONTENT: Subject Layer (55% width) -->
-          <div class="hidden md:flex w-6/12 absolute right-0 bottom-0 top-0 pointer-events-none z-30 items-end justify-end">
-            <!-- Fade the edges of the subject using radial mask-image -->
-            <img src="assets/images/cinematic/hero_marx_lenin_cinematic.png" alt="C. Mác và Ph. Ăngghen sáng lập Kinh tế chính trị Mác" class="h-[105%] max-w-none object-cover translate-y-8" style="-webkit-mask-image: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%); mask-image: radial-gradient(ellipse 65% 65% at 50% 50%, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);" />
-          </div>
+
         </div>
       </section>
 
@@ -135,7 +136,7 @@
           <h2
             class="text-3xl md:text-4xl font-bold font-serif-academy text-philo-ivory"
           >
-            Trích Dẫn Kinh Điển Kinh Tế Chính Trị
+            Trích Dẫn Kinh Điển Lịch Sử Đảng
           </h2>
         </div>
         <div class="max-w-4xl mx-auto text-center">
@@ -145,7 +146,7 @@
                 id="hcm-quote-text"
                 class="text-base md:text-lg font-serif text-philo-ivory leading-relaxed italic text-center transition-opacity duration-300"
               >
-                "Đảng ta là một Đảng cầm quyền. Mỗi đảng viên và cán bộ phải thật sự thấm nhuần đạo đức cách mạng, thật sự cần kiệm liêm chính, chí công vô tư." — Hồ Chí Minh
+                "Đảng ta là một Đảng cầm quyền. Mỗi đảng viên và cán bộ phải thật sự thấm nhuần đạo đức cách mạng, thật sự cần kiệm liêm chính, chí công vô tư." <br><span class="text-xs font-normal text-[#D4A017] not-italic mt-2 inline-block">— Chủ tịch Hồ Chí Minh (Di chúc, 1969)</span>
               </p>
               <div class="absolute bottom-[-10px] right-0">
                 <button
@@ -168,120 +169,118 @@
             class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#D4A017]/10 rounded-full text-xs font-bold text-[#D4A017] uppercase tracking-wider mb-3"
           >
             <span class="material-symbols-outlined text-xs">local_library</span>
-            Trụ Cột Lý Luận
+            Trụ Cột Lãnh Đạo
           </div>
           <h2
             class="text-3xl md:text-4xl font-bold font-serif-academy text-philo-ivory"
           >
-            Những Nhà Kinh Điển &amp; Kinh Tế Học Tiêu Biểu
+            Các Lãnh Tụ Kiệt Xuất &amp; Tổng Bí Thư Tiêu Biểu
           </h2>
           <p
             class="text-xs md:text-sm text-philo-ivory/70 dark:text-slate-400 mt-2 max-w-xl mx-auto"
           >
-            Các lãnh tụ kiệt xuất và Tổng Bí thư của Đảng Cộng sản Việt Nam qua các mốc son lịch sử.
+            Các lãnh tụ kiệt xuất và Tổng Bí thư của Đảng Cộng sản Việt Nam qua các mốc son lịch sử vẻ vang.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Card 1: Karl Marx -->
+          <!-- Card 1: Chủ tịch Hồ Chí Minh -->
           <div class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-6 border border-philo-gold/25 hover-lift flex flex-col justify-between group">
             <div>
               <div class="flex items-center gap-4 mb-5">
                 <div class="size-16 rounded-full overflow-hidden border-2 border-philo-gold/40 group-hover:border-philo-gold transition-colors shrink-0 bg-philo-blackBurgundy flex items-center justify-center shadow-sm">
-                  <img src="assets/images/marx.jpg" alt="Karl Marx" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="assets/images/philosophers/ho-chi-minh.jpg" alt="Chủ tịch Hồ Chí Minh" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
                   <h3 class="text-sm font-bold font-heading text-philo-ivory group-hover:text-philo-gold transition-colors">
-                    Karl Marx (C. Mác)
+                    Hồ Chí Minh
                   </h3>
-                  <span class="text-[10px] text-philo-gold font-medium block">Sáng Lập Học Thuyết GTTD</span>
-                  <span class="text-[9px] text-philo-ivory/60">1818 - 1883</span>
+                  <span class="text-[10px] text-philo-gold font-medium block">Người Sáng Lập &amp; Rèn Luyện Đảng</span>
+                  <span class="text-[9px] text-philo-ivory/60">1890 - 1969</span>
                 </div>
               </div>
               <p class="text-xs italic text-philo-ivory/80 leading-relaxed quote-text font-serif">
-                "Giá trị là lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa."
+                "Đảng ta là đạo đức, là văn minh, là thống nhất, độc lập, là hòa bình, ấm no."
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-philo-gold/20 text-[10px] text-philo-ivory/70">
-              Tác giả bộ <em>Tư bản</em> vĩ đại, phát hiện tính hai mặt của lao động sản xuất hàng hóa và bản chất bóc lột giá trị thặng dư.
+              Chủ trì Hội nghị thành lập Đảng (3/2/1930), soạn thảo Cương lĩnh chính trị đầu tiên đưa cách mạng Việt Nam đi từ thắng lợi này đến thắng lợi khác.
             </div>
           </div>
 
-          <!-- Card 2: Friedrich Engels -->
+          <!-- Card 2: Tổng Bí thư Trường Chinh -->
           <div class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-6 border border-philo-gold/25 hover-lift flex flex-col justify-between group">
             <div>
               <div class="flex items-center gap-4 mb-5">
                 <div class="size-16 rounded-full overflow-hidden border-2 border-philo-gold/40 group-hover:border-philo-gold transition-colors shrink-0 bg-philo-blackBurgundy flex items-center justify-center shadow-sm">
-                  <img src="assets/images/engels.jpg" alt="Friedrich Engels" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="assets/images/philosophers/truong-chinh.jpg" alt="Tổng Bí thư Trường Chinh" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
                   <h3 class="text-sm font-bold font-heading text-philo-ivory group-hover:text-philo-gold transition-colors">
-                    Ph. Ăngghen
+                    Trường Chinh
                   </h3>
-                  <span class="text-[10px] text-philo-gold font-medium block">Đồng Sáng Lập Chủ Nghĩa Mác</span>
-                  <span class="text-[9px] text-philo-ivory/60">1820 - 1895</span>
+                  <span class="text-[10px] text-philo-gold font-medium block">Tổng Bí Thư &amp; Nhà Lý Luận Chiến Lược</span>
+                  <span class="text-[9px] text-philo-ivory/60">1907 - 1988</span>
                 </div>
               </div>
               <p class="text-xs italic text-philo-ivory/80 leading-relaxed quote-text font-serif">
-                "Những quan hệ kinh tế của một xã hội nhất định nào đó biểu hiện trước hết dưới hình thức lợi ích."
+                "Đổi mới là đòi hỏi bức thiết của cuộc sống, đổi mới là mệnh lệnh sống còn của cách mạng."
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-philo-gold/20 text-[10px] text-philo-ivory/70">
-              Đồng sáng lập học thuyết Mác, người có công lao vĩ đại trong việc hiệu chỉnh và công bố các tập tiếp theo của bộ <em>Tư bản</em>.
+              Kiến trúc sư của công cuộc Đổi mới, tác giả tác phẩm <em>Kháng chiến nhất định thắng lợi</em> và khởi xướng đường lối Đổi mới tại Đại hội VI (1986).
             </div>
           </div>
 
-          <!-- Card 3: V.I. Lenin -->
+          <!-- Card 3: Tổng Bí thư Lê Duẩn -->
           <div class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-6 border border-philo-gold/25 hover-lift flex flex-col justify-between group">
             <div>
               <div class="flex items-center gap-4 mb-5">
                 <div class="size-16 rounded-full overflow-hidden border-2 border-philo-gold/40 group-hover:border-philo-gold transition-colors shrink-0 bg-philo-blackBurgundy flex items-center justify-center shadow-sm">
-                  <img src="assets/images/cinematic/hero_golden_light.png" alt="V.I. Lênin" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="assets/images/philosophers/le-duan.jpg" alt="Tổng Bí thư Lê Duẩn" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
                   <h3 class="text-sm font-bold font-heading text-philo-ivory group-hover:text-philo-gold transition-colors">
-                    V.I. Lênin
+                    Lê Duẩn
                   </h3>
-                  <span class="text-[10px] text-philo-gold font-medium block">Lý Luận Độc Quyền &amp; Nhà Nước</span>
-                  <span class="text-[9px] text-philo-ivory/60">1870 - 1924</span>
+                  <span class="text-[10px] text-philo-gold font-medium block">Tổng Bí Thư Kháng Chiến &amp; Thống Nhất</span>
+                  <span class="text-[9px] text-philo-ivory/60">1907 - 1986</span>
                 </div>
               </div>
               <p class="text-xs italic text-philo-ivory/80 leading-relaxed quote-text font-serif">
-                "Chính trị kinh tế học nghiên cứu những quan hệ xã hội giữa người với người trong sản xuất."
+                "Càng thương yêu nhân dân bao nhiêu thì càng phải kiên quyết đánh đuổi đế quốc xâm lược bấy nhiêu."
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-philo-gold/20 text-[10px] text-philo-ivory/70">
-              Phát triển lý luận 5 đặc điểm kinh tế của độc quyền, độc quyền nhà nước và các vấn đề kinh tế thời kỳ quá độ lên CNXH.
+              Tác giả <em>Đề cương cách mạng miền Nam</em> (1956), lãnh đạo Đảng và toàn dân trong suốt 26 năm kháng chiến chống Mỹ và thống nhất non sông.
             </div>
           </div>
 
-          <!-- Card 4: Adam Smith & Cổ Điển Anh -->
+          <!-- Card 4: Đại tướng Võ Nguyên Giáp -->
           <div class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-6 border border-philo-gold/25 hover-lift flex flex-col justify-between group">
             <div>
               <div class="flex items-center gap-4 mb-5">
                 <div class="size-16 rounded-full overflow-hidden border-2 border-philo-gold/40 group-hover:border-philo-gold transition-colors shrink-0 bg-philo-blackBurgundy flex items-center justify-center shadow-sm">
-                  <img src="assets/images/cinematic/historical_texture.png" alt="Adam Smith" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="assets/images/philosophers/vo-nguyen-giap.jpg" alt="Đại tướng Võ Nguyên Giáp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
                   <h3 class="text-sm font-bold font-heading text-philo-ivory group-hover:text-philo-gold transition-colors">
-                    Adam Smith
+                    Võ Nguyên Giáp
                   </h3>
-                  <span class="text-[10px] text-philo-gold font-medium block">Kinh Tế Chính Trị Cổ Điển Anh</span>
-                  <span class="text-[9px] text-slate-400">1723 - 1790</span>
+                  <span class="text-[10px] text-philo-gold font-medium block">Đại Tướng Tổng Tư Lệnh Quân Đội</span>
+                  <span class="text-[9px] text-philo-ivory/60">1911 - 2013</span>
                 </div>
               </div>
-              <p class="text-xs italic text-slate-350 leading-relaxed quote-text font-serif">
-                "Cơ chế thị trường như một 'bàn tay vô hình' có khả năng tự điều chỉnh các quan hệ kinh tế."
+              <p class="text-xs italic text-philo-ivory/80 leading-relaxed quote-text font-serif">
+                "Thần tốc, thần tốc hơn nữa; táo bạo, táo bạo hơn nữa; tranh thủ từng phút, từng giờ xốc tới mặt trận."
               </p>
             </div>
-            <div class="mt-6 pt-4 border-t border-[#D9A62E]/25 text-[10px] text-slate-400">
-              Tác giả <em>Của cải của các quốc gia</em> (1776), đặt nền móng đưa kinh tế chính trị chính thức trở thành môn khoa học độc lập.
+            <div class="mt-6 pt-4 border-t border-[#D9A62E]/25 text-[10px] text-philo-ivory/70">
+              Nhà quân sự kiệt xuất của Đảng, người anh cả của QĐND Việt Nam, chỉ huy trưởng các chiến dịch lịch sử Điện Biên Phủ và Đại thắng mùa Xuân 1975.
             </div>
           </div>
         </div>
       </section>
-          </div>
-        </div>
       </section>
 
       <!-- FEATURE SHOWCASE SECTION -->
@@ -319,7 +318,7 @@
                 <span class="material-symbols-outlined text-blue-500 text-2xl">robot_2</span>
               </div>
               <h3 class="text-base font-bold text-slate-900 dark:text-white font-serif-academy group-hover:text-blue-500 transition-colors">AI Hỏi Đáp 24/7</h3>
-              <p class="text-xs text-philo-ivory/80 leading-relaxed">Tra cứu và giải thích các khái niệm Kinh tế chính trị Mác - Lênin từ dữ liệu học phần.</p>
+              <p class="text-xs text-philo-ivory/80 leading-relaxed">Tra cứu và giải thích các sự kiện, mốc son Lịch sử Đảng Cộng sản Việt Nam từ dữ liệu học phần.</p>
             </a>
 
             <!-- Feature 3 -->
@@ -362,7 +361,7 @@
           <p
             class="text-xs md:text-sm text-philo-ivory/70 dark:text-slate-400 mt-2 max-w-xl mx-auto"
           >
-            6 chương cốt lõi bám sát cấu trúc Giáo trình Kinh tế chính trị Mác - Lênin (Bộ Giáo dục & Đào tạo, NXB Chính trị quốc gia Sự thật 2021).
+            Chương trình học tập bám sát cấu trúc Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục & Đào tạo, NXB Chính trị quốc gia Sự thật).
           </p>
         </div>
 
@@ -371,13 +370,14 @@
           <a href="module1.html" class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-8 border border-[#D9A62E]/25 hover-lift block group relative overflow-hidden">
             <div class="absolute -right-6 -top-6 text-[120px] font-black text-slate-50 dark:text-[#1e293b]/30 z-0 select-none transition-transform group-hover:scale-110">1</div>
             <div class="relative z-10 flex flex-col h-full">
-              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 1</span>
-              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Đối tượng, Phương pháp &amp; Chức năng KTCT</h3>
-              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Khám phá quá trình hình thành kinh tế chính trị, đối tượng nghiên cứu (quan hệ xã hội của sản xuất &amp; trao đổi), phương pháp trừu tượng hóa khoa học và 4 chức năng cốt lõi.</p>
+              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 1 • Sessions 1 - 4</span>
+              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Nhập Môn &amp; Sự Ra Đời Của Đảng (1920 - 1930)</h3>
+              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Đối tượng, phương pháp nghiên cứu Lịch sử Đảng; Phong trào yêu nước, Nguyễn Ái Quốc tìm đường cứu nước; Hội nghị thành lập Đảng (3/2/1930) và Cương lĩnh chính trị đầu tiên.</p>
               <div class="flex items-center justify-between">
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Đối tượng nghiên cứu</span>
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Trừu tượng hóa</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Hội nghị 3/2/1930</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Cương lĩnh chính trị</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Nguyễn Ái Quốc</span>
                 </div>
                 <div class="text-[#D4A017] font-semibold text-xs flex items-center gap-1 shrink-0">Vào học <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
               </div>
@@ -388,13 +388,14 @@
           <a href="module2.html" class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-8 border border-[#D9A62E]/25 hover-lift block group relative overflow-hidden">
             <div class="absolute -right-6 -top-6 text-[120px] font-black text-slate-50 dark:text-[#1e293b]/30 z-0 select-none transition-transform group-hover:scale-110">2</div>
             <div class="relative z-10 flex flex-col h-full">
-              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 2</span>
-              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Hàng Hóa, Thị Trường &amp; Các Chủ Thể</h3>
-              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Lý luận C. Mác về sản xuất hàng hóa, hai thuộc tính hàng hóa, tính hai mặt của lao động sản xuất hàng hóa, tiền tệ và các quy luật kinh tế chủ yếu của thị trường.</p>
+              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 2 • Sessions 5 - 10</span>
+              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Đấu Tranh Giành Chính Quyền &amp; CMT8 (1930 - 1945)</h3>
+              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Phong trào cách mạng 1930-1931, Xô Viết Nghệ Tĩnh; Luận cương 10/1930; Cao trào Dân chủ 1936-1939; Mặt trận Việt Minh và Tổng khởi nghĩa Cách mạng Tháng Tám 1945.</p>
               <div class="flex items-center justify-between">
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Lao động trừu tượng</span>
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Quy luật giá trị</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Xô Viết Nghệ Tĩnh</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Mặt trận Việt Minh</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">CMT8 1945</span>
                 </div>
                 <div class="text-[#D4A017] font-semibold text-xs flex items-center gap-1 shrink-0">Vào học <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
               </div>
@@ -405,13 +406,14 @@
           <a href="module3.html" class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-8 border border-[#D9A62E]/25 hover-lift block group relative overflow-hidden">
             <div class="absolute -right-6 -top-6 text-[120px] font-black text-slate-50 dark:text-[#1e293b]/30 z-0 select-none transition-transform group-hover:scale-110">3</div>
             <div class="relative z-10 flex flex-col h-full">
-              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 3</span>
-              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Giá Trị Thặng Dư Trong Nền Kinh Tế Thị Trường</h3>
-              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Bản chất và nguồn gốc giá trị thặng dư (m), hàng hóa sức lao động, tư bản bất biến (c) và khả biến (v), tích lũy tư bản và các hình thái chuyển hóa: lợi nhuận, lợi tức, địa tô.</p>
+              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 3 • Sessions 11 - 14</span>
+              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Kháng Chiến Chống Thực Dân Pháp (1945 - 1954)</h3>
+              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Bảo vệ chính quyền cách mạng non trẻ 1945-1946; Đường lối toàn quốc kháng chiến; Chiến dịch Việt Bắc 1947, Biên Giới 1950; Đại hội II (1951) và Chiến thắng lịch sử Điện Biên Phủ 1954.</p>
               <div class="flex items-center justify-between">
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">GTTD siêu ngạch</span>
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Cấu tạo hữu cơ c/v</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Toàn quốc kháng chiến</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Đại hội II (1951)</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Điện Biên Phủ</span>
                 </div>
                 <div class="text-[#D4A017] font-semibold text-xs flex items-center gap-1 shrink-0">Vào học <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
               </div>
@@ -422,13 +424,14 @@
           <a href="module4.html" class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-8 border border-[#D9A62E]/25 hover-lift block group relative overflow-hidden">
             <div class="absolute -right-6 -top-6 text-[120px] font-black text-slate-50 dark:text-[#1e293b]/30 z-0 select-none transition-transform group-hover:scale-110">4</div>
             <div class="relative z-10 flex flex-col h-full">
-              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 4</span>
-              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Cạnh Tranh &amp; Độc Quyền Trong KTTT</h3>
-              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Lý luận của V.I. Lênin về 5 đặc điểm kinh tế của độc quyền, độc quyền nhà nước trong CNTB và những biểu hiện mới (Concern, Conglomerate, biên giới mềm) ngày nay.</p>
+              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 4 • Sessions 15 - 18</span>
+              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Kháng Chiến Chống Mỹ Cứu Nước (1954 - 1975)</h3>
+              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Xây dựng CNXH ở miền Bắc; Đường lối cách mạng hai miền; Đánh bại các chiến lược chiến tranh của Mỹ; Đại thắng mùa Xuân 1975 giải phóng miền Nam, thống nhất non sông.</p>
               <div class="flex items-center justify-between">
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">5 đặc điểm Lênin</span>
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Tư bản tài chính</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Đường lối hai miền</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Mùa Xuân 1975</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Thống nhất đất nước</span>
                 </div>
                 <div class="text-[#D4A017] font-semibold text-xs flex items-center gap-1 shrink-0">Vào học <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
               </div>
@@ -439,13 +442,14 @@
           <a href="module5.html" class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-8 border border-[#D9A62E]/25 hover-lift block group relative overflow-hidden">
             <div class="absolute -right-6 -top-6 text-[120px] font-black text-slate-50 dark:text-[#1e293b]/30 z-0 select-none transition-transform group-hover:scale-110">5</div>
             <div class="relative z-10 flex flex-col h-full">
-              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 5</span>
-              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">KTTT Định Hướng XHCN Ở Việt Nam</h3>
-              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Tính tất yếu khách quan, các đặc trưng về mục tiêu, sở hữu, quản lý, phân phối; hoàn thiện thể chế KTTT và các giải pháp bảo đảm hài hòa quan hệ lợi ích kinh tế.</p>
+              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 5 • Sessions 19 - 23</span>
+              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">Xây Dựng CNXH &amp; Bước Ngoặt Đổi Mới (1975 - 1996)</h3>
+              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Khắc phục hậu quả chiến tranh, bảo vệ Tổ quốc; Các bước đột phá tìm tòi đổi mới kinh tế (Chỉ thị 100, Nghị định 25-CP); Đại hội VI (1986) khởi xướng Đổi mới toàn diện và Cương lĩnh 1991.</p>
               <div class="flex items-center justify-between">
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Thể chế kinh tế</span>
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Hài hòa lợi ích</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Đại hội VI (1986)</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Cương lĩnh 1991</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Đổi mới toàn diện</span>
                 </div>
                 <div class="text-[#D4A017] font-semibold text-xs flex items-center gap-1 shrink-0">Vào học <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
               </div>
@@ -456,13 +460,14 @@
           <a href="module6.html" class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl p-8 border border-[#D9A62E]/25 hover-lift block group relative overflow-hidden">
             <div class="absolute -right-6 -top-6 text-[120px] font-black text-slate-50 dark:text-[#1e293b]/30 z-0 select-none transition-transform group-hover:scale-110">6</div>
             <div class="relative z-10 flex flex-col h-full">
-              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 6</span>
-              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">CNH, HĐH &amp; Hội Nhập Kinh Tế Quốc Tế</h3>
-              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Lịch sử các cuộc Cách mạng công nghiệp, thích ứng CMCN 4.0, kinh tế tri thức, tiến trình hội nhập kinh tế quốc tế và chiến lược xây dựng nền kinh tế độc lập tự chủ.</p>
+              <span class="px-2.5 py-1 bg-[#D4A017]/10 rounded text-[#D4A017] text-[10px] font-bold uppercase tracking-wider mb-4 inline-table w-max">Chương 6 • Sessions 24 - 29</span>
+              <h3 class="text-xl font-serif-academy font-bold text-slate-900 dark:text-white group-hover:text-[#D4A017] transition-colors mb-3">CNH, HĐH, Hội Nhập &amp; Xây Dựng Đảng (1996 - Nay)</h3>
+              <p class="text-sm text-philo-ivory/80 leading-relaxed mb-6 flex-grow">Đẩy mạnh công nghiệp hóa, hiện đại hóa và hội nhập quốc tế toàn diện qua các kỳ Đại hội VIII - XIII; Cương lĩnh bổ sung 2011; Công tác xây dựng chỉnh đốn Đảng và bài học kinh nghiệm.</p>
               <div class="flex items-center justify-between">
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">CMCN 4.0</span>
-                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Độc lập tự chủ</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Cương lĩnh 2011</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Đại hội XIII</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-[#D9A62E]/20 text-philo-ivory/80 text-[10px] rounded-full font-medium">Xây dựng chỉnh đốn Đảng</span>
                 </div>
                 <div class="text-[#D4A017] font-semibold text-xs flex items-center gap-1 shrink-0">Vào học <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
               </div>
@@ -492,142 +497,79 @@
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Article 1 -->
-            <article
- class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl overflow-hidden border border-[#D9A62E]/25 hover-lift relative group flex flex-col"
-            >
-              <a
-                href="articles/nguon-goc-kinh-te-chinh-tri.html"
- class="absolute inset-0 z-0"
-              ></a>
-              <div
- class="h-44 relative overflow-hidden z-10 pointer-events-none bg-black/60"
-              >
-                <!-- Placeholder image for now -->
+            <article class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl overflow-hidden border border-[#D9A62E]/25 hover-lift relative group flex flex-col">
+              <a href="articles/nguon-goc-lich-su-dang.html" class="absolute inset-0 z-0"></a>
+              <div class="h-44 relative overflow-hidden z-10 pointer-events-none bg-black/60">
                 <div class="w-full h-full flex items-center justify-center text-slate-400 bg-gradient-to-br from-[#D4A017]/20 to-transparent">
                   <span class="material-symbols-outlined text-5xl">history_edu</span>
                 </div>
-                <span
- class="absolute top-4 left-4 px-2.5 py-1 bg-slate-900/70 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider"
-                  >MLN131</span
-                >
+                <span class="absolute top-4 left-4 px-2.5 py-1 bg-slate-900/70 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider">VNR202</span>
               </div>
-              <div
- class="p-6 flex flex-col justify-between flex-grow z-10 relative pointer-events-none"
-              >
+              <div class="p-6 flex flex-col justify-between flex-grow z-10 relative pointer-events-none">
                 <div>
-                  <h3
- class="text-sm font-bold text-slate-900 dark:text-white leading-snug group-hover:text-[#D4A017] transition-colors line-clamp-2"
-                  >
-                    Nguồn gốc và sự phát triển của Kinh tế chính trị
+                  <h3 class="text-sm font-bold text-slate-900 dark:text-white leading-snug group-hover:text-[#D4A017] transition-colors line-clamp-2">
+                    Cương Lĩnh 1930 & Khát Vọng Độc Lập Dân Tộc
                   </h3>
-                  <p
- class="text-[11px] text-philo-ivory/70 line-clamp-3 leading-relaxed mt-2"
-                  >
-                    Từ các trường phái kinh tế đầu tiên đến Kinh tế chính trị Mác - Lênin.
+                  <p class="text-[11px] text-philo-ivory/70 line-clamp-3 leading-relaxed mt-2">
+                    Sự chuẩn bị toàn diện của Nguyễn Ái Quốc và tính độc lập, sáng tạo của bản Cương lĩnh chính trị đầu tiên ngày 3/2/1930.
                   </p>
                 </div>
-                <div
- class="mt-4 pt-3 border-t border-[#D9A62E]/25 flex items-center justify-between pointer-events-auto"
-                >
-                  <a
-                    href="articles/nguon-goc-kinh-te-chinh-tri.html"
- class="text-[10px] font-bold text-[#D4A017] flex items-center gap-1"
-                    >Đọc Ngay <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a
-                  >
+                <div class="mt-4 pt-3 border-t border-[#D9A62E]/25 flex items-center justify-between pointer-events-auto">
+                  <a href="articles/nguon-goc-lich-su-dang.html" class="text-[10px] font-bold text-[#D4A017] flex items-center gap-1">
+                    Đọc Ngay <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span>
+                  </a>
                 </div>
               </div>
             </article>
 
             <!-- Article 2 -->
-            <article
- class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl overflow-hidden border border-[#D9A62E]/25 hover-lift relative group flex flex-col"
-            >
-              <a
-                href="articles/gia-tri-thang-du-va-ai.html"
- class="absolute inset-0 z-0"
-              ></a>
-              <div
- class="h-44 relative overflow-hidden z-10 pointer-events-none bg-black/60"
-              >
-                <!-- Placeholder image for now -->
+            <article class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl overflow-hidden border border-[#D9A62E]/25 hover-lift relative group flex flex-col">
+              <a href="articles/dien-bien-phu-va-nghe-thuat-quan-su.html" class="absolute inset-0 z-0"></a>
+              <div class="h-44 relative overflow-hidden z-10 pointer-events-none bg-black/60">
                 <div class="w-full h-full flex items-center justify-center text-slate-400 bg-gradient-to-br from-[#D4A017]/20 to-transparent">
-                  <span class="material-symbols-outlined text-5xl">auto_stories</span>
+                  <span class="material-symbols-outlined text-5xl">military_tech</span>
                 </div>
-                <span
- class="absolute top-4 left-4 px-2.5 py-1 bg-slate-900/70 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider"
-                  >MLN131</span
-                >
+                <span class="absolute top-4 left-4 px-2.5 py-1 bg-slate-900/70 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider">VNR202</span>
               </div>
-              <div
- class="p-6 flex flex-col justify-between flex-grow z-10 relative pointer-events-none"
-              >
+              <div class="p-6 flex flex-col justify-between flex-grow z-10 relative pointer-events-none">
                 <div>
-                  <h3
- class="text-sm font-bold text-slate-900 dark:text-white leading-snug group-hover:text-[#D4A017] transition-colors line-clamp-2"
-                  >
-                    Giá trị thặng dư trong kỷ nguyên AI
+                  <h3 class="text-sm font-bold text-slate-900 dark:text-white leading-snug group-hover:text-[#D4A017] transition-colors line-clamp-2">
+                    Nghệ Thuật Quân Sự Từ Điện Biên Phủ Đến Mùa Xuân 1975
                   </h3>
-                  <p
- class="text-[11px] text-philo-ivory/70 line-clamp-3 leading-relaxed mt-2"
-                  >
-                    Vận dụng học thuyết giá trị thặng dư để phân tích máy móc, robot và kinh tế số.
+                  <p class="text-[11px] text-philo-ivory/70 line-clamp-3 leading-relaxed mt-2">
+                    Đỉnh cao nghệ thuật chiến tranh nhân dân, kết hợp 3 mũi giáp công trên 3 vùng chiến lược và tinh thần đại thắng thống nhất non sông.
                   </p>
                 </div>
-                <div
- class="mt-4 pt-3 border-t border-[#D9A62E]/25 flex items-center justify-between pointer-events-auto"
-                >
-                  <a
-                    href="articles/gia-tri-thang-du-va-ai.html"
- class="text-[10px] font-bold text-[#D4A017] flex items-center gap-1"
-                    >Đọc Ngay <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a
-                  >
+                <div class="mt-4 pt-3 border-t border-[#D9A62E]/25 flex items-center justify-between pointer-events-auto">
+                  <a href="articles/dien-bien-phu-va-nghe-thuat-quan-su.html" class="text-[10px] font-bold text-[#D4A017] flex items-center gap-1">
+                    Đọc Ngay <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span>
+                  </a>
                 </div>
               </div>
             </article>
 
             <!-- Article 3 -->
-            <article
- class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl overflow-hidden border border-[#D9A62E]/25 hover-lift relative group flex flex-col"
-            >
-              <a
-                href="articles/kinh-te-thi-truong-dinh-huong-xhcn.html"
- class="absolute inset-0 z-0"
-              ></a>
-              <div
- class="h-44 relative overflow-hidden z-10 pointer-events-none bg-black/60"
-              >
-                <!-- Placeholder image for now -->
+            <article class="bg-[rgba(70,8,8,0.65)] backdrop-blur-md shadow-cinematic rounded-2xl overflow-hidden border border-[#D9A62E]/25 hover-lift relative group flex flex-col">
+              <a href="articles/doi-moi-1986-va-khat-vong-phat-trien.html" class="absolute inset-0 z-0"></a>
+              <div class="h-44 relative overflow-hidden z-10 pointer-events-none bg-black/60">
                 <div class="w-full h-full flex items-center justify-center text-slate-400 bg-gradient-to-br from-[#D4A017]/20 to-transparent">
-                  <span class="material-symbols-outlined text-5xl">flag</span>
+                  <span class="material-symbols-outlined text-5xl">trending_up</span>
                 </div>
-                <span
- class="absolute top-4 left-4 px-2.5 py-1 bg-slate-900/70 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider"
-                  >MLN131</span
-                >
+                <span class="absolute top-4 left-4 px-2.5 py-1 bg-slate-900/70 backdrop-blur-md rounded text-white text-[9px] font-bold uppercase tracking-wider">VNR202</span>
               </div>
-              <div
- class="p-6 flex flex-col justify-between flex-grow z-10 relative pointer-events-none"
-              >
+              <div class="p-6 flex flex-col justify-between flex-grow z-10 relative pointer-events-none">
                 <div>
-                  <h3
- class="text-sm font-bold text-slate-900 dark:text-white leading-snug group-hover:text-[#D4A017] transition-colors line-clamp-2"
-                  >
-                    Kinh tế thị trường định hướng xã hội chủ nghĩa
+                  <h3 class="text-sm font-bold text-slate-900 dark:text-white leading-snug group-hover:text-[#D4A017] transition-colors line-clamp-2">
+                    Đại Hội VI (1986) & Bước Ngoặt Đổi Mới Toàn Diện
                   </h3>
-                  <p
- class="text-[11px] text-philo-ivory/70 line-clamp-3 leading-relaxed mt-2"
-                  >
-                    Tìm hiểu mô hình kinh tế thị trường, các thành phần kinh tế và vai trò quản lý của Nhà nước.
+                  <p class="text-[11px] text-philo-ivory/70 line-clamp-3 leading-relaxed mt-2">
+                    Tinh thần nhìn thẳng vào sự thật, bài học lấy dân làm gốc và khát vọng phát triển đất nước phồn vinh đến năm 2045.
                   </p>
                 </div>
-                <div
- class="mt-4 pt-3 border-t border-[#D9A62E]/25 flex items-center justify-between pointer-events-auto"
-                >
-                  <a
-                    href="articles/kinh-te-thi-truong-dinh-huong-xhcn.html"
- class="text-[10px] font-bold text-[#D4A017] flex items-center gap-1"
-                    >Đọc Ngay <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a
-                  >
+                <div class="mt-4 pt-3 border-t border-[#D9A62E]/25 flex items-center justify-between pointer-events-auto">
+                  <a href="articles/doi-moi-1986-va-khat-vong-phat-trien.html" class="text-[10px] font-bold text-[#D4A017] flex items-center gap-1">
+                    Đọc Ngay <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span>
+                  </a>
                 </div>
               </div>
             </article>
@@ -715,31 +657,35 @@
       window.addEventListener("scroll", updateActiveNav);
       window.addEventListener("load", updateActiveNav);
 
-      // Economy Quotes data list for MLN131
+      // Party History Quotes data list for VNR202
       const economyQuotes = [
         {
-          text: "Đảng ta là một Đảng cầm quyền. Mỗi đảng viên và cán bộ phải thật sự thấm nhuần đạo đức cách mạng, thật sự cần kiệm liêm chính, chí công vô tư." — Hồ Chí Minh,
-          author: "C. Mác (Bộ Tư bản)"
+          text: "Đảng ta là một Đảng cầm quyền. Mỗi đảng viên và cán bộ phải thật sự thấm nhuần đạo đức cách mạng, thật sự cần kiệm liêm chính, chí công vô tư.",
+          author: "Chủ tịch Hồ Chí Minh (Di chúc, 1969)"
         },
         {
-          text: "Chính trị kinh tế học tuyệt nhiên không nghiên cứu 'sự sản xuất' mà nghiên cứu những quan hệ xã hội giữa người với người trong sản xuất, nghiên cứu chế độ xã hội của sản xuất.",
-          author: "V.I. Lênin"
+          text: "Đảng ta là đạo đức, là văn minh, là thống nhất, độc lập, là hòa bình, ấm no.",
+          author: "Chủ tịch Hồ Chí Minh"
         },
         {
-          text: "Giá trị là lao động xã hội của người sản xuất kết tinh trong hàng hóa.",
-          author: "C. Mác"
+          text: "Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công.",
+          author: "Chủ tịch Hồ Chí Minh"
         },
         {
-          text: "Những quan hệ kinh tế của một xã hội nhất định nào đó biểu hiện trước hết dưới hình thức lợi ích.",
-          author: "Ph. Ăngghen"
+          text: "Hãy giữ vững chí khí chiến đấu!",
+          author: "Tổng Bí thư Trần Phú (1931)"
         },
         {
-          text: "Tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, khi phát triển đến mức độ nhất định, lại dẫn tới độc quyền.",
-          author: "V.I. Lênin"
+          text: "Đổi mới là đòi hỏi bức thiết của cuộc sống, đổi mới là mệnh lệnh sống còn của cách mạng Việt Nam.",
+          author: "Tổng Bí thư Trường Chinh (Đại hội VI, 1986)"
         },
         {
-          text: "Cơ chế thị trường như một 'bàn tay vô hình' có khả năng tự điều chỉnh các quan hệ kinh tế khách quan.",
-          author: "Adam Smith (Của cải của các quốc gia, 1776)"
+          text: "Độc lập dân tộc gắn liền với chủ nghĩa xã hội là đường lối cơ bản, xuyên suốt của cách mạng Việt Nam.",
+          author: "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ (1991, 2011)"
+        },
+        {
+          text: "Đất nước ta chưa bao giờ có được cơ đồ, tiềm lực, vị thế và uy tín quốc tế như ngày nay.",
+          author: "Tổng Bí thư Nguyễn Phú Trọng (Đại hội XIII của Đảng)"
         }
       ];
       let currentEconomyQuoteIdx = 0;
@@ -758,24 +704,24 @@
       // Parchment Wisdom quotes data list
       const wisdomQuotes = [
         {
-          text: "Lao động đã sáng tạo ra chính bản thân con người. Nó là điều kiện cơ bản đầu tiên của toàn bộ đời sống loài người.",
-          author: "Friedrich Engels",
+          text: "Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công.",
+          author: "Chủ tịch Hồ Chí Minh",
         },
         {
-          text: "Giá trị hàng hóa được xác định bởi thời gian lao động xã hội cần thiết để sản xuất ra hàng hóa đó.",
-          author: "Karl Marx",
+          text: "Hãy giữ vững chí khí chiến đấu!",
+          author: "Tổng Bí thư Trần Phú",
         },
         {
-          text: "Sự phân chia thế giới về kinh tế giữa các liên minh độc quyền là tất yếu trong giai đoạn đế quốc chủ nghĩa.",
-          author: "Vladimir Lenin",
+          text: "Đổi mới là mệnh lệnh sống còn của cách mạng Việt Nam.",
+          author: "Tổng Bí thư Trường Chinh",
         },
         {
-          text: "Kinh tế thị trường định hướng XHCN ở Việt Nam là mô hình kinh tế tổng quát trong thời kỳ quá độ lên CNXH.",
+          text: "Độc lập dân tộc gắn liền với chủ nghĩa xã hội là ngọn cờ bách chiến bách thắng.",
           author: "Đảng Cộng sản Việt Nam",
         },
         {
-          text: "Kinh tế tri thức và Cách mạng công nghiệp 4.0 đưa nhân loại bước vào kỷ nguyên phát triển dựa trên đổi mới sáng tạo.",
-          author: "Giáo trình MLN131 (2021)",
+          text: "Đất nước ta chưa bao giờ có được cơ đồ, tiềm lực, vị thế và uy tín quốc tế như ngày nay.",
+          author: "Văn kiện Đại hội XIII của Đảng",
         },
       ];
       let currentQuoteIndex = 0;

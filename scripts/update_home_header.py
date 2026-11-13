@@ -76,7 +76,7 @@ home = re.sub(
 
 # Update badge in hero
 home = home.replace(
-    "Giáo trình Chuẩn Quốc Gia • MLN131",
+    "Giáo trình Chuẩn Quốc Gia • VNR202",
     "Giáo trình Chuẩn Bộ GD&ĐT • VNR202 (29 Sessions)"
 )
 
@@ -106,7 +106,7 @@ Khám phá 6 Chương
 <span class="material-symbols-outlined text-base font-bold">arrow_forward</span>
 </a>
 <a href="ai-assistants.html" class="bg-[#3A0505]/40 backdrop-blur-md border border-[#FFD34E]/50 text-[#FFF4DC] hover:text-[#FFD34E] hover:border-[#FFD34E] text-xs md:text-sm px-6 py-3 rounded-full transition-all flex items-center gap-2">
-Hỏi Đáp AI MLN131
+Hỏi Đáp AI VNR202
 <span class="material-symbols-outlined text-base">auto_awesome</span>
 </a>'''
 
@@ -128,7 +128,7 @@ home = home.replace(old_thinkers_title, new_thinkers_title)
 
 # Replace roadmap title
 home = home.replace(
-    "Chương Trình Học Tập MLN131",
+    "Chương Trình Học Tập VNR202",
     "Chương Trình Khảo Sát & Luyện Thi VNR202"
 )
 home = home.replace(

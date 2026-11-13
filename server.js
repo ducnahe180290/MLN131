@@ -31,7 +31,7 @@ async function loadCurriculum() {
     try {
       cachedCurriculum = require("./data/vnr202-curriculum.json");
     } catch (e) {
-      cachedCurriculum = require("./data/mln131-curriculum.json");
+      cachedCurriculum = require("./data/vnr202-curriculum.json");
     }
     return cachedCurriculum;
   } catch (err) {
@@ -87,8 +87,8 @@ function findRelevantPages(question, pages) {
   return scoredPages.filter(p => p.score > 0).slice(0, 5);
 }
 
-// Function to handle MLN131 AI question
-async function handleAskMLN131(req, res) {
+// Function to handle VNR202 AI question
+async function handleAskVNR202(req, res) {
   try {
     const { question } = req.body;
 
@@ -100,14 +100,14 @@ async function handleAskMLN131(req, res) {
     const pagesArray = Array.isArray(curriculum) ? curriculum : (curriculum.pages || []);
     const relevantPages = findRelevantPages(question, pagesArray);
     if (relevantPages.length === 0) {
-      return res.json({ answer: "Dữ liệu tóm tắt MLN131 hiện chưa có nội dung đủ liên quan để trả lời câu hỏi này. Hãy thử hỏi cụ thể hơn hoặc tra giáo trình của lớp.", mode: "no_match" });
+      return res.json({ answer: "Dữ liệu tóm tắt VNR202 hiện chưa có nội dung đủ liên quan để trả lời câu hỏi này. Hãy thử hỏi cụ thể hơn hoặc tra giáo trình của lớp.", mode: "no_match" });
     }
     
     // Gộp nội dung các trang thành context
     const contextText = relevantPages.map(p => `--- Chương ${p.chapter}: ${p.chapter_title || ''}; trang tham chiếu ${p.page_num} (chưa đối chiếu PDF) ---\n${p.content}`).join("\n\n");
 
     const systemPrompt = `
-Bạn là trợ lý ôn tập môn Kinh tế chính trị Mác - Lênin (MLN131).
+Bạn là trợ lý ôn tập môn Kinh tế chính trị Mác - Lênin (VNR202).
 Chỉ trả lời bằng thông tin có trong các mục tóm tắt được cung cấp. Nếu dữ liệu không đủ, nói rõ là chưa đủ căn cứ; không tự thêm kiến thức, công thức hoặc số trang.
 Đây là dữ liệu tóm tắt do dự án biên soạn, chưa được đối chiếu với PDF giáo trình của lớp. Nếu nhắc tới chương hoặc trang, ghi rõ đó là tham chiếu cần kiểm chứng, không khẳng định đã trích từ giáo trình gốc.
 Trả lời bằng tiếng Việt, ngắn gọn và dễ hiểu.
@@ -194,7 +194,7 @@ Trả lời bằng tiếng Việt, ngắn gọn và dễ hiểu.
     // 3. Fallback sang cơ sở dữ liệu Giáo trình nếu chưa có API key hoặc API lỗi
     if (!answer && relevantPages.length > 0) {
       const top = relevantPages[0];
-      answer = `### Mục tóm tắt liên quan trong dữ liệu MLN131
+      answer = `### Mục tóm tắt liên quan trong dữ liệu VNR202
 
 **Chương ${top.chapter}: ${top.chapter_title || ''} — trang tham chiếu ${top.page_num} (chưa đối chiếu PDF):**
 ${top.content}
@@ -217,11 +217,12 @@ ${top.content}
   }
 }
 
-app.post("/api/ask-mln131", handleAskMLN131);
-app.post("/api/ask-hcm", handleAskMLN131);
+app.post("/api/ask-vnr202", handleAskVNR202);
+app.post("/api/ask-mln131", handleAskVNR202);
+app.post("/api/ask-hcm", handleAskVNR202);
 
 // Legacy endpoint kept for older page links.
-app.post("/api/ask-gemini", handleAskMLN131);
+app.post("/api/ask-gemini", handleAskVNR202);
 
 // AI helper for the "Ôn thi FE" quiz tab - explains quiz questions and answers follow-ups via Gemini
 app.post("/api/ask-quiz", async (req, res) => {
@@ -237,7 +238,7 @@ app.post("/api/ask-quiz", async (req, res) => {
     }
 
     const systemInstruction = `
-Bạn là "Trợ giảng AI" của môn Kinh tế chính trị Mác - Lênin (MLN131). Nhiệm vụ: giúp sinh viên ôn thi cuối kỳ (FE) bằng cách giải thích rõ câu hỏi trắc nghiệm, vì sao đáp án đúng lại đúng, các đáp án khác sai ở đâu, và trả lời các câu hỏi đào sâu thêm mà sinh viên tự đặt ra dựa trên Giáo trình Kinh tế chính trị Mác - Lênin 2021.
+Bạn là "Trợ giảng AI" của môn Kinh tế chính trị Mác - Lênin (VNR202). Nhiệm vụ: giúp sinh viên ôn thi cuối kỳ (FE) bằng cách giải thích rõ câu hỏi trắc nghiệm, vì sao đáp án đúng lại đúng, các đáp án khác sai ở đâu, và trả lời các câu hỏi đào sâu thêm mà sinh viên tự đặt ra dựa trên Giáo trình Kinh tế chính trị Mác - Lênin 2021.
 Phong cách: ngắn gọn, sư phạm, thân thiện, có thể dùng emoji vừa phải. Trả lời bằng tiếng Việt, định dạng Markdown (in đậm, danh sách) cho dễ đọc.
 `.trim();
 

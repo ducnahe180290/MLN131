@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi" class="dark">
-
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Module 6: CNH, HĐH và Hội nhập kinh tế quốc tế của Việt Nam — PhiloVerse MLN131</title>
-    <meta name="description" content="Chương 6 Giáo trình Kinh tế chính trị Mác - Lênin 2021: Lịch sử 4 cuộc CMCN, các mô hình CNH, CNH-HĐH ở VN thích ứng CMCN 4.0, hội nhập quốc tế và xây dựng nền kinh tế độc lập tự chủ." />
+    <title>Chương 6: CNH, HĐH, Hội Nhập & Xây Dựng Đảng (1996 - Nay) — PhiloVerse VNR202</title>
+    <meta name="description" content="Chương 6 Giáo trình Lịch sử Đảng Cộng sản Việt Nam (VNR202): Đẩy mạnh CNH-HĐH qua các kỳ Đại hội VIII - XIII, gia nhập WTO, Cương lĩnh bổ sung 2011, khát vọng phát triển đất nước đến 2030 - 2045, công tác xây dựng chỉnh đốn Đảng và bài học lịch sử Đảng." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
@@ -20,76 +19,49 @@
             font-size: 24px;
             display: inline-block;
             line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
             direction: ltr;
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-
-        #m6-progress-bar {
-            transition: width 0.6s ease;
-        }
-
+        #m6-progress-bar { transition: width 0.6s ease; }
         .reflection-answer {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease, opacity 0.3s;
             opacity: 0;
         }
-
         .reflection-answer.open {
-            max-height: 500px;
+            max-height: 800px;
             opacity: 1;
         }
-
-        @keyframes badge-pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-        }
-
-        .achievement-earned {
-            animation: badge-pulse 0.6s ease 2;
-        }
-
         .hidden-panel {
             transform: translateX(100%);
             transition: transform 0.3s ease;
         }
-
         .lesson-tab.active-tab {
             border-color: #FFD34E !important;
-            background: rgba(217, 166, 46, 0.12) !important;
-            box-shadow: 0 0 20px rgba(217, 166, 46, 0.2);
+            background: rgba(217, 166, 46, 0.15) !important;
+            box-shadow: 0 0 20px rgba(217, 166, 46, 0.25);
         }
-
         .lesson-tab.active-tab .tab-label {
             color: #FFD34E !important;
         }
-
         .lesson-dot.completed {
             background-color: #D9A62E !important;
         }
-
         .lesson-header-academic {
             padding: 2rem 2rem 1.5rem;
             background: linear-gradient(135deg, rgba(20, 3, 3, 0.95) 0%, rgba(101, 7, 7, 0.85) 100%);
             border-bottom: 1px solid rgba(217, 166, 46, 0.2);
         }
-
         .module-page-hero {
             position: relative;
             padding: 3rem 2rem 2.5rem;
             overflow: hidden;
             background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%);
         }
-
         .module-page-hero > * {
             position: relative;
             z-index: 1;
         }
-
         .module-page-hero::after {
             content: '';
             position: absolute;
@@ -106,7 +78,6 @@
     <div id="header-placeholder"></div>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-
         <!-- ===== MODULE HERO HEADER ===== -->
         <div class="module-page-hero -mx-4 sm:-mx-6 lg:-mx-8 mb-10">
             <div class="absolute inset-0 z-0 overflow-hidden">
@@ -118,19 +89,18 @@
                 <div class="philo-breadcrumb mb-5">
                     <a href="home.html">TRANG CHỦ</a>
                     <span class="sep">/</span>
-                    <a href="Overview.html">GIÁO TRÌNH MLN131</a>
+                    <a href="Overview.html">GIÁO TRÌNH VNR202</a>
                     <span class="sep">/</span>
-                    <span>CHƯƠNG 6 • CNH, HĐH VÀ HỘI NHẬP KINH TẾ QUỐC TẾ</span>
+                    <span>CHƯƠNG 6 • CNH, HĐH, HỘI NHẬP & XÂY DỰNG ĐẢNG (1996 - NAY)</span>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                     <div>
-                        <span class="philo-badge mb-3 inline-flex"><span class="material-symbols-outlined text-[14px]">public</span> MODULE 06 • GIÁO TRÌNH CHUẨN 2021 (TRANG 201 - 257)</span>
+                        <span class="philo-badge mb-3 inline-flex"><span class="material-symbols-outlined text-[14px]">public</span> CHƯƠNG 06 • SESSIONS 24 - 29</span>
                         <h1 class="font-heading text-3xl md:text-5xl font-bold leading-tight text-philo-ivory mt-2">
-                            Công nghiệp hóa, Hiện đại hóa &<br class="hidden md:block" />
-                            <span class="text-philo-gold font-serif italic">Hội nhập kinh tế quốc tế của Việt Nam</span>
+                            CNH, HĐH, Hội Nhập &amp;<br class="hidden md:block" /> <span class="text-philo-gold font-serif italic">Xây Dựng, Chỉnh Đốn Đảng (1996 - Nay)</span>
                         </h1>
                         <p class="font-heading italic text-base md:text-lg text-philo-gold/80 mt-3 max-w-3xl leading-relaxed">
-                            Lịch sử 4 cuộc Cách mạng công nghiệp, các mô hình công nghiệp hóa thế giới, chiến lược CNH-HĐH ở Việt Nam thích ứng CMCN 4.0 và phương thức hội nhập giữ vững độc lập tự chủ.
+                            "Đất nước ta chưa bao giờ có được cơ đồ, tiềm lực, vị thế và uy tín quốc tế như ngày nay!" — Cương lĩnh bổ sung 2011, Đại hội XIII, khát vọng phát triển phồn vinh hạnh phúc và kiên quyết phòng chống tham nhũng tiêu cực.
                         </p>
                         <div class="flex flex-wrap items-center gap-4 mt-4 text-xs text-philo-ivory/60">
                             <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-philo-gold">menu_book</span> 6 bài học chuẩn</span>
@@ -173,570 +143,515 @@
 
         <!-- 6 Lesson Navigation Tabs -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-8">
-            <button onclick="showLesson('M6-L1')" id="tab-M6-L1" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            
+            <button onclick="showLesson('M6-L1')" id="tab-M6-L1" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all active-tab">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 6.1</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Lịch sử 4 cuộc CMCN</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đại hội VIII (1996) & IX (2001) - Đẩy mạnh CNH, HĐH</span>
             </button>
-            <button onclick="showLesson('M6-L2')" id="tab-M6-L2" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M6-L2')" id="tab-M6-L2" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 6.2</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Các mô hình CNH thế giới</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đại hội X (2006) - Chủ động hội nhập kinh tế quốc tế</span>
             </button>
-            <button onclick="showLesson('M6-L3')" id="tab-M6-L3" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M6-L3')" id="tab-M6-L3" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 6.3</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">CNH-HĐH ở VN thích ứng 4.0</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đại hội XI (2011) & Cương lĩnh bổ sung 2011</span>
             </button>
-            <button onclick="showLesson('M6-L4')" id="tab-M6-L4" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M6-L4')" id="tab-M6-L4" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 6.4</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Hội nhập kinh tế quốc tế</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đại hội XII (2016) - Đổi mới toàn diện, đồng bộ</span>
             </button>
-            <button onclick="showLesson('M6-L5')" id="tab-M6-L5" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M6-L5')" id="tab-M6-L5" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 6.5</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Tác động: Thời cơ & Thách thức</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đại hội XIII (2021) - Khát vọng phát triển đất nước</span>
             </button>
-            <button onclick="showLesson('M6-L6')" id="tab-M6-L6" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all">
+            <button onclick="showLesson('M6-L6')" id="tab-M6-L6" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
                 <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 6.6</span>
-                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Kinh tế độc lập tự chủ</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Công tác Xây dựng, chỉnh đốn Đảng & Bài học lịch sử</span>
             </button>
         </div>
 
-        <!-- ======================================================== -->
-        <!-- LESSON 6.1: LỊCH SỬ 4 CUỘC CÁCH MẠNG CÔNG NGHIỆP         -->
-        <!-- ======================================================== -->
-        <article id="lesson-M6-L1" class="lesson-content space-y-6">
+        <!-- LESSON ARTICLES -->
+        
+        <!-- LESSON 6.1: Đại hội VIII (1996) & IX (2001) - Đẩy mạnh CNH, HĐH -->
+        <article id="lesson-M6-L1" class="lesson-content space-y-6 ">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.1 • GIÁO TRÌNH TRANG 201 - 216</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.1 • SESSION 24 CHƯƠNG 6</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Khái quát Cách mạng công nghiệp & Lịch sử 4 cuộc CMCN
+                        Đại hội VIII (1996) & IX (2001) - Đẩy mạnh công nghiệp hóa, hiện đại hóa
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Từ động cơ hơi nước thế kỷ XVIII đến kỷ nguyên số, kết nối vạn vật và trí tuệ nhân tạo (AI)</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Chuyển sang thời kỳ mới, mô hình kinh tế thị trường định hướng XHCN và đại đoàn kết toàn dân tộc</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
-                    <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm leading-relaxed">
-                        <h4 class="font-bold text-philo-gold mb-1">Khái niệm Cách mạng công nghiệp (Trang 202):</h4>
-                        <p>
-                            Là những bước phát triển nhảy vọt về chất trình độ của tư liệu lao động trên cơ sở những phát minh đột phá về kỹ thuật và công nghệ trong quá trình phát triển của nhân loại kéo theo sự thay đổi căn bản về phân công lao động xã hội cũng như tạo bước phát triển năng suất lao động cao hơn hẳn.
+                    
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                        <strong class="text-philo-gold block mb-1">Đại hội VIII (6/1996) — Chuyển sang thời kỳ đẩy mạnh CNH, HĐH:</strong>
+                        <p class="leading-relaxed">
+                            Khẳng định nước ta đã ra khỏi khủng hoảng kinh tế - xã hội, chuyển sang thời kỳ <strong>đẩy mạnh công nghiệp hóa, hiện đại hóa</strong> đất nước với mục tiêu phấn đấu đến năm 2020 cơ bản trở thành một nước công nghiệp theo hướng hiện đại. Đồng chí Đỗ Mười, sau đó đồng chí Lê Khả Phiêu làm Tổng Bí thư.
                         </p>
                     </div>
+                    <div class="p-5 bg-black/40 border border-philo-warmGold/20 rounded-xl space-y-3">
+                        <h4 class="font-heading font-bold text-philo-gold text-base">Đại hội IX (4/2001) — Đại hội mở đầu thế kỷ XXI:</h4>
+                        <p class="text-xs text-philo-ivory/80">Bầu đồng chí <strong>Nông Đức Mạnh</strong> làm Tổng Bí thư. Đại hội chính thức khẳng định mô hình phát triển:</p>
+                        <div class="p-3 bg-white/5 rounded-lg text-xs space-y-1">
+                            <strong class="text-philo-gold">Mô hình kinh tế tổng quát trong thời kỳ quá độ:</strong>
+                            <p class="text-philo-ivory/80">Là <strong>nền kinh tế thị trường định hướng xã hội chủ nghĩa</strong>; phát triển kinh tế là nhiệm vụ trung tâm, xây dựng Đảng là nhiệm vụ then chốt; xây dựng nền văn hóa tiên tiến, đậm đà bản sắc dân tộc là nền tảng tinh thần của xã hội.</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">history</span>
-                            Lịch sử 4 cuộc Cách mạng công nghiệp (Hộp 6.1, trang 205)
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 6.1
                         </h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm">
-                            <div class="glass-panel p-4 rounded-xl border border-white/10">
-                                <span class="font-bold text-philo-gold block mb-1">CMCN Lần thứ nhất (Giữa XVIII - Giữa XIX)</span>
-                                <p class="text-philo-ivory/80 leading-relaxed">
-                                    Khởi phát từ <strong>nước Anh</strong>. Nội dung: Chuyển từ lao động thủ công sang lao động máy móc; cơ giới hóa sản xuất bằng <strong>năng lượng nước và máy hơi nước</strong> (James Watt 1784, máy dệt Cartwright 1785, tàu thủy Fulton 1807, xe lửa Stephensen 1814).
-                                </p>
-                            </div>
-                            <div class="glass-panel p-4 rounded-xl border border-white/10">
-                                <span class="font-bold text-philo-gold block mb-1">CMCN Lần thứ hai (Nửa cuối XIX - Đầu XX)</span>
-                                <p class="text-philo-ivory/80 leading-relaxed">
-                                    Nội dung: Sử dụng <strong>năng lượng điện, động cơ điện và động cơ đốt trong</strong>; tạo ra dây chuyền sản xuất hàng loạt có tính chuyên môn hóa cao (Fayol, Taylor), luyện thép Bessemer, ô tô, thông tin liên lạc.
-                                </p>
-                            </div>
-                            <div class="glass-panel p-4 rounded-xl border border-white/10">
-                                <span class="font-bold text-philo-gold block mb-1">CMCN Lần thứ ba (Đầu thập niên 60 - Hết TK XX)</span>
-                                <p class="text-philo-ivory/80 leading-relaxed">
-                                    Nội dung: Xuất hiện <strong>công nghệ thông tin, vi mạch bán dẫn và tự động hóa sản xuất</strong>; máy tính cá nhân (PC), mạng internet (thập niên 1990) và robot công nghiệp.
-                                </p>
-                            </div>
-                            <div class="glass-panel p-4 rounded-xl border border-philo-gold/40 bg-philo-gold/5">
-                                <span class="font-bold text-philo-gold block mb-1">CMCN Lần thứ tư (Industry 4.0 - Từ 2011 đến nay)</span>
-                                <p class="text-philo-ivory/80 leading-relaxed">
-                                    Được xướng tên tại Hội chợ Hannover (Đức 2011). Nội dung: <strong>Liên kết giữa thế giới thực và ảo</strong>, dựa trên cuộc cách mạng số, internet kết nối vạn vật (IoT), <strong>trí tuệ nhân tạo (AI)</strong>, dữ liệu lớn (Big Data), in 3D, công nghệ sinh học và điện toán lượng tử.
-                                </p>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Điểm cốt lõi mới trong nhận thức về thời kỳ quá độ tại Đại hội IX (2001) là gì?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Làm rõ bản chất của con đường quá độ lên CNXH bỏ qua chế độ tư bản chủ nghĩa: tức là bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa, nhưng tiếp thu, kế thừa những thành tựu của nhân loại dưới CNTB.
                             </div>
                         </div>
                     </div>
 
-                    <div class="p-4 rounded-xl border border-white/10 bg-white/5 text-sm">
-                        <h4 class="font-heading font-bold text-philo-gold mb-2">Vai trò to lớn của CMCN đối với phát triển:</h4>
-                        <ul class="list-disc list-inside space-y-1 text-xs md:text-sm text-philo-ivory/80 pl-2">
-                            <li><strong>Thúc đẩy lực lượng sản xuất:</strong> Tăng năng suất lao động xã hội đột biến, giải phóng sức lao động chân tay của con người.</li>
-                            <li><strong>Thúc đẩy hoàn thiện quan hệ sản xuất:</strong> Biến đổi cơ cấu sở hữu (sự ra đời của công ty cổ phần, sở hữu nhà nước).</li>
-                            <li><strong>Đổi mới phương thức quản trị:</strong> Hình thành "chính phủ điện tử", "đô thị thông minh", kinh tế số và thế giới phẳng.</li>
-                        </ul>
-                    </div>
-
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="toggleReflection('ref-M6-L1')" class="text-philo-gold hover:underline text-sm font-semibold flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">lightbulb</span> Câu hỏi tự suy ngẫm
-                        </button>
-                        <button id="btn-complete-M6-L1" onclick="completeLesson('M6-L1')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 6.1 ✓
-                        </button>
-                    </div>
-                    <div id="ref-M6-L1" class="reflection-answer p-4 rounded-xl border border-philo-gold/20 bg-white/5">
-                        <p class="text-xs text-philo-gold font-bold mb-1">Gợi ý suy ngẫm:</p>
-                        <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                            C. Mác đã dự báo tài tình cách đây gần 2 thế kỷ (Trang 207-208): "Theo đà phát triển của đại công nghiệp, việc tạo ra của cải thực tế trở nên ít phụ thuộc vào thời gian lao động và số lượng lao động đã chi phí hơn là vào... trình độ chung của khoa học và sự tiến bộ của kỹ thuật... Tri thức xã hội phổ biến chuyển hóa thành lực lượng sản xuất trực tiếp".
-                        </p>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <div></div>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M6-FQ1')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M6-L1')" id="btn-complete-M6-L1" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 6.2: CÁC MÔ HÌNH CNH TIÊU BIỂU TRÊN THẾ GIỚI       -->
-        <!-- ======================================================== -->
+        <!-- LESSON 6.2: Đại hội X (2006) - Chủ động hội nhập kinh tế quốc tế -->
         <article id="lesson-M6-L2" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.2 • GIÁO TRÌNH TRANG 217 - 220</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.2 • SESSION 25 CHƯƠNG 6</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Khái niệm Công nghiệp hóa & Các mô hình CNH tiêu biểu trên thế giới
+                        Đại hội X (2006) - Nâng cao năng lực lãnh đạo & Hội nhập kinh tế quốc tế
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">So sánh mô hình cổ điển Anh, mô hình Liên Xô và con đường CNH rút ngắn của Nhật Bản & các nước NICs</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Cho phép đảng viên làm kinh tế tư nhân, gia nhập WTO và đưa đất nước ra khỏi nhóm nước kém phát triển</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
                     <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
-                        <h4 class="font-bold text-philo-gold mb-1">Khái niệm Công nghiệp hóa (Trang 217):</h4>
+                        <strong class="text-philo-gold block mb-1">Đại hội X của Đảng (4/2006):</strong>
                         <p class="leading-relaxed">
-                            Công nghiệp hóa là quá trình chuyển đổi nền sản xuất xã hội từ <strong>dựa trên lao động thủ công là chính sang nền sản xuất xã hội dựa chủ yếu trên lao động bằng máy móc</strong> nhằm tạo ra năng suất lao động xã hội cao.
+                            Chủ đề: <em>"Nâng cao năng lực lãnh đạo và sức chiến đấu của Đảng, phát huy sức mạnh toàn dân tộc, đẩy mạnh toàn diện công cuộc đổi mới, sớm đưa nước ta ra khỏi tình trạng kém phát triển"</em>. Bầu lại đồng chí Nông Đức Mạnh làm Tổng Bí thư. Cho phép đảng viên làm kinh tế tư nhân.
                         </p>
                     </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1.5">
+                            <strong class="text-philo-gold block text-sm">Chính thức gia nhập WTO (1/2007):</strong>
+                            <p class="text-philo-ivory/80 leading-relaxed">
+                                Ngày 11/1/2007, Việt Nam trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới (WTO), đánh dấu bước hội nhập sâu rộng, toàn diện vào nền kinh tế toàn cầu, thu hút làn sóng đầu tư FDI mạnh mẽ.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1.5">
+                            <strong class="text-philo-gold block text-sm">Thoát khỏi nhóm nước thu nhập thấp:</strong>
+                            <p class="text-philo-ivory/80 leading-relaxed">
+                                Đến năm 2008, quy mô nền kinh tế và thu nhập bình quân đầu người của Việt Nam vượt qua ngưỡng kém phát triển, chính thức bước vào nhóm các quốc gia đang phát triển có thu nhập trung bình.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">account_tree</span>
-                            Ba mô hình công nghiệp hóa tiêu biểu trong lịch sử (Trang 217 - 220)
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 6.2
                         </h3>
-                        <div class="space-y-4 text-xs md:text-sm">
-                            <div class="p-4 rounded-xl border border-white/10 bg-white/5">
-                                <h4 class="font-bold text-philo-gold mb-1">1. Mô hình công nghiệp hóa cổ điển (Tiêu biểu: Nước Anh)</h4>
-                                <ul class="list-disc list-inside space-y-1 text-philo-ivory/80 pl-2">
-                                    <li><strong>Trình tự:</strong> Bắt đầu từ công nghiệp nhẹ (dệt), thu hồi vốn nhanh; sau đó tích lũy vốn phát triển công nghiệp nặng (cơ khí chế tạo).</li>
-                                    <li><strong>Nguồn vốn:</strong> Bóc lột lao động làm thuê, phá sản nông dân nhỏ, xâm chiếm và cướp bóc thuộc địa.</li>
-                                    <li><strong>Thời gian:</strong> Rất dài, trung bình <strong>60 – 80 năm</strong>.</li>
-                                </ul>
-                            </div>
-
-                            <div class="p-4 rounded-xl border border-white/10 bg-white/5">
-                                <h4 class="font-bold text-philo-gold mb-1">2. Mô hình công nghiệp hóa kiểu Liên Xô</h4>
-                                <ul class="list-disc list-inside space-y-1 text-philo-ivory/80 pl-2">
-                                    <li><strong>Đặc điểm:</strong> <strong>Ưu tiên phát triển công nghiệp nặng</strong> (cơ khí, luyện kim, quốc phòng) thông qua cơ chế kế hoạch hóa tập trung, mệnh lệnh.</li>
-                                    <li><strong>Ưu - nhược điểm:</strong> Xây dựng CSVC-KT nhanh chóng ban đầu; nhưng duy trì bao cấp mệnh lệnh quá lâu khiến kinh tế không thích ứng được với tiến bộ KHKT mới, dẫn đến trì trệ và khủng hoảng.</li>
-                                </ul>
-                            </div>
-
-                            <div class="p-4 rounded-xl border border-philo-gold/40 bg-philo-gold/5">
-                                <h4 class="font-bold text-philo-gold mb-1">3. Mô hình CNH của Nhật Bản và các nước công nghiệp mới (NICs: Hàn Quốc, Singapore)</h4>
-                                <ul class="list-disc list-inside space-y-1 text-philo-ivory/80 pl-2">
-                                    <li><strong>Chiến lược:</strong> <strong>Công nghiệp hóa rút ngắn</strong>, kết hợp phát triển sản xuất thay thế nhập khẩu với hướng mạnh về xuất khẩu.</li>
-                                    <li><strong>Tiếp cận công nghệ:</strong> Sử dụng chiến lược "nhiều tầng", vừa tiếp nhận chuyển giao công nghệ vừa nghiên cứu chế tạo, "đi tắt đón đầu".</li>
-                                    <li><strong>Thời gian:</strong> Rất ngắn, chỉ khoảng <strong>20 – 30 năm</strong> đã thành công. Đây là gợi ý quý báu cho Việt Nam!</li>
-                                </ul>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Ý nghĩa bước đột phá tư duy khi Đại hội X cho phép đảng viên làm kinh tế tư nhân?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Xóa bỏ định kiến khắt khe về tư nhân; giải phóng mọi nguồn lực xã hội để làm giàu chính đáng cho bản thân và đất nước, phù hợp với quy luật phát triển của nền kinh tế thị trường định hướng XHCN.
                             </div>
                         </div>
                     </div>
 
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="openFormativeQuiz('M6-FQ1')" class="philo-btn-secondary text-xs px-4 py-2 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">quiz</span> Làm Quiz Hình thành 6.1 & 6.2
-                        </button>
-                        <button id="btn-complete-M6-L2" onclick="completeLesson('M6-L2')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 6.2 ✓
-                        </button>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M6-L1')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M6-FQ2')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M6-L2')" id="btn-complete-M6-L2" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 6.3: CNH-HĐH Ở VIỆT NAM THÍCH ỨNG 4.0            -->
-        <!-- ======================================================== -->
+        <!-- LESSON 6.3: Đại hội XI (2011) & Cương lĩnh bổ sung 2011 -->
         <article id="lesson-M6-L3" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.3 • GIÁO TRÌNH TRANG 220 - 233</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.3 • SESSION 26 CHƯƠNG 6</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Tính tất yếu & Nội dung CNH, HĐH ở Việt Nam thích ứng CMCN 4.0
+                        Đại hội XI (2011) & Cương lĩnh bổ sung, phát triển năm 2011
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Đặc điểm CNH gắn với kinh tế tri thức, chuyển dịch cơ cấu ngành và giải pháp thích ứng cách mạng 4.0</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">8 đặc trưng xã hội XHCN, 3 đột phá chiến lược và Chiến lược phát triển kinh tế xã hội 2011 - 2020</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
-                    <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm leading-relaxed">
-                        <h4 class="font-bold text-philo-gold mb-1">Khái niệm CNH, HĐH ở Việt Nam (Trang 220):</h4>
-                        <p>
-                            Là quá trình chuyển đổi căn bản, toàn diện các hoạt động sản xuất kinh doanh, dịch vụ và quản lý kinh tế - xã hội, từ sử dụng sức lao động thủ công là chính sang sử dụng một cách phổ biến sức lao động với công nghệ, phương tiện, phương pháp tiên tiến hiện đại, dựa trên sự phát triển của công nghiệp và tiến bộ khoa học - công nghệ, nhằm tạo ra năng suất lao động xã hội cao.
-                        </p>
-                    </div>
+                    
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <strong class="text-philo-gold block mb-1">Mốc son Đại hội XI (1/2011):</strong>
+                    <p class="leading-relaxed">
+                        Đồng chí <strong>Nguyễn Phú Trọng</strong> được bầu làm Tổng Bí thư của Đảng. Đại hội thông qua bản <strong>Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH (bổ sung, phát triển năm 2011)</strong> hoàn thiện hệ thống lý luận của Đảng sau 25 năm đổi mới.
+                    </p>
+                </div>
+                <div class="p-5 bg-black/40 border border-philo-warmGold/20 rounded-xl space-y-3 text-xs">
+                    <h4 class="font-heading font-bold text-philo-gold text-sm">Mô hình CNXH ở Việt Nam gồm 8 đặc trưng cơ bản:</h4>
+                    <p class="text-philo-ivory/80">1. Dân giàu, nước mạnh, dân chủ, công bằng, văn minh.</p>
+                    <p class="text-philo-ivory/80">2. Do nhân dân làm chủ.</p>
+                    <p class="text-philo-ivory/80">3. Có nền kinh tế phát triển cao dựa trên LLSX hiện đại và QHSX tiến bộ phù hợp.</p>
+                    <p class="text-philo-ivory/80">4. Có nền văn hóa tiên tiến, đậm đà bản sắc dân tộc.</p>
+                    <p class="text-philo-ivory/80">5. Con người có cuộc sống ấm no, tự do, hạnh phúc, có điều kiện phát triển toàn diện.</p>
+                    <p class="text-philo-ivory/80">6. Các dân tộc trong cộng đồng Việt Nam bình đẳng, đoàn kết, tôn trọng và giúp nhau cùng phát triển.</p>
+                    <p class="text-philo-ivory/80">7. Có Nhà nước pháp quyền XHCN của nhân dân, do nhân dân, vì nhân dân do Đảng lãnh đạo.</p>
+                    <p class="text-philo-ivory/80">8. Có quan hệ hữu nghị và hợp tác với các nước trên thế giới.</p>
+                </div>
+                <div class="p-4 bg-white/5 border border-white/10 rounded-xl text-xs space-y-1.5">
+                    <strong class="text-philo-gold block text-sm">3 Đột phá chiến lược được xác định:</strong>
+                    <p>1. Hoàn thiện thể chế kinh tế thị trường định hướng XHCN.</p>
+                    <p>2. Phát triển nhanh nguồn nhân lực, nhất là nguồn nhân lực chất lượng cao.</p>
+                    <p>3. Xây dựng hệ thống kết cấu hạ tầng đồng bộ với một số công trình hiện đại.</p>
+                </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">psychology</span>
-                            Công nghiệp hóa, hiện đại hóa gắn với phát triển Kinh tế tri thức (Trang 225 - 227)
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 6.3
                         </h3>
-                        <p class="text-sm text-philo-ivory/80 leading-relaxed mb-3">
-                            Theo OECD (1995): <strong>Kinh tế tri thức</strong> là nền kinh tế trong đó sự sản sinh ra, phổ cập và sử dụng tri thức giữ vai trò quyết định nhất đối với sự phát triển kinh tế, tạo ra của cải.
-                        </p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong class="text-philo-gold block mb-1">Đặc điểm then chốt:</strong>
-                                <span>Tri thức trở thành lực lượng sản xuất trực tiếp, là vốn quý nhất; CNTT phủ khắp; tài nguyên quan trọng nhất là thông tin và chất xám.</span>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong class="text-philo-gold block mb-1">Yêu cầu với Việt Nam:</strong>
-                                <span>Không đi tuần tự đơn thuần mà phải <strong>kết hợp phát triển tuần tự với đi tắt đón đầu</strong>, phát triển kinh tế số và ứng dụng ngay công nghệ cao vào các ngành mũi nhọn.</span>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>So với Cương lĩnh 1991, Cương lĩnh bổ sung 2011 đã bổ sung thêm những đặc trưng mới quan trọng nào?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Bổ sung đặc trưng bao quát số 1: 'Dân giàu, nước mạnh, dân chủ, công bằng, văn minh' và đặc trưng số 7: 'Có Nhà nước pháp quyền XHCN của nhân dân, do nhân dân, vì nhân dân do Đảng lãnh đạo'.
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">memory</span>
-                            Nội dung CNH, HĐH thích ứng bối cảnh CMCN 4.0 ở Việt Nam (Trang 229 - 233)
-                        </h3>
-                        <div class="space-y-3 text-sm">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>1. Xây dựng hệ thống đổi mới sáng tạo quốc gia:</strong> Khung pháp lý thuận lợi, gắn kết trường đại học, viện nghiên cứu với doanh nghiệp.
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>2. Phát triển hạ tầng số & chuẩn bị nền tảng kinh tế số:</strong> Coi phát triển hạ tầng CNTT và truyền thông là khâu đột phá; xây dựng chuỗi dữ liệu lớn (Big Data), cảm biến, an ninh mạng.
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>3. Chuyển đổi số nền kinh tế và quản trị xã hội:</strong> Xây dựng "chính phủ điện tử", "đô thị thông minh", số hóa thủ tục hành chính và doanh nghiệp.
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>4. Đẩy mạnh CNH-HĐH nông nghiệp, nông thôn:</strong> Ứng dụng công nghệ sinh học, nông nghiệp sạch công nghệ cao, chế biến sâu xuất khẩu.
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-                                <strong>5. Phát triển nguồn nhân lực chất lượng cao:</strong> Đổi mới căn bản giáo dục, coi <em>"hiền tài là nguyên khí quốc gia"</em>, chính sách trọng dụng người tài.
-                            </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M6-L2')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M6-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M6-L3')" id="btn-complete-M6-L3" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
                         </div>
-                    </div>
-
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="toggleReflection('ref-M6-L3')" class="text-philo-gold hover:underline text-sm font-semibold flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">lightbulb</span> Câu hỏi tự suy ngẫm
-                        </button>
-                        <button id="btn-complete-M6-L3" onclick="completeLesson('M6-L3')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 6.3 ✓
-                        </button>
-                    </div>
-                    <div id="ref-M6-L3" class="reflection-answer p-4 rounded-xl border border-philo-gold/20 bg-white/5">
-                        <p class="text-xs text-philo-gold font-bold mb-1">Gợi ý suy ngẫm:</p>
-                        <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                            Tại sao trong CMCN 4.0, các lợi thế truyền thống như lao động giá rẻ hay giàu tài nguyên thiên nhiên của các nước đang phát triển lại có nguy cơ mất đi? Vì robot và AI có thể làm việc tự động với chi phí rẻ hơn nhiều, đòi hỏi các quốc gia phải chuyển sang cạnh tranh bằng đổi mới sáng tạo và nhân lực chất lượng cao!
-                        </p>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 6.4: HỘI NHẬP KINH TẾ QUỐC TẾ                    -->
-        <!-- ======================================================== -->
+        <!-- LESSON 6.4: Đại hội XII (2016) - Đổi mới toàn diện, đồng bộ -->
         <article id="lesson-M6-L4" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.4 • GIÁO TRÌNH TRANG 233 - 237</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.4 • SESSION 27 CHƯƠNG 6</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Khái niệm, Sự cần thiết khách quan & Các cấp độ Hội nhập kinh tế quốc tế
+                        Đại hội đại biểu toàn quốc lần thứ XII (2016) - Đổi mới đồng bộ
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Toàn cầu hóa kinh tế là xu thế khách quan; tiến trình 5 cấp độ hội nhập từ PTA, FTA đến Liên minh kinh tế - tiền tệ</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Tái cơ cấu nền kinh tế, đổi mới mô hình tăng trưởng và xây dựng Đảng trong sạch, vững mạnh</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
                     <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
-                        <h4 class="font-bold text-philo-gold mb-1">Khái niệm Hội nhập kinh tế quốc tế (Trang 233):</h4>
+                        <strong class="text-philo-gold block mb-1">Đại hội XII (1/2016):</strong>
                         <p class="leading-relaxed">
-                            Hội nhập kinh tế quốc tế của một quốc gia là <strong>quá trình quốc gia đó thực hiện gắn kết nền kinh tế của mình với nền kinh tế thế giới</strong> dựa trên sự chia sẻ lợi ích, đồng thời tuân thủ các chuẩn mực quốc tế chung.
+                            Đồng chí <strong>Nguyễn Phú Trọng</strong> tiếp tục được bầu làm Tổng Bí thư. Đại hội đề ra mục tiêu: <em>"Tăng cường xây dựng Đảng trong sạch, vững mạnh; phát huy sức mạnh toàn dân tộc và dân chủ XHCN; đẩy mạnh toàn diện, đồng bộ công cuộc đổi mới; bảo vệ vững chắc Tổ quốc, giữ vững môi trường hòa bình, ổn định"</em>.
                         </p>
                     </div>
-
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-2 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">public</span>
-                            Tính tất yếu khách quan của Hội nhập kinh tế quốc tế
-                        </h3>
-                        <p class="text-sm text-philo-ivory/80 leading-relaxed mb-3">
-                            Do xu thế khách quan của <strong>toàn cầu hóa kinh tế</strong>. Toàn cầu hóa lôi cuốn mọi quốc gia vào hệ thống phân công lao động quốc tế. Không một nước nào có thể tự cung tự cấp đảm bảo mọi điều kiện phát triển nếu đứng ngoài dòng chảy hội nhập.
-                        </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1.5">
+                            <strong class="text-philo-gold block text-sm">Đổi mới mô hình tăng trưởng:</strong>
+                            <p class="text-philo-ivory/80 leading-relaxed">
+                                Chuyển mô hình tăng trưởng từ chủ yếu dựa vào xuất khẩu tài nguyên thô, gia công và thâm dụng vốn sang dựa trên năng suất, chất lượng, hiệu quả, ứng dụng khoa học công nghệ hiện đại và đổi mới sáng tạo.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1.5">
+                            <strong class="text-philo-gold block text-sm">Hội nhập quốc tế thế hệ mới:</strong>
+                            <p class="text-philo-ivory/80 leading-relaxed">
+                                Tham gia tích cực vào các hiệp định thương mại tự do thế hệ mới tiêu chuẩn cao: Hiệp định CPTPP, EVFTA; nâng cao vị thế ngoại giao đa phương trên trường quốc tế.
+                            </p>
+                        </div>
                     </div>
+                </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">stairs</span>
-                            Năm cấp độ hội nhập kinh tế quốc tế từ thấp đến cao (Trang 236 - 237)
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 6.4
                         </h3>
-                        <div class="space-y-2 text-xs md:text-sm">
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10 flex items-center gap-3">
-                                <span class="font-mono font-bold text-philo-gold text-base">Cấp 1</span>
-                                <div><strong>Thỏa thuận thương mại ưu đãi (PTA):</strong> Giảm thuế quan cho một số mặt hàng nhất định giữa các nước ký kết.</div>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10 flex items-center gap-3">
-                                <span class="font-mono font-bold text-philo-gold text-base">Cấp 2</span>
-                                <div><strong>Khu vực mậu dịch tự do (FTA):</strong> Xóa bỏ hoàn toàn hàng rào thuế quan và phi thuế quan đối với phần lớn hàng hóa (AFTA, CPTPP, EVFTA).</div>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10 flex items-center gap-3">
-                                <span class="font-mono font-bold text-philo-gold text-base">Cấp 3</span>
-                                <div><strong>Liên minh thuế quan (CU):</strong> Có chung một biểu thuế quan đối với các nước ngoài liên minh.</div>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-white/10 flex items-center gap-3">
-                                <span class="font-mono font-bold text-philo-gold text-base">Cấp 4</span>
-                                <div><strong>Thị trường chung:</strong> Cho phép tự do lưu chuyển không chỉ hàng hóa mà cả vốn, dịch vụ và sức lao động.</div>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-xl border border-philo-gold/40 flex items-center gap-3 bg-philo-gold/5">
-                                <span class="font-mono font-bold text-philo-gold text-base">Cấp 5</span>
-                                <div><strong>Liên minh kinh tế - tiền tệ:</strong> Thống nhất chính sách tiền tệ, tài khóa và sử dụng đồng tiền chung (Điển hình: Liên minh châu Âu EU dùng đồng EURO từ 1/1/1999).</div>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Ý nghĩa của việc đẩy mạnh toàn diện, 'đồng bộ' công cuộc Đổi mới tại Đại hội XII?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Không chỉ đổi mới kinh tế mà phải đổi mới đồng bộ với đổi mới hệ thống chính trị, xây dựng Nhà nước pháp quyền, cải cách tư pháp và nâng cao năng lực lãnh đạo của Đảng để tạo động lực phát triển nhịp nhàng.
                             </div>
                         </div>
                     </div>
 
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="openFormativeQuiz('M6-FQ2')" class="philo-btn-secondary text-xs px-4 py-2 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">quiz</span> Làm Quiz Hình thành 6.3 & 6.4
-                        </button>
-                        <button id="btn-complete-M6-L4" onclick="completeLesson('M6-L4')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 6.4 ✓
-                        </button>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M6-L3')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M6-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M6-L4')" id="btn-complete-M6-L4" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 6.5: TÁC ĐỘNG CỦA HỘI NHẬP: THỜI CƠ & THÁCH THỨC  -->
-        <!-- ======================================================== -->
+        <!-- LESSON 6.5: Đại hội XIII (2021) - Khát vọng phát triển đất nước -->
         <article id="lesson-M6-L5" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.5 • GIÁO TRÌNH TRANG 237 - 241</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.5 • SESSION 28 CHƯƠNG 6</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Tác động của Hội nhập kinh tế quốc tế đối với Việt Nam
+                        Đại hội XIII (2021) - Khát vọng phát triển đất nước phồn vinh, hạnh phúc
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Phân tích đa chiều về những cơ hội to lớn và những nguy cơ, thách thức gay gắt</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Đánh giá 35 năm Đổi mới, mục tiêu chiến lược 2030 - 2045, chuyển đổi số quốc gia và kinh tế tri thức</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div class="glass-panel p-5 rounded-xl border border-emerald-500/30 bg-emerald-950/10">
-                            <h4 class="font-heading font-bold text-emerald-400 mb-3 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-[20px]">thumb_up</span>
-                                Tác động tích cực (Thời cơ lớn - Trang 237-239)
-                            </h4>
-                            <ul class="text-xs md:text-sm space-y-2 list-disc list-inside text-philo-ivory/80">
-                                <li><strong>Mở rộng thị trường xuất khẩu:</strong> Thúc đẩy sản xuất trong nước, chuyển đổi mô hình tăng trưởng theo chiều sâu.</li>
-                                <li><strong>Thu hút nguồn lực bên ngoài:</strong> Vốn FDI, công nghệ tiên tiến, kỹ năng quản trị hiện đại.</li>
-                                <li><strong>Cải thiện tiêu dùng:</strong> Người dân được tiếp cận hàng hóa dịch vụ đa dạng, giá cả cạnh tranh.</li>
-                                <li><strong>Nâng cao chất lượng nguồn nhân lực:</strong> Tiếp cận tri thức khoa học hiện đại qua giao lưu quốc tế.</li>
-                                <li><strong>Thúc đẩy cải cách thể chế:</strong> Nâng cao năng lực cạnh tranh và vị thế quốc tế của Việt Nam.</li>
-                            </ul>
+                    
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <strong class="text-philo-gold block mb-1">Đánh giá lịch sử 35 năm Đổi mới:</strong>
+                    <p class="leading-relaxed">
+                        Đại hội XIII (1/2021) khẳng định một nhận định vô cùng tự hào: <em>"Đất nước ta chưa bao giờ có được cơ đồ, tiềm lực, vị thế và uy tín quốc tế như ngày nay"</em>. Bầu đồng chí <strong>Nguyễn Phú Trọng</strong> tiếp tục giữ trọng trách Tổng Bí thư.
+                    </p>
+                </div>
+                <div class="p-5 bg-black/40 border border-philo-warmGold/20 rounded-xl space-y-3 text-xs">
+                    <h4 class="font-heading font-bold text-philo-gold text-sm">Mục tiêu phát triển chiến lược đến giữa thế kỷ XXI:</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="p-3 bg-white/5 rounded-lg space-y-1">
+                            <strong class="text-philo-gold">Đến năm 2030 (Kỷ niệm 100 năm thành lập Đảng):</strong>
+                            <p class="text-philo-ivory/80">Là nước đang phát triển, có công nghiệp hiện đại, thu nhập trung bình cao.</p>
                         </div>
+                        <div class="p-3 bg-white/5 rounded-lg space-y-1">
+                            <strong class="text-philo-gold">Đến năm 2045 (Kỷ niệm 100 năm thành lập Nước):</strong>
+                            <p class="text-philo-ivory/80">Trở thành nước phát triển, có thu nhập cao, theo định hướng xã hội chủ nghĩa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 bg-white/5 border border-white/10 rounded-xl text-xs space-y-1.5">
+                    <strong class="text-philo-gold block text-sm">Động lực phát triển mới trong kỷ nguyên số:</strong>
+                    <p>Khơi dậy khát vọng phát triển đất nước phồn vinh, hạnh phúc; phát huy giá trị văn hóa, sức mạnh con người Việt Nam; đẩy mạnh đổi mới sáng tạo, chuyển đổi số quốc gia, phát triển kinh tế số, xã hội số và kinh tế xanh.</p>
+                </div>
 
-                        <div class="glass-panel p-5 rounded-xl border border-red-500/30 bg-red-950/10">
-                            <h4 class="font-heading font-bold text-red-400 mb-3 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-[20px]">warning</span>
-                                Tác động tiêu cực (Thách thức lớn - Trang 239-241)
-                            </h4>
-                            <ul class="text-xs md:text-sm space-y-2 list-disc list-inside text-philo-ivory/80">
-                                <li><strong>Cạnh tranh gay gắt:</strong> Nhiều doanh nghiệp nội địa yếu thế có nguy cơ thua lỗ, phá sản.</li>
-                                <li><strong>Gia tăng sự phụ thuộc:</strong> Nền kinh tế dễ bị tổn thương trước các biến động khủng hoảng bên ngoài.</li>
-                                <li><strong>Nguy cơ chuyển dịch cơ cấu bất lợi:</strong> Dễ biến thành "bãi thải công nghiệp" công nghệ thấp, cạn kiệt tài nguyên thiên nhiên.</li>
-                                <li><strong>Gia tăng phân hóa giàu nghèo:</strong> Lợi ích hội nhập phân bổ không đều giữa các tầng lớp dân cư.</li>
-                                <li><strong>Nguy cơ xói mòn bản sắc văn hóa</strong> và các vấn đề an ninh phi truyền thống.</li>
-                            </ul>
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 6.5
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Điểm cốt lõi mới nhất trong chủ đề Đại hội XIII thể hiện khát vọng dân tộc là gì?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Lần đầu tiên đưa cụm từ 'khát vọng phát triển đất nước phồn vinh, hạnh phúc' vào chủ đề Đại hội, đặt nhân tố con người và hạnh phúc của nhân dân làm trung tâm, chủ thể và mục tiêu phấn đấu cao nhất.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="toggleReflection('ref-M6-L5')" class="text-philo-gold hover:underline text-sm font-semibold flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">lightbulb</span> Câu hỏi tự suy ngẫm
-                        </button>
-                        <button id="btn-complete-M6-L5" onclick="completeLesson('M6-L5')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 6.5 ✓
-                        </button>
-                    </div>
-                    <div id="ref-M6-L5" class="reflection-answer p-4 rounded-xl border border-philo-gold/20 bg-white/5">
-                        <p class="text-xs text-philo-gold font-bold mb-1">Gợi ý suy ngẫm:</p>
-                        <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                            Joseph Stiglitz nhận xét (Hộp 6.3, trang 234): "Toàn cầu hóa không tốt, không xấu. Nó có sức mạnh để đem lại vô số điều tốt... Nhưng ở phần lớn các nơi khác, toàn cầu hóa không đem lại lợi ích tương xứng". Do đó, hội nhập đòi hỏi phải chủ động, có chiến lược bản lĩnh chứ không phải hội nhập bằng mọi giá!
-                        </p>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M6-L4')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M6-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M6-L5')" id="btn-complete-M6-L5" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-
-        <!-- ======================================================== -->
-        <!-- LESSON 6.6: KINH TẾ ĐỘC LẬP TỰ CHỦ                       -->
-        <!-- ======================================================== -->
+        <!-- LESSON 6.6: Công tác Xây dựng, chỉnh đốn Đảng & Bài học lịch sử -->
         <article id="lesson-M6-L6" class="lesson-content space-y-6 hidden">
             <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
                 <div class="lesson-header-academic">
-                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.6 • GIÁO TRÌNH TRANG 241 - 257</span>
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 6.6 • SESSION 29 TỔNG KẾT MÔN HỌC</span>
                     <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
-                        Phương hướng nâng cao hiệu quả hội nhập & Xây dựng nền kinh tế độc lập tự chủ
+                        Công tác xây dựng, chỉnh đốn Đảng & Bài học lịch sử Đảng
                     </h2>
-                    <p class="text-sm text-philo-ivory/70 mt-1">Mối quan hệ biện chứng giữa độc lập tự chủ và hội nhập quốc tế; các giải pháp chiến lược của Việt Nam</p>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Phòng chống tham nhũng tiêu cực không có vùng cấm, kiên định nguyên tắc và 5 bài học lớn qua 90 năm</p>
                 </div>
                 <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
                     <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
-                        <h4 class="font-bold text-philo-gold mb-1">Khái niệm Nền kinh tế độc lập, tự chủ (Trang 250):</h4>
+                        <strong class="text-philo-gold block mb-1">Xây dựng, chỉnh đốn Đảng & Cuộc chiến chống 'giặc nội xâm':</strong>
                         <p class="leading-relaxed">
-                            Là nền kinh tế không bị lệ thuộc, phụ thuộc vào nước khác, người khác, hoặc vào một tổ chức kinh tế nào đó về đường lối, chính sách phát triển; không bị bất cứ ai dùng những điều kiện kinh tế, tài chính, viện trợ... để áp đặt, khống chế, làm tổn hại chủ quyền quốc gia và lợi ích cơ bản của dân tộc.
+                            Đảng đẩy mạnh thực hiện Nghị quyết Trung ương 4 khóa XI, XII và Kết luận Trung ương 4 khóa XIII về xây dựng chỉnh đốn Đảng. Kiên quyết, kiên trì đấu tranh phòng chống tham nhũng, lãng phí, tiêu cực với phương châm: <em>"Không có vùng cấm, không có ngoại lệ, bất kể người đó là ai"</em>, củng cố vững chắc niềm tin của nhân dân đối với Đảng.
                         </p>
                     </div>
+                    <div class="p-5 bg-black/40 border border-philo-warmGold/20 rounded-xl space-y-2 text-xs">
+                        <h4 class="font-heading font-bold text-philo-gold text-sm">5 Bài học lịch sử lớn qua hơn 90 năm lãnh đạo của Đảng:</h4>
+                        <p><strong>1. Nắm vững ngọn cờ độc lập dân tộc và chủ nghĩa xã hội:</strong> Đây là sợi chỉ đỏ xuyên suốt toàn bộ lịch sử cách mạng Việt Nam.</p>
+                        <p><strong>2. Sự nghiệp cách mạng là của nhân dân, do nhân dân và vì nhân dân:</strong> Luôn luôn quán triệt sâu sắc chân lý "Dân là gốc".</p>
+                        <p><strong>3. Không ngừng củng cố, tăng cường đoàn kết:</strong> Đoàn kết toàn Đảng, đại đoàn kết toàn dân tộc, đoàn kết quốc tế trong sáng.</p>
+                        <p><strong>4. Kết hợp sức mạnh dân tộc với sức mạnh thời đại:</strong> Kết hợp sức mạnh nội lực trong nước với tranh thủ các yếu tố thuận lợi quốc tế.</p>
+                        <p><strong>5. Sự lãnh đạo đúng đắn của Đảng là nhân tố hàng đầu quyết định:</strong> Thường xuyên tự đổi mới, tự chỉnh đốn, nâng cao năng lực lãnh đạo và sức chiến đấu của Đảng.</p>
+                    </div>
+                </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">sync_alt</span>
-                            Mối quan hệ biện chứng giữa Độc lập tự chủ và Hội nhập quốc tế (Trang 253 - 255)
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 6.6
                         </h3>
-                        <div class="space-y-3 text-sm leading-relaxed">
-                            <p>
-                                <strong>Vừa tạo tiền đề cho nhau, vừa thống nhất với nhau:</strong>
-                            </p>
-                            <ul class="list-disc list-inside space-y-1 text-xs md:text-sm text-philo-ivory/80 pl-2">
-                                <li>Giữ vững độc lập tự chủ là <em>nền tảng</em> để hội nhập quốc tế hiệu quả, không bị "hòa tan" hay biến thành con bài chính trị.</li>
-                                <li>Hội nhập quốc tế thành công sẽ tạo thêm <em>lực lượng vật chất</em> và vị thế quốc tế vững mạnh để củng cố độc lập, tự chủ dân tộc.</li>
-                                <li><strong>Tránh hai thái cực sai lầm:</strong> Tuyệt đối hóa độc lập tự chủ dẫn tới "đóng cửa" biệt lập; hoặc hội nhập mù quáng, quá nhanh trong khi nội lực yếu kém dẫn tới mất chủ quyền kinh tế.</li>
-                            </ul>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Vì sao Đảng ta khẳng định 'Sự lãnh đạo đúng đắn của Đảng là nhân tố hàng đầu quyết định thắng lợi của cách mạng Việt Nam'?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Thực tiễn lịch sử hơn 90 năm chứng minh: mọi thắng lợi vĩ đại của dân tộc (CMT8 1945, Điện Biên Phủ 1954, Mùa Xuân 1975, thành tựu Đổi mới to lớn) đều bắt nguồn từ đường lối đúng đắn, bản lĩnh chính trị kiên định và sự hy sinh tận tụy của Đảng vì độc lập tự do và hạnh phúc của nhân dân.
+                            </div>
                         </div>
                     </div>
 
-                    <div>
-                        <h3 class="font-heading text-lg font-bold text-philo-gold mb-3 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-[20px]">task_alt</span>
-                            Năm giải pháp chiến lược xây dựng nền kinh tế độc lập tự chủ (Trang 251 - 253)
-                        </h3>
-                        <ol class="list-decimal list-inside space-y-2 text-xs md:text-sm text-philo-ivory/80 pl-2">
-                            <li>Hoàn thiện, bổ sung đường lối chung và đường lối kinh tế phát triển đất nước.</li>
-                            <li>Đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước (cơ cấu lại nền kinh tế, đa dạng hóa thị trường đối tác, tự chủ dần về công nghệ).</li>
-                            <li>Đẩy mạnh quan hệ kinh tế đối ngoại và chủ động hội nhập kinh tế quốc tế hiệu quả (thực hiện tốt 3 đột phá chiến lược: thể chế, hạ tầng, nhân lực).</li>
-                            <li>Tăng cường năng lực cạnh tranh của nền kinh tế và các doanh nghiệp trong nước.</li>
-                            <li>Kết hợp chặt chẽ phát triển kinh tế với củng cố quốc phòng, an ninh và đối ngoại.</li>
-                        </ol>
-                    </div>
-
-                    <div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/10">
-                        <button onclick="openFormativeQuiz('M6-FQ3')" class="philo-btn-secondary text-xs px-4 py-2 flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-[16px]">quiz</span> Làm Quiz Hình thành 6.5 & 6.6
-                        </button>
-                        <button id="btn-complete-M6-L6" onclick="completeLesson('M6-L6')" class="philo-btn-gold text-xs px-5 py-2.5">
-                            Hoàn thành Bài 6.6 ✓
-                        </button>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M6-L5')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M6-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M6-L6')" id="btn-complete-M6-L6" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
 
-        <!-- Banner thi trắc nghiệm cuối module -->
-        <div id="module-quiz-banner" class="hidden glass-panel p-8 rounded-2xl border-2 border-philo-gold/40 text-center my-10 bg-gradient-to-r from-philo-gold/10 via-philo-burgundy/40 to-philo-gold/10">
-            <span class="text-4xl mb-2 block">🎓</span>
-            <h3 class="font-heading text-2xl font-bold text-philo-gold mb-2">Chúc mừng bạn đã hoàn thành trọn vẹn cả 6 Chương Giáo trình MLN131!</h3>
-            <p class="text-sm text-philo-ivory/80 max-w-2xl mx-auto mb-5">
-                Bạn đã hoàn thành Chương 6 về CNH, HĐH và Hội nhập kinh tế quốc tế. Hãy làm bài kiểm tra tổng kết để nhận huy hiệu cuối cùng của khóa học!
-            </p>
-            <button onclick="openModuleQuiz()" class="philo-btn-gold text-sm px-8 py-3.5 inline-flex items-center gap-2">
-                <span class="material-symbols-outlined text-[20px]">military_tech</span>
-                Làm bài thi trắc nghiệm Module 6 (12 câu)
-            </button>
+        <!-- MODULE FINAL EXAM BANNER -->
+        <div id="module-quiz-banner" class="hidden mt-8 p-6 rounded-2xl glass-panel border border-philo-gold/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <h3 class="font-heading text-xl font-bold text-philo-gold">Chúc mừng bạn đã hoàn thành 6 bài học Chương 6!</h3>
+                <p class="text-xs text-philo-ivory/80 mt-1">Hãy tham gia bài thi tổng kết để củng cố toàn diện kiến thức và mở khóa danh hiệu vinh dự.</p>
+            </div>
+            <button onclick="openModuleQuiz()" class="philo-btn-gold shrink-0">Bắt đầu thi tổng kết</button>
         </div>
-
     </main>
 
-    <!-- ===== QUIZ MODAL ===== -->
-    <div id="quiz-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm hidden">
-        <div class="glass-panel w-full max-w-2xl max-h-[90vh] flex flex-col rounded-2xl border border-philo-gold/30 shadow-2xl overflow-hidden bg-philo-blackBurgundy">
-            <div class="p-5 border-b border-white/10 flex items-center justify-between bg-philo-burgundy/50">
+    <!-- SLIDE-OVER AI PANEL -->
+    <aside id="ai-panel" class="fixed top-0 right-0 w-full sm:w-96 h-full bg-[#120202] border-l border-philo-gold/30 shadow-2xl z-50 p-6 flex flex-col hidden-panel">
+        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-philo-gold">smart_toy</span>
+                <h3 class="font-heading font-bold text-philo-ivory">Trợ Lý AI Chương 6</h3>
+            </div>
+            <button onclick="toggleAIPanel()" class="text-philo-ivory/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
+        </div>
+        <div class="py-3 flex flex-wrap gap-1.5 border-b border-white/10">
+            <button onclick="sendAIPrompt('Mô hình KTTT định hướng XHCN?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Mô hình KTTT định hướng XHCN?</button>
+<button onclick="sendAIPrompt('Cương lĩnh bổ sung năm 2011?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Cương lĩnh bổ sung năm 2011?</button>
+<button onclick="sendAIPrompt('Mục tiêu 2030 và 2045 của Đại hội XIII?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Mục tiêu 2030 và 2045 của Đại hội XIII?</button>
+<button onclick="sendAIPrompt('Bài học lớn nhất của Lịch sử Đảng?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Bài học lớn nhất của Lịch sử Đảng?</button>
+
+        </div>
+        <div id="ai-chat-history" class="flex-grow overflow-y-auto py-4 space-y-3 text-xs">
+            <div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20">
+                <p class="font-bold text-philo-gold mb-1">🤖 AI Giáo trình VNR202</p>
+                <p class="text-philo-ivory/80">Chào bạn! Tôi là trợ lý AI chuyên sâu môn Lịch sử Đảng Cộng sản Việt Nam (VNR202) Chương 6. Bạn cần giải đáp câu hỏi hay tài liệu nào?</p>
+            </div>
+        </div>
+        <div class="pt-3 border-t border-white/10 flex gap-2">
+            <input type="text" id="ai-input" placeholder="Hỏi AI về Chương 6..." class="flex-grow bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-philo-gold" onkeydown="if(event.key==='Enter') sendAIMessage()" />
+            <button onclick="sendAIMessage()" class="philo-btn-gold px-3 py-2 rounded-xl text-xs"><span class="material-symbols-outlined text-[16px]">send</span></button>
+        </div>
+    </aside>
+
+    <!-- QUIZ MODAL -->
+    <div id="quiz-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glass-panel border border-philo-gold/40 rounded-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden">
+            <div class="p-5 border-b border-white/10 flex items-center justify-between">
                 <div>
                     <h3 id="quiz-modal-title" class="font-heading font-bold text-lg text-philo-gold">Bài kiểm tra trắc nghiệm</h3>
-                    <p id="quiz-modal-sub" class="text-xs text-philo-ivory/60 mt-0.5">MLN131 — Giáo trình chuẩn 2021</p>
+                    <p id="quiz-modal-sub" class="text-xs text-philo-ivory/60 mt-0.5">VNR202 Lịch sử Đảng</p>
                 </div>
-                <button onclick="closeQuizModal()" class="text-philo-ivory/60 hover:text-white p-1 rounded-lg hover:bg-white/10">
-                    <span class="material-symbols-outlined text-[20px]">close</span>
-                </button>
+                <button onclick="closeQuizModal()" class="text-white/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
             </div>
-            <div id="quiz-modal-body" class="p-6 overflow-y-auto flex-grow space-y-6 text-sm">
-                <!-- Injected by JS -->
-            </div>
+            <div id="quiz-modal-body" class="p-6 overflow-y-auto space-y-6 flex-grow"></div>
         </div>
     </div>
 
-    <!-- ===== AI ASSISTANT SLIDE-OVER PANEL ===== -->
-    <div id="ai-panel" class="fixed top-0 right-0 h-full w-full sm:w-[420px] z-50 glass-panel border-l border-philo-gold/30 flex flex-col hidden-panel bg-[#140303]/95 backdrop-blur-xl shadow-2xl">
-        <div class="p-4 border-b border-white/10 flex items-center justify-between bg-philo-burgundy/70">
-            <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-philo-gold/20 flex items-center justify-center border border-philo-gold/40">
-                    <span class="material-symbols-outlined text-philo-gold text-[18px]">smart_toy</span>
-                </div>
-                <div>
-                    <h4 class="font-heading font-bold text-sm text-philo-gold">AI Gia sư MLN131</h4>
-                    <p class="text-[10px] text-philo-ivory/60">Chương 6: CNH, HĐH & Hội nhập</p>
-                </div>
-            </div>
-            <button onclick="toggleAIPanel()" class="text-philo-ivory/60 hover:text-white p-1 rounded-lg hover:bg-white/10">
-                <span class="material-symbols-outlined text-[20px]">close</span>
-            </button>
-        </div>
-        <div id="ai-chat-history" class="flex-grow p-4 overflow-y-auto space-y-3 text-xs md:text-sm">
-            <div class="bg-philo-warmGold/10 rounded-xl p-3 border border-philo-warmGold/20">
-                <p class="font-bold text-philo-gold text-xs mb-1">💡 Trợ lý Giáo trình MLN131</p>
-                <p class="text-philo-ivory/80 leading-relaxed text-xs">
-                    Chào bạn! Tôi có thể giải đáp toàn bộ kiến thức Chương 6: Lịch sử 4 cuộc CMCN, mô hình CNH cổ điển Anh, Liên Xô, NICs, chuyển dịch cơ cấu ngành kinh tế, các cấp độ hội nhập quốc tế (PTA, FTA, CU...), và giải pháp xây dựng nền kinh tế độc lập tự chủ.
-                </p>
-            </div>
-        </div>
-        <div class="p-3 border-t border-white/10 bg-black/40">
-            <div class="flex items-center gap-2">
-                <input type="text" id="ai-input" placeholder="Hỏi về CMCN 4.0, kinh tế tri thức, FTA..." class="flex-grow bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-white/40 focus:outline-none focus:border-philo-gold" onkeydown="if(event.key==='Enter')sendAIMessage()" />
-                <button onclick="sendAIMessage()" class="p-2 rounded-xl bg-philo-gold text-black font-bold hover:bg-yellow-400 transition-all flex items-center justify-center">
-                    <span class="material-symbols-outlined text-[18px]">send</span>
-                </button>
-            </div>
-            <div class="flex flex-wrap gap-1.5 mt-2">
-                <button onclick="sendAIPrompt('Đặc trưng của Cách mạng công nghiệp lần thứ tư là gì?')" class="text-[10px] bg-white/5 hover:bg-white/10 px-2 py-1 rounded text-philo-ivory/70 border border-white/5">CMCN 4.0</button>
-                <button onclick="sendAIPrompt('So sánh mô hình CNH cổ điển Anh và mô hình NICs?')" class="text-[10px] bg-white/5 hover:bg-white/10 px-2 py-1 rounded text-philo-ivory/70 border border-white/5">Mô hình CNH</button>
-                <button onclick="sendAIPrompt('Mối quan hệ giữa độc lập tự chủ và hội nhập quốc tế?')" class="text-[10px] bg-white/5 hover:bg-white/10 px-2 py-1 rounded text-philo-ivory/70 border border-white/5">Độc lập vs Hội nhập</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement Toast Notification -->
-    <div id="achievement-toast" class="fixed bottom-6 right-6 z-50 glass-panel p-4 rounded-xl border border-philo-gold flex items-center gap-3 hidden bg-black/90 shadow-2xl">
-        <span class="text-3xl" id="achievement-icon">🏆</span>
+    <!-- ACHIEVEMENT TOAST -->
+    <div id="achievement-toast" class="fixed bottom-6 right-6 glass-panel border border-philo-gold p-4 rounded-2xl shadow-2xl flex items-center gap-4 z-50 hidden">
+        <span class="text-3xl" id="achievement-icon">🎖️</span>
         <div>
-            <h5 class="font-bold text-xs text-philo-gold uppercase tracking-wider" id="achievement-name">Thành tích mới!</h5>
-            <p class="text-xs text-philo-ivory/80" id="achievement-desc">Mô tả thành tích</p>
+            <h4 class="font-bold text-philo-gold text-sm" id="achievement-name">Mở khóa danh hiệu</h4>
+            <p class="text-xs text-philo-ivory/80" id="achievement-desc">Mô tả danh hiệu</p>
         </div>
     </div>
 
     <div id="footer-placeholder"></div>
 
+    <!-- Component Loaders -->
+    <script src="js/search-data-global.js"></script>
     <script src="js/load-components.js"></script>
+    <script src="js/search-init.js"></script>
+
     <script>
-        const M6_LESSONS = ['M6-L1', 'M6-L2', 'M6-L3', 'M6-L4', 'M6-L5', 'M6-L6'];
-        let M6_STATE = {
+        const M_LESSONS = ["M6-L1","M6-L2","M6-L3","M6-L4","M6-L5","M6-L6"];
+        let M_STATE = {
             completedLessons: new Set(),
             quizResults: {}
         };
 
-        function loadM6State() {
+        const STORAGE_KEY = 'vnr202_m6_state';
+
+        function loadMState() {
             try {
-                const raw = localStorage.getItem('philo_mln131_m6');
-                if (raw) {
-                    const parsed = JSON.parse(raw);
-                    M6_STATE.completedLessons = new Set(parsed.completedLessons || []);
-                    M6_STATE.quizResults = parsed.quizResults || {};
+                const s = localStorage.getItem(STORAGE_KEY);
+                if (s) {
+                    const parsed = JSON.parse(s);
+                    M_STATE.completedLessons = new Set(parsed.completedLessons || []);
+                    M_STATE.quizResults = parsed.quizResults || {};
                 }
-            } catch (e) { console.warn(e); }
+            } catch(e) {}
         }
 
-        function saveM6State() {
-            try {
-                localStorage.setItem('philo_mln131_m6', JSON.stringify({
-                    completedLessons: Array.from(M6_STATE.completedLessons),
-                    quizResults: M6_STATE.quizResults
-                }));
-            } catch (e) { console.warn(e); }
+        function saveMState() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                completedLessons: Array.from(M_STATE.completedLessons),
+                quizResults: M_STATE.quizResults
+            }));
         }
 
         function showLesson(id) {
-            M6_LESSONS.forEach(lId => {
-                const el = document.getElementById('lesson-' + lId);
-                const tab = document.getElementById('tab-' + lId);
+            M_LESSONS.forEach(l => {
+                const el = document.getElementById('lesson-' + l);
+                const tab = document.getElementById('tab-' + l);
                 if (el) el.classList.add('hidden');
                 if (tab) tab.classList.remove('active-tab');
             });
@@ -744,12 +659,12 @@
             const activeTab = document.getElementById('tab-' + id);
             if (activeEl) activeEl.classList.remove('hidden');
             if (activeTab) activeTab.classList.add('active-tab');
-            window.scrollTo({ top: 350, behavior: 'smooth' });
+            window.scrollTo({ top: 380, behavior: 'smooth' });
         }
 
         function completeLesson(id) {
-            M6_STATE.completedLessons.add(id);
-            saveM6State();
+            M_STATE.completedLessons.add(id);
+            saveMState();
             updateProgress();
             const btn = document.getElementById('btn-complete-' + id);
             if (btn) {
@@ -757,403 +672,314 @@
                 btn.classList.add('bg-emerald-600', 'text-white');
                 btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span> Đã hoàn thành ✓';
             }
-            const curIdx = M6_LESSONS.indexOf(id);
-            if (curIdx < M6_LESSONS.length - 1) {
-                showLesson(M6_LESSONS[curIdx + 1]);
-            } else {
-                const b = document.getElementById('module-quiz-banner');
-                if (b) b.classList.remove('hidden');
+            const idx = M_LESSONS.indexOf(id);
+            if (idx < M_LESSONS.length - 1) {
+                setTimeout(() => showLesson(M_LESSONS[idx + 1]), 400);
             }
         }
 
         function updateProgress() {
-            const count = M6_STATE.completedLessons.size;
+            const count = M_STATE.completedLessons.size;
             const pct = Math.round((count / 6) * 100);
             const bar = document.getElementById('m6-progress-bar');
             const txt = document.getElementById('m6-progress-text');
             if (bar) bar.style.width = pct + '%';
             if (txt) txt.textContent = count + ' / 6 bài (' + pct + '%)';
-
-            M6_LESSONS.forEach(id => {
-                const dot = document.getElementById('dot-' + id);
+            M_LESSONS.forEach(l => {
+                const dot = document.getElementById('dot-' + l);
                 if (dot) {
-                    if (M6_STATE.completedLessons.has(id)) {
-                        dot.classList.add('completed');
-                    } else {
-                        dot.classList.remove('completed');
-                    }
+                    if (M_STATE.completedLessons.has(l)) dot.classList.add('completed');
+                    else dot.classList.remove('completed');
                 }
             });
-        }
-
-        function toggleReflection(id) {
-            const el = document.getElementById(id);
-            if (el) el.classList.toggle('open');
-        }
-
-        /* FORMATIVE QUIZZES DATA (PP. 201 - 257) */
-        window.FORMATIVE_QUIZZES_M6 = {
-            'M6-FQ1': {
-                title: 'Kiểm tra nhanh — Bài 6.1 & 6.2: Các cuộc CMCN & Mô hình CNH',
-                passingScore: 75,
-                questions: [
-                    {
-                        id: 'fq6_1',
-                        text: 'Phát minh quan trọng mở đầu quá trình cơ giới hóa sản xuất trong cuộc Cách mạng công nghiệp lần thứ nhất là:',
-                        options: [
-                            { id: 'a', text: 'Máy hơi nước của James Watt (1784)' },
-                            { id: 'b', text: 'Máy tính cá nhân của IBM' },
-                            { id: 'c', text: 'Động cơ điện của Faraday' },
-                            { id: 'd', text: 'Công nghệ in 3D' }
-                        ],
-                        correctOptionId: 'a',
-                        rationale: 'Giáo trình trang 203: Phát minh máy động lực, đặc biệt là máy hơi nước của James Watt (1784) là mốc mở đầu quá trình cơ giới hóa sản xuất.'
-                    },
-                    {
-                        id: 'fq6_2',
-                        text: 'Đặc trưng cốt lõi của Cách mạng công nghiệp lần thứ tư (Industry 4.0) là gì?',
-                        options: [
-                            { id: 'a', text: 'Cơ giới hóa sử dụng sức nước' },
-                            { id: 'b', text: 'Sử dụng động cơ đốt trong và năng lượng điện' },
-                            { id: 'c', text: 'Liên kết giữa thế giới thực và ảo trên nền tảng internet kết nối vạn vật (IoT), AI và dữ liệu lớn' },
-                            { id: 'd', text: 'Phát triển ngành dệt may thủ công' }
-                        ],
-                        correctOptionId: 'c',
-                        rationale: 'Giáo trình trang 205 (Hộp 6.1): CMCN lần thứ tư liên kết giữa thế giới thực và ảo, internet kết nối vạn vật (IoT), trí tuệ nhân tạo (AI), big data.'
-                    },
-                    {
-                        id: 'fq6_3',
-                        text: 'Mô hình công nghiệp hóa cổ điển (nước Anh) bắt đầu từ ngành công nghiệp nào?',
-                        options: [
-                            { id: 'a', text: 'Công nghiệp cơ khí chế tạo máy' },
-                            { id: 'b', text: 'Công nghiệp nhẹ, trực tiếp là công nghiệp dệt' },
-                            { id: 'c', text: 'Công nghiệp hóa chất và luyện kim' },
-                            { id: 'd', text: 'Công nghiệp điện tử viễn thông' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 217: Công nghiệp hóa ở nước Anh được bắt đầu từ ngành công nghiệp nhẹ, trực tiếp là ngành công nghiệp dệt đòi hỏi vốn ít, thu lợi nhuận nhanh.'
-                    },
-                    {
-                        id: 'fq6_4',
-                        text: 'Mô hình công nghiệp hóa của Nhật Bản và các nước NICs (Hàn Quốc, Singapore) có đặc điểm nổi bật nào?',
-                        options: [
-                            { id: 'a', text: 'Thời gian kéo dài hơn 100 năm giống như nước Anh' },
-                            { id: 'b', text: 'Thực hiện CNH rút ngắn, kết hợp công nghệ truyền thống và hiện đại, đi tắt đón đầu' },
-                            { id: 'c', text: 'Ưu tiên tuyệt đối phát triển công nghiệp nặng theo mệnh lệnh tập trung' },
-                            { id: 'd', text: 'Đóng cửa hoàn toàn thị trường trong nước để tự cung tự cấp' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 219-220: Chiến lược của Nhật Bản và NICs là CNH rút ngắn, kết hợp vừa nghiên cứu vừa chuyển giao công nghệ, rút ngắn thời gian còn 20 - 30 năm.'
-                    }
-                ]
-            },
-            'M6-FQ2': {
-                title: 'Kiểm tra nhanh — Bài 6.3 & 6.4: CNH-HĐH ở VN & Cấp độ Hội nhập',
-                passingScore: 75,
-                questions: [
-                    {
-                        id: 'fq6_1_2',
-                        text: 'Theo định nghĩa của OECD (1995), nền kinh tế tri thức là nền kinh tế như thế nào?',
-                        options: [
-                            { id: 'a', text: 'Nền kinh tế dựa chủ yếu vào khai thác tài nguyên dầu mỏ' },
-                            { id: 'b', text: 'Nền kinh tế trong đó sự sản sinh, phổ cập và sử dụng tri thức giữ vai trò quyết định nhất đối với sự phát triển kinh tế' },
-                            { id: 'c', text: 'Nền kinh tế chỉ bao gồm các trường đại học và viện hàn lâm' },
-                            { id: 'd', text: 'Nền kinh tế nông nghiệp cổ truyền' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 225: Kinh tế tri thức là nền kinh tế trong đó sự sản sinh ra, phổ cập và sử dụng tri thức giữ vai trò quyết định nhất đối với phát triển kinh tế.'
-                    },
-                    {
-                        id: 'fq6_2_2',
-                        text: 'Chuyển dịch cơ cấu ngành kinh tế trong quá trình CNH, HĐH theo hướng hiện đại là quá trình:',
-                        options: [
-                            { id: 'a', text: 'Tăng tỷ trọng nông nghiệp, giảm tỷ trọng công nghiệp và dịch vụ' },
-                            { id: 'b', text: 'Tăng tỷ trọng công nghiệp và dịch vụ, giảm tỷ trọng nông nghiệp trong GDP' },
-                            { id: 'c', text: 'Chỉ phát triển các ngành dịch vụ thương mại tiêu dùng' },
-                            { id: 'd', text: 'Triệt tiêu hoàn toàn khu vực sản xuất lương thực thực phẩm' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 227: Chuyển dịch cơ cấu ngành theo hướng hiện đại chính là quá trình tăng tỷ trọng của ngành công nghiệp và dịch vụ, giảm tỷ trọng nông nghiệp trong GDP.'
-                    },
-                    {
-                        id: 'fq6_3_2',
-                        text: 'Cấp độ hội nhập kinh tế quốc tế cao nhất trong tiến trình liên kết kinh tế là:',
-                        options: [
-                            { id: 'a', text: 'Thỏa thuận thương mại ưu đãi (PTA)' },
-                            { id: 'b', text: 'Khu vực mậu dịch tự do (FTA)' },
-                            { id: 'c', text: 'Liên minh kinh tế - tiền tệ' },
-                            { id: 'd', text: 'Liên minh thuế quan (CU)' }
-                        ],
-                        correctOptionId: 'c',
-                        rationale: 'Giáo trình trang 236-237: Tiến trình hội nhập từ thấp đến cao gồm: PTA -> FTA -> CU -> Thị trường chung -> Liên minh kinh tế - tiền tệ.'
-                    },
-                    {
-                        id: 'fq6_4_2',
-                        text: 'Việt Nam chính thức trở thành thành viên của Tổ chức Thương mại Thế giới (WTO) vào năm nào?',
-                        options: [
-                            { id: 'a', text: 'Năm 1995' },
-                            { id: 'b', text: 'Năm 1998' },
-                            { id: 'c', text: 'Năm 2007' },
-                            { id: 'd', text: 'Năm 2015' }
-                        ],
-                        correctOptionId: 'c',
-                        rationale: 'Giáo trình trang 246 (Hộp 6.4): Năm 2007: Việt Nam chính thức trở thành thành viên của Tổ chức Thương mại thế giới (WTO).'
-                    }
-                ]
-            },
-            'M6-FQ3': {
-                title: 'Kiểm tra nhanh — Bài 6.5 & 6.6: Tác động Hội nhập & Kinh tế Độc lập Tự chủ',
-                passingScore: 75,
-                questions: [
-                    {
-                        id: 'fq6_1_3',
-                        text: 'Một trong những nguy cơ tiêu cực lớn nhất đối với các nước đang phát triển trong hội nhập kinh tế quốc tế là:',
-                        options: [
-                            { id: 'a', text: 'Mở rộng thị trường xuất khẩu hàng hóa' },
-                            { id: 'b', text: 'Dễ trở thành bãi thải công nghiệp công nghệ thấp và bị cạn kiệt tài nguyên thiên nhiên' },
-                            { id: 'c', text: 'Thu hút thêm nhiều nguồn vốn đầu tư trực tiếp nước ngoài FDI' },
-                            { id: 'd', text: 'Nâng cao trình độ đội ngũ nhân lực kỹ thuật' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 240: Nguy cơ thua thiệt trong chuỗi giá trị toàn cầu, dễ trở thành bãi thải công nghiệp và công nghệ thấp, cạn kiệt tài nguyên thiên nhiên.'
-                    },
-                    {
-                        id: 'fq6_2_3',
-                        text: 'Nền kinh tế độc lập, tự chủ là nền kinh tế:',
-                        options: [
-                            { id: 'a', text: 'Đóng cửa biên giới hoàn toàn, không giao thương buôn bán với bất kỳ nước nào' },
-                            { id: 'b', text: 'Không bị lệ thuộc vào nước khác về đường lối, chính sách phát triển; không bị áp đặt khống chế làm tổn hại chủ quyền' },
-                            { id: 'c', text: 'Từ chối mọi nguồn vốn và công nghệ viện trợ từ nước ngoài' },
-                            { id: 'd', text: 'Chỉ chấp nhận thanh toán bằng vàng miếng' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 250: Nền kinh tế độc lập tự chủ là không bị lệ thuộc, phụ thuộc vào nước khác, tổ chức khác về đường lối chính sách; không bị dùng kinh tế tài chính áp đặt khống chế.'
-                    },
-                    {
-                        id: 'fq6_3_3',
-                        text: 'Mối quan hệ giữa giữ vững độc lập, tự chủ và chủ động hội nhập kinh tế quốc tế là:',
-                        options: [
-                            { id: 'a', text: 'Hoàn toàn đối lập và loại trừ lẫn nhau' },
-                            { id: 'b', text: 'Mối quan hệ biện chứng, vừa tạo tiền đề cho nhau vừa thống nhất với nhau' },
-                            { id: 'c', text: 'Muốn giữ độc lập thì bắt buộc phải bế quan tỏa cảng' },
-                            { id: 'd', text: 'Hội nhập đồng nghĩa với việc chấp nhận để bị hòa tan' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 253: Giữa độc lập, tự chủ và hội nhập quốc tế có mối quan hệ biện chứng; vừa tạo tiền đề cho nhau và phát huy lẫn nhau, vừa thống nhất trong thực hiện mục tiêu cách mạng.'
-                    },
-                    {
-                        id: 'fq6_4_3',
-                        text: 'Ba đột phá chiến lược để thực hiện thành công hội nhập kinh tế quốc tế ở Việt Nam bao gồm:',
-                        options: [
-                            { id: 'a', text: 'Đô thị hóa, khai thác khoáng sản và in thêm tiền tệ' },
-                            { id: 'b', text: 'Cải cách thể chế, phát triển hạ tầng cơ sở và phát triển nguồn nhân lực' },
-                            { id: 'c', text: 'Tăng thuế nhập khẩu, cấm xuất khẩu nông sản và trợ giá công nghiệp' },
-                            { id: 'd', text: 'Giảm giờ làm, tăng ngày nghỉ lễ và hạn chế đầu tư tư nhân' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Giáo trình trang 252: Ba đột phá chiến lược gồm: cải cách thể chế, phát triển hạ tầng cơ sở, phát triển nguồn nhân lực (nhất là nhân lực chất lượng cao).'
-                    }
-                ]
+            if (count === 6) {
+                const banner = document.getElementById('module-quiz-banner');
+                if (banner) banner.classList.remove('hidden');
             }
-        };
+        }
 
-        /* MODULE 6 QUIZ - 12 MCQs */
-        window.MODULE_QUIZ_M6 = {
-            title: 'Kiểm tra tổng kết Module 6 — CNH, HĐH & Hội nhập kinh tế quốc tế',
-            passingScore: 75,
-            achievement: 'integration-visionary',
-            questions: [
-                {
-                    id: 'mq6_1',
-                    text: 'Nội dung cốt lõi của Cách mạng công nghiệp lần thứ nhất là gì?',
-                    options: [
-                        { id: 'a', text: 'Ứng dụng công nghệ thông tin và máy tính' },
-                        { id: 'b', text: 'Chuyển từ lao động thủ công thành lao động sử dụng máy móc, cơ giới hóa bằng năng lượng hơi nước' },
-                        { id: 'c', text: 'Sản xuất hàng loạt nhờ động cơ điện' },
-                        { id: 'd', text: 'Hợp nhất hệ thống kỹ thuật số, vật lý và sinh học' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 202-203: Chuyển từ lao động thủ công thành lao động sử dụng máy móc, thực hiện cơ giới hóa sản xuất bằng việc sử dụng năng lượng nước và hơi nước.'
-                },
-                {
-                    id: 'mq6_2',
-                    text: 'Cuộc Cách mạng công nghiệp lần thứ hai diễn ra trong khoảng thời gian nào?',
-                    options: [
-                        { id: 'a', text: 'Giữa thế kỷ XVIII đến giữa thế kỷ XIX' },
-                        { id: 'b', text: 'Nửa cuối thế kỷ XIX đến đầu thế kỷ XX' },
-                        { id: 'c', text: 'Thập niên 60 đến cuối thế kỷ XX' },
-                        { id: 'd', text: 'Từ năm 2011 đến nay' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 203: Cách mạng công nghiệp lần thứ hai diễn ra từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX.'
-                },
-                {
-                    id: 'mq6_3',
-                    text: 'Công nghiệp hóa ở nước Anh (mô hình cổ điển) được bắt đầu từ ngành nào?',
-                    options: [
-                        { id: 'a', text: 'Công nghiệp nhẹ, trực tiếp là công nghiệp dệt' },
-                        { id: 'b', text: 'Chế tạo máy móc và động cơ xe lửa' },
-                        { id: 'c', text: 'Luyện kim đen và luyện gang' },
-                        { id: 'd', text: 'Khai thác mỏ than đá' }
-                    ],
-                    correctOptionId: 'a',
-                    rationale: 'Giáo trình trang 217: Bắt đầu từ công nghiệp nhẹ, trực tiếp là ngành công nghiệp dệt đòi hỏi vốn ít, thu lợi nhuận nhanh.'
-                },
-                {
-                    id: 'mq6_4',
-                    text: 'Con đường công nghiệp hóa theo mô hình Liên Xô có đặc điểm gì?',
-                    options: [
-                        { id: 'a', text: 'Ưu tiên phát triển nông nghiệp sạch xuất khẩu' },
-                        { id: 'b', text: 'Ưu tiên phát triển công nghiệp nặng thông qua cơ chế kế hoạch hóa tập trung mệnh lệnh' },
-                        { id: 'c', text: 'Phát triển kinh tế thị trường tự do cạnh tranh' },
-                        { id: 'd', text: 'Dựa chủ yếu vào viện trợ nước ngoài không hoàn lại' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 218: Ưu tiên phát triển công nghiệp nặng, trực tiếp là cơ khí chế tạo máy thông qua cơ chế kế hoạch hóa tập trung, mệnh lệnh.'
-                },
-                {
-                    id: 'mq6_5',
-                    text: 'Đâu KHÔNG PHẢI là đặc điểm của công nghiệp hóa, hiện đại hóa ở Việt Nam?',
-                    options: [
-                        { id: 'a', text: 'Thực hiện theo định hướng XHCN vì mục tiêu dân giàu nước mạnh' },
-                        { id: 'b', text: 'Gắn liền với phát triển kinh tế tri thức' },
-                        { id: 'c', text: 'Thực hiện trong điều kiện bế quan tỏa cảng, đóng cửa thị trường' },
-                        { id: 'd', text: 'Tiến hành trong bối cảnh toàn cầu hóa và thích ứng CMCN 4.0' }
-                    ],
-                    correctOptionId: 'c',
-                    rationale: 'Giáo trình trang 223: CNH-HĐH ở VN diễn ra trong bối cảnh toàn cầu hóa kinh tế và chủ động tích cực hội nhập, không hề bế quan tỏa cảng.'
-                },
-                {
-                    id: 'mq6_6',
-                    text: 'Trong hệ thống cơ cấu kinh tế, cơ cấu nào giữ vị trí quan trọng nhất phản ánh trình độ phát triển?',
-                    options: [
-                        { id: 'a', text: 'Cơ cấu vùng kinh tế' },
-                        { id: 'b', text: 'Cơ cấu ngành kinh tế (công nghiệp - nông nghiệp - dịch vụ)' },
-                        { id: 'c', text: 'Cơ cấu các thành phần kinh tế' },
-                        { id: 'd', text: 'Cơ cấu dân số theo độ tuổi' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 227: Cơ cấu ngành kinh tế giữ vị trí quan trọng nhất, vì nó phản ánh trình độ phát triển của nền kinh tế và kết quả của quá trình CNH, HĐH.'
-                },
-                {
-                    id: 'mq6_7',
-                    text: 'Trong Cách mạng công nghiệp 4.0, khâu nào được coi là đột phá ở Việt Nam?',
-                    options: [
-                        { id: 'a', text: 'Phát triển và ứng dụng công nghệ thông tin và truyền thông' },
-                        { id: 'b', text: 'Đóng cửa toàn bộ các nhà máy nhiệt điện than' },
-                        { id: 'c', text: 'Nhập khẩu 100% lương thực từ nước ngoài' },
-                        { id: 'd', text: 'Chỉ tập trung vào công nghiệp dệt may truyền thống' }
-                    ],
-                    correctOptionId: 'a',
-                    rationale: 'Giáo trình trang 230: Coi phát triển và ứng dụng công nghệ thông tin là khâu đột phá trong Cách mạng công nghiệp lần thứ tư ở Việt Nam.'
-                },
-                {
-                    id: 'mq6_8',
-                    text: 'Hiệp ước nào đánh dấu sự ra đời của đồng tiền chung châu Âu (EURO) vào ngày 1/1/1999?',
-                    options: [
-                        { id: 'a', text: 'Hiệp định Paris' },
-                        { id: 'b', text: 'Liên minh châu Âu (EU)' },
-                        { id: 'c', text: 'Khối Mậu dịch tự do Bắc Mỹ (NAFTA)' },
-                        { id: 'd', text: 'Tổ chức các nước xuất khẩu dầu mỏ (OPEC)' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 139, 237: Liên minh châu Âu (EU) ngày 1/1/1999 chính thức đưa đồng tiền chung EURO ra đời.'
-                },
-                {
-                    id: 'mq6_9',
-                    text: 'Việt Nam gia nhập Hiệp hội các quốc gia Đông Nam Á (ASEAN) vào năm nào?',
-                    options: [
-                        { id: 'a', text: 'Năm 1986' },
-                        { id: 'b', text: 'Năm 1995' },
-                        { id: 'c', text: 'Năm 2000' },
-                        { id: 'd', text: 'Năm 2007' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 246 (Hộp 6.4): Năm 1995: Việt Nam gia nhập Hiệp hội các quốc gia Đông Nam Á (ASEAN).'
-                },
-                {
-                    id: 'mq6_10',
-                    text: 'Trong các hình thức đầu tư trực tiếp nước ngoài hiện nay, hình thức BOT viết tắt của cụm từ tiếng Anh nào?',
-                    options: [
-                        { id: 'a', text: 'Build - Operate - Transfer (Xây dựng - Kinh doanh - Chuyển giao)' },
-                        { id: 'b', text: 'Built and Transfer (Xây dựng - Chuyển giao)' },
-                        { id: 'c', text: 'Bank of Trade' },
-                        { id: 'd', text: 'Buy On Technology' }
-                    ],
-                    correctOptionId: 'a',
-                    rationale: 'Giáo trình trang 138-139, 245: BOT là Build - Operate - Transfer (Xây dựng - Kinh doanh - Chuyển giao).'
-                },
-                {
-                    id: 'mq6_11',
-                    text: 'Ai là lực lượng nòng cốt trong tiến trình hội nhập kinh tế quốc tế của Việt Nam?',
-                    options: [
-                        { id: 'a', text: 'Các cơ quan hành chính nhà nước' },
-                        { id: 'b', text: 'Doanh nghiệp và đội ngũ doanh nhân' },
-                        { id: 'c', text: 'Các chuyên gia tư vấn nước ngoài' },
-                        { id: 'd', text: 'Lực lượng vũ trang nhân dân' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giáo trình trang 242: Hội nhập quốc tế toàn diện là sự nghiệp của toàn dân, trong đó doanh nghiệp và đội ngũ doanh nhân sẽ là lực lượng nòng cốt.'
-                },
-                {
-                    id: 'mq6_12',
-                    text: 'Chiến lược phát triển kinh tế - xã hội 2021 - 2030 của Đại hội XIII nhấn mạnh: Xây dựng nền kinh tế tự chủ phải dựa trên cơ sở nào?',
-                    options: [
-                        { id: 'a', text: 'Làm chủ công nghệ và chủ động, tích cực hội nhập, đa dạng hóa thị trường' },
-                        { id: 'b', text: 'Dựa hoàn toàn vào vốn vay ODA của quốc tế' },
-                        { id: 'c', text: 'Đóng cửa thị trường chứng khoán' },
-                        { id: 'd', text: 'Khai thác tối đa nguồn tài nguyên khoáng sản thô' }
-                    ],
-                    correctOptionId: 'a',
-                    rationale: 'Giáo trình trang 250 trích Văn kiện ĐH XIII: "Xây dựng nền kinh tế tự chủ phải trên cơ sở làm chủ công nghệ và chủ động, tích cực hội nhập, đa dạng hóa thị trường, nâng cao khả năng thích ứng của nền kinh tế".'
-                }
-            ]
-        };
+        function toggleReflection(btn) {
+            const answer = btn.nextElementSibling;
+            if (answer) {
+                answer.classList.toggle('open');
+                const icon = btn.querySelector('.material-symbols-outlined');
+                if (icon) icon.textContent = answer.classList.contains('open') ? 'expand_less' : 'expand_more';
+            }
+        }
+
+        // QUIZ DATA
+        const FORMATIVE_QUIZZES = {
+  "M6-FQ1": {
+    "id": "M6-FQ1",
+    "title": "Trắc nghiệm nhanh: CNH, HĐH & Hội nhập WTO",
+    "passingScore": 75,
+    "questions": [
+      {
+        "id": "fq6_1",
+        "text": "Mô hình kinh tế tổng quát trong thời kỳ quá độ lên CNXH được Đại hội IX (2001) khẳng định là gì?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kinh tế thị trường tự do tư bản chủ nghĩa"
+          },
+          {
+            "id": "b",
+            "text": "Kinh tế kế hoạch hóa tập trung quan liêu bao cấp"
+          },
+          {
+            "id": "c",
+            "text": "Kinh tế thị trường định hướng xã hội chủ nghĩa"
+          },
+          {
+            "id": "d",
+            "text": "Kinh tế tự cung tự cấp"
+          }
+        ],
+        "correctOptionId": "c",
+        "rationale": "Đại hội IX chính thức xác định mô hình kinh tế thị trường định hướng xã hội chủ nghĩa."
+      },
+      {
+        "id": "fq6_2",
+        "text": "Việt Nam chính thức trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới (WTO) vào ngày tháng năm nào?",
+        "options": [
+          {
+            "id": "a",
+            "text": "11/1/2007"
+          },
+          {
+            "id": "b",
+            "text": "28/7/1995"
+          },
+          {
+            "id": "c",
+            "text": "1/1/2001"
+          },
+          {
+            "id": "d",
+            "text": "3/2/2010"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "Việt Nam chính thức gia nhập WTO vào ngày 11/1/2007."
+      },
+      {
+        "id": "fq6_3",
+        "text": "Cương lĩnh bổ sung, phát triển năm 2011 xác định xã hội XHCN mà nhân dân ta xây dựng gồm bao nhiêu đặc trưng?",
+        "options": [
+          {
+            "id": "a",
+            "text": "6 đặc trưng"
+          },
+          {
+            "id": "b",
+            "text": "8 đặc trưng"
+          },
+          {
+            "id": "c",
+            "text": "10 đặc trưng"
+          },
+          {
+            "id": "d",
+            "text": "5 đặc trưng"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Cương lĩnh bổ sung 2011 hoàn thiện mô hình gồm 8 đặc trưng cơ bản."
+      }
+    ]
+  }
+};
+        const MODULE_QUIZ = {
+  "id": "MODULE_QUIZ_M6",
+  "title": "Kiểm tra Tổng kết Chương 6: CNH, HĐH, Hội nhập & Xây dựng Đảng",
+  "passingScore": 70,
+  "achievement": "m6-master",
+  "questions": [
+    {
+      "id": "mq6_1",
+      "text": "Cương lĩnh bổ sung phát triển năm 2011 đã xác định mấy đột phá chiến lược để phát triển đất nước?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 đột phá"
+        },
+        {
+          "id": "b",
+          "text": "3 đột phá chiến lược (thể chế, nguồn nhân lực, hạ tầng)"
+        },
+        {
+          "id": "c",
+          "text": "4 đột phá"
+        },
+        {
+          "id": "d",
+          "text": "5 đột phá"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Ba đột phá chiến lược: Thể chế KTTT định hướng XHCN, phát triển nguồn nhân lực chất lượng cao và kết cấu hạ tầng đồng bộ."
+    },
+    {
+      "id": "mq6_2",
+      "text": "Đại hội XIII (1/2021) xác định mục tiêu đến năm 2030 (kỷ niệm 100 năm thành lập Đảng) nước ta sẽ là:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nước đang phát triển, có công nghiệp hiện đại, thu nhập trung bình cao"
+        },
+        {
+          "id": "b",
+          "text": "Nước phát triển, thu nhập cao"
+        },
+        {
+          "id": "c",
+          "text": "Nước nông nghiệp lạc hậu"
+        },
+        {
+          "id": "d",
+          "text": "Nước có nền kinh tế bao cấp"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Mục tiêu 2030: Nước đang phát triển, có công nghiệp hiện đại, thu nhập trung bình cao."
+    },
+    {
+      "id": "mq6_3",
+      "text": "Đại hội XIII xác định mục tiêu đến năm 2045 (kỷ niệm 100 năm thành lập nước) là gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trở thành nước phát triển, thu nhập cao theo định hướng XHCN"
+        },
+        {
+          "id": "b",
+          "text": "Nước có thu nhập trung bình thấp"
+        },
+        {
+          "id": "c",
+          "text": "Duy trì tình trạng kinh tế hiện tại"
+        },
+        {
+          "id": "d",
+          "text": "Không đặt mục tiêu cụ thể"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Mục tiêu 2045: Trở thành nước phát triển, có thu nhập cao theo định hướng XHCN."
+    },
+    {
+      "id": "mq6_4",
+      "text": "Nhận định nổi tiếng nào của Tổng Bí thư Nguyễn Phú Trọng được đưa vào Văn kiện Đại hội XIII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "\"Đất nước ta chưa bao giờ có được cơ đồ, tiềm lực, vị thế và uy tín quốc tế như ngày nay\""
+        },
+        {
+          "id": "b",
+          "text": "\"Không có gì quý hơn độc lập tự do\""
+        },
+        {
+          "id": "c",
+          "text": "\"Hãy giữ vững chí khí chiến đấu\""
+        },
+        {
+          "id": "d",
+          "text": "\"Nhìn thẳng vào sự thật, nói rõ sự thật\""
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Văn kiện Đại hội XIII đúc kết đánh giá: \"Đất nước ta chưa bao giờ có được cơ đồ, tiềm lực, vị thế và uy tín quốc tế như ngày nay\"."
+    },
+    {
+      "id": "mq6_5",
+      "text": "Phương châm cốt lõi trong công tác phòng chống tham nhũng, tiêu cực hiện nay của Đảng là gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "\"Không có vùng cấm, không có ngoại lệ, bất kể người đó là ai\""
+        },
+        {
+          "id": "b",
+          "text": "\"Xử lý nội bộ kín đáo\""
+        },
+        {
+          "id": "c",
+          "text": "\"Chỉ xử lý cấp dưới\""
+        },
+        {
+          "id": "d",
+          "text": "\"Hòa cả làng\""
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Phương châm phòng chống tham nhũng tiêu cực: Không có vùng cấm, không có ngoại lệ."
+    },
+    {
+      "id": "mq6_6",
+      "text": "Bài học xuyên suốt số 1 qua hơn 90 năm lãnh đạo cách mạng của Đảng là:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nắm vững ngọn cờ độc lập dân tộc và chủ nghĩa xã hội"
+        },
+        {
+          "id": "b",
+          "text": "Chỉ dựa vào viện trợ bên ngoài"
+        },
+        {
+          "id": "c",
+          "text": "Tập trung phát triển công nghiệp nặng"
+        },
+        {
+          "id": "d",
+          "text": "Tách rời nhân dân"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Độc lập dân tộc gắn liền với chủ nghĩa xã hội là bài học số 1 và là sợi chỉ đỏ xuyên suốt của cách mạng Việt Nam."
+    }
+  ]
+};
+        const ACHIEVEMENT = {"id":"m6-master","name":"Chuyên Gia Lịch Sử Đảng Đương Đại","desc":"Đạt kết quả xuất sắc bài thi tổng kết Chương 6 VNR202!"};
 
         let currentQuizData = null;
         let currentQuizAnswers = {};
-        let currentQuizSubmitted = false;
 
         function openFormativeQuiz(id) {
-            const q = window.FORMATIVE_QUIZZES_M6[id];
-            if (!q) return;
-            currentQuizData = { ...q, id };
-            currentQuizAnswers = {};
-            currentQuizSubmitted = false;
-            renderQuizModal(q);
-            document.getElementById('quiz-modal').classList.remove('hidden');
+            const q = FORMATIVE_QUIZZES[id] || FORMATIVE_QUIZZES['M6-FQ1'];
+            if (q) renderQuizModal(q);
         }
 
         function openModuleQuiz() {
-            currentQuizData = window.MODULE_QUIZ_M6;
-            currentQuizAnswers = {};
-            currentQuizSubmitted = false;
-            renderQuizModal(window.MODULE_QUIZ_M6);
-            document.getElementById('quiz-modal').classList.remove('hidden');
+            renderQuizModal(MODULE_QUIZ);
         }
 
         function renderQuizModal(quiz) {
+            currentQuizData = quiz;
+            currentQuizAnswers = {};
             document.getElementById('quiz-modal-title').textContent = quiz.title;
-            document.getElementById('quiz-modal-sub').textContent = 'Cần đạt ' + quiz.passingScore + '% • ' + quiz.questions.length + ' câu hỏi chuẩn giáo trình';
+            document.getElementById('quiz-modal-sub').textContent = 'Cần đạt ' + quiz.passingScore + '% • ' + quiz.questions.length + ' câu hỏi trắc nghiệm';
             let h = '<div class="space-y-6">';
             quiz.questions.forEach((q, i) => {
-                h += `<div class="quiz-question" data-qid="${q.id}">
-                    <p class="font-medium text-sm mb-3">${i + 1}. ${q.text}</p>
-                    <div class="space-y-2">`;
+                h += '<div class="quiz-question" data-qid="' + q.id + '">' +
+                    '<p class="font-medium text-sm mb-3">' + (i + 1) + '. ' + q.text + '</p>' +
+                    '<div class="space-y-2">';
                 q.options.forEach(o => {
-                    h += `<label class="quiz-option flex items-start gap-3 p-3 rounded-xl border border-white/10 cursor-pointer hover:border-philo-gold/50 hover:bg-white/5 transition-all">
-                        <input type="radio" name="q_${q.id}" value="${o.id}" onclick="selectAnswer('${q.id}','${o.id}')" class="mt-0.5 flex-shrink-0 text-philo-gold focus:ring-philo-gold">
-                        <span class="text-xs md:text-sm text-philo-ivory/90">${o.text}</span>
-                    </label>`;
+                    h += '<label class="quiz-option flex items-start gap-3 p-3 rounded-xl border border-white/10 cursor-pointer hover:border-philo-gold/50 hover:bg-white/5 transition-all">' +
+                        '<input type="radio" name="q_' + q.id + '" value="' + o.id + '" onclick="selectAnswer(\'' + q.id + '\',\'' + o.id + '\')" class="mt-0.5 flex-shrink-0 text-philo-gold focus:ring-philo-gold">' +
+                        '<span class="text-xs md:text-sm text-philo-ivory/90">' + o.text + '</span>' +
+                    '</label>';
                 });
-                h += `</div></div>`;
+                h += '</div></div>';
             });
-            h += `</div>
-            <div class="mt-6 flex justify-end gap-3 pt-4 border-t border-white/10">
-                <button onclick="closeQuizModal()" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5">Đóng</button>
-                <button onclick="submitQuiz()" id="btn-submit-quiz" class="bg-white/10 text-white/40 font-bold px-8 py-2.5 rounded-xl cursor-not-allowed text-xs" data-ready="false">Nộp bài</button>
-            </div>`;
+            h += '</div>' +
+            '<div class="mt-6 flex justify-end gap-3 pt-4 border-t border-white/10">' +
+                '<button onclick="closeQuizModal()" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5">Đóng</button>' +
+                '<button onclick="submitQuiz()" id="btn-submit-quiz" class="bg-white/10 text-white/40 font-bold px-8 py-2.5 rounded-xl cursor-not-allowed text-xs" data-ready="false">Nộp bài</button>' +
+            '</div>';
             document.getElementById('quiz-modal-body').innerHTML = h;
+            document.getElementById('quiz-modal').classList.remove('hidden');
         }
 
         function selectAnswer(q, o) {
@@ -1174,15 +1000,13 @@
         function submitQuiz() {
             const b = document.getElementById('btn-submit-quiz');
             if (b && b.getAttribute('data-ready') !== 'true') return;
-            if (currentQuizSubmitted) return;
-            currentQuizSubmitted = true;
             const quiz = currentQuizData;
             let correct = 0;
 
             quiz.questions.forEach(q => {
                 const u = currentQuizAnswers[q.id], ok = u === q.correctOptionId;
                 if (ok) correct++;
-                const qEl = document.querySelector(`[data-qid="${q.id}"]`);
+                const qEl = document.querySelector('[data-qid="' + q.id + '"]');
                 if (!qEl) return;
                 qEl.querySelectorAll('.quiz-option').forEach(l => {
                     const r = l.querySelector('input');
@@ -1196,20 +1020,20 @@
                 });
                 const re = document.createElement('div');
                 re.className = 'mt-2 p-3 bg-philo-gold/10 border border-philo-gold/20 rounded-lg text-xs';
-                re.innerHTML = '<strong class="text-philo-gold">📖 Trích dẫn Giáo trình 2021:</strong> ' + q.rationale;
+                re.innerHTML = '<strong class="text-philo-gold">📖 Trích dẫn Giáo trình VNR202:</strong> ' + q.rationale;
                 qEl.appendChild(re);
             });
 
             const score = Math.round((correct / quiz.questions.length) * 100);
             const passed = score >= quiz.passingScore;
-            M6_STATE.quizResults[quiz.id || 'module_quiz'] = { score, correct, total: quiz.questions.length, passed, timestamp: Date.now() };
-            saveM6State();
+            M_STATE.quizResults[quiz.id || 'module_quiz'] = { score, correct, total: quiz.questions.length, passed, timestamp: Date.now() };
+            saveMState();
 
-            const rh = `<div class="mb-6 p-4 rounded-2xl text-center border ${passed ? 'bg-emerald-950/30 border-emerald-500/50' : 'bg-red-950/30 border-red-500/50'}">
-                <p class="text-3xl mb-1">${passed ? '🎉' : '📚'}</p>
-                <p class="text-xl font-bold ${passed ? 'text-emerald-400' : 'text-red-400'}">${score}% (${correct}/${quiz.questions.length} câu đúng)</p>
-                <p class="text-xs mt-1 ${passed ? 'text-emerald-400' : 'text-red-400'}">${passed ? '✅ Hoàn thành xuất sắc Module 6!' : '❌ Chưa đạt (Yêu cầu ' + quiz.passingScore + '%). Hãy xem lại giải thích và thử lại!'}</p>
-            </div>`;
+            const rh = '<div class="mb-6 p-4 rounded-2xl text-center border ' + (passed ? 'bg-emerald-950/30 border-emerald-500/50' : 'bg-red-950/30 border-red-500/50') + '">' +
+                '<p class="text-3xl mb-1">' + (passed ? '🎉' : '📚') + '</p>' +
+                '<p class="text-xl font-bold ' + (passed ? 'text-emerald-400' : 'text-red-400') + '">' + score + '% (' + correct + '/' + quiz.questions.length + ' câu đúng)</p>' +
+                '<p class="text-xs mt-1 ' + (passed ? 'text-emerald-400' : 'text-red-400') + '">' + (passed ? '✅ Đạt yêu cầu kiến thức Chương 6!' : '❌ Chưa đạt (Yêu cầu ' + quiz.passingScore + '%). Hãy xem lại giải thích và thử lại!') + '</p>' +
+            '</div>';
             document.getElementById('quiz-modal-body').insertAdjacentHTML('afterbegin', rh);
 
             b.textContent = passed ? 'Hoàn tất ✓' : 'Làm lại';
@@ -1218,8 +1042,8 @@
                 setTimeout(() => openModuleQuiz(), 300);
             };
 
-            if (passed && quiz.achievement) {
-                showAchievement(quiz.achievement);
+            if (passed && ACHIEVEMENT) {
+                showAchievement(ACHIEVEMENT.name, ACHIEVEMENT.desc);
             }
         }
 
@@ -1227,17 +1051,10 @@
             document.getElementById('quiz-modal').classList.add('hidden');
         }
 
-        const M6_ACHIEVEMENTS = {
-            'integration-visionary': { name: 'Nhà Kiến Tạo Hội Nhập Quốc Tế', icon: '🌐', desc: 'Đạt ≥75% bài kiểm tra tổng kết Chương 6 — +15 XP' }
-        };
-
-        function showAchievement(slug) {
-            const a = M6_ACHIEVEMENTS[slug];
-            if (!a) return;
-            document.getElementById('achievement-icon').textContent = a.icon;
-            document.getElementById('achievement-name').textContent = a.name;
-            document.getElementById('achievement-desc').textContent = a.desc;
+        function showAchievement(name, desc) {
             const t = document.getElementById('achievement-toast');
+            document.getElementById('achievement-name').textContent = name;
+            document.getElementById('achievement-desc').textContent = desc;
             t.classList.remove('hidden');
             setTimeout(() => t.classList.add('hidden'), 4000);
         }
@@ -1250,22 +1067,33 @@
             else p.classList.add('hidden-panel');
         }
 
-        const AI_M6 = {
-            'cmcn 4.0': { answer: 'Cách mạng công nghiệp 4.0 liên kết giữa thế giới thực và ảo trên nền tảng cuộc cách mạng số, internet kết nối vạn vật (IoT), trí tuệ nhân tạo (AI), big data, in 3D... tạo ra động lực tăng trưởng không có trần giới hạn là đổi mới sáng tạo.', sourceRef: 'Chương 6, Mục I.1.a — Giáo trình KTCT 2021 (tr. 204-205, 215)' },
-            'mô hình cnh': { answer: 'Có 3 mô hình tiêu biểu: 1) Mô hình cổ điển (Anh): từ công nghiệp nhẹ đến công nghiệp nặng, 60-80 năm; 2) Mô hình Liên Xô: ưu tiên công nghiệp nặng bằng kế hoạch tập trung; 3) Mô hình Nhật Bản & NICs: CNH rút ngắn 20-30 năm, hướng mạnh về xuất khẩu, đi tắt đón đầu.', sourceRef: 'Chương 6, Mục I.1.b — Giáo trình KTCT 2021 (tr. 217-220)' },
-            'kinh tế tri thức': { answer: 'Theo OECD (1995), kinh tế tri thức là nền kinh tế trong đó việc sản sinh, phổ cập và sử dụng tri thức giữ vai trò quyết định nhất. Tri thức trở thành lực lượng sản xuất trực tiếp, thông tin là tài nguyên hàng đầu.', sourceRef: 'Chương 6, Mục I.2.b — Giáo trình KTCT 2021 (tr. 225-227)' },
-            'cấp độ hội nhập': { answer: 'Tiến trình hội nhập kinh tế quốc tế chia làm 5 cấp độ từ thấp đến cao: 1) Thỏa thuận thương mại ưu đãi (PTA); 2) Khu vực mậu dịch tự do (FTA); 3) Liên minh thuế quan (CU); 4) Thị trường chung; 5) Liên minh kinh tế - tiền tệ (như EU dùng đồng Euro).', sourceRef: 'Chương 6, Mục II.1.b — Giáo trình KTCT 2021 (tr. 236-237)' },
-            'độc lập tự chủ': { answer: 'Nền kinh tế độc lập tự chủ là không bị lệ thuộc, phụ thuộc vào nước khác về đường lối chính sách; không bị dùng kinh tế tài chính áp đặt khống chế. Độc lập tự chủ và hội nhập quốc tế có quan hệ biện chứng, bổ trợ và làm tiền đề cho nhau.', sourceRef: 'Chương 6, Mục II.3.e — Giáo trình KTCT 2021 (tr. 250-255)' }
-        };
+        const AI_RESPONSES = {
+  "định hướng xhcn": {
+    "answer": "Kinh tế thị trường định hướng XHCN là mô hình kinh tế tổng quát của nước ta trong thời kỳ quá độ: vận hành đầy đủ, đồng bộ theo quy luật KTTT, đồng thời bảo đảm định hướng XHCN vì mục tiêu \"dân giàu, nước mạnh, dân chủ, công bằng, văn minh\".",
+    "sourceRef": "Giáo trình VNR202 — Chương 3, Mục II.1"
+  },
+  "cương lĩnh 2011": {
+    "answer": "Cương lĩnh bổ sung 2011 xác định 8 đặc trưng của xã hội XHCN ở Việt Nam, 8 phương hướng cơ bản và 3 đột phá chiến lược: hoàn thiện thể chế KTTT định hướng XHCN, phát triển nguồn nhân lực chất lượng cao và kết cấu hạ tầng đồng bộ.",
+    "sourceRef": "Giáo trình VNR202 — Chương 3, Mục II.2"
+  },
+  "đại hội xiii": {
+    "answer": "Đại hội XIII (2021) xác định mục tiêu: Đến 2030 (100 năm thành lập Đảng) là nước đang phát triển có công nghiệp hiện đại, thu nhập trung bình cao; Đến 2045 (100 năm lập nước) là nước phát triển, thu nhập cao theo định hướng XHCN.",
+    "sourceRef": "Giáo trình VNR202 — Chương 3, Mục II.3"
+  },
+  "bài học": {
+    "answer": "5 bài học lịch sử lớn của Đảng: 1) Nắm vững ngọn cờ độc lập dân tộc và CNXH; 2) Dân là gốc - sự nghiệp của nhân dân, do nhân dân, vì nhân dân; 3) Tăng cường đoàn kết; 4) Kết hợp sức mạnh dân tộc với sức mạnh thời đại; 5) Sự lãnh đạo của Đảng là nhân tố quyết định.",
+    "sourceRef": "Giáo trình VNR202 — Chương 3, Mục III (Tổng kết)"
+  }
+};
 
         function getAIResponse(q) {
             const l = q.toLowerCase();
-            for (const [k, r] of Object.entries(AI_M6)) {
+            for (const [k, r] of Object.entries(AI_RESPONSES)) {
                 if (l.includes(k)) return r;
             }
             return {
-                answer: 'Module 6 trọng tâm: Lịch sử 4 cuộc CMCN, các mô hình CNH thế giới, nội dung CNH-HĐH ở Việt Nam thích ứng 4.0, các cấp độ hội nhập (PTA, FTA, CU...), và quan hệ biện chứng giữa độc lập tự chủ và hội nhập quốc tế. Bạn cần hỏi phần nào?',
-                sourceRef: 'Chương 6 — Giáo trình KTCT Mác - Lênin 2021'
+                answer: 'Trọng tâm Chương 6 VNR202 bám sát giáo trình Lịch sử Đảng: các kỳ Đại hội, đường lối chiến lược, các bước đột phá và bài học lịch sử cốt lõi.',
+                sourceRef: 'Giáo trình Lịch sử Đảng Cộng sản Việt Nam (VNR202) — Chương 6'
             };
         }
 
@@ -1279,40 +1107,23 @@
             if (!q) return;
             i.value = '';
             const h = document.getElementById('ai-chat-history');
-            h.insertAdjacentHTML('beforeend', `<div class="flex justify-end"><div class="bg-philo-gold text-black font-medium rounded-xl p-3 max-w-[85%] text-xs md:text-sm"><p>${q}</p></div></div>`);
+            h.insertAdjacentHTML('beforeend', '<div class="flex justify-end"><div class="bg-philo-gold text-black font-medium rounded-xl p-3 max-w-[85%] text-xs"><p>' + q + '</p></div></div>');
             const lid = 'l' + Date.now();
-            h.insertAdjacentHTML('beforeend', `<div id="${lid}" class="bg-white/5 rounded-xl p-3 text-xs"><p>⏳ Đang tra cứu Giáo trình 2021...</p></div>`);
+            h.insertAdjacentHTML('beforeend', '<div id="' + lid + '" class="bg-white/5 rounded-xl p-3 text-xs"><p>⏳ Đang tra cứu Giáo trình VNR202...</p></div>');
             h.scrollTop = h.scrollHeight;
             setTimeout(() => {
                 const r = getAIResponse(q);
                 const le = document.getElementById(lid);
-                if (le) le.outerHTML = `<div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20 text-xs md:text-sm"><p class="text-xs font-bold text-philo-gold mb-1">🤖 AI Giáo trình MLN131</p><p class="text-philo-ivory/90 leading-relaxed mb-2">${r.answer}</p><p class="text-[10px] text-philo-gold/70 border-t border-white/10 pt-1">📖 <em>${r.sourceRef}</em></p></div>`;
+                if (le) le.outerHTML = '<div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20 text-xs"><p class="text-xs font-bold text-philo-gold mb-1">🤖 AI Giáo trình VNR202</p><p class="text-philo-ivory/90 leading-relaxed mb-2">' + r.answer + '</p><p class="text-[10px] text-philo-gold/70 border-t border-white/10 pt-1">📖 <em>' + r.sourceRef + '</em></p></div>';
                 h.scrollTop = h.scrollHeight;
-            }, 600);
+            }, 500);
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadM6State();
+            loadMState();
             updateProgress();
-            if (M6_STATE.completedLessons.size > 0) {
-                showLesson(M6_LESSONS[Math.min(M6_STATE.completedLessons.size, 5)]);
-            } else {
-                showLesson('M6-L1');
-            }
-            if (M6_STATE.completedLessons.size === 6) {
-                const b = document.getElementById('module-quiz-banner');
-                if (b) b.classList.remove('hidden');
-            }
-            M6_STATE.completedLessons.forEach(id => {
-                const b = document.getElementById('btn-complete-' + id);
-                if (b) {
-                    b.classList.remove('philo-btn-gold');
-                    b.classList.add('bg-emerald-600', 'text-white');
-                    b.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span> Đã hoàn thành ✓';
-                }
-            });
+            showLesson('M6-L1');
         });
     </script>
 </body>
-
 </html>

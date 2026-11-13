@@ -124,12 +124,12 @@
     let randomized = shuffle(QUESTIONS);
 
     try {
-      const lastFirstPrompt = sessionStorage.getItem("mln131_decode_last_first_prompt");
+      const lastFirstPrompt = sessionStorage.getItem("vnr202_decode_last_first_prompt");
       if (lastFirstPrompt && randomized.length > 1 && randomized[0].prompt === lastFirstPrompt) {
         const swapIndex = 1 + Math.floor(Math.random() * (randomized.length - 1));
         [randomized[0], randomized[swapIndex]] = [randomized[swapIndex], randomized[0]];
       }
-      sessionStorage.setItem("mln131_decode_last_first_prompt", randomized[0].prompt);
+      sessionStorage.setItem("vnr202_decode_last_first_prompt", randomized[0].prompt);
     } catch (_) {
       // Game vẫn chạy bình thường nếu trình duyệt chặn storage.
     }
@@ -170,7 +170,7 @@
             <span class="material-symbols-outlined text-base">encrypted</span> GAME 01 · GIẢI MÃ
           </div>
           <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-philo-ivory leading-tight">Giải mã<br><span class="text-philo-gold">Thuật ngữ KTCT</span></h1>
-          <p class="mt-5 text-philo-ivory/80 text-base md:text-lg leading-relaxed max-w-xl">Đọc gợi ý từ giáo trình MLN131, sau đó bấm các mảnh từ khóa theo đúng thứ tự để tạo đáp án. Càng ít dùng gợi ý, điểm thưởng càng cao.</p>
+          <p class="mt-5 text-philo-ivory/80 text-base md:text-lg leading-relaxed max-w-xl">Đọc gợi ý từ giáo trình VNR202, sau đó bấm các mảnh từ khóa theo đúng thứ tự để tạo đáp án. Càng ít dùng gợi ý, điểm thưởng càng cao.</p>
           <div class="grid sm:grid-cols-3 gap-3 mt-7 max-w-2xl">
             ${statCard("10", "Câu giải mã/lượt", "grid_view")}
             ${statCard("100", "Điểm tối đa/câu", "stars")}
@@ -193,7 +193,7 @@
               ${stepCard(3,"Kiểm tra","Nhận điểm và xem trích dẫn sách giáo trình 2021.")}
             </div>
             <div class="mt-7 rounded-2xl border border-philo-gold/20 bg-philo-blackBurgundy/70 p-4 text-xs md:text-sm text-philo-ivory/80 leading-relaxed shadow-sm">
-              <b class="text-philo-gold">Nội dung chuẩn:</b> sử dụng hệ thống phạm trù và quy luật kinh tế cốt lõi trong Giáo trình Kinh tế chính trị Mác - Lênin 2021 (MLN131).
+              <b class="text-philo-gold">Nội dung chuẩn:</b> sử dụng hệ thống phạm trù và quy luật kinh tế cốt lõi trong Giáo trình Kinh tế chính trị Mác - Lênin 2021 (VNR202).
             </div>
           </div>
         </div>

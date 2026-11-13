@@ -126,7 +126,7 @@ class WorldviewTemplates {
             },
             // =============================================\r
             // MODULE 1 — Vật chất & Vận động\r
-            // sourceRef: Giáo trình Triết học Mác-Lênin 2021, Chương 2\r
+            // sourceRef: Giáo trình Lịch sử Đảng 2021, Chương 2\r
             // =============================================\r
             {
 

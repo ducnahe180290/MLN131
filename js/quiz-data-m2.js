@@ -1,7 +1,7 @@
 // =============================================
 // MODULE 2 — Ý THỨC (CONSCIOUSNESS)
 // Kiểm tra hình thành (Formative Quizzes)
-// sourceRef: Giáo trình Triết học Mác-Lênin 2021, Chương 2, dòng 511-610
+// sourceRef: Giáo trình Lịch sử Đảng 2021, Chương 2, dòng 511-610
 // =============================================
 
 const FORMATIVE_QUIZZES_M2 = {
@@ -195,7 +195,7 @@ const FORMATIVE_QUIZZES_M2 = {
 
 // =============================================
 // MODULE 2 — Bài kiểm tra tổng kết (12 câu)
-// sourceRef: Giáo trình Triết học Mác-Lênin 2021, Chương 2, dòng 511-610
+// sourceRef: Giáo trình Lịch sử Đảng 2021, Chương 2, dòng 511-610
 // =============================================
 
 const MODULE_QUIZ_M2 = {

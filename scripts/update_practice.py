@@ -6,19 +6,19 @@ with open(file_path, "r", encoding="utf-8") as f:
 
 replacements = [
     (
-        "<title>Thực hành & Ôn thi FE — Kinh tế chính trị Mác - Lênin (MLN131)</title>",
+        "<title>Thực hành & Ôn thi FE — Kinh tế chính trị Mác - Lênin (VNR202)</title>",
         "<title>Thực hành & Ôn thi FE — Lịch sử Đảng Cộng sản Việt Nam (VNR202)</title>"
     ),
     (
-        "Thực hành Kinh tế chính trị Mác - Lênin<br /><span class=\"text-philo-gold italic font-normal\">(Học phần MLN131)</span>",
+        "Thực hành Kinh tế chính trị Mác - Lênin<br /><span class=\"text-philo-gold italic font-normal\">(Học phần VNR202)</span>",
         "Thực hành Lịch sử Đảng Cộng sản Việt Nam<br /><span class=\"text-philo-gold italic font-normal\">(Học phần VNR202 — 29 Sessions)</span>"
     ),
     (
-        "Phòng thực hành & Ôn thi MLN131 Tương tác",
+        "Phòng thực hành & Ôn thi VNR202 Tương tác",
         "Phòng thực hành & Ôn thi VNR202 Tương tác"
     ),
     (
-        "1. Ôn thi FE (Ngân hàng MLN131)",
+        "1. Ôn thi FE (Ngân hàng VNR202)",
         "1. Ôn thi FE (Ngân hàng VNR202 — 72+ Câu)"
     ),
     (

@@ -1,7 +1,7 @@
 // =============================================
 // MODULE 3 — QUY LUẬT LƯỢNG ↔ CHẤT
 // Kiểm tra hình thành (Formative Quizzes)
-// sourceRef: Giáo trình Triết học Mác-Lênin 2021, Chương 3 — dòng 727–751
+// sourceRef: Giáo trình Lịch sử Đảng 2021, Chương 3 — dòng 727–751
 // =============================================
 
 const FORMATIVE_QUIZZES_M3 = {

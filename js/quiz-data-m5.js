@@ -1,7 +1,7 @@
 // =============================================
 // MODULE 5 — QUY LUẬT QUAN HỆ SẢN XUẤT PHÙ HỢP
 // VỚI TRÌNH ĐỘ PHÁT TRIỂN CỦA LỰC LƯỢNG SẢN XUẤT
-// sourceRef: Giáo trình Triết học Mác-Lênin 2021
+// sourceRef: Giáo trình Lịch sử Đảng 2021
 //            Triet.txt, dòng 900–930
 // =============================================
 

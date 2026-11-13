@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="vi" class="dark">
-
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Chương 1: Đối tượng, Phương pháp &amp; Chức năng KTCT Mác - Lênin — MLN131</title>
-    <meta name="description"
-        content="Khám phá Chương 1 môn Kinh tế chính trị Mác - Lênin: Sự hình thành, đối tượng nghiên cứu, phương pháp trừu tượng hóa khoa học và 4 chức năng cốt lõi." />
+    <title>Chương 1: Nhập Môn & Sự Ra Đời Của Đảng (1920 - 1930) — PhiloVerse VNR202</title>
+    <meta name="description" content="Chương 1 Giáo trình Lịch sử Đảng Cộng sản Việt Nam (VNR202): Đối tượng, chức năng, phương pháp nghiên cứu, bối cảnh lịch sử, phong trào yêu nước, Nguyễn Ái Quốc và Cương lĩnh chính trị đầu tiên 3/2/1930." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script src="js/tailwind-config-global.js"></script>
     <link rel="stylesheet" href="css/philoverse-ui.css" />
     <style>
@@ -24,84 +19,69 @@
             font-size: 24px;
             display: inline-block;
             line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
             direction: ltr;
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-        }
-
-        .dark .glass-panel {
-            background: rgba(37, 38, 43, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        #m1-progress-bar {
-            transition: width 0.6s ease;
-        }
-
-        .lesson-card.active {
-            border-color: #D4A017;
-            box-shadow: 0 0 0 2px rgba(212, 160, 23, 0.2);
-        }
-
-        #quiz-modal {
-            transition: opacity 0.3s;
-        }
-
+        #m1-progress-bar { transition: width 0.6s ease; }
         .reflection-answer {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease, opacity 0.3s;
             opacity: 0;
         }
-
         .reflection-answer.open {
-            max-height: 500px;
+            max-height: 800px;
             opacity: 1;
         }
-
-        @keyframes badge-pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-        }
-
-        .achievement-earned {
-            animation: badge-pulse 0.6s ease 2;
-        }
-
         .hidden-panel {
             transform: translateX(100%);
             transition: transform 0.3s ease;
         }
-
-        .lesson-tab.active-tab { border-color: #FFD34E !important; background: rgba(217,166,46,0.12) !important; box-shadow: 0 0 20px rgba(217,166,46,0.2); }
-        .lesson-tab.active-tab .tab-label { color: #FFD34E !important; }
-        .lesson-dot.completed { background-color: #D9A62E !important; }
-        .lesson-header-academic { padding: 2rem 2rem 1.5rem; background: linear-gradient(135deg, rgba(20,3,3,0.95) 0%, rgba(101,7,7,0.85) 100%); border-bottom: 1px solid rgba(217,166,46,0.2); }
-        .module-page-hero { position: relative; padding: 3rem 2rem 2.5rem; overflow: hidden; background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%); }
-        .module-page-hero > * { position: relative; z-index: 1; }
-        .module-page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(217,166,46,0.5), transparent); }
+        .lesson-tab.active-tab {
+            border-color: #FFD34E !important;
+            background: rgba(217, 166, 46, 0.15) !important;
+            box-shadow: 0 0 20px rgba(217, 166, 46, 0.25);
+        }
+        .lesson-tab.active-tab .tab-label {
+            color: #FFD34E !important;
+        }
+        .lesson-dot.completed {
+            background-color: #D9A62E !important;
+        }
+        .lesson-header-academic {
+            padding: 2rem 2rem 1.5rem;
+            background: linear-gradient(135deg, rgba(20, 3, 3, 0.95) 0%, rgba(101, 7, 7, 0.85) 100%);
+            border-bottom: 1px solid rgba(217, 166, 46, 0.2);
+        }
+        .module-page-hero {
+            position: relative;
+            padding: 3rem 2rem 2.5rem;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%);
+        }
+        .module-page-hero > * {
+            position: relative;
+            z-index: 1;
+        }
+        .module-page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(217, 166, 46, 0.5), transparent);
+        }
     </style>
 </head>
 
 <body class="bg-philo-blackBurgundy relative text-philo-ivory font-body transition-colors duration-300 min-h-screen flex flex-col overflow-x-hidden">
-    <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-
         <!-- ===== MODULE HERO HEADER ===== -->
         <div class="module-page-hero -mx-4 sm:-mx-6 lg:-mx-8 mb-10">
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <img src="assets/images/cinematic/historical_texture.png" alt="" class="w-full h-full object-cover opacity-20" style="object-position: center 30%;" />
+                <img src="assets/images/shared/module-hero-bg.jpg" alt="" class="w-full h-full object-cover opacity-20" style="object-position: center 30%;" />
                 <div class="absolute inset-0 bg-gradient-to-r from-[#0D0101] via-[#3A0505]/80 to-transparent"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-[#140303] via-transparent to-transparent"></div>
             </div>
@@ -109,1056 +89,1062 @@
                 <div class="philo-breadcrumb mb-5">
                     <a href="home.html">TRANG CHỦ</a>
                     <span class="sep">/</span>
-                    <a href="Overview.html">GIÁO TRÌNH MLN131</a>
+                    <a href="Overview.html">GIÁO TRÌNH VNR202</a>
                     <span class="sep">/</span>
-                    <span>CHƯƠNG 1 • ĐỐI TƯỢNG, PHƯƠNG PHÁP &amp; CHỨC NĂNG CỦA KTCT MÁC - LÊNIN</span>
+                    <span>CHƯƠNG 1 • NHẬP MÔN & SỰ RA ĐỜI CỦA ĐẢNG (1920 - 1930)</span>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                     <div>
-                        <span class="philo-badge mb-3 inline-flex"><span class="material-symbols-outlined text-[14px]">school</span> CHƯƠNG 01 (TRANG 8 - 28)</span>
+                        <span class="philo-badge mb-3 inline-flex"><span class="material-symbols-outlined text-[14px]">history_edu</span> CHƯƠNG 01 • SESSIONS 1 - 4</span>
                         <h1 class="font-heading text-3xl md:text-5xl font-bold leading-tight text-philo-ivory mt-2">
-                            Đối Tượng, Phương Pháp &amp;<br class="hidden md:block" />
-                            <span class="text-philo-gold italic">Chức Năng Của KTCT Mác - Lênin</span>
+                            Nhập Môn &amp;<br class="hidden md:block" /> <span class="text-philo-gold font-serif italic">Sự Ra Đời Của Đảng (1920 - 1930)</span>
                         </h1>
-                        <p class="mt-3 text-philo-ivory/70 text-sm md:text-base max-w-xl leading-relaxed">6 bài học bám sát giáo trình chuẩn: Sự hình thành từ Chủ nghĩa Trọng thương đến Mác - Lênin, đối tượng quan hệ xã hội của sản xuất &amp; trao đổi, phương pháp trừu tượng hóa khoa học và 4 chức năng cốt lõi.</p>
+                        <p class="font-heading italic text-base md:text-lg text-philo-gold/80 mt-3 max-w-3xl leading-relaxed">
+                            "Đảng muốn vững thì phải có chủ nghĩa làm cốt, trong Đảng ai cũng phải hiểu, ai cũng phải theo chủ nghĩa ấy." — Đối tượng, chức năng, phương pháp nghiên cứu; Nguyễn Ái Quốc và Cương lĩnh chính trị đầu tiên 3/2/1930.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-4 mt-4 text-xs text-philo-ivory/60">
+                            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-philo-gold">menu_book</span> 6 bài học chuẩn</span>
+                            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-philo-gold">timer</span> ~40 phút học</span>
+                            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-philo-gold">quiz</span> 3 Formative Quizzes & 1 Module Exam</span>
+                        </div>
                     </div>
-                    <div class="md:min-w-[220px]">
-                        <div class="flex items-center justify-between text-xs text-philo-ivory/60 mb-2">
-                            <span id="m1-progress-label">0 / 6 bài hoàn thành</span>
-                            <span id="m1-progress-pct" class="text-philo-gold font-bold">0%</span>
-                        </div>
-                        <div class="philo-progress-track">
-                            <div id="m1-progress-bar" class="philo-progress-fill" style="width:0%"></div>
-                        </div>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                        <button onclick="toggleAIPanel()" class="philo-btn-gold flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">smart_toy</span>
+                            <span>Trợ lý AI Chương 1</span>
+                        </button>
+                        <button onclick="openModuleQuiz()" class="philo-btn-secondary flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">verified</span>
+                            <span>Thi trắc nghiệm</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ===== LESSON NAV TABS ===== -->
-        <section class="mb-10">
-            <div class="philo-section-divider"><span class="philo-section-title">✦ 6 Bài học Chương 1 ✦</span></div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-                <button onclick="showLesson('M1-L1')" id="tab-M1-L1" class="lesson-tab active-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:#FFD34E;">
-                    <span class="text-2xl">⏳</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 1.1</span>
-                    <span class="text-xs font-medium text-philo-gold">Sự hình thành KTCT</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M1-L1"></span>
-                </button>
-                <button onclick="showLesson('M1-L2')" id="tab-M1-L2" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">🎯</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 1.2</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">Đối tượng nghiên cứu</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M1-L2"></span>
-                </button>
-                <button onclick="showLesson('M1-L3')" id="tab-M1-L3" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">⚖️</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 1.3</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">Quy luật kinh tế</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M1-L3"></span>
-                </button>
-                <button onclick="showLesson('M1-L4')" id="tab-M1-L4" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">🔬</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 1.4</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">Phương pháp nghiên cứu</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M1-L4"></span>
-                </button>
-                <button onclick="showLesson('M1-L5')" id="tab-M1-L5" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">🏛️</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 1.5</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">4 Chức năng KTCT</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M1-L5"></span>
-                </button>
-                <button onclick="showLesson('M1-L6')" id="tab-M1-L6" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">💎</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 1.6</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">Ý nghĩa &amp; Thuật ngữ</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M1-L6"></span>
-                </button>
+        <!-- Progress Tracker Bar -->
+        <div class="glass-panel p-4 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-philo-ivory/80">Tiến độ bài học:</span>
+                <span id="m1-progress-text" class="text-sm font-bold text-philo-gold">0 / 6 bài</span>
             </div>
-        </section>
+            <div class="flex-grow max-w-md bg-white/5 rounded-full h-2.5 overflow-hidden border border-white/10">
+                <div id="m1-progress-bar" class="bg-gradient-to-r from-philo-gold to-yellow-500 h-full rounded-full" style="width: 0%"></div>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M1-L1"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M1-L2"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M1-L3"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M1-L4"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M1-L5"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M1-L6"></div>
+            </div>
+        </div>
 
-        <!-- ===== LESSON CONTENT AREA ===== -->
-        <section id="lesson-area" class="mb-16 min-h-[500px]">
+        <!-- 6 Lesson Navigation Tabs -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-8">
+            
+            <button onclick="showLesson('M1-L1')" id="tab-M1-L1" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all active-tab">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 1.1</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Đối tượng, chức năng & nhiệm vụ môn Lịch sử Đảng</span>
+            </button>
+            <button onclick="showLesson('M1-L2')" id="tab-M1-L2" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 1.2</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Phương pháp nghiên cứu, học tập Lịch sử Đảng</span>
+            </button>
+            <button onclick="showLesson('M1-L3')" id="tab-M1-L3" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 1.3</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Bối cảnh lịch sử & Phong trào yêu nước trước 1930</span>
+            </button>
+            <button onclick="showLesson('M1-L4')" id="tab-M1-L4" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 1.4</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Nguyễn Ái Quốc chuẩn bị thành lập Đảng</span>
+            </button>
+            <button onclick="showLesson('M1-L5')" id="tab-M1-L5" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 1.5</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Hội nghị 3/2/1930 & Cương lĩnh đầu tiên</span>
+            </button>
+            <button onclick="showLesson('M1-L6')" id="tab-M1-L6" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 1.6</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Ý nghĩa lịch sử thành lập Đảng</span>
+            </button>
+        </div>
 
-            <!-- BÀI 1.1: SỰ HÌNH THÀNH VÀ PHÁT TRIỂN CỦA KTCT MÁC - LÊNIN -->
-            <div id="lesson-M1-L1" class="lesson-content">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">⏳</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 1.1 — Chương 1 (Trang 8 - 15)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Khái Quát Sự Hình Thành &amp; Phát Triển Của Kinh Tế Chính Trị</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Nắm vững các mốc lịch sử, sự xuất hiện thuật ngữ "Kinh tế chính trị", quá trình phát triển qua các trường phái (Trọng thương, Trọng nông, Cổ điển Anh) và bước nhảy vọt của KTCT Mác - Lênin.</p>
+        <!-- LESSON ARTICLES -->
+        
+        <!-- LESSON 1.1: Đối tượng, chức năng & nhiệm vụ môn Lịch sử Đảng -->
+        <article id="lesson-M1-L1" class="lesson-content space-y-6 ">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 1.1 • SESSION 1 CHƯƠNG NHẬP MÔN</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Đối tượng, chức năng và nhiệm vụ của môn Lịch sử Đảng
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Vị trí khoa học, đối tượng nghiên cứu, 3 chức năng cốt lõi và 4 nhiệm vụ chủ yếu</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <p class="font-bold text-philo-gold mb-1">Vị trí khoa học:</p>
+                    <p class="leading-relaxed">
+                        Lịch sử Đảng Cộng sản Việt Nam là một chuyên ngành, bộ phận cấu thành của khoa học lịch sử. Môn học nghiên cứu có hệ thống các sự kiện lịch sử, cương lĩnh, đường lối, chủ trương, chính sách và sự chỉ đạo thực tiễn của Đảng từ khi thành lập (1930) đến nay.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="glass-panel p-5 rounded-xl border border-white/10">
+                        <h4 class="font-heading font-bold text-philo-gold flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-[18px]">category</span>
+                            1. Đối tượng nghiên cứu
+                        </h4>
+                        <ul class="text-sm space-y-2 list-disc list-inside">
+                            <li><strong>Hệ thống sự kiện lịch sử Đảng:</strong> Quá trình Đảng ra đời, phát triển và lãnh đạo cách mạng qua các thời kỳ.</li>
+                            <li><strong>Cương lĩnh, đường lối:</strong> Các cương lĩnh chính trị (2/1930, 10/1930, 1951, 1991, 2011), chiến lược và sách lược.</li>
+                            <li><strong>Tổ chức và xây dựng Đảng:</strong> Công tác chính trị, tư tưởng, tổ chức và đạo đức của Đảng.</li>
+                            <li><strong>Quy luật & bài học lịch sử:</strong> Tổng kết những thắng lợi, bài học kinh nghiệm và quy luật phát triển cách mạng.</li>
+                        </ul>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Thuật ngữ "Kinh tế chính trị" xuất hiện khi nào?</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Thuật ngữ khoa học <strong>Kinh tế chính trị</strong> (oeconomie politique) xuất hiện lần đầu tiên ở châu Âu vào <strong>năm 1615</strong> trong tác phẩm <em>"Chuyên luận về kinh tế chính trị"</em> (Traicté de l'oeconomie politique) của nhà kinh tế người Pháp <strong>Antoine de Montchrétien</strong>. Tuy nhiên, tác phẩm này mới chỉ là những phác thảo ban đầu.
-                            </p>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Đến <strong>thế kỷ XVIII</strong>, với hệ thống lý luận đồ sộ của nhà kinh tế học người Anh <strong>Adam Smith</strong> (đặc biệt qua kiệt tác <em>"Của cải của các quốc gia"</em> năm 1776), kinh tế chính trị mới chính thức trở thành một môn khoa học độc lập với hệ thống khái niệm, phạm trù chuyên ngành chặt chẽ.
-                            </p>
+                    <div class="glass-panel p-5 rounded-xl border border-philo-gold/30 bg-philo-gold/5">
+                        <h4 class="font-heading font-bold text-philo-gold flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-[18px]">verified</span>
+                            2. Ba chức năng cốt lõi
+                        </h4>
+                        <ul class="text-sm space-y-2 list-disc list-inside">
+                            <li><strong>Chức năng nhận thức:</strong> Cung cấp tri thức khoa học, có hệ thống về quy luật ra đời và phát triển của Đảng.</li>
+                            <li><strong>Chức năng giáo dục:</strong> Bồi dưỡng lý tưởng cách mạng, tinh thần yêu nước, chủ nghĩa anh hùng cách mạng.</li>
+                            <li><strong>Chức năng dự báo và phê phán:</strong> Nhận thức quá khứ để hiểu hiện tại và dự báo xu thế tương lai; tự phê bình và phê bình.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-5 bg-white/5 border border-white/10 rounded-xl">
+                    <h4 class="font-heading font-bold text-philo-gold mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">task_alt</span>
+                        3. Bốn nhiệm vụ trọng yếu
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs leading-relaxed">
+                        <div class="p-3 bg-black/40 rounded-lg border border-white/5"><strong>Nhiệm vụ 1:</strong> Trình bày có hệ thống Cương lĩnh, đường lối của Đảng qua các giai đoạn lịch sử.</div>
+                        <div class="p-3 bg-black/40 rounded-lg border border-white/5"><strong>Nhiệm vụ 2:</strong> Tái hiện chân thực, sinh động tiến trình lịch sử lãnh đạo, đấu tranh anh dũng của Đảng.</div>
+                        <div class="p-3 bg-black/40 rounded-lg border border-white/5"><strong>Nhiệm vụ 3:</strong> Tổng kết lịch sử Đảng, làm rõ kinh nghiệm lịch sử, quy luật cách mạng và bài học quý giá.</div>
+                        <div class="p-3 bg-black/40 rounded-lg border border-white/5"><strong>Nhiệm vụ 4:</strong> Làm rõ vai trò lãnh đạo, sức chiến đấu của hệ thống tổ chức Đảng từ Trung ương đến cơ sở.</div>
+                    </div>
+                </div>
 
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Tiến trình phát triển của các trường phái kinh tế</h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-2">① Chủ nghĩa Trọng thương (Giữa TK XV - giữa TK XVII)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        • Đại biểu: W. Stafford, Thomas Mun (Anh), Gasparo Scaruffi, Serra (Ý), A. Montchrétien (Pháp).<br>
-                                        • Trọng tâm nghiên cứu: Lĩnh vực <strong>lưu thông</strong> (thương nghiệp).<br>
-                                        • Hạn chế: Cho rằng nguồn gốc lợi nhuận là từ thương nghiệp thông qua "mua rẻ, bán đắt".
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-2">② Chủ nghĩa Trọng nông (Nửa cuối TK XVII - nửa đầu TK XVIII)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        • Đại biểu ở Pháp: Pierre Boisguillebert, Francois Quesnay, Jacques Turgot.<br>
-                                        • Bước tiến: Chuyển trọng tâm nghiên cứu sang <strong>lĩnh vực sản xuất</strong>.<br>
-                                        • Hạn chế: Coi <strong>chỉ có nông nghiệp mới là sản xuất</strong> thực sự, xem nhẹ công nghiệp.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-2">③ Kinh tế chính trị Cổ điển Anh (Cuối TK XVIII - nửa đầu TK XIX)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        • Đại biểu: William Petty (mở đầu), Adam Smith (phát triển) và David Ricardo (kết thúc đỉnh cao).<br>
-                                        • Đóng góp lớn: Rút ra kết luận quan trọng: <strong>Giá trị là do hao phí lao động tạo ra</strong>; phân biệt giá trị với của cải.<br>
-                                        • Hạn chế: Chưa giải thích được tính hai mặt của lao động và nguồn gốc thực sự của giá trị thặng dư.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-2">④ Kinh tế chính trị Mác - Lênin (Từ giữa TK XIX đến nay)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        • Sáng lập: <strong>C. Mác và Ph. Ăngghen</strong>. Kế thừa có phê phán D. Ricardo, phát hiện tính hai mặt của lao động sản xuất hàng hóa và hoàn thành Học thuyết Giá trị thặng dư trong bộ <em>Tư bản</em>.<br>
-                                        • Phát triển: <strong>V.I. Lênin</strong> bảo vệ và bổ sung lý luận về độc quyền, CNTB độc quyền nhà nước và thời kỳ quá độ.
-                                    </p>
-                                </div>
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.1
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Vì sao chức năng giáo dục của môn Lịch sử Đảng có ý nghĩa đặc biệt quan trọng đối với thế hệ trẻ?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Giáo dục truyền thống yêu nước nồng nàn, chủ nghĩa anh hùng cách mạng, củng cố niềm tin khoa học vào sự lãnh đạo của Đảng và con đường đi lên CNXH; rèn luyện bản lĩnh chính trị và tinh thần tự lực tự cường.
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Reflection Questions -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.1
-                            </h3>
-                            <div class="space-y-3">
-                                <div class="reflection-item">
-                                    <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                        <span>1. Vì sao nói chủ nghĩa trọng thương giải thích nguồn gốc lợi nhuận là "thiếu tính khoa học"?</span>
-                                        <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                    </button>
-                                    <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                        <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 10):</strong> Vì việc lưu thông mua bán thông thường (mua rẻ bán đắt) chỉ làm dịch chuyển giá trị từ túi người này sang túi người khác. Xét trên phạm vi toàn xã hội, nếu người bán được lợi khi bán đắt thì khi trở thành người mua họ lại bị thiệt, do đó lưu thông thuần túy không thể tạo thêm giá trị mới cho xã hội.
-                                    </div>
-                                </div>
-                                <div class="reflection-item">
-                                    <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                        <span>2. Bước nhảy vọt về lý luận của C. Mác so với D. Ricardo nằm ở điểm then chốt nào?</span>
-                                        <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                    </button>
-                                    <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                        <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 13):</strong> C. Mác là người đầu tiên phát hiện ra <em>tính hai mặt của lao động sản xuất hàng hóa</em> (lao động cụ thể và lao động trừu tượng). Đây chính là tiền đề lý luận khoa học cốt tử giúp giải thích triệt để nguồn gốc của giá trị thặng dư.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mini quiz check button -->
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <div></div>
+                        <div class="flex items-center gap-3">
                             <button onclick="openFormativeQuiz('M1-FQ1')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">quiz</span> Làm trắc nghiệm củng cố Bài 1.1 &amp; 1.2
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
                             </button>
-                            <button onclick="completeLesson('M1-L1')" id="btn-complete-M1-L1" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <button onclick="completeLesson('M1-L1')" id="btn-complete-M1-L1" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 1.2: ĐỐI TƯỢNG NGHIÊN CỨU CỦA KINH TẾ CHÍNH TRỊ MÁC - LÊNIN -->
-            <div id="lesson-M1-L2" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">🎯</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 1.2 — Chương 1 (Trang 15 - 20)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Đối Tượng Nghiên Cứu Của Kinh Tế Chính Trị Mác - Lênin</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Hiểu rõ đối tượng nghiên cứu theo nghĩa hẹp, nghĩa rộng và định nghĩa chuẩn xác của KTCT Mác - Lênin: các quan hệ xã hội của sản xuất và trao đổi.</p>
+        </article>
+        <!-- LESSON 1.2: Phương pháp nghiên cứu, học tập Lịch sử Đảng -->
+        <article id="lesson-M1-L2" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 1.2 • SESSION 2 CHƯƠNG NHẬP MÔN</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Phương pháp nghiên cứu, học tập môn Lịch sử Đảng
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Phương pháp luận sử học Mácxít, phương pháp lịch sử và phương pháp logic, các nguyên tắc khoa học</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10">
+                        <h4 class="font-heading font-bold text-philo-gold mb-2 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[18px]">timeline</span>
+                            Phương pháp lịch sử
+                        </h4>
+                        <p class="text-xs leading-relaxed text-philo-ivory/80">
+                            Nghiên cứu và trình bày các sự kiện, quá trình phát triển của Đảng theo đúng <strong>trình tự thời gian</strong>, không gian cụ thể, tái hiện lịch sử với đầy đủ tính sống động, chân thực, quanh co và phức tạp vốn có.
+                        </p>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Quan niệm về đối tượng nghiên cứu trong lịch sử</h3>
-                            <ul class="text-philo-ivory/80 space-y-2 list-disc pl-6">
-                                <li><strong>Chủ nghĩa trọng thương:</strong> Đối tượng nghiên cứu là trong <em>lĩnh vực lưu thông</em>.</li>
-                                <li><strong>Chủ nghĩa trọng nông:</strong> Chuyển đối tượng vào quan hệ kinh tế trong <em>lĩnh vực nông nghiệp</em>.</li>
-                                <li><strong>Kinh tế chính trị cổ điển Anh:</strong> Xác định đối tượng trong <em>nền sản xuất</em> vật chất.</li>
-                            </ul>
-
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Quan niệm của C. Mác và Ph. Ăngghen</h3>
-                            <div class="p-5 rounded-2xl bg-black/40 border-l-4 border-philo-gold my-4">
-                                <p class="text-sm italic text-philo-gold">
-                                    "Đối tượng nghiên cứu của kinh tế chính trị là các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đó hình thành và phát triển."
-                                </p>
-                                <span class="text-xs text-philo-ivory/60 block mt-2">— Giáo trình MLN131 (Trang 16)</span>
-                            </div>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Kinh tế chính trị có thể được hiểu theo 2 nghĩa:
-                            </p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-sm mb-1">Nghĩa hẹp (Theo C. Mác trong bộ Tư bản)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        Nghiên cứu quan hệ sản xuất và trao đổi trong <strong>một phương thức sản xuất nhất định</strong> (cụ thể là phương thức sản xuất tư bản chủ nghĩa) nhằm tìm ra quy luật vận động kinh tế của xã hội ấy.
-                                    </p>
-                                </div>
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-sm mb-1">Nghĩa rộng (Theo Ph. Ăngghen)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        Là khoa học về những quy luật chi phối sự sản xuất và trao đổi những tư liệu sinh hoạt vật chất trong <strong>xã hội loài người qua các thời kỳ lịch sử</strong>. Môn KTCT về thực chất là môn khoa học có tính chất lịch sử.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">3. Quan điểm nhấn mạnh của V.I. Lênin</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                V.I. Lênin khẳng định: <em>"Chính trị kinh tế học tuyệt nhiên không nghiên cứu 'sự sản xuất' mà nghiên cứu những quan hệ xã hội giữa người với người trong sản xuất, nghiên cứu chế độ xã hội của sản xuất"</em>.
-                            </p>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                <strong>Khái quát lại:</strong> Đối tượng nghiên cứu của KTCT Mác - Lênin là <strong>các quan hệ xã hội của sản xuất và trao đổi</strong> mà các quan hệ này được đặt trong sự liên hệ biện chứng với trình độ phát triển của lực lượng sản xuất và kiến trúc thượng tầng tương ứng của phương thức sản xuất nhất định.
-                            </p>
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10">
+                        <h4 class="font-heading font-bold text-philo-gold mb-2 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[18px]">account_tree</span>
+                            Phương pháp logic
+                        </h4>
+                        <p class="text-xs leading-relaxed text-philo-ivory/80">
+                            Đi sâu tìm hiểu cái <strong>bản chất, cái quy luật phổ biến</strong>, tất yếu của các sự kiện; phân tích, so sánh, tổng hợp để rút ra kết luận khái quát, không bị chi phối bởi các chi tiết ngẫu nhiên, thứ yếu.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <h4 class="font-bold text-philo-gold mb-1">Mối quan hệ biện chứng:</h4>
+                    <p class="leading-relaxed">
+                        Phương pháp lịch sử là cơ sở cung cấp chất liệu thực tiễn sống động; phương pháp logic định hướng tư duy tìm ra quy luật bản chất nội tại. Hai phương pháp này kết hợp hữu cơ, không tách rời nhau.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-black/40 border border-philo-warmGold/20">
+                    <h4 class="font-heading font-bold text-philo-gold mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">balance</span>
+                        Nguyên tắc phương pháp luận: Tính Đảng kết hợp chặt chẽ với Tính Khoa học
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-3 bg-white/5 rounded-lg">
+                            <strong class="text-white block mb-1">Tính Đảng:</strong> Đứng vững trên lập trường của giai cấp vô sản, chủ nghĩa Mác - Lênin và tư tưởng Hồ Chí Minh; kiên định độc lập dân tộc và CNXH.
                         </div>
-
-                        <!-- Reflection Questions -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.2
-                            </h3>
-                            <div class="space-y-3">
-                                <div class="reflection-item">
-                                    <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                        <span>Kinh tế chính trị có nghiên cứu mặt kỹ thuật, công nghệ của sản xuất không?</span>
-                                        <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                    </button>
-                                    <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                        <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 18):</strong> Không. Kinh tế chính trị không nghiên cứu biểu hiện kỹ thuật hay yếu tố vật chất thuần túy của lực lượng sản xuất, mà nghiên cứu hệ thống các <em>quan hệ xã hội giữa người với người</em> trong quá trình sản xuất, trao đổi, phân phối và tiêu dùng.
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="p-3 bg-white/5 rounded-lg">
+                            <strong class="text-white block mb-1">Tính Khoa học:</strong> Tôn trọng sự thật khách quan, dựa trên tư liệu văn kiện chính xác, đánh giá khách quan, toàn diện và biện chứng.
                         </div>
+                    </div>
+                </div>
 
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M1-L1')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.2
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Vì sao nghiên cứu Lịch sử Đảng phải kết hợp nhuần nhuyễn tính Đảng với tính khoa học?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
                             </button>
-                            <button onclick="completeLesson('M1-L2')" id="btn-complete-M1-L2" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Tính Đảng và tính khoa học thống nhất biện chứng. Tính Đảng chân chính phải dựa trên cơ sở khoa học khách quan, trung thực; ngược lại tính khoa học phục vụ cho mục tiêu chính trị cao đẹp của Đảng và nhân dân.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M1-L1')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M1-FQ2')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M1-L2')" id="btn-complete-M1-L2" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 1.3: MỤC ĐÍCH NGHIÊN CỨU & QUY LUẬT KINH TẾ -->
-            <div id="lesson-M1-L3" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">⚖️</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 1.3 — Chương 1 (Trang 20 - 22)</span>
+        </article>
+        <!-- LESSON 1.3: Bối cảnh lịch sử & Phong trào yêu nước trước 1930 -->
+        <article id="lesson-M1-L3" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 1.3 • SESSION 3 CHƯƠNG 1</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Bối cảnh lịch sử & Các phong trào yêu nước trước 1930
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Chính sách thống trị của thực dân Pháp, biến đổi cơ cấu xã hội và sự bế tắc của các phong trào yêu nước</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
+                    <p class="text-sm">
+                        Ngày 1/9/1858, thực dân Pháp nổ súng tấn công bán đảo Sơn Trà (Đà Nẵng), chính thức xâm lược Việt Nam. Qua các bản Hiệp ước Nhâm Tuất (1862), Giáp Tuất (1874), Hácmăng (1883) và Patơnốt (1884), Pháp đã biến Việt Nam từ một nước phong kiến độc lập thành thuộc địa nửa phong kiến.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl">
+                            <strong class="text-philo-gold block mb-1">Chính trị:</strong> "Chia để trị" (chia thành Bắc Kỳ, Trung Kỳ, Nam Kỳ), tước đoạt toàn bộ quyền tự do dân chủ của nhân dân.
                         </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Mục Đích Nghiên Cứu &amp; Bản Chất Quy Luật Kinh Tế</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Làm rõ mục đích cao nhất của KTCT Mác - Lênin, bản chất khách quan của quy luật kinh tế và phân biệt rạch ròi giữa quy luật kinh tế với chính sách kinh tế.</p>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl">
+                            <strong class="text-philo-gold block mb-1">Kinh tế:</strong> Khai thác thuộc địa lần 1 và lần 2 vơ vét tài nguyên khoáng sản, độc quyền ngoại thương, đánh thuế khóa nặng nề.
+                        </div>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl">
+                            <strong class="text-philo-gold block mb-1">Văn hóa - Xã hội:</strong> Chính sách "ngu dân", lập nhiều nhà tù hơn trường học, dùng rượu cồn và thuốc phiện đầu độc nhân dân.
+                        </div>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Mục đích nghiên cứu ở cấp độ cao nhất</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Mục đích nghiên cứu ở cấp độ cao nhất của kinh tế chính trị Mác - Lênin là <strong>nhằm phát hiện ra các quy luật chi phối quan hệ giữa người với người trong sản xuất và trao đổi</strong>.
-                            </p>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Từ việc phát hiện các quy luật, môn học giúp các chủ thể xã hội nhận thức và vận dụng các quy luật ấy, tạo động lực sáng tạo, thúc đẩy văn minh và sự phát triển toàn diện của xã hội thông qua giải quyết hài hòa các quan hệ lợi ích.
-                            </p>
-
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Quy luật kinh tế là gì?</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                <strong>Quy luật kinh tế</strong> là những mối liên hệ phản ánh bản chất, khách quan, lặp đi lặp lại của các hiện tượng và quá trình kinh tế trong nền sản xuất xã hội tương ứng với những trình độ phát triển nhất định.
-                            </p>
-
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">3. Phân biệt Quy luật kinh tế và Chính sách kinh tế</h3>
-                            <div class="overflow-x-auto my-4">
-                                <table class="w-full text-left text-xs border-collapse border border-philo-warmGold/30">
-                                    <thead>
-                                        <tr class="bg-philo-warmGold/20 text-philo-gold font-bold">
-                                            <th class="p-3 border border-philo-warmGold/30">Tiêu chí</th>
-                                            <th class="p-3 border border-philo-warmGold/30">Quy luật kinh tế (Economic Laws)</th>
-                                            <th class="p-3 border border-philo-warmGold/30">Chính sách kinh tế (Economic Policies)</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-philo-ivory/80 divide-y divide-philo-warmGold/20">
-                                        <tr>
-                                            <td class="p-3 font-semibold text-philo-gold">Bản chất</td>
-                                            <td class="p-3">Tồn tại <strong>khách quan</strong>, không phụ thuộc vào ý chí chủ quan của con người.</td>
-                                            <td class="p-3">Là sản phẩm <strong>chủ quan</strong> của con người được ban hành trên cơ sở vận dụng quy luật.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-3 font-semibold text-philo-gold">Khả năng thay đổi</td>
-                                            <td class="p-3">Con người <em>không thể thủ tiêu</em>, bãi bỏ hay sáng tạo ra quy luật kinh tế. Chỉ có thể nhận thức và điều chỉnh hành vi của mình.</td>
-                                            <td class="p-3">Con người có thể sửa đổi, hủy bỏ hoặc ban hành chính sách mới khi không còn phù hợp.</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-3 font-semibold text-philo-gold">Hậu quả khi sai lệch</td>
-                                            <td class="p-3">Nếu làm trái quy luật kinh tế khách quan, nền kinh tế sẽ bị khủng hoảng, trì trệ.</td>
-                                            <td class="p-3">Chính sách sai lầm sẽ kìm hãm sản xuất, đòi hỏi phải đổi mới và hoàn thiện thể chế.</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-heading text-base font-bold text-philo-gold">Sự thất bại của các phong trào yêu nước trước khi có Đảng:</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 bg-black/40 rounded-xl border border-white/10">
+                            <strong class="text-philo-gold block text-sm mb-1">Khuynh hướng phong kiến:</strong> Phong trào Cần Vương (1885 - 1896) của vua Hàm Nghi, Tôn Thất Thuyết; Khởi nghĩa Yên Thế (1884 - 1913) của Hoàng Hoa Thám thất bại vì hệ tư tưởng phong kiến đã lỗi thời.
                         </div>
-
-                        <!-- Reflection Question -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.3
-                            </h3>
-                            <div class="reflection-item">
-                                <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                    <span>Nếu một chính sách kinh tế không phù hợp với quy luật khách quan thì điều gì sẽ xảy ra?</span>
-                                    <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                </button>
-                                <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                    <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Hộp 1.2 - Trang 21):</strong> Khi chính sách không phù hợp với quy luật khách quan, nó sẽ gây cản trở và kìm hãm sức sản xuất, gây khan hiếm, mất cân đối thị trường. Chủ thể ban hành chính sách phải thay đổi, hủy bỏ hoặc ban hành chính sách mới thay thế chứ không thể ép quy luật kinh tế tuân theo ý muốn chủ quan của mình.
-                                </div>
-                            </div>
+                        <div class="p-4 bg-black/40 rounded-xl border border-white/10">
+                            <strong class="text-philo-gold block text-sm mb-1">Khuynh hướng dân chủ tư sản:</strong> Phong trào Đông Du của Phan Bội Châu; Xu hướng cải cách của Phan Châu Trinh; Khởi nghĩa Yên Bái (2/1930) của Việt Nam Quốc dân Đảng do Nguyễn Thái Học lãnh đạo ("Không thành công cũng thành nhân").
                         </div>
+                    </div>
+                </div>
 
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M1-L2')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.3
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Mâu thuẫn chủ yếu và cơ bản nhất trong lòng xã hội Việt Nam thời thuộc địa nửa phong kiến là gì?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
                             </button>
-                            <button onclick="completeLesson('M1-L3')" id="btn-complete-M1-L3" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Mâu thuẫn giữa toàn thể dân tộc Việt Nam với thực dân Pháp xâm lược và tay sai phản động (mâu thuẫn dân tộc) là mâu thuẫn chủ yếu nhất, chi phối các mâu thuẫn khác trong xã hội.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M1-L2')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M1-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M1-L3')" id="btn-complete-M1-L3" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 1.4: PHƯƠNG PHÁP NGHIÊN CỨU CỦA KTCT MÁC - LÊNIN -->
-            <div id="lesson-M1-L4" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">🔬</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 1.4 — Chương 1 (Trang 22 - 24)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Phương Pháp Nghiên Cứu Của Kinh Tế Chính Trị Mác - Lênin</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Làm rõ phương pháp trừu tượng hóa khoa học — phương pháp nghiên cứu chủ yếu của KTCT Mác - Lênin, cùng các phương pháp nghiên cứu liên ngành hiện đại.</p>
+        </article>
+        <!-- LESSON 1.4: Nguyễn Ái Quốc chuẩn bị thành lập Đảng -->
+        <article id="lesson-M1-L4" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 1.4 • SESSIONS 3 - 4</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Nguyễn Ái Quốc chuẩn bị về tư tưởng, chính trị & tổ chức
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Từ người thanh niên yêu nước đến người chiến sĩ cộng sản; ba mặt chuẩn bị chu đáo để thành lập Đảng</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <h4 class="font-bold text-philo-gold mb-1">Bước ngoặt lịch sử năm 1920:</h4>
+                    <p class="leading-relaxed">
+                        Tháng 7/1920, Nguyễn Ái Quốc đọc bản <em>Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa</em> của V.I. Lênin. Người khẳng định: <em>"Muốn cứu nước và giải phóng dân tộc không có con đường nào khác con đường cách mạng vô sản"</em>. Tháng 12/1920 tại Đại hội Tours, Người bỏ phiếu tán thành gia nhập Quốc tế III và sáng lập Đảng Cộng sản Pháp.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">1. Chuẩn bị Tư tưởng</strong>
+                        <p class="leading-relaxed text-philo-ivory/80">Truyền bá chủ nghĩa Mác - Lênin qua báo *Le Paria*, báo *Thanh niên*, tác phẩm *Bản án chế độ thực dân Pháp* (1925).</p>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Phép biện chứng duy vật — Nền tảng phương pháp luận</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Vận dụng phép biện chứng duy vật để thấy được các hiện tượng và quá trình kinh tế hình thành, phát triển và chuyển hóa không ngừng, có mối liên hệ tác động biện chứng với nhau trong một chỉnh thể thống nhất.
-                            </p>
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">2. Chuẩn bị Chính trị</strong>
+                        <p class="leading-relaxed text-philo-ivory/80">Xuất bản tác phẩm *Đường Kách mệnh* (1927), xác định mục tiêu độc lập dân tộc gắn liền với CNXH, công nông là gốc cách mạng.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">3. Chuẩn bị Tổ chức</strong>
+                        <p class="leading-relaxed text-philo-ivory/80">Thành lập Hội Việt Nam Cách mạng Thanh niên (6/1925) tại Quảng Châu, đào tạo cán bộ và thực hiện phong trào "Vô sản hóa" (1928).</p>
+                    </div>
+                </div>
 
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Phương pháp trừu tượng hóa khoa học — Phương pháp chủ yếu</h3>
-                            <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                <p class="text-sm text-philo-ivory/80 leading-relaxed">
-                                    <strong>Định nghĩa (Trang 23):</strong> <em>Trừu tượng hóa khoa học</em> là phương pháp được tiến hành bằng cách nhận ra và <strong>gạt bỏ khỏi quá trình nghiên cứu những yếu tố ngẫu nhiên, những hiện tượng tạm thời, gián tiếp</strong>; trên cơ sở đó tách ra được những dấu hiệu điển hình, bền vững, ổn định, trực tiếp của đối tượng nghiên cứu để nắm được bản chất, khái quát thành các phạm trù và phát hiện quy luật.
-                                </p>
-                            </div>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                <strong>Vì sao đây là phương pháp chủ yếu của KTCT?</strong> Vì các nghiên cứu kinh tế không thể tiến hành trong các phòng thí nghiệm, không thể sử dụng kính hiển vi hay máy móc kỹ thuật như khoa học tự nhiên. Quan hệ kinh tế luôn đan xen phức tạp nên việc trừu tượng hóa giúp tiếp cận nhanh chóng bản chất đối tượng.
-                            </p>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                <strong>Yêu cầu then chốt:</strong> Phải xác định đúng <em>giới hạn của sự trừu tượng hóa</em>. Không được tùy tiện loại bỏ yếu tố phản ánh trực tiếp bản chất (ví dụ: nghiên cứu quan hệ giữa người lao động và chủ doanh nghiệp có thể gạt bỏ tình cảm cá nhân nhưng không thể gạt bỏ yếu tố lợi ích kinh tế).
-                            </p>
-
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">3. Các phương pháp nghiên cứu kết hợp khác</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Ngoài trừu tượng hóa khoa học, KTCT Mác - Lênin còn sử dụng: Phương pháp lôgíc kết hợp với lịch sử; Thống kê, so sánh; Phân tích và tổng hợp; Quy nạp và diễn dịch; Mô hình hóa; Tổng kết thực tiễn và nghiên cứu liên ngành dựa trên bằng chứng thực nghiệm.
-                            </p>
-                        </div>
-
-                        <!-- Reflection Question -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.4
-                            </h3>
-                            <div class="reflection-item">
-                                <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                    <span>Tại sao việc gạt bỏ yếu tố lợi ích khi nghiên cứu quan hệ kinh tế sẽ làm sai lệch bản chất?</span>
-                                    <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                </button>
-                                <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                    <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 24):</strong> Lợi ích kinh tế chính là động cơ trực tiếp và bản chất chi phối các hành vi kinh tế của con người trong sản xuất và trao đổi. Nếu gạt bỏ lợi ích kinh tế ra khỏi nghiên cứu thì mối quan hệ đó không còn là quan hệ kinh tế nữa.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M1-L3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.4
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Phong trào 'Vô sản hóa' (1928) có ý nghĩa như thế nào đối với phong trào công nhân Việt Nam?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
                             </button>
-                            <button onclick="completeLesson('M1-L4')" id="btn-complete-M1-L4" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Đưa cán bộ vào hầm mỏ, xí nghiệp cùng sống và lao động với công nhân để rèn luyện lập trường giai cấp, truyền bá chủ nghĩa Mác - Lênin, đưa phong trào công nhân chuyển nhanh từ tự phát sang tự giác.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M1-L3')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M1-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M1-L4')" id="btn-complete-M1-L4" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 1.5: 4 CHỨC NĂNG CỦA KINH TẾ CHÍNH TRỊ MÁC - LÊNIN -->
-            <div id="lesson-M1-L5" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">🏛️</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 1.5 — Chương 1 (Trang 24 - 27)</span>
+        </article>
+        <!-- LESSON 1.5: Hội nghị 3/2/1930 & Cương lĩnh đầu tiên -->
+        <article id="lesson-M1-L5" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 1.5 • SESSION 4 CHƯƠNG 1</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Hội nghị thành lập Đảng & Cương lĩnh chính trị đầu tiên (3/2/1930)
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Sự xuất hiện 3 tổ chức cộng sản năm 1929, Hội nghị hợp nhất tại Cửu Long và nội dung Cương lĩnh đầu tiên</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-3">
+                    <p class="text-sm">
+                        Năm 1929, phong trào dâng cao dẫn đến sự ra đời của 3 tổ chức cộng sản: Đông Dương Cộng sản Đảng (6/1929), An Nam Cộng sản Đảng (11/1929), Đông Dương Cộng sản Liên đoàn (9/1929). Nhận thấy nguy cơ chia rẽ, Nguyễn Ái Quốc triệu tập Hội nghị hợp nhất tại Cửu Long (Hương Cảng) từ 6/1 đến 7/2/1930, thống nhất thành <strong>Đảng Cộng sản Việt Nam</strong>.
+                    </p>
+                </div>
+                <div class="p-5 bg-black/40 border border-philo-warmGold/20 rounded-xl space-y-4">
+                    <h4 class="font-heading text-base font-bold text-philo-gold">Nội dung Cương lĩnh chính trị đầu tiên:</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-3 bg-white/5 rounded-lg space-y-1">
+                            <strong class="text-philo-gold">Phương hướng chiến lược:</strong>
+                            <p>Làm "tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản".</p>
                         </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Hệ Thống 4 Chức Năng Của Kinh Tế Chính Trị Mác - Lênin</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Phân tích toàn diện 4 chức năng: Chức năng nhận thức, Chức năng thực tiễn, Chức năng tư tưởng và Chức năng phương pháp luận.</p>
+                        <div class="p-3 bg-white/5 rounded-lg space-y-1">
+                            <strong class="text-philo-gold">Nhiệm vụ hàng đầu:</strong>
+                            <p>Đánh đổ đế quốc Pháp và phong kiến, làm cho nước Việt Nam hoàn toàn độc lập, ruộng đất về tay dân cày nghèo.</p>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-lg space-y-1">
+                            <strong class="text-philo-gold">Lực lượng cách mạng:</strong>
+                            <p>Công nông là gốc; liên minh tiểu tư sản, trí thức; tranh thủ hoặc trung lập phú nông, trung tiểu địa chủ, tư sản dân tộc.</p>
+                        </div>
+                        <div class="p-3 bg-white/5 rounded-lg space-y-1">
+                            <strong class="text-philo-gold">Vai trò lãnh đạo:</strong>
+                            <p>Giai cấp vô sản là lực lượng lãnh đạo thông qua đội tiên phong là Đảng Cộng sản Việt Nam.</p>
+                        </div>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-4">
-                                <div class="p-6 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <div class="flex items-center gap-3 mb-3">
-                                        <span class="text-2xl text-philo-gold">🧠</span>
-                                        <h3 class="font-bold text-lg text-philo-gold">1. Chức năng nhận thức</h3>
-                                    </div>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        • Cung cấp hệ thống tri thức lý luận về sự vận động của các quan hệ sản xuất và trao đổi.<br>
-                                        • Cung cấp hệ thống tri thức mở về quy luật phát triển kinh tế qua các thời kỳ lịch sử.<br>
-                                        • Giúp người học nhận thức xuyên qua các hiện tượng hỗn độn trên bề mặt thị trường để thấy bản chất và quy luật vận động khách quan.
-                                    </p>
-                                </div>
-                                <div class="p-6 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <div class="flex items-center gap-3 mb-3">
-                                        <span class="text-2xl text-philo-gold">🛠️</span>
-                                        <h3 class="font-bold text-lg text-philo-gold">2. Chức năng thực tiễn</h3>
-                                    </div>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        • Giúp người lao động và nhà hoạch định chính sách hình thành kỹ năng vận dụng quy luật kinh tế vào thực tiễn sản xuất, kinh doanh và quản trị quốc gia.<br>
-                                        • Thực hiện chức năng <em>cải tạo thực tiễn</em>, thúc đẩy phát triển xã hội tiến bộ, giải quyết hài hòa quan hệ lợi ích.<br>
-                                        • Đối với sinh viên: Định vị trách nhiệm sáng tạo của bản thân trong đời sống kinh tế.
-                                    </p>
-                                </div>
-                                <div class="p-6 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <div class="flex items-center gap-3 mb-3">
-                                        <span class="text-2xl text-philo-gold">🚩</span>
-                                        <h3 class="font-bold text-lg text-philo-gold">3. Chức năng tư tưởng</h3>
-                                    </div>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        • Xây dựng nền tảng tư tưởng tiến bộ, biết quý trọng thành quả lao động của bản thân và xã hội.<br>
-                                        • Củng cố niềm tin vào con đường phấn đấu vì mục tiêu <em>dân giàu, nước mạnh, dân chủ, công bằng, văn minh</em>.<br>
-                                        • Xây dựng lý tưởng giải phóng con người, xóa bỏ áp bức, bất công xã hội.
-                                    </p>
-                                </div>
-                                <div class="p-6 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <div class="flex items-center gap-3 mb-3">
-                                        <span class="text-2xl text-philo-gold">📐</span>
-                                        <h3 class="font-bold text-lg text-philo-gold">4. Chức năng phương pháp luận</h3>
-                                    </div>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        • Là nền tảng lý luận khoa học cho việc nghiên cứu các môn kinh tế chuyên ngành (Kinh tế học, Tài chính, Ngân hàng, Quản trị kinh doanh...).<br>
-                                        • Giúp lý giải cội nguồn bản chất của các hiện tượng: vì sao tiền có chức năng mua bán, bản chất của giá cả, nguồn gốc lợi nhuận...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                </div>
 
-                        <!-- Reflection Question -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.5
-                            </h3>
-                            <div class="reflection-item">
-                                <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                    <span>Tại sao sinh viên ngành kinh tế - kỹ thuật lại cần học môn Kinh tế chính trị Mác - Lênin?</span>
-                                    <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                </button>
-                                <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                    <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 26-27):</strong> Môn học cung cấp thế giới quan và phương pháp luận khoa học, giúp người học hiểu rõ bản chất của các phạm trù kinh tế chuyên ngành, nhận diện các quan hệ lợi ích và có kỹ năng giải quyết hài hòa xung đột lợi ích khi khởi nghiệp hay tham gia các hoạt động kinh tế trong nền kinh tế thị trường.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M1-L4')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.5
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Tính sáng tạo của Cương lĩnh chính trị đầu tiên thể hiện ở điểm mấu chốt nào?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
                             </button>
-                            <button onclick="completeLesson('M1-L5')" id="btn-complete-M1-L5" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Đặt nhiệm vụ giải phóng dân tộc lên hàng đầu; tập hợp được lực lượng toàn dân tộc trong mặt trận dân tộc thống nhất; giải quyết đúng đắn mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M1-L4')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M1-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M1-L5')" id="btn-complete-M1-L5" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 1.6: Ý NGHĨA MÔN HỌC & CÁC THUẬT NGỮ CẦN GHI NHỚ -->
-            <div id="lesson-M1-L6" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">💎</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 1.6 — Chương 1 (Trang 27 - 28)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Tóm Tắt Chương 1 &amp; Thuật Ngữ Cốt Lõi</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Khái quát toàn bộ tri thức Chương 1, hệ thống hóa bảng thuật ngữ bắt buộc ghi nhớ để chuẩn bị cho bài kiểm tra tổng kết Module 1.</p>
+        </article>
+        <!-- LESSON 1.6: Ý nghĩa lịch sử thành lập Đảng -->
+        <article id="lesson-M1-L6" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 1.6 • SESSION 4 TỔNG KẾT</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Ý nghĩa lịch sử của việc thành lập Đảng Cộng sản Việt Nam
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Quy luật ra đời của Đảng, chấm dứt khủng hoảng đường lối cứu nước và bước ngoặt lịch sử vĩ đại</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="p-5 rounded-xl bg-philo-gold/10 border border-philo-gold/30">
+                    <h4 class="font-heading font-bold text-philo-gold text-base mb-2">Quy luật đặc thù về sự ra đời của Đảng:</h4>
+                    <p class="text-sm leading-relaxed">
+                        Đảng Cộng sản Việt Nam ra đời là sản phẩm của sự kết hợp giữa ba yếu tố:
+                    </p>
+                    <div class="mt-3 p-3 bg-black/50 border border-philo-gold/40 rounded-lg text-center font-bold text-philo-gold text-sm tracking-wider">
+                        Chủ nghĩa Mác - Lênin &nbsp;+&nbsp; Phong trào công nhân &nbsp;+&nbsp; Phong trào yêu nước
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Tóm tắt nội dung cốt lõi Chương 1</h3>
-                            <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30 text-sm text-philo-ivory/80 space-y-3">
-                                <p>• <strong>Kinh tế chính trị Mác - Lênin</strong> là môn khoa học bắt nguồn từ sự kế thừa những kết quả khoa học của nhân loại, do C. Mác và Ph. Ăngghen sáng lập, được V.I. Lênin và các đảng cộng sản phát triển.</p>
-                                <p>• <strong>Đối tượng nghiên cứu:</strong> Các quan hệ xã hội của sản xuất và trao đổi trong mối quan hệ biện chứng với lực lượng sản xuất và kiến trúc thượng tầng tương ứng.</p>
-                                <p>• <strong>Phương pháp nghiên cứu chủ yếu:</strong> Trừu tượng hóa khoa học.</p>
-                                <p>• <strong>Mục đích tối cao:</strong> Phát hiện các quy luật kinh tế khách quan để vận dụng phục vụ lợi ích con người.</p>
-                                <p>• <strong>4 Chức năng:</strong> Nhận thức, Thực tiễn, Tư tưởng và Phương pháp luận.</p>
-                            </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">Chấm dứt khủng hoảng đường lối</strong>
+                        <p class="leading-relaxed text-philo-ivory/80">Chấm dứt thời kỳ bế tắc về đường lối cứu nước kéo dài hơn hai phần ba thế kỷ, khẳng định sự lựa chọn đúng đắn: độc lập dân tộc gắn liền với CNXH.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">Bước ngoặt vĩ đại của dân tộc</strong>
+                        <p class="leading-relaxed text-philo-ivory/80">Đưa cách mạng Việt Nam trở thành một bộ phận khăng khít của phong trào cách mạng vô sản thế giới, mở ra kỷ nguyên mới cho dân tộc.</p>
+                    </div>
+                </div>
 
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Bảng thuật ngữ chuyên ngành bắt buộc ghi nhớ</h3>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 my-4">
-                                <div class="p-3 rounded-xl bg-black/30 border border-philo-warmGold/20 text-center">
-                                    <span class="text-xs text-philo-gold font-bold block mb-1">Kinh tế chính trị</span>
-                                    <span class="text-[11px] text-philo-ivory/60">Thuật ngữ xuất hiện 1615 (Montchrétien)</span>
-                                </div>
-                                <div class="p-3 rounded-xl bg-black/30 border border-philo-warmGold/20 text-center">
-                                    <span class="text-xs text-philo-gold font-bold block mb-1">Chủ nghĩa trọng thương</span>
-                                    <span class="text-[11px] text-philo-ivory/60">Nghiên cứu lưu thông thương nghiệp</span>
-                                </div>
-                                <div class="p-3 rounded-xl bg-black/30 border border-philo-warmGold/20 text-center">
-                                    <span class="text-xs text-philo-gold font-bold block mb-1">Chủ nghĩa trọng nông</span>
-                                    <span class="text-[11px] text-philo-ivory/60">Nghiên cứu sản xuất nông nghiệp</span>
-                                </div>
-                                <div class="p-3 rounded-xl bg-black/30 border border-philo-warmGold/20 text-center">
-                                    <span class="text-xs text-philo-gold font-bold block mb-1">KTCT Cổ điển Anh</span>
-                                    <span class="text-[11px] text-philo-ivory/60">Giá trị do lao động tạo ra (Smith, Ricardo)</span>
-                                </div>
-                                <div class="p-3 rounded-xl bg-black/30 border border-philo-warmGold/20 text-center">
-                                    <span class="text-xs text-philo-gold font-bold block mb-1">Trừu tượng hóa KH</span>
-                                    <span class="text-[11px] text-philo-ivory/60">Phương pháp nghiên cứu chủ yếu</span>
-                                </div>
-                                <div class="p-3 rounded-xl bg-black/30 border border-philo-warmGold/20 text-center">
-                                    <span class="text-xs text-philo-gold font-bold block mb-1">Quy luật kinh tế</span>
-                                    <span class="text-[11px] text-philo-ivory/60">Khách quan, không phụ thuộc ý chí</span>
-                                </div>
-                                <div class="p-3 rounded-xl bg-black/30 border border-philo-warmGold/20 text-center">
-                                    <span class="text-xs text-philo-gold font-bold block mb-1">Chính sách kinh tế</span>
-                                    <span class="text-[11px] text-philo-ivory/60">Sản phẩm chủ quan của con người</span>
-                                </div>
-                                <div class="p-3 rounded-xl bg-black/30 border border-philo-warmGold/20 text-center">
-                                    <span class="text-xs text-philo-gold font-bold block mb-1">Quan hệ sản xuất</span>
-                                    <span class="text-[11px] text-philo-ivory/60">Sở hữu, quản lý và phân phối</span>
-                                </div>
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 1.6
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Vì sao việc đưa phong trào yêu nước trở thành yếu tố cấu thành Đảng là sáng tạo lớn của Bác Hồ?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Vì ở Việt Nam - một xứ thuộc địa, chủ nghĩa yêu nước có truyền thống hàng ngàn năm vô cùng sâu sắc; phong trào công nhân gắn bó ruột thịt với phong trào yêu nước trong mục tiêu chung là độc lập dân tộc.
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Completion Banner -->
-                        <div id="module-quiz-banner" class="p-6 rounded-2xl bg-gradient-to-r from-amber-500/20 via-yellow-500/10 to-transparent border border-philo-gold/40 flex flex-col md:flex-row items-center justify-between gap-4">
-                            <div>
-                                <h4 class="font-bold text-philo-gold text-lg mb-1">🏆 Bạn đã sẵn sàng làm Bài kiểm tra Tổng kết Chương 1?</h4>
-                                <p class="text-xs text-philo-ivory/70">Đạt ≥ 75% trong bài thi 12 câu để mở khóa huy hiệu <strong>"Kinh Tế Học Mácxít Khởi Điểm"</strong> 🥈 và +15 XP.</p>
-                            </div>
-                            <button onclick="openModuleQuiz()" class="btn-academic-gold px-6 py-3 font-bold text-xs uppercase tracking-wider shrink-0">
-                                Làm bài kiểm tra Chương 1
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M1-L5')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M1-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
                             </button>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M1-L5')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
-                            </button>
-                            <button onclick="completeLesson('M1-L6')" id="btn-complete-M1-L6" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined">check_circle</span> Đã hoàn thành chương
+                            <button onclick="completeLesson('M1-L6')" id="btn-complete-M1-L6" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+        </article>
 
-        </section>
-
-        <!-- ===== FLOATING / SIDE AI TUTOR DRAWER ===== -->
-        <div id="ai-panel" class="hidden-panel fixed top-24 right-6 w-96 max-w-[90vw] bg-philo-blackBurgundy border border-philo-warmGold/30 shadow-2xl rounded-2xl z-50 p-6 flex flex-col max-h-[80vh]">
-            <div class="flex items-center justify-between mb-4 border-b border-philo-warmGold/20 pb-3">
-                <div class="flex items-center gap-2 text-philo-gold font-bold">
-                    <span class="material-symbols-outlined">smart_toy</span>
-                    <span>AI Trợ Giảng — Chương 1</span>
-                </div>
-                <button onclick="toggleAIPanel()" class="text-philo-ivory/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
+        <!-- MODULE FINAL EXAM BANNER -->
+        <div id="module-quiz-banner" class="hidden mt-8 p-6 rounded-2xl glass-panel border border-philo-gold/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <h3 class="font-heading text-xl font-bold text-philo-gold">Chúc mừng bạn đã hoàn thành 6 bài học Chương 1!</h3>
+                <p class="text-xs text-philo-ivory/80 mt-1">Hãy tham gia bài thi tổng kết để củng cố toàn diện kiến thức và mở khóa danh hiệu vinh dự.</p>
             </div>
-            <div id="ai-chat-history" class="flex-1 overflow-y-auto space-y-3 text-xs mb-4">
-                <div class="p-3 bg-black/40 rounded-xl text-philo-ivory/80">
-                    👋 Xin chào! Mình là Trợ lý AI môn MLN131. Bạn có thể hỏi bất kỳ câu hỏi nào về Chương 1: Đối tượng, phương pháp, sự hình thành và chức năng của KTCT Mác - Lênin!
-                </div>
-            </div>
-            <div class="space-y-2">
-                <div class="flex gap-2">
-                    <input id="ai-quick-input" type="text" placeholder="Hỏi về Chương 1..." class="flex-1 bg-black/50 border border-philo-warmGold/30 rounded-xl px-3 py-2 text-xs text-philo-ivory focus:outline-none focus:border-philo-gold" onkeydown="if(event.key==='Enter') sendQuickAI();" />
-                    <button onclick="sendQuickAI()" class="p-2 bg-philo-gold text-black rounded-xl hover:bg-philo-warmGold transition-colors"><span class="material-symbols-outlined text-sm">send</span></button>
-                </div>
-                <div class="flex flex-wrap gap-1 text-[10px]">
-                    <button onclick="quickPrompt('Đối tượng nghiên cứu của KTCT là gì?')" class="px-2 py-1 bg-philo-gold/10 text-philo-gold rounded border border-philo-gold/20 hover:bg-philo-gold/20">Đối tượng KTCT?</button>
-                    <button onclick="quickPrompt('Phương pháp trừu tượng hóa khoa học là gì?')" class="px-2 py-1 bg-philo-gold/10 text-philo-gold rounded border border-philo-gold/20 hover:bg-philo-gold/20">Trừu tượng hóa?</button>
-                </div>
-            </div>
+            <button onclick="openModuleQuiz()" class="philo-btn-gold shrink-0">Bắt đầu thi tổng kết</button>
         </div>
-
     </main>
 
-    <!-- ===== FORMATIVE & MODULE QUIZ MODAL ===== -->
-    <div id="quiz-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <div class="bg-philo-blackBurgundy border border-philo-warmGold/40 rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="p-6 border-b border-philo-warmGold/30 flex items-center justify-between">
+    <!-- SLIDE-OVER AI PANEL -->
+    <aside id="ai-panel" class="fixed top-0 right-0 w-full sm:w-96 h-full bg-[#120202] border-l border-philo-gold/30 shadow-2xl z-50 p-6 flex flex-col hidden-panel">
+        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-philo-gold">smart_toy</span>
+                <h3 class="font-heading font-bold text-philo-ivory">Trợ Lý AI Chương 1</h3>
+            </div>
+            <button onclick="toggleAIPanel()" class="text-philo-ivory/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
+        </div>
+        <div class="py-3 flex flex-wrap gap-1.5 border-b border-white/10">
+            <button onclick="sendAIPrompt('Đối tượng nghiên cứu Lịch sử Đảng?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Đối tượng nghiên cứu Lịch sử Đảng?</button>
+<button onclick="sendAIPrompt('Quy luật ra đời của Đảng?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Quy luật ra đời của Đảng?</button>
+<button onclick="sendAIPrompt('Cương lĩnh chính trị đầu tiên 3/2/1930?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Cương lĩnh chính trị đầu tiên 3/2/1930?</button>
+<button onclick="sendAIPrompt('Vai trò của Nguyễn Ái Quốc năm 1930?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Vai trò của Nguyễn Ái Quốc năm 1930?</button>
+
+        </div>
+        <div id="ai-chat-history" class="flex-grow overflow-y-auto py-4 space-y-3 text-xs">
+            <div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20">
+                <p class="font-bold text-philo-gold mb-1">🤖 AI Giáo trình VNR202</p>
+                <p class="text-philo-ivory/80">Chào bạn! Tôi là trợ lý AI chuyên sâu môn Lịch sử Đảng Cộng sản Việt Nam (VNR202) Chương 1. Bạn cần giải đáp câu hỏi hay tài liệu nào?</p>
+            </div>
+        </div>
+        <div class="pt-3 border-t border-white/10 flex gap-2">
+            <input type="text" id="ai-input" placeholder="Hỏi AI về Chương 1..." class="flex-grow bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-philo-gold" onkeydown="if(event.key==='Enter') sendAIMessage()" />
+            <button onclick="sendAIMessage()" class="philo-btn-gold px-3 py-2 rounded-xl text-xs"><span class="material-symbols-outlined text-[16px]">send</span></button>
+        </div>
+    </aside>
+
+    <!-- QUIZ MODAL -->
+    <div id="quiz-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glass-panel border border-philo-gold/40 rounded-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden">
+            <div class="p-5 border-b border-white/10 flex items-center justify-between">
                 <div>
-                    <h2 id="quiz-modal-title" class="text-xl font-bold text-philo-gold">Kiểm tra Chương 1</h2>
-                    <p id="quiz-modal-sub" class="text-xs text-philo-ivory/70"></p>
+                    <h3 id="quiz-modal-title" class="font-heading font-bold text-lg text-philo-gold">Bài kiểm tra trắc nghiệm</h3>
+                    <p id="quiz-modal-sub" class="text-xs text-philo-ivory/60 mt-0.5">VNR202 Lịch sử Đảng</p>
                 </div>
-                <button onclick="closeQuizModal()" class="p-2 hover:bg-philo-warmGold/20 rounded-full text-philo-ivory/60 hover:text-white">
-                    <span class="material-symbols-outlined">close</span>
-                </button>
+                <button onclick="closeQuizModal()" class="text-white/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
             </div>
-            <div id="quiz-modal-body" class="p-6 space-y-6"></div>
+            <div id="quiz-modal-body" class="p-6 overflow-y-auto space-y-6 flex-grow"></div>
         </div>
     </div>
 
-    <!-- ===== ACHIEVEMENT TOAST ===== -->
-    <div id="achievement-toast" class="hidden fixed top-6 right-6 z-50 max-w-sm">
-        <div class="bg-gradient-to-r from-amber-400 to-yellow-300 rounded-2xl p-4 shadow-2xl flex items-center gap-4 achievement-earned">
-            <span id="achievement-icon" class="text-4xl">🥈</span>
-            <div>
-                <p class="font-bold text-amber-900 text-sm">Thành tích mới!</p>
-                <p id="achievement-name" class="font-heading font-bold text-amber-900"></p>
-                <p id="achievement-desc" class="text-xs text-amber-800"></p>
-            </div>
+    <!-- ACHIEVEMENT TOAST -->
+    <div id="achievement-toast" class="fixed bottom-6 right-6 glass-panel border border-philo-gold p-4 rounded-2xl shadow-2xl flex items-center gap-4 z-50 hidden">
+        <span class="text-3xl" id="achievement-icon">🎖️</span>
+        <div>
+            <h4 class="font-bold text-philo-gold text-sm" id="achievement-name">Mở khóa danh hiệu</h4>
+            <p class="text-xs text-philo-ivory/80" id="achievement-desc">Mô tả danh hiệu</p>
         </div>
     </div>
 
-    <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
 
-    <!-- Scripts -->
+    <!-- Component Loaders -->
     <script src="js/search-data-global.js"></script>
     <script src="js/load-components.js"></script>
     <script src="js/search-init.js"></script>
 
     <script>
-        // =============================================
-        // MODULE 1 STATE & LOGIC
-        // =============================================
-        const M1_STATE = {
+        const M_LESSONS = ["M1-L1","M1-L2","M1-L3","M1-L4","M1-L5","M1-L6"];
+        let M_STATE = {
             completedLessons: new Set(),
-            currentLesson: 'M1-L1',
             quizResults: {}
         };
 
-        const M1_LESSONS = ['M1-L1', 'M1-L2', 'M1-L3', 'M1-L4', 'M1-L5', 'M1-L6'];
+        const STORAGE_KEY = 'vnr202_m1_state';
 
-        function loadM1State() {
+        function loadMState() {
             try {
-                const saved = JSON.parse(localStorage.getItem('mln131_quiz_results') || '{}');
-                if (saved.M1_completed) {
-                    saved.M1_completed.forEach(id => M1_STATE.completedLessons.add(id));
+                const s = localStorage.getItem(STORAGE_KEY);
+                if (s) {
+                    const parsed = JSON.parse(s);
+                    M_STATE.completedLessons = new Set(parsed.completedLessons || []);
+                    M_STATE.quizResults = parsed.quizResults || {};
                 }
-                M1_STATE.quizResults = saved.M1_quiz || {};
-            } catch (e) { console.warn('M1 load error:', e); }
+            } catch(e) {}
         }
 
-        function saveM1State() {
-            try {
-                const saved = JSON.parse(localStorage.getItem('mln131_quiz_results') || '{}');
-                saved.M1_completed = [...M1_STATE.completedLessons];
-                saved.M1_quiz = M1_STATE.quizResults;
-                localStorage.setItem('mln131_quiz_results', JSON.stringify(saved));
-            } catch (e) { console.warn('M1 save error:', e); }
+        function saveMState() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                completedLessons: Array.from(M_STATE.completedLessons),
+                quizResults: M_STATE.quizResults
+            }));
         }
 
-        function showLesson(lessonId) {
-            document.querySelectorAll('.lesson-content').forEach(el => el.classList.add('hidden'));
-            document.querySelectorAll('.lesson-tab').forEach(el => {
-                el.classList.remove('active-tab');
-                el.style.borderColor = 'rgba(217,166,46,0.2)';
-                const label = el.querySelectorAll('span')[2];
-                if (label) {
-                    label.classList.remove('text-philo-gold');
-                    label.classList.add('text-philo-ivory/80');
-                }
+        function showLesson(id) {
+            M_LESSONS.forEach(l => {
+                const el = document.getElementById('lesson-' + l);
+                const tab = document.getElementById('tab-' + l);
+                if (el) el.classList.add('hidden');
+                if (tab) tab.classList.remove('active-tab');
             });
-
-            const target = document.getElementById('lesson-' + lessonId);
-            if (target) {
-                target.classList.remove('hidden');
-                M1_STATE.currentLesson = lessonId;
-            }
-
-            const tab = document.getElementById('tab-' + lessonId);
-            if (tab) {
-                tab.classList.add('active-tab');
-                tab.style.borderColor = '#FFD34E';
-                const label = tab.querySelectorAll('span')[2];
-                if (label) {
-                    label.classList.remove('text-philo-ivory/80');
-                    label.classList.add('text-philo-gold');
-                }
-            }
-
-            const area = document.getElementById('lesson-area');
-            if (area) {
-                area.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            const activeEl = document.getElementById('lesson-' + id);
+            const activeTab = document.getElementById('tab-' + id);
+            if (activeEl) activeEl.classList.remove('hidden');
+            if (activeTab) activeTab.classList.add('active-tab');
+            window.scrollTo({ top: 380, behavior: 'smooth' });
         }
 
-        function completeLesson(lessonId) {
-            M1_STATE.completedLessons.add(lessonId);
-            saveM1State();
+        function completeLesson(id) {
+            M_STATE.completedLessons.add(id);
+            saveMState();
             updateProgress();
-
-            const dot = document.getElementById('dot-' + lessonId);
-            if (dot) { dot.classList.add('completed'); }
-
-            const btn = document.getElementById('btn-complete-' + lessonId);
+            const btn = document.getElementById('btn-complete-' + id);
             if (btn) {
-                btn.className = "bg-green-600 text-white font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2";
-                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Đã hoàn thành ✓';
+                btn.classList.remove('philo-btn-gold');
+                btn.classList.add('bg-emerald-600', 'text-white');
+                btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span> Đã hoàn thành ✓';
             }
-
-            const idx = M1_LESSONS.indexOf(lessonId);
-            if (idx >= 0 && idx < M1_LESSONS.length - 1) {
-                setTimeout(() => showLesson(M1_LESSONS[idx + 1]), 400);
+            const idx = M_LESSONS.indexOf(id);
+            if (idx < M_LESSONS.length - 1) {
+                setTimeout(() => showLesson(M_LESSONS[idx + 1]), 400);
             }
         }
 
         function updateProgress() {
-            const count = M1_STATE.completedLessons.size;
+            const count = M_STATE.completedLessons.size;
             const pct = Math.round((count / 6) * 100);
-            document.getElementById('m1-progress-label').textContent = count + ' / 6 bài hoàn thành';
-            document.getElementById('m1-progress-pct').textContent = pct + '%';
-            document.getElementById('m1-progress-bar').style.width = pct + '%';
+            const bar = document.getElementById('m1-progress-bar');
+            const txt = document.getElementById('m1-progress-text');
+            if (bar) bar.style.width = pct + '%';
+            if (txt) txt.textContent = count + ' / 6 bài (' + pct + '%)';
+            M_LESSONS.forEach(l => {
+                const dot = document.getElementById('dot-' + l);
+                if (dot) {
+                    if (M_STATE.completedLessons.has(l)) dot.classList.add('completed');
+                    else dot.classList.remove('completed');
+                }
+            });
+            if (count === 6) {
+                const banner = document.getElementById('module-quiz-banner');
+                if (banner) banner.classList.remove('hidden');
+            }
         }
 
         function toggleReflection(btn) {
             const answer = btn.nextElementSibling;
-            const icon = btn.querySelector('.material-symbols-outlined');
-            if (answer.classList.contains('open')) {
-                answer.classList.remove('open');
-                icon.textContent = 'expand_more';
-            } else {
-                answer.classList.add('open');
-                icon.textContent = 'expand_less';
+            if (answer) {
+                answer.classList.toggle('open');
+                const icon = btn.querySelector('.material-symbols-outlined');
+                if (icon) icon.textContent = answer.classList.contains('open') ? 'expand_less' : 'expand_more';
             }
         }
 
-        // =============================================
-        // QUIZ DATA CHƯƠNG 1
-        // =============================================
+        // QUIZ DATA
+        const FORMATIVE_QUIZZES = {
+  "M1-FQ1": {
+    "id": "M1-FQ1",
+    "title": "Trắc nghiệm nhanh: Đối tượng, Chức năng & Phương pháp Lịch sử Đảng",
+    "passingScore": 75,
+    "questions": [
+      {
+        "id": "fq1_1",
+        "text": "Đối tượng nghiên cứu của môn Lịch sử Đảng Cộng sản Việt Nam là gì?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Quá trình biến đổi tự nhiên của Việt Nam"
+          },
+          {
+            "id": "b",
+            "text": "Các sự kiện, cương lĩnh đường lối và sự chỉ đạo thực tiễn của Đảng"
+          },
+          {
+            "id": "c",
+            "text": "Lịch sử các triều đại phong kiến phong kiến phương Đông"
+          },
+          {
+            "id": "d",
+            "text": "Quan hệ thương mại giữa các nước phương Tây"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Môn học nghiên cứu các sự kiện lịch sử, cương lĩnh đường lối và sự lãnh đạo của Đảng."
+      },
+      {
+        "id": "fq1_2",
+        "text": "Hệ thống chức năng cơ bản của môn Lịch sử Đảng gồm:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nhận thức, Giáo dục, Dự báo và phê phán"
+          },
+          {
+            "id": "b",
+            "text": "Thống kê, Lưu trữ, Tóm tắt"
+          },
+          {
+            "id": "c",
+            "text": "Kinh tế, Tài chính, Đầu tư"
+          },
+          {
+            "id": "d",
+            "text": "Quân sự, Quốc phòng, Đối ngoại"
+          }
+        ],
+        "correctOptionId": "a",
+        "rationale": "Ba chức năng cốt lõi: Nhận thức, Giáo dục, Dự báo và phê phán."
+      },
+      {
+        "id": "fq1_3",
+        "text": "Đảng Cộng sản Việt Nam ra đời là sản phẩm của sự kết hợp giữa các yếu tố nào?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Chủ nghĩa Mác - Lênin với phong trào công nhân"
+          },
+          {
+            "id": "b",
+            "text": "Chủ nghĩa Mác - Lênin, phong trào công nhân và phong trào yêu nước"
+          },
+          {
+            "id": "c",
+            "text": "Phong trào nông dân với tư sản dân tộc"
+          },
+          {
+            "id": "d",
+            "text": "Phong trào Cần Vương với khởi nghĩa Yên Thế"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Đây là quy luật sáng tạo đặc thù do Chủ tịch Hồ Chí Minh đúc kết."
+      }
+    ]
+  }
+};
+        const MODULE_QUIZ = {
+  "id": "MODULE_QUIZ_M1",
+  "title": "Kiểm tra Tổng kết Chương 1: Sự ra đời của Đảng & Cương lĩnh đầu tiên",
+  "passingScore": 70,
+  "achievement": "m1-scholar",
+  "questions": [
+    {
+      "id": "mq1_1",
+      "text": "Thực dân Pháp nổ súng xâm lược Việt Nam vào thời gian nào và ở đâu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/9/1858 tại bán đảo Sơn Trà (Đà Nẵng)"
+        },
+        {
+          "id": "b",
+          "text": "20/11/1873 tại Hà Nội"
+        },
+        {
+          "id": "c",
+          "text": "5/6/1911 tại Sài Gòn"
+        },
+        {
+          "id": "d",
+          "text": "17/2/1859 tại Gia Định"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Ngày 1/9/1858 thực dân Pháp bắt đầu xâm lược nước ta tại Đà Nẵng."
+    },
+    {
+      "id": "mq1_2",
+      "text": "Mâu thuẫn chủ yếu nhất trong xã hội thuộc địa nửa phong kiến Việt Nam là:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nông dân với địa chủ"
+        },
+        {
+          "id": "b",
+          "text": "Toàn thể dân tộc Việt Nam với thực dân Pháp và phản động tay sai"
+        },
+        {
+          "id": "c",
+          "text": "Công nhân với tư sản"
+        },
+        {
+          "id": "d",
+          "text": "Thị dân với phong kiến"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Mâu thuẫn dân tộc là mâu thuẫn chủ yếu hàng đầu chi phối toàn bộ xã hội."
+    },
+    {
+      "id": "mq1_3",
+      "text": "Tác phẩm nào của Nguyễn Ái Quốc xuất bản năm 1927 chuẩn bị về mặt chính trị và tư tưởng cho sự ra đời của Đảng?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bản án chế độ thực dân Pháp"
+        },
+        {
+          "id": "b",
+          "text": "Đường Kách mệnh"
+        },
+        {
+          "id": "c",
+          "text": "Tuyên ngôn của Hội Liên hiệp thuộc địa"
+        },
+        {
+          "id": "d",
+          "text": "Lời kêu gọi toàn quốc kháng chiến"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Tác phẩm Đường Kách mệnh (1927) định hướng đường lối cách mạng vô sản."
+    },
+    {
+      "id": "mq1_4",
+      "text": "Tổ chức cộng sản nào được thành lập đầu tiên ở Việt Nam vào tháng 6/1929 tại Bắc Kỳ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đông Dương Cộng sản Đảng"
+        },
+        {
+          "id": "b",
+          "text": "An Nam Cộng sản Đảng"
+        },
+        {
+          "id": "c",
+          "text": "Đông Dương Cộng sản Liên đoàn"
+        },
+        {
+          "id": "d",
+          "text": "Tân Việt Cách mạng Đảng"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Đông Dương Cộng sản Đảng thành lập tháng 6/1929 tại Hà Nội."
+    },
+    {
+      "id": "mq1_5",
+      "text": "Hội nghị hợp nhất thành lập Đảng họp tại đâu và do ai chủ trì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tại Cửu Long (Hương Cảng, Trung Quốc) do Nguyễn Ái Quốc chủ trì"
+        },
+        {
+          "id": "b",
+          "text": "Tại Ma Cao do Lê Hồng Phong chủ trì"
+        },
+        {
+          "id": "c",
+          "text": "Tại Quảng Châu do Trần Phú chủ trì"
+        },
+        {
+          "id": "d",
+          "text": "Tại Pác Bó do Trường Chinh chủ trì"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Hội nghị họp tại Cửu Long (Hương Cảng) từ 6/1 đến 7/2/1930 do Nguyễn Ái Quốc chủ trì."
+    },
+    {
+      "id": "mq1_6",
+      "text": "Phương hướng chiến lược nêu trong Cương lĩnh chính trị đầu tiên (tháng 2/1930) là gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản"
+        },
+        {
+          "id": "b",
+          "text": "Làm thổ địa cách mạng trước rồi mới làm giải phóng dân tộc"
+        },
+        {
+          "id": "c",
+          "text": "Xây dựng chế độ quân chủ lập hiến"
+        },
+        {
+          "id": "d",
+          "text": "Tiến hành cải cách dân chủ từng bước"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Trích Chánh cương vắn tắt của Đảng tháng 2/1930."
+    },
+    {
+      "id": "mq1_7",
+      "text": "Theo Cương lĩnh chính trị đầu tiên, hai lực lượng nào là gốc của cách mạng?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Công nhân và Nông dân"
+        },
+        {
+          "id": "b",
+          "text": "Tiểu tư sản và Trí thức"
+        },
+        {
+          "id": "c",
+          "text": "Tư sản dân tộc và Phú nông"
+        },
+        {
+          "id": "d",
+          "text": "Binh lính và Địa chủ nhỏ"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Công nhân và nông dân là động lực chính và là gốc cách mạng."
+    },
+    {
+      "id": "mq1_8",
+      "text": "Sự kiện thành lập Đảng Cộng sản Việt Nam 3/2/1930 có ý nghĩa quyết định nào?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chấm dứt khủng hoảng về đường lối cứu nước và tổ chức lãnh đạo cách mạng"
+        },
+        {
+          "id": "b",
+          "text": "Quân Pháp đầu hàng vô điều kiện"
+        },
+        {
+          "id": "c",
+          "text": "Kháng chiến chống Mỹ hoàn toàn thắng lợi"
+        },
+        {
+          "id": "d",
+          "text": "Xóa bỏ hoàn toàn chế độ tư hữu"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Chấm dứt thời kỳ khủng hoảng sâu sắc về đường lối giải phóng dân tộc."
+    }
+  ]
+};
+        const ACHIEVEMENT = {"id":"m1-scholar","name":"Học Giả Lịch Sử Đảng Khởi Điểm","desc":"Đạt kết quả xuất sắc bài thi tổng kết Chương 1 VNR202!"};
+
         let currentQuizData = null;
         let currentQuizAnswers = {};
 
-        window.FORMATIVE_QUIZZES_M1 = {
-            'M1-FQ1': {
-                title: 'Kiểm tra nhanh — Bài 1.1 & 1.2 (Sự ra đời & Đối tượng KTCT)',
-                passingScore: 75,
-                questions: [
-                    {
-                        id: 'fq1_1',
-                        text: 'Thuật ngữ "Kinh tế chính trị" lần đầu tiên xuất hiện vào năm nào, trong tác phẩm của ai?',
-                        options: [
-                            { id: 'a', text: 'Năm 1776, bởi Adam Smith' },
-                            { id: 'b', text: 'Năm 1615, bởi Antoine de Montchrétien' },
-                            { id: 'c', text: 'Năm 1867, bởi Karl Marx' },
-                            { id: 'd', text: 'Năm 1800, bởi David Ricardo' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Theo Giáo trình MLN131 (trang 9), thuật ngữ Kinh tế chính trị xuất hiện lần đầu năm 1615 trong tác phẩm "Chuyên luận về kinh tế chính trị" của nhà kinh tế người Pháp Antoine de Montchrétien.'
-                    },
-                    {
-                        id: 'fq1_2',
-                        text: 'Hạn chế lớn nhất trong lý luận của Chủ nghĩa Trọng thương là gì?',
-                        options: [
-                            { id: 'a', text: 'Chỉ coi nông nghiệp mới tạo ra giá trị' },
-                            { id: 'b', text: 'Cho rằng nguồn gốc lợi nhuận là từ thương nghiệp thông qua mua rẻ, bán đắt' },
-                            { id: 'c', text: 'Bác bỏ hoàn toàn vai trò của tiền vàng' },
-                            { id: 'd', text: 'Không thừa nhận vai trò của nhà nước' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Chủ nghĩa Trọng thương dành trọng tâm vào lưu thông và ngộ nhận rằng nguồn gốc của lợi nhuận là từ thương nghiệp thông qua mua rẻ, bán đắt (trang 10).'
-                    },
-                    {
-                        id: 'fq1_3',
-                        text: 'Theo C. Mác và Ph. Ăngghen, đối tượng nghiên cứu của kinh tế chính trị là gì?',
-                        options: [
-                            { id: 'a', text: 'Kỹ thuật và công nghệ sản xuất vật chất' },
-                            { id: 'b', text: 'Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất' },
-                            { id: 'c', text: 'Hành vi tâm lý của người tiêu dùng cá nhân' },
-                            { id: 'd', text: 'Sự biến động chỉ số giá cả trên thị trường tài chính' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'C. Mác và Ph. Ăngghen xác định: Đối tượng nghiên cứu của KTCT là các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đó hình thành và phát triển (trang 16).'
-                    },
-                    {
-                        id: 'fq1_4',
-                        text: 'Luận điểm: "Chính trị kinh tế học tuyệt nhiên không nghiên cứu \'sự sản xuất\' mà nghiên cứu những quan hệ xã hội giữa người với người trong sản xuất" là của ai?',
-                        options: [
-                            { id: 'a', text: 'Adam Smith' },
-                            { id: 'b', text: 'David Ricardo' },
-                            { id: 'c', text: 'V.I. Lênin' },
-                            { id: 'd', text: 'Ph. Ăngghen' }
-                        ],
-                        correctOptionId: 'c',
-                        rationale: 'V.I. Lênin nhấn mạnh luận điểm này nhằm làm rõ bản chất đối tượng nghiên cứu của KTCT Mác - Lênin là quan hệ xã hội trong sản xuất (trang 18).'
-                    }
-                ]
-            }
-        };
-
-        window.MODULE_QUIZ_M1 = {
-            title: 'Bài Kiểm Tra Tổng Kết Chương 1 — KTCT Mác - Lênin',
-            passingScore: 75,
-            achievement: 'm1-master',
-            questions: [
-                {
-                    id: 'mq1_1',
-                    text: 'Kinh tế chính trị chính thức trở thành môn học độc lập với hệ thống khái niệm chuyên ngành từ thế kỷ nào?',
-                    options: [
-                        { id: 'a', text: 'Thế kỷ XV với Chủ nghĩa Trọng thương' },
-                        { id: 'b', text: 'Thế kỷ XVII với Chủ nghĩa Trọng nông' },
-                        { id: 'c', text: 'Thế kỷ XVIII với hệ thống lý luận của Adam Smith' },
-                        { id: 'd', text: 'Thế kỷ XIX với tác phẩm của Karl Marx' }
-                    ],
-                    correctOptionId: 'c',
-                    rationale: 'Tới thế kỷ XVIII, với công trình của Adam Smith, kinh tế chính trị chính thức trở thành môn học khoa học có hệ thống (trang 9).'
-                },
-                {
-                    id: 'mq1_2',
-                    text: 'Chủ nghĩa Trọng nông có bước tiến bộ gì so với Chủ nghĩa Trọng thương?',
-                    options: [
-                        { id: 'a', text: 'Phát hiện ra quy luật giá trị thặng dư' },
-                        { id: 'b', text: 'Hướng việc nghiên cứu từ lĩnh vực lưu thông sang lĩnh vực sản xuất' },
-                        { id: 'c', text: 'Đưa máy móc vào công nghiệp dệt' },
-                        { id: 'd', text: 'Ủng hộ thương nghiệp quốc tế tự do' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Chủ nghĩa Trọng nông đạt bước tiến lớn khi hướng việc nghiên cứu vào lĩnh vực sản xuất thay vì chỉ nhìn vào lưu thông như trọng thương (trang 10).'
-                },
-                {
-                    id: 'mq1_3',
-                    text: 'Đóng góp khoa học lớn nhất của các đại biểu Kinh tế chính trị Cổ điển Anh (Smith, Ricardo) là gì?',
-                    options: [
-                        { id: 'a', text: 'Khẳng định giá trị là do hao phí lao động tạo ra' },
-                        { id: 'b', text: 'Tìm ra công thức chung của tư bản T - H - T\'' },
-                        { id: 'c', text: 'Phát hiện ra tính hai mặt của lao động sản xuất hàng hóa' },
-                        { id: 'd', text: 'Phân tích bản chất của độc quyền nhà nước' }
-                    ],
-                    correctOptionId: 'a',
-                    rationale: 'KTCT cổ điển Anh đã rút ra kết luận khoa học quan trọng: Giá trị là do hao phí lao động tạo ra, giá trị khác với của cải (trang 11).'
-                },
-                {
-                    id: 'mq1_4',
-                    text: 'Theo Ph. Ăngghen, kinh tế chính trị theo nghĩa rộng nghiên cứu điều gì?',
-                    options: [
-                        { id: 'a', text: 'Chỉ nghiên cứu phương thức sản xuất tư bản chủ nghĩa' },
-                        { id: 'b', text: 'Quy luật chi phối sự sản xuất và trao đổi tư liệu sinh hoạt vật chất trong các xã hội loài người' },
-                        { id: 'c', text: 'Kỹ thuật tối ưu hóa dây chuyền máy móc' },
-                        { id: 'd', text: 'Chính sách tài khóa và tiền tệ của các quốc gia' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Ph. Ăngghen khẳng định KTCT theo nghĩa rộng là khoa học về những quy luật chi phối sự sản xuất và trao đổi những tư liệu sinh hoạt vật chất trong xã hội loài người (trang 17).'
-                },
-                {
-                    id: 'mq1_5',
-                    text: 'Mục đích nghiên cứu ở cấp độ cao nhất của Kinh tế chính trị Mác - Lênin là gì?',
-                    options: [
-                        { id: 'a', text: 'Tìm cách làm giàu nhanh nhất cho doanh nghiệp' },
-                        { id: 'b', text: 'Phát hiện ra các quy luật chi phối quan hệ giữa người với người trong sản xuất và trao đổi' },
-                        { id: 'c', text: 'Dự báo giá chứng khoán ngắn hạn' },
-                        { id: 'd', text: 'Soạn thảo các luật thuế cho nhà nước' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Mục đích nghiên cứu ở cấp độ cao nhất là phát hiện ra các quy luật kinh tế chi phối quan hệ sản xuất và trao đổi, từ đó vận dụng thúc đẩy xã hội văn minh toàn diện (trang 20).'
-                },
-                {
-                    id: 'mq1_6',
-                    text: 'Điểm khác biệt cơ bản nhất giữa "Quy luật kinh tế" và "Chính sách kinh tế" là gì?',
-                    options: [
-                        { id: 'a', text: 'Quy luật kinh tế mang tính chủ quan, chính sách mang tính khách quan' },
-                        { id: 'b', text: 'Quy luật kinh tế tồn tại khách quan; còn chính sách kinh tế là sản phẩm chủ quan của con người' },
-                        { id: 'c', text: 'Quy luật kinh tế có thể thay đổi tùy ý muốn nhà nước' },
-                        { id: 'd', text: 'Chính sách kinh tế không bao giờ có sai lầm' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Quy luật kinh tế tồn tại khách quan, con người không thể thủ tiêu. Chính sách kinh tế là sản phẩm chủ quan, có thể phù hợp hoặc không phù hợp với quy luật (trang 21).'
-                },
-                {
-                    id: 'mq1_7',
-                    text: 'Phương pháp nghiên cứu chủ yếu của Kinh tế chính trị Mác - Lênin là phương pháp nào?',
-                    options: [
-                        { id: 'a', text: 'Thí nghiệm trong phòng thí nghiệm' },
-                        { id: 'b', text: 'Trừu tượng hóa khoa học' },
-                        { id: 'c', text: 'Điều tra trắc nghiệm tâm lý' },
-                        { id: 'd', text: 'Quan sát thiên văn học' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Trừu tượng hóa khoa học được sử dụng như phương pháp chủ yếu vì đối tượng kinh tế không thể thực nghiệm trong phòng thí nghiệm kỹ thuật (trang 23).'
-                },
-                {
-                    id: 'mq1_8',
-                    text: 'Nội dung cốt lõi của phương pháp "Trừu tượng hóa khoa học" là gì?',
-                    options: [
-                        { id: 'a', text: 'Tưởng tượng ra những mô hình kinh tế không có trong thực tế' },
-                        { id: 'b', text: 'Gạt bỏ những hiện tượng ngẫu nhiên, tạm thời để nhận diện bản chất điển hình, bền vững' },
-                        { id: 'c', text: 'Bỏ qua toàn bộ lợi ích kinh tế của con người' },
-                        { id: 'd', text: 'Quy mọi hiện tượng về mặt toán học thuần túy' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Trừu tượng hóa khoa học là nhận ra và gạt bỏ yếu tố ngẫu nhiên tạm thời, tách ra dấu hiệu điển hình, ổn định để nắm bắt bản chất và quy luật (trang 23).'
-                },
-                {
-                    id: 'mq1_9',
-                    text: 'Chức năng nào của KTCT Mác - Lênin đóng vai trò là cơ sở lý luận nền tảng cho các môn khoa học kinh tế chuyên ngành?',
-                    options: [
-                        { id: 'a', text: 'Chức năng nhận thức' },
-                        { id: 'b', text: 'Chức năng thực tiễn' },
-                        { id: 'c', text: 'Chức năng tư tưởng' },
-                        { id: 'd', text: 'Chức năng phương pháp luận' }
-                    ],
-                    correctOptionId: 'd',
-                    rationale: 'Chức năng phương pháp luận của KTCT là nền tảng lý luận khoa học giúp nhận diện sâu hơn nội hàm khái niệm của các môn kinh tế chuyên ngành (trang 27).'
-                },
-                {
-                    id: 'mq1_10',
-                    text: 'Khi nghiên cứu quan hệ giữa người lao động và người sử dụng lao động, yếu tố nào KHÔNG được phép trừu tượng hóa (gạt bỏ)?',
-                    options: [
-                        { id: 'a', text: 'Tính cách cá nhân của người lao động' },
-                        { id: 'b', text: 'Quan hệ tình cảm cá nhân giữa chủ và thợ' },
-                        { id: 'c', text: 'Lợi ích kinh tế của mỗi bên' },
-                        { id: 'd', text: 'Sở thích giải trí của chủ doanh nghiệp' }
-                    ],
-                    correctOptionId: 'c',
-                    rationale: 'Giáo trình chỉ rõ: Có thể gạt bỏ yếu tố tình cảm cá nhân, nhưng không thể gạt bỏ lợi ích kinh tế, vì gạt bỏ lợi ích thì quan hệ đó không còn là quan hệ kinh tế (trang 24).'
-                },
-                {
-                    id: 'mq1_11',
-                    text: 'Chức năng tư tưởng của Kinh tế chính trị Mác - Lênin thể hiện ở điểm nào?',
-                    options: [
-                        { id: 'a', text: 'Dạy cách đầu cơ đất đai có lãi' },
-                        { id: 'b', text: 'Củng cố niềm tin vào lý tưởng dân giàu, nước mạnh, dân chủ, công bằng, văn minh' },
-                        { id: 'c', text: 'Phủ nhận toàn bộ thành tựu của kinh tế thị trường' },
-                        { id: 'd', text: 'Kêu gọi quay trở lại nền kinh tế tự cấp tự túc' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Chức năng tư tưởng góp phần xây dựng nền tảng tư tưởng tiến bộ, củng cố niềm tin phấn đấu vì mục tiêu dân giàu, nước mạnh, giải phóng con người (trang 26).'
-                },
-                {
-                    id: 'mq1_12',
-                    text: 'Bộ tác phẩm kinh điển nào của C. Mác thể hiện tập trung và cô đọng nhất lý luận kinh tế chính trị?',
-                    options: [
-                        { id: 'a', text: 'Tuyên ngôn của Đảng Cộng sản' },
-                        { id: 'b', text: 'Hệ tư tưởng Đức' },
-                        { id: 'c', text: 'Bộ Tư bản (Das Kapital)' },
-                        { id: 'd', text: 'Phê phán cương lĩnh Gôta' }
-                    ],
-                    correctOptionId: 'c',
-                    rationale: 'Lý luận kinh tế chính trị của C. Mác được thể hiện tập trung và cô đọng nhất trong bộ Tư bản (trang 13).'
-                }
-            ]
-        };
-
-        function openFormativeQuiz(quizId) {
-            const quiz = window.FORMATIVE_QUIZZES_M1[quizId];
-            if (!quiz) return;
-            renderQuiz(quiz);
+        function openFormativeQuiz(id) {
+            const q = FORMATIVE_QUIZZES[id] || FORMATIVE_QUIZZES['M1-FQ1'];
+            if (q) renderQuizModal(q);
         }
 
         function openModuleQuiz() {
-            renderQuiz(window.MODULE_QUIZ_M1);
+            renderQuizModal(MODULE_QUIZ);
         }
 
-        function renderQuiz(quiz) {
+        function renderQuizModal(quiz) {
             currentQuizData = quiz;
             currentQuizAnswers = {};
             document.getElementById('quiz-modal-title').textContent = quiz.title;
-            document.getElementById('quiz-modal-sub').textContent = 'Điểm đạt yêu cầu: ' + quiz.passingScore + '% (' + quiz.questions.length + ' câu hỏi)';
-            
-            let html = '';
-            quiz.questions.forEach((q, idx) => {
-                html += `
-                    <div class="p-4 bg-black/40 rounded-2xl border border-philo-warmGold/20 space-y-3" id="q-block-${q.id}">
-                        <p class="font-semibold text-sm text-philo-ivory"><span class="text-philo-gold font-bold">Câu ${idx + 1}:</span> ${q.text}</p>
-                        <div class="space-y-2">
-                            ${q.options.map(opt => `
-                                <label class="flex items-center gap-3 p-3 rounded-xl border border-philo-warmGold/20 hover:bg-philo-warmGold/10 cursor-pointer text-xs transition-colors" id="label-${q.id}-${opt.id}">
-                                    <input type="radio" name="question-${q.id}" value="${opt.id}" onchange="selectOption('${q.id}', '${opt.id}')" class="text-philo-gold focus:ring-philo-gold" />
-                                    <span><strong>${opt.id.toUpperCase()}.</strong> ${opt.text}</span>
-                                </label>
-                            `).join('')}
-                        </div>
-                        <div id="explanation-${q.id}" class="hidden p-3 rounded-xl bg-blue-900/30 border border-blue-500/30 text-xs text-blue-200 mt-2"></div>
-                    </div>
-                `;
+            document.getElementById('quiz-modal-sub').textContent = 'Cần đạt ' + quiz.passingScore + '% • ' + quiz.questions.length + ' câu hỏi trắc nghiệm';
+            let h = '<div class="space-y-6">';
+            quiz.questions.forEach((q, i) => {
+                h += '<div class="quiz-question" data-qid="' + q.id + '">' +
+                    '<p class="font-medium text-sm mb-3">' + (i + 1) + '. ' + q.text + '</p>' +
+                    '<div class="space-y-2">';
+                q.options.forEach(o => {
+                    h += '<label class="quiz-option flex items-start gap-3 p-3 rounded-xl border border-white/10 cursor-pointer hover:border-philo-gold/50 hover:bg-white/5 transition-all">' +
+                        '<input type="radio" name="q_' + q.id + '" value="' + o.id + '" onclick="selectAnswer(\'' + q.id + '\',\'' + o.id + '\')" class="mt-0.5 flex-shrink-0 text-philo-gold focus:ring-philo-gold">' +
+                        '<span class="text-xs md:text-sm text-philo-ivory/90">' + o.text + '</span>' +
+                    '</label>';
+                });
+                h += '</div></div>';
             });
-
-            html += `
-                <div class="flex items-center justify-between pt-4">
-                    <span id="quiz-result-summary" class="text-sm font-bold text-philo-gold"></span>
-                    <button id="btn-submit-quiz" onclick="submitCurrentQuiz()" class="btn-academic-gold px-8 py-3 font-bold text-xs uppercase tracking-wider">
-                        Nộp bài kiểm tra
-                    </button>
-                </div>
-            `;
-
-            document.getElementById('quiz-modal-body').innerHTML = html;
+            h += '</div>' +
+            '<div class="mt-6 flex justify-end gap-3 pt-4 border-t border-white/10">' +
+                '<button onclick="closeQuizModal()" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5">Đóng</button>' +
+                '<button onclick="submitQuiz()" id="btn-submit-quiz" class="bg-white/10 text-white/40 font-bold px-8 py-2.5 rounded-xl cursor-not-allowed text-xs" data-ready="false">Nộp bài</button>' +
+            '</div>';
+            document.getElementById('quiz-modal-body').innerHTML = h;
             document.getElementById('quiz-modal').classList.remove('hidden');
         }
 
-        function selectOption(qId, optId) {
-            currentQuizAnswers[qId] = optId;
+        function selectAnswer(q, o) {
+            currentQuizAnswers[q] = o;
+            const all = currentQuizData.questions.every(x => currentQuizAnswers[x.id]);
+            const b = document.getElementById('btn-submit-quiz');
+            if (b) {
+                if (all) {
+                    b.setAttribute('data-ready', 'true');
+                    b.className = 'philo-btn-gold font-bold px-8 py-2.5 rounded-xl cursor-pointer text-xs';
+                } else {
+                    b.setAttribute('data-ready', 'false');
+                    b.className = 'bg-white/10 text-white/40 font-bold px-8 py-2.5 rounded-xl cursor-not-allowed text-xs';
+                }
+            }
         }
 
-        function submitCurrentQuiz() {
-            if (!currentQuizData) return;
+        function submitQuiz() {
+            const b = document.getElementById('btn-submit-quiz');
+            if (b && b.getAttribute('data-ready') !== 'true') return;
+            const quiz = currentQuizData;
             let correct = 0;
-            currentQuizData.questions.forEach(q => {
-                const selected = currentQuizAnswers[q.id];
-                const expBox = document.getElementById('explanation-' + q.id);
-                if (expBox) {
-                    expBox.innerHTML = '<strong>Giải thích:</strong> ' + q.rationale;
-                    expBox.classList.remove('hidden');
-                }
 
-                q.options.forEach(opt => {
-                    const label = document.getElementById(`label-${q.id}-${opt.id}`);
-                    if (!label) return;
-                    if (opt.id === q.correctOptionId) {
-                        label.classList.add('bg-green-900/40', 'border-green-500', 'text-green-300');
-                    } else if (opt.id === selected && selected !== q.correctOptionId) {
-                        label.classList.add('bg-red-900/40', 'border-red-500', 'text-red-300');
+            quiz.questions.forEach(q => {
+                const u = currentQuizAnswers[q.id], ok = u === q.correctOptionId;
+                if (ok) correct++;
+                const qEl = document.querySelector('[data-qid="' + q.id + '"]');
+                if (!qEl) return;
+                qEl.querySelectorAll('.quiz-option').forEach(l => {
+                    const r = l.querySelector('input');
+                    if (!r) return;
+                    if (r.value === q.correctOptionId) {
+                        l.classList.add('border-emerald-500', 'bg-emerald-950/30');
+                    }
+                    if (r.value === u && !ok) {
+                        l.classList.add('border-red-500', 'bg-red-950/30');
                     }
                 });
-
-                if (selected === q.correctOptionId) {
-                    correct++;
-                }
+                const re = document.createElement('div');
+                re.className = 'mt-2 p-3 bg-philo-gold/10 border border-philo-gold/20 rounded-lg text-xs';
+                re.innerHTML = '<strong class="text-philo-gold">📖 Trích dẫn Giáo trình VNR202:</strong> ' + q.rationale;
+                qEl.appendChild(re);
             });
 
-            const score = Math.round((correct / currentQuizData.questions.length) * 100);
-            const passed = score >= currentQuizData.passingScore;
-            const summary = document.getElementById('quiz-result-summary');
-            summary.innerHTML = passed 
-                ? `<span class="text-green-400">🎉 Xuất sắc! Bạn đạt ${score}% (${correct}/${currentQuizData.questions.length} câu đúng)</span>`
-                : `<span class="text-red-400">⚠️ Bạn đạt ${score}% (${correct}/${currentQuizData.questions.length} câu đúng). Cần ≥ ${currentQuizData.passingScore}% để đạt.</span>`;
+            const score = Math.round((correct / quiz.questions.length) * 100);
+            const passed = score >= quiz.passingScore;
+            M_STATE.quizResults[quiz.id || 'module_quiz'] = { score, correct, total: quiz.questions.length, passed, timestamp: Date.now() };
+            saveMState();
 
-            const btn = document.getElementById('btn-submit-quiz');
-            btn.textContent = passed ? 'Đóng lại' : 'Thử lại';
-            btn.onclick = passed ? closeQuizModal : () => renderQuiz(currentQuizData);
+            const rh = '<div class="mb-6 p-4 rounded-2xl text-center border ' + (passed ? 'bg-emerald-950/30 border-emerald-500/50' : 'bg-red-950/30 border-red-500/50') + '">' +
+                '<p class="text-3xl mb-1">' + (passed ? '🎉' : '📚') + '</p>' +
+                '<p class="text-xl font-bold ' + (passed ? 'text-emerald-400' : 'text-red-400') + '">' + score + '% (' + correct + '/' + quiz.questions.length + ' câu đúng)</p>' +
+                '<p class="text-xs mt-1 ' + (passed ? 'text-emerald-400' : 'text-red-400') + '">' + (passed ? '✅ Đạt yêu cầu kiến thức Chương 1!' : '❌ Chưa đạt (Yêu cầu ' + quiz.passingScore + '%). Hãy xem lại giải thích và thử lại!') + '</p>' +
+            '</div>';
+            document.getElementById('quiz-modal-body').insertAdjacentHTML('afterbegin', rh);
 
-            if (passed && currentQuizData.achievement) {
-                showAchievement('Kinh Tế Học Mácxít Khởi Điểm', 'Hoàn thành xuất sắc bài thi tổng kết Chương 1 MLN131!');
+            b.textContent = passed ? 'Hoàn tất ✓' : 'Làm lại';
+            b.onclick = passed ? closeQuizModal : () => {
+                closeQuizModal();
+                setTimeout(() => openModuleQuiz(), 300);
+            };
+
+            if (passed && ACHIEVEMENT) {
+                showAchievement(ACHIEVEMENT.name, ACHIEVEMENT.desc);
             }
         }
 
@@ -1167,63 +1153,77 @@
         }
 
         function showAchievement(name, desc) {
-            const toast = document.getElementById('achievement-toast');
+            const t = document.getElementById('achievement-toast');
             document.getElementById('achievement-name').textContent = name;
             document.getElementById('achievement-desc').textContent = desc;
-            toast.classList.remove('hidden');
-            setTimeout(() => toast.classList.add('hidden'), 4000);
+            t.classList.remove('hidden');
+            setTimeout(() => t.classList.add('hidden'), 4000);
         }
 
-        // =============================================
-        // AI PANEL FUNCTIONS
-        // =============================================
-        let aiOpen = false;
+        let aiPanelOpen = false;
         function toggleAIPanel() {
-            aiOpen = !aiOpen;
+            aiPanelOpen = !aiPanelOpen;
             const p = document.getElementById('ai-panel');
-            if (aiOpen) p.classList.remove('hidden-panel');
+            if (aiPanelOpen) p.classList.remove('hidden-panel');
             else p.classList.add('hidden-panel');
         }
 
-        function quickPrompt(txt) {
-            document.getElementById('ai-quick-input').value = txt;
-            sendQuickAI();
+        const AI_RESPONSES = {
+  "đối tượng": {
+    "answer": "Đối tượng nghiên cứu của môn Lịch sử Đảng là các sự kiện lịch sử của Đảng; Cương lĩnh, đường lối, chủ trương chính sách; quá trình Đảng lãnh đạo và tổ chức thực tiễn; các kinh nghiệm và bài học lịch sử.",
+    "sourceRef": "Giáo trình VNR202 — Chương Nhập môn, Mục I"
+  },
+  "chức năng": {
+    "answer": "Khoa học Lịch sử Đảng có 3 chức năng: 1) Chức năng nhận thức (cung cấp tri thức có hệ thống); 2) Chức năng giáo dục (bồi dưỡng lý tưởng, lòng yêu nước, đạo đức cách mạng); 3) Chức năng dự báo và phê phán.",
+    "sourceRef": "Giáo trình VNR202 — Chương Nhập môn, Mục II"
+  },
+  "quy luật": {
+    "answer": "Chủ tịch Hồ Chí Minh chỉ rõ: Đảng Cộng sản Việt Nam ra đời là sản phẩm của sự kết hợp giữa ba yếu tố: Chủ nghĩa Mác - Lênin + Phong trào công nhân + Phong trào yêu nước Việt Nam.",
+    "sourceRef": "Giáo trình VNR202 — Chương 1, Mục I"
+  },
+  "cương lĩnh": {
+    "answer": "Cương lĩnh chính trị đầu tiên (tháng 2/1930) xác định đường lối: Làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản; đánh đổ đế quốc Pháp và phong kiến; giải phóng dân tộc là hàng đầu; liên minh công nông là gốc.",
+    "sourceRef": "Giáo trình VNR202 — Chương 1, Mục I"
+  }
+};
+
+        function getAIResponse(q) {
+            const l = q.toLowerCase();
+            for (const [k, r] of Object.entries(AI_RESPONSES)) {
+                if (l.includes(k)) return r;
+            }
+            return {
+                answer: 'Trọng tâm Chương 1 VNR202 bám sát giáo trình Lịch sử Đảng: các kỳ Đại hội, đường lối chiến lược, các bước đột phá và bài học lịch sử cốt lõi.',
+                sourceRef: 'Giáo trình Lịch sử Đảng Cộng sản Việt Nam (VNR202) — Chương 1'
+            };
         }
 
-        async function sendQuickAI() {
-            const inp = document.getElementById('ai-quick-input');
-            const q = inp.value.trim();
+        function sendAIPrompt(p) {
+            document.getElementById('ai-input').value = p;
+            sendAIMessage();
+        }
+
+        function sendAIMessage() {
+            const i = document.getElementById('ai-input'), q = i.value.trim();
             if (!q) return;
-            const hist = document.getElementById('ai-chat-history');
-            hist.innerHTML += `<div class="p-3 bg-philo-gold/20 rounded-xl text-philo-gold"><strong>Bạn:</strong> ${q}</div>`;
-            inp.value = '';
-
-            const loadEl = document.createElement('div');
-            loadEl.className = "p-3 bg-black/40 rounded-xl text-philo-ivory/60 italic";
-            loadEl.textContent = "AI đang tra cứu Giáo trình MLN131 Chương 1...";
-            hist.appendChild(loadEl);
-            hist.scrollTop = hist.scrollHeight;
-
-            try {
-                const res = await fetch("/api/ask-mln131", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ question: q })
-                });
-                const data = await res.json();
-                loadEl.className = "p-3 bg-black/40 rounded-xl text-philo-ivory/90";
-                loadEl.innerHTML = `<strong>AI Trợ Giảng:</strong><br>${data.answer || "Không nhận được phản hồi."}`;
-            } catch (err) {
-                // Offline fallback
-                loadEl.className = "p-3 bg-black/40 rounded-xl text-philo-ivory/90";
-                loadEl.innerHTML = `<strong>AI Trợ Giảng (Offline):</strong><br>Theo Giáo trình Kinh tế chính trị Mác - Lênin Chương 1: Đối tượng nghiên cứu là các quan hệ xã hội của sản xuất và trao đổi, đặt trong mối liên hệ biện chứng với lực lượng sản xuất và kiến trúc thượng tầng tương ứng. Phương pháp trừu tượng hóa khoa học là phương pháp chủ yếu.`;
-            }
-            hist.scrollTop = hist.scrollHeight;
+            i.value = '';
+            const h = document.getElementById('ai-chat-history');
+            h.insertAdjacentHTML('beforeend', '<div class="flex justify-end"><div class="bg-philo-gold text-black font-medium rounded-xl p-3 max-w-[85%] text-xs"><p>' + q + '</p></div></div>');
+            const lid = 'l' + Date.now();
+            h.insertAdjacentHTML('beforeend', '<div id="' + lid + '" class="bg-white/5 rounded-xl p-3 text-xs"><p>⏳ Đang tra cứu Giáo trình VNR202...</p></div>');
+            h.scrollTop = h.scrollHeight;
+            setTimeout(() => {
+                const r = getAIResponse(q);
+                const le = document.getElementById(lid);
+                if (le) le.outerHTML = '<div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20 text-xs"><p class="text-xs font-bold text-philo-gold mb-1">🤖 AI Giáo trình VNR202</p><p class="text-philo-ivory/90 leading-relaxed mb-2">' + r.answer + '</p><p class="text-[10px] text-philo-gold/70 border-t border-white/10 pt-1">📖 <em>' + r.sourceRef + '</em></p></div>';
+                h.scrollTop = h.scrollHeight;
+            }, 500);
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadM1State();
+            loadMState();
             updateProgress();
+            showLesson('M1-L1');
         });
     </script>
 </body>

@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="vi" class="dark">
-
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Chương 2: Hàng Hóa, Thị Trường &amp; Các Chủ Thể — MLN131</title>
-    <meta name="description"
-        content="Chương 2 môn Kinh tế chính trị Mác - Lênin: Lý luận về sản xuất hàng hóa, hai thuộc tính, tính hai mặt của lao động, tiền tệ và các quy luật kinh tế thị trường." />
+    <title>Chương 2: Đấu Tranh Giành Chính Quyền & CMT8 (1930 - 1945) — PhiloVerse VNR202</title>
+    <meta name="description" content="Chương 2 Giáo trình Lịch sử Đảng Cộng sản Việt Nam (VNR202): Phong trào 1930-1931, Xô Viết Nghệ Tĩnh, Luận cương 10/1930, Cuộc vận động Dân chủ 1936-1939, Chuyển hướng chiến lược, Mặt trận Việt Minh và Cách mạng Tháng Tám 1945." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <script src="js/tailwind-config-global.js"></script>
     <link rel="stylesheet" href="css/philoverse-ui.css" />
     <style>
@@ -24,64 +19,69 @@
             font-size: 24px;
             display: inline-block;
             line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
             direction: ltr;
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-
-        #m2-progress-bar {
-            transition: width 0.6s ease;
-        }
-
+        #m2-progress-bar { transition: width 0.6s ease; }
         .reflection-answer {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease, opacity 0.3s;
             opacity: 0;
         }
-
         .reflection-answer.open {
-            max-height: 500px;
+            max-height: 800px;
             opacity: 1;
         }
-
-        @keyframes badge-pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-        }
-
-        .achievement-earned {
-            animation: badge-pulse 0.6s ease 2;
-        }
-
         .hidden-panel {
             transform: translateX(100%);
             transition: transform 0.3s ease;
         }
-
-        .lesson-tab.active-tab { border-color: #FFD34E !important; background: rgba(217,166,46,0.12) !important; box-shadow: 0 0 20px rgba(217,166,46,0.2); }
-        .lesson-tab.active-tab .tab-label { color: #FFD34E !important; }
-        .lesson-dot.completed { background-color: #D9A62E !important; }
-        .lesson-header-academic { padding: 2rem 2rem 1.5rem; background: linear-gradient(135deg, rgba(20,3,3,0.95) 0%, rgba(101,7,7,0.85) 100%); border-bottom: 1px solid rgba(217,166,46,0.2); }
-        .module-page-hero { position: relative; padding: 3rem 2rem 2.5rem; overflow: hidden; background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%); }
-        .module-page-hero > * { position: relative; z-index: 1; }
-        .module-page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(217,166,46,0.5), transparent); }
+        .lesson-tab.active-tab {
+            border-color: #FFD34E !important;
+            background: rgba(217, 166, 46, 0.15) !important;
+            box-shadow: 0 0 20px rgba(217, 166, 46, 0.25);
+        }
+        .lesson-tab.active-tab .tab-label {
+            color: #FFD34E !important;
+        }
+        .lesson-dot.completed {
+            background-color: #D9A62E !important;
+        }
+        .lesson-header-academic {
+            padding: 2rem 2rem 1.5rem;
+            background: linear-gradient(135deg, rgba(20, 3, 3, 0.95) 0%, rgba(101, 7, 7, 0.85) 100%);
+            border-bottom: 1px solid rgba(217, 166, 46, 0.2);
+        }
+        .module-page-hero {
+            position: relative;
+            padding: 3rem 2rem 2.5rem;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0D0101 0%, #3A0505 50%, #140303 100%);
+        }
+        .module-page-hero > * {
+            position: relative;
+            z-index: 1;
+        }
+        .module-page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(217, 166, 46, 0.5), transparent);
+        }
     </style>
 </head>
 
 <body class="bg-philo-blackBurgundy relative text-philo-ivory font-body transition-colors duration-300 min-h-screen flex flex-col overflow-x-hidden">
-    <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-
         <!-- ===== MODULE HERO HEADER ===== -->
         <div class="module-page-hero -mx-4 sm:-mx-6 lg:-mx-8 mb-10">
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <img src="assets/images/cinematic/cinematic_section_bg.png" alt="" class="w-full h-full object-cover opacity-20" style="object-position: center 30%;" />
+                <img src="assets/images/shared/module-hero-bg.jpg" alt="" class="w-full h-full object-cover opacity-20" style="object-position: center 30%;" />
                 <div class="absolute inset-0 bg-gradient-to-r from-[#0D0101] via-[#3A0505]/80 to-transparent"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-[#140303] via-transparent to-transparent"></div>
             </div>
@@ -89,1023 +89,977 @@
                 <div class="philo-breadcrumb mb-5">
                     <a href="home.html">TRANG CHỦ</a>
                     <span class="sep">/</span>
-                    <a href="Overview.html">GIÁO TRÌNH MLN131</a>
+                    <a href="Overview.html">GIÁO TRÌNH VNR202</a>
                     <span class="sep">/</span>
-                    <span>CHƯƠNG 2 • HÀNG HÓA, THỊ TRƯỜNG &amp; VAI TRÒ CỦA CÁC CHỦ THỂ</span>
+                    <span>CHƯƠNG 2 • ĐẤU TRANH GIÀNH CHÍNH QUYỀN & CMT8 (1930 - 1945)</span>
                 </div>
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                     <div>
-                        <span class="philo-badge mb-3 inline-flex"><span class="material-symbols-outlined text-[14px]">shopping_cart</span> CHƯƠNG 02 (TRANG 29 - 74)</span>
+                        <span class="philo-badge mb-3 inline-flex"><span class="material-symbols-outlined text-[14px]">flag</span> CHƯƠNG 02 • SESSIONS 5 - 10</span>
                         <h1 class="font-heading text-3xl md:text-5xl font-bold leading-tight text-philo-ivory mt-2">
-                            Hàng Hóa, Thị Trường &amp;<br class="hidden md:block" />
-                            <span class="text-philo-gold italic">Vai Trò Các Chủ Thể Tham Gia</span>
+                            Lãnh Đạo Đấu Tranh Giành Chính Quyền &amp;<br class="hidden md:block" /> <span class="text-philo-gold font-serif italic">Cách Mạng Tháng Tám (1930 - 1945)</span>
                         </h1>
-                        <p class="mt-3 text-philo-ivory/70 text-sm md:text-base max-w-xl leading-relaxed">Khám phá học thuyết giá trị của C. Mác: 2 điều kiện ra đời sản xuất hàng hóa, 2 thuộc tính hàng hóa, tính hai mặt của lao động, tiền tệ, các quy luật kinh tế thị trường và các chủ thể tham gia.</p>
+                        <p class="font-heading italic text-base md:text-lg text-philo-gold/80 mt-3 max-w-3xl leading-relaxed">
+                            "Dù phải đốt cháy cả dãy Trường Sơn cũng phải kiên quyết giành cho được độc lập!" — Cao trào 1930-1931, Xô Viết Nghệ Tĩnh, Mặt trận Việt Minh và Tổng khởi nghĩa Cách mạng Tháng Tám 1945.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-4 mt-4 text-xs text-philo-ivory/60">
+                            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-philo-gold">menu_book</span> 6 bài học chuẩn</span>
+                            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-philo-gold">timer</span> ~45 phút học</span>
+                            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-philo-gold">quiz</span> 3 Formative Quizzes & 1 Module Exam</span>
+                        </div>
                     </div>
-                    <div class="md:min-w-[220px]">
-                        <div class="flex items-center justify-between text-xs text-philo-ivory/60 mb-2">
-                            <span id="m2-progress-label">0 / 6 bài hoàn thành</span>
-                            <span id="m2-progress-pct" class="text-philo-gold font-bold">0%</span>
-                        </div>
-                        <div class="philo-progress-track">
-                            <div id="m2-progress-bar" class="philo-progress-fill" style="width:0%"></div>
-                        </div>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                        <button onclick="toggleAIPanel()" class="philo-btn-gold flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">smart_toy</span>
+                            <span>Trợ lý AI Chương 2</span>
+                        </button>
+                        <button onclick="openModuleQuiz()" class="philo-btn-secondary flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">verified</span>
+                            <span>Thi trắc nghiệm</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ===== LESSON NAV TABS ===== -->
-        <section class="mb-10">
-            <div class="philo-section-divider"><span class="philo-section-title">✦ 6 Bài học Chương 2 ✦</span></div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-                <button onclick="showLesson('M2-L1')" id="tab-M2-L1" class="lesson-tab active-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:#FFD34E;">
-                    <span class="text-2xl">📦</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 2.1</span>
-                    <span class="text-xs font-medium text-philo-gold">Hàng hóa &amp; Thuộc tính</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M2-L1"></span>
-                </button>
-                <button onclick="showLesson('M2-L2')" id="tab-M2-L2" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">⚡</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 2.2</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">Tính hai mặt của LĐ</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M2-L2"></span>
-                </button>
-                <button onclick="showLesson('M2-L3')" id="tab-M2-L3" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">⏱️</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 2.3</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">Lượng giá trị hàng hóa</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M2-L3"></span>
-                </button>
-                <button onclick="showLesson('M2-L4')" id="tab-M2-L4" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">💰</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 2.4</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">Tiền tệ &amp; Dịch vụ</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M2-L4"></span>
-                </button>
-                <button onclick="showLesson('M2-L5')" id="tab-M2-L5" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">📊</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 2.5</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">4 Quy luật thị trường</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M2-L5"></span>
-                </button>
-                <button onclick="showLesson('M2-L6')" id="tab-M2-L6" class="lesson-tab group flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all duration-200 text-center" style="background:rgba(58,5,5,0.7); border-color:rgba(217,166,46,0.2);">
-                    <span class="text-2xl">🤝</span>
-                    <span class="text-xs font-semibold text-philo-ivory/70">Bài 2.6</span>
-                    <span class="text-xs font-medium text-philo-ivory/80">Các chủ thể thị trường</span>
-                    <span class="w-2 h-2 rounded-full bg-philo-warmGold/40 lesson-dot" id="dot-M2-L6"></span>
-                </button>
+        <!-- Progress Tracker Bar -->
+        <div class="glass-panel p-4 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-philo-ivory/80">Tiến độ bài học:</span>
+                <span id="m2-progress-text" class="text-sm font-bold text-philo-gold">0 / 6 bài</span>
             </div>
-        </section>
+            <div class="flex-grow max-w-md bg-white/5 rounded-full h-2.5 overflow-hidden border border-white/10">
+                <div id="m2-progress-bar" class="bg-gradient-to-r from-philo-gold to-yellow-500 h-full rounded-full" style="width: 0%"></div>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M2-L1"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M2-L2"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M2-L3"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M2-L4"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M2-L5"></div>
+                <div class="w-3 h-3 rounded-full lesson-dot bg-white/20" id="dot-M2-L6"></div>
+            </div>
+        </div>
 
-        <!-- ===== LESSON CONTENT AREA ===== -->
-        <section id="lesson-area" class="mb-16 min-h-[500px]">
+        <!-- 6 Lesson Navigation Tabs -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-8">
+            
+            <button onclick="showLesson('M2-L1')" id="tab-M2-L1" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all active-tab">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 2.1</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Phong trào cách mạng 1930 - 1931 & Xô Viết Nghệ Tĩnh</span>
+            </button>
+            <button onclick="showLesson('M2-L2')" id="tab-M2-L2" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 2.2</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Luận cương chính trị 10/1930 & Khôi phục phong trào (1932 - 1935)</span>
+            </button>
+            <button onclick="showLesson('M2-L3')" id="tab-M2-L3" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 2.3</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Phong trào Dân chủ 1936 - 1939 & Nhận thức mới của Đảng</span>
+            </button>
+            <button onclick="showLesson('M2-L4')" id="tab-M2-L4" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 2.4</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Chuyển hướng chỉ đạo chiến lược 1939 - 1941 & Mặt trận Việt Minh</span>
+            </button>
+            <button onclick="showLesson('M2-L5')" id="tab-M2-L5" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 2.5</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Cao trào Kháng Nhật cứu nước & Chuẩn bị khởi nghĩa vũ trang</span>
+            </button>
+            <button onclick="showLesson('M2-L6')" id="tab-M2-L6" class="lesson-tab p-3 rounded-xl border border-white/10 glass-panel text-left transition-all ">
+                <span class="text-[10px] uppercase tracking-wider block text-philo-gold/70 font-semibold">Bài 2.6</span>
+                <span class="text-xs font-semibold tab-label text-philo-ivory line-clamp-2 mt-1">Tổng khởi nghĩa CMT8 1945 & Bài học lịch sử</span>
+            </button>
+        </div>
 
-            <!-- BÀI 2.1: SẢN XUẤT HÀNG HÓA VÀ HAI THUỘC TÍNH -->
-            <div id="lesson-M2-L1" class="lesson-content">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">📦</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 2.1 — Chương 2 (Trang 30 - 34)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Sản Xuất Hàng Hóa &amp; Hai Thuộc Tính Của Hàng Hóa</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Nắm vững định nghĩa sản xuất hàng hóa, 2 điều kiện tất yếu để ra đời nền sản xuất hàng hóa và hai thuộc tính: Giá trị sử dụng và Giá trị.</p>
+        <!-- LESSON ARTICLES -->
+        
+        <!-- LESSON 2.1: Phong trào cách mạng 1930 - 1931 & Xô Viết Nghệ Tĩnh -->
+        <article id="lesson-M2-L1" class="lesson-content space-y-6 ">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 2.1 • SESSION 5 CHƯƠNG 2</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Phong trào cách mạng 1930 - 1931 & Đỉnh cao Xô Viết Nghệ Tĩnh
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Bối cảnh khủng hoảng kinh tế 1929-1933, cao trào đấu tranh công nông và chính quyền Xô Viết đầu tiên</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <p class="font-bold text-philo-gold mb-1">Bối cảnh lịch sử:</p>
+                    <p class="leading-relaxed">
+                        Cuộc khủng hoảng kinh tế thế giới 1929 - 1933 dội đòn nặng nề vào nền kinh tế thuộc địa Việt Nam. Thực dân Pháp tăng cường bóc lột, khủng bố trắng dã man sau khởi nghĩa Yên Bái. Dưới sự lãnh đạo của Đảng vừa ra đời, làn sóng đấu tranh bùng nổ mạnh mẽ trên cả nước từ đầu năm 1930.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="glass-panel p-5 rounded-xl border border-white/10">
+                        <h4 class="font-heading font-bold text-philo-gold flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+                            Diễn biến cao trào 1930 - 1931
+                        </h4>
+                        <ul class="text-sm space-y-2 list-disc list-inside">
+                            <li><strong>Tháng 1 đến tháng 4/1930:</strong> Nổ ra nhiều cuộc bãi công của công nhân (Phú Riềng, Nam Định, Bến Thủy).</li>
+                            <li><strong>Ngày 1/5/1930:</strong> Lần đầu tiên nhân dân ta kỷ niệm ngày Quốc tế Lao động công khai với biểu tình, cờ búa liềm.</li>
+                            <li><strong>Tháng 9/1930:</strong> Đỉnh cao là cuộc biểu tình của 8.000 nông dân huyện Hưng Nguyên (Nghệ An) ngày 12/9/1930.</li>
+                        </ul>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Khái niệm và Điều kiện ra đời của sản xuất hàng hóa</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Theo C. Mác, <strong>sản xuất hàng hóa</strong> là kiểu tổ chức hoạt động kinh tế mà ở đó, những người sản xuất ra sản phẩm nhằm mục đích trao đổi, mua bán. Nền kinh tế hàng hóa không xuất hiện đồng thời với sự xuất hiện của loài người, mà chỉ ra đời khi có đủ 2 điều kiện:
-                            </p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-2">① Phân công lao động xã hội (Điều kiện cần)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        Là sự phân chia lao động trong xã hội thành các ngành nghề khác nhau, tạo nên sự chuyên môn hóa. Mỗi người chỉ sản xuất một hoặc vài loại sản phẩm, nhưng nhu cầu lại cần nhiều loại, do đó tất yếu phải trao đổi với nhau.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-2">② Sự tách biệt về mặt kinh tế giữa các chủ thể (Điều kiện đủ)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        Xuất hiện dựa trên <strong>sự tách biệt về sở hữu tư liệu sản xuất</strong>. Làm cho những người sản xuất độc lập với nhau, có lợi ích riêng biệt. C. Mác: <em>"Chỉ có sản phẩm của những lao động tư nhân độc lập và không phụ thuộc vào nhau mới đối diện với nhau như là những hàng hóa"</em>.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="glass-panel p-5 rounded-xl border border-philo-gold/30 bg-philo-gold/5">
+                        <h4 class="font-heading font-bold text-philo-gold flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-[18px]">shield</span>
+                            Chính quyền Xô Viết Nghệ Tĩnh
+                        </h4>
+                        <ul class="text-sm space-y-2 list-disc list-inside">
+                            <li>Bộ máy thống trị của thực dân phong kiến tan rã ở nhiều thôn xã.</li>
+                            <li>Các Ban Chấp hành Nông hội đỏ (Xã bộ nông) nắm chính quyền, thực hiện quyền làm chủ của nhân dân.</li>
+                            <li>Thực hiện các chính sách tiến bộ: chia ruộng đất công, giảm tô, xóa nợ, bãi bỏ các thứ thuế vô lý, mở lớp học chữ Quốc ngữ.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Khái niệm và Hai thuộc tính của hàng hóa</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                <strong>Hàng hóa</strong> là sản phẩm của lao động, có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán. Hàng hóa có thể ở dạng vật thể (hữu hình) hoặc phi vật thể (dịch vụ). Hàng hóa có hai thuộc tính thống nhất biện chứng:
-                            </p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-                                <div class="p-5 rounded-2xl bg-black/30 border border-philo-warmGold/20">
-                                    <span class="text-xs font-bold text-philo-gold uppercase tracking-wider block mb-1">Thuộc tính 1</span>
-                                    <h4 class="text-lg font-bold text-white mb-2">Giá trị sử dụng (Use-value)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        • Là <strong>công dụng của sản phẩm</strong> có thể thỏa mãn một nhu cầu nào đó của con người (tiêu dùng cá nhân hoặc sản xuất).<br>
-                                        • Do thuộc tính tự nhiên của vật quy định, là một <strong>phạm trù vĩnh viễn</strong>.<br>
-                                        • Chỉ được thực hiện khi con người tiêu dùng hay sử dụng sản phẩm.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/30 border border-philo-warmGold/20">
-                                    <span class="text-xs font-bold text-philo-gold uppercase tracking-wider block mb-1">Thuộc tính 2</span>
-                                    <h4 class="text-lg font-bold text-white mb-2">Giá trị (Value)</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        • Là <strong>lao động xã hội của người sản xuất kết tinh trong hàng hóa</strong>.<br>
-                                        • Biểu hiện ra bên ngoài thông qua <em>giá trị trao đổi</em> (tỷ lệ trao đổi giữa các giá trị sử dụng khác nhau: $xA = yB$).<br>
-                                        • Là một <strong>phạm trù lịch sử</strong>, phản ánh quan hệ kinh tế giữa những người sản xuất hàng hóa.
-                                    </p>
-                                </div>
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.1
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Vì sao phong trào 1930 - 1931 với đỉnh cao Xô Viết Nghệ Tĩnh được coi là cuộc tổng diễn tập đầu tiên của Cách mạng Tháng Tám?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Vì phong trào đã rèn luyện và xây dựng được liên minh công nông vững chắc dưới sự lãnh đạo của Đảng; quần chúng được giác ngộ và nếm trải kinh nghiệm giành và giữ chính quyền cách mạng.
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Reflection Question -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.1
-                            </h3>
-                            <div class="reflection-item">
-                                <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                    <span>Tại sao không khí trong lành tự nhiên có giá trị sử dụng vô cùng to lớn nhưng lại không có giá trị?</span>
-                                    <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                </button>
-                                <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                    <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 31-33):</strong> Vì không khí trong lành tự nhiên không phải là sản phẩm của lao động do con người hao phí sức lực để tạo ra và không thông qua trao đổi mua bán trên thị trường. Muốn có thuộc tính giá trị, sản phẩm bắt buộc phải có sự kết tinh lao động xã hội của con người.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <div></div>
+                        <div class="flex items-center gap-3">
                             <button onclick="openFormativeQuiz('M2-FQ1')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh Bài 2.1 &amp; 2.2
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
                             </button>
-                            <button onclick="completeLesson('M2-L1')" id="btn-complete-M2-L1" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <button onclick="completeLesson('M2-L1')" id="btn-complete-M2-L1" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 2.2: TÍNH HAI MẶT CỦA LAO ĐỘNG SẢN XUẤT HÀNG HÓA -->
-            <div id="lesson-M2-L2" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">⚡</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 2.2 — Chương 2 (Trang 34 - 36)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Tính Hai Mặt Của Lao Động Sản Xuất Hàng Hóa</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Khám phá phát kiến vĩ đại của C. Mác: Lao động cụ thể và Lao động trừu tượng, giải mã nguồn gốc vì sao hàng hóa có hai thuộc tính.</p>
+        </article>
+        <!-- LESSON 2.2: Luận cương chính trị 10/1930 & Khôi phục phong trào (1932 - 1935) -->
+        <article id="lesson-M2-L2" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 2.2 • SESSION 6 CHƯƠNG 2</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Luận cương chính trị tháng 10/1930 & Khôi phục phong trào 1932 - 1935
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Hội nghị Trung ương lần thứ nhất, Luận cương do đồng chí Trần Phú khởi thảo và cuộc đấu tranh kiên cường trong lao tù</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                        <p class="font-bold text-philo-gold mb-1">Hội nghị Trung ương lần thứ nhất (10/1930):</p>
+                        <p class="leading-relaxed">
+                            Họp tại Hương Cảng (Trung Quốc) từ 14 đến 31/10/1930 do đồng chí <strong>Trần Phú</strong> chủ trì. Hội nghị quyết định đổi tên Đảng thành <em>Đảng Cộng sản Đông Dương</em>, bầu Ban Chấp hành Trung ương chính thức và cử đồng chí Trần Phú làm Tổng Bí thư đầu tiên.
+                        </p>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                C. Mác phát hiện ra rằng, sở dĩ hàng hóa có hai thuộc tính (GTSD và Giá trị) không phải do có hai thứ lao động khác nhau, mà là do <strong>lao động của người sản xuất hàng hóa có tính hai mặt</strong>:
-                            </p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-4">
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <div class="flex items-center gap-2 mb-2 text-philo-gold font-bold">
-                                        <span class="material-symbols-outlined">handyman</span>
-                                        <span>Lao động cụ thể (Concrete Labor)</span>
-                                    </div>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed mb-3">
-                                        • Là lao động có ích dưới một hình thức nghề nghiệp chuyên môn nhất định (thợ may, thợ mộc, kỹ sư...).<br>
-                                        • Có mục đích riêng, đối tượng riêng, công cụ riêng và kết quả riêng.<br>
-                                        • <strong>Tạo ra Giá trị sử dụng</strong> của hàng hóa.<br>
-                                        • Phản ánh <strong>tính chất tư nhân</strong> của người sản xuất hàng hóa (sản xuất cái gì, như thế nào là việc riêng của mỗi chủ thể).
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <div class="flex items-center gap-2 mb-2 text-philo-gold font-bold">
-                                        <span class="material-symbols-outlined">psychology</span>
-                                        <span>Lao động trừu tượng (Abstract Labor)</span>
-                                    </div>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed mb-3">
-                                        • Là lao động xã hội của người sản xuất không kể đến hình thức cụ thể; là sự hao phí sức lao động nói chung về cơ bắp, thần kinh, trí óc.<br>
-                                        • <strong>Tạo ra Giá trị</strong> của hàng hóa.<br>
-                                        • Phản ánh <strong>tính chất xã hội</strong> của lao động sản xuất hàng hóa (vì lao động của mỗi người là một bộ phận của phân công lao động xã hội).
-                                    </p>
-                                </div>
-                            </div>
-
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">Mâu thuẫn giữa lao động tư nhân và lao động xã hội</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Xuất hiện khi sản phẩm do người sản xuất cá biệt tạo ra không phù hợp với nhu cầu xã hội, hoặc hao phí lao động cá biệt cao hơn mức hao phí xã hội chấp nhận. Khi đó hàng hóa không bán được, lao động cá biệt không được xã hội thừa nhận -> Đây là <strong>nguy cơ khủng hoảng tiềm ẩn</strong> của sản xuất hàng hóa.
-                            </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                            <strong class="text-philo-gold block text-sm">Ưu điểm của Luận cương:</strong>
+                            <p class="text-philo-ivory/80 leading-relaxed">Khẳng định tính chất cách mạng tư sản dân quyền; xác định giai cấp vô sản lãnh đạo thông qua Đảng; phương pháp vũ trang bạo động để giành chính quyền; cách mạng Đông Dương là một bộ phận của cách mạng vô sản thế giới.</p>
                         </div>
-
-                        <!-- Reflection Question -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.2
-                            </h3>
-                            <div class="reflection-item">
-                                <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                    <span>Lao động cụ thể và lao động trừu tượng là hai hoạt động lao động khác nhau đúng hay sai?</span>
-                                    <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                </button>
-                                <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                    <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 34-35):</strong> Hoàn toàn SAI. Đây không phải là hai loại lao động riêng biệt, mà là hai mặt của cùng một hoạt động lao động của người sản xuất hàng hóa. Lao động xét về mặt hình thức nghiệp vụ tạo ra giá trị sử dụng (lao động cụ thể), đồng thời xét về mặt hao phí năng lượng sức óc và cơ bắp tạo ra giá trị (lao động trừu tượng).
-                                </div>
-                            </div>
+                        <div class="p-4 bg-red-950/20 border border-red-500/30 rounded-xl space-y-2">
+                            <strong class="text-red-300 block text-sm">Hạn chế lịch sử của Luận cương:</strong>
+                            <p class="text-red-200/80 leading-relaxed">Chưa xác định mâu thuẫn chủ yếu là mâu thuẫn dân tộc mà nặng về đấu tranh giai cấp; coi vấn đề thổ địa là "cái cốt"; đánh giá không đúng vị trí của tiểu tư sản, tư sản dân tộc và địa chủ vừa và nhỏ.</p>
                         </div>
+                    </div>
+                    <div class="p-4 bg-black/40 border border-philo-warmGold/20 rounded-xl text-xs space-y-2">
+                        <strong class="text-philo-gold block text-sm">Cuộc đấu tranh khôi phục phong trào (1932 - 1935):</strong>
+                        <p>Dù thực dân Pháp khủng bố dã man làm Ban Chấp hành Trung ương bị bắt, Tổng Bí thư Trần Phú hy sinh oanh liệt với lời nhắn nhủ bất hủ: <em>"Hãy giữ vững chí khí chiến đấu!"</em>, các chiến sĩ cộng sản đã biến nhà tù đế quốc thành trường học cách mạng. Tháng 3/1935, Đại hội lần thứ I của Đảng họp tại Ma Cao do Lê Hồng Phong chủ trì, đánh dấu việc khôi phục hoàn toàn hệ thống tổ chức Đảng.</p>
+                    </div>
+                </div>
 
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M2-L1')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.2
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Điểm khác biệt căn bản nhất giữa Cương lĩnh chính trị đầu tiên (2/1930) và Luận cương chính trị (10/1930) là gì?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
                             </button>
-                            <button onclick="completeLesson('M2-L2')" id="btn-complete-M2-L2" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Cương lĩnh 2/1930 đặt nhiệm vụ giải phóng dân tộc lên hàng đầu và tập hợp rộng rãi mọi giai tầng yêu nước; trong khi Luận cương 10/1930 đặt nặng đấu tranh giai cấp và thổ địa, xem nhẹ khả năng cách mạng của tiểu tư sản và tư sản dân tộc.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M2-L1')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M2-FQ2')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M2-L2')" id="btn-complete-M2-L2" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 2.3: LƯỢNG GIÁ TRỊ VÀ CÁC NHÂN TỐ ẢNH HƯỞNG -->
-            <div id="lesson-M2-L3" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">⏱️</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 2.3 — Chương 2 (Trang 36 - 39)</span>
+        </article>
+        <!-- LESSON 2.3: Phong trào Dân chủ 1936 - 1939 & Nhận thức mới của Đảng -->
+        <article id="lesson-M2-L3" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 2.3 • SESSION 7 CHƯƠNG 2</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Phong trào Dân chủ 1936 - 1939 & Nhận thức mới của Đảng
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Chủ nghĩa phát xít đe dọa, Mặt trận Dân chủ Đông Dương, hình thức đấu tranh công khai và tác phẩm 'Tự chỉ trích'</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
+                    <p class="text-sm">
+                        Trước nguy cơ chiến tranh phát xít và bám sát tinh thần Đại hội VII Quốc tế Cộng sản (7/1935), Đảng Cộng sản Đông Dương đã có sự điều chỉnh chiến lược vô cùng linh hoạt, đề ra chủ trương đấu tranh mới trong Hội nghị Trung ương 7/1936 tại Thượng Hải do Lê Hồng Phong và Hà Huy Tập chủ trì.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                            <strong class="text-philo-gold block text-sm">1. Mục tiêu trước mắt</strong>
+                            <p class="text-philo-ivory/80">Tạm gác khẩu hiệu "Đánh đổ đế quốc Pháp" và "Tịch thu ruộng đất của địa chủ", tập trung đòi tự do, dân chủ, cơm áo và hòa bình; chống phát xít và chống chiến tranh đế quốc.</p>
                         </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Lượng Giá Trị Hàng Hóa &amp; Các Nhân Tố Ảnh Hưởng</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Nắm vững thước đo lượng giá trị (Thời gian lao động xã hội cần thiết), cấu thành lượng giá trị $G = c + v + m$, và tác động của NSLĐ, cường độ lao động, độ phức tạp lao động.</p>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                            <strong class="text-philo-gold block text-sm">2. Hình thức đấu tranh</strong>
+                            <p class="text-philo-ivory/80">Kết hợp chặt chẽ hình thức bí mật, bất hợp pháp với các hình thức công khai, nửa công khai, hợp pháp và nửa hợp pháp; xuất bản báo chí công khai, phong trào Đông Dương Đại hội.</p>
+                        </div>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                            <strong class="text-philo-gold block text-sm">3. Tác phẩm 'Tự chỉ trích'</strong>
+                            <p class="text-philo-ivory/80">Tổng Bí thư Nguyễn Văn Cừ viết tác phẩm kinh điển <em>"Tự chỉ trích"</em> (7/1939), nêu cao nguyên tắc tự phê bình và phê bình chân thành, khắc phục các biểu hiện tả khuynh, hữu khuynh.</p>
+                        </div>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Thước đo lượng giá trị hàng hóa</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Giá trị hàng hóa do lao động xã hội trừu tượng kết tinh. Vì vậy, <strong>lượng giá trị của hàng hóa là lượng lao động hao phí để tạo ra hàng hóa</strong>, được đo lường bằng <em>thời gian lao động</em>.
-                            </p>
-                            <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30 my-3">
-                                <h4 class="font-bold text-philo-gold text-base mb-1">Thời gian lao động xã hội cần thiết</h4>
-                                <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                    Là thời gian đòi hỏi để sản xuất ra một giá trị sử dụng nào đó trong <strong>những điều kiện sản xuất bình thường của xã hội</strong> với trình độ thành thạo trung bình và cường độ lao động trung bình (trang 36-37).
-                                </p>
-                            </div>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                <strong>Cấu thành lượng giá trị một đơn vị hàng hóa:</strong>
-                                <br><code class="text-philo-gold font-bold text-sm bg-black/50 px-3 py-1 rounded">G = c + (v + m)</code>
-                                <br>Trong đó: $c$ là hao phí lao động quá khứ (vật tư, khấu hao máy móc); $v + m$ là hao phí lao động mới kết tinh thêm ($v$ là giá trị sức lao động, $m$ là giá trị thặng dư).
-                            </p>
+                </div>
 
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Ba nhân tố ảnh hưởng tới lượng giá trị</h3>
-                            <div class="space-y-4 my-4">
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-sm mb-1">① Năng suất lao động</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        Năng suất lao động tăng -> Giảm thời gian lao động xã hội cần thiết trong 1 sản phẩm -> <strong>Lượng giá trị trong một đơn vị hàng hóa giảm xuống</strong> (tỷ lệ nghịch với sức sản xuất của lao động).
-                                    </p>
-                                </div>
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-sm mb-1">② Cường độ lao động</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        Là mức độ khẩn trương, tích cực của lao động. Tăng cường độ lao động làm <strong>tổng sản phẩm tăng, tổng lượng giá trị tạo ra tăng</strong>, nhưng <strong>lượng giá trị của 1 đơn vị hàng hóa không đổi</strong> (vì thời gian cần thiết cho 1 đơn vị không đổi).
-                                    </p>
-                                </div>
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-sm mb-1">③ Mức độ phức tạp của lao động</h4>
-                                    <p class="text-xs text-philo-ivory/70 leading-relaxed">
-                                        • <em>Lao động giản đơn:</em> Không đòi hỏi đào tạo chuyên sâu.<br>
-                                        • <em>Lao động phức tạp:</em> Đòi hỏi đào tạo kỹ năng chuyên môn. <strong>Lao động phức tạp là lao động giản đơn được nhân bội lên</strong>, trong cùng thời gian tạo ra nhiều giá trị hơn.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Reflection Question -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.3
-                            </h3>
-                            <div class="reflection-item">
-                                <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                    <span>Khi tăng năng suất lao động và tăng cường độ lao động, lượng giá trị của một đơn vị hàng hóa thay đổi thế nào?</span>
-                                    <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                </button>
-                                <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                    <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 37-38):</strong> Tăng năng suất lao động làm lượng giá trị của MỘT đơn vị hàng hóa GIẢM xuống. Ngược lại, tăng cường độ lao động làm lượng giá trị của MỘT đơn vị hàng hóa KHÔNG ĐỔI (chỉ có tổng giá trị của tất cả hàng hóa tạo ra là tăng lên).
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M2-L2')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.3
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Ý nghĩa to lớn của tác phẩm 'Tự chỉ trích' của Tổng Bí thư Nguyễn Văn Cừ đối với công tác xây dựng Đảng?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
                             </button>
-                            <button onclick="completeLesson('M2-L3')" id="btn-complete-M2-L3" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Khẳng định tự phê bình và phê bình là quy luật phát triển của Đảng cách mạng; giúp cán bộ đảng viên dũng cảm nhìn thẳng vào khuyết điểm, tăng cường đoàn kết nội bộ và củng cố mối liên hệ mật thiết với nhân dân.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M2-L2')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M2-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M2-L3')" id="btn-complete-M2-L3" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 2.4: TIỀN TỆ, DỊCH VỤ VÀ CÁC HÀNG HÓA ĐẶC BIỆT -->
-            <div id="lesson-M2-L4" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">💰</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 2.4 — Chương 2 (Trang 39 - 49)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Tiền Tệ, Dịch Vụ &amp; Các Yếu Tố Hàng Hóa Đặc Biệt Ngày Nay</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Nắm vững lịch sử 4 hình thái giá trị, bản chất &amp; 5 chức năng của tiền tệ, hiểu rõ về dịch vụ, quyền sử dụng đất, thương hiệu và chứng khoán (tư bản giả).</p>
+        </article>
+        <!-- LESSON 2.4: Chuyển hướng chỉ đạo chiến lược 1939 - 1941 & Mặt trận Việt Minh -->
+        <article id="lesson-M2-L4" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 2.4 • SESSION 8 CHƯƠNG 2</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Chuyển hướng chỉ đạo chiến lược 1939 - 1941 & Mặt trận Việt Minh
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Chiến tranh thế giới II bùng nổ, Hội nghị Trung ương VIII tại Pác Bó và sự ra đời của Mặt trận Việt Minh</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                    <p class="font-bold text-philo-gold mb-1">Mốc son lịch sử Hội nghị Trung ương VIII (5/1941):</p>
+                    <p class="leading-relaxed">
+                        Đầu năm 1941, sau 30 năm bôn ba tìm đường cứu nước, đồng chí <strong>Nguyễn Ái Quốc</strong> về nước trực tiếp lãnh đạo cách mạng. Người chủ trì Hội nghị Ban Chấp hành Trung ương lần thứ 8 họp tại lán Khuổi Nặm, Pác Bó (Hà Quảng, Cao Bằng) từ 10 đến 19/5/1941.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">Nội dung chuyển hướng chiến lược:</strong>
+                        <ul class="space-y-1.5 list-disc list-inside text-philo-ivory/80">
+                            <li>Đặt nhiệm vụ <strong>giải phóng dân tộc lên hàng đầu</strong>: <em>"Trong lúc này, quyền lợi của bộ phận, của giai cấp phải đặt dưới quyền lợi giải phóng của toàn thể dân tộc"</em>.</li>
+                            <li>Tạm gác khẩu hiệu "Đánh đổ địa chủ, chia ruộng đất cho dân cày", thay bằng khẩu hiệu tịch thu ruộng đất của đế quốc và Việt gian.</li>
+                            <li>Xác định khởi nghĩa vũ trang là nhiệm vụ trung tâm của toàn Đảng, toàn dân.</li>
+                        </ul>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Lịch sử hình thành &amp; Bản chất của tiền tệ</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                Tiền tệ ra đời qua 4 hình thái phát triển của giá trị:
-                                <br>1. <em>Hình thái giản đơn hay ngẫu nhiên</em> ($1A = 2B$).
-                                <br>2. <em>Hình thái đầy đủ hay mở rộng</em> ($1A = 2B$ hoặc $3C$ hoặc $5D$...).
-                                <br>3. <em>Hình thái chung của giá trị</em> ($2B$ hoặc $3C$ hoặc $5D = 1A$ - $A$ làm vật ngang giá chung).
-                                <br>4. <em>Hình thái tiền</em> (Vàng trở thành vật ngang giá chung độc tôn và thống nhất).
-                            </p>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                <strong>Bản chất:</strong> Tiền là một loại <strong>hàng hóa đặc biệt</strong>, đóng vai trò là vật ngang giá chung cho thế giới hàng hóa, là hình thái biểu hiện giá trị của hàng hóa.
-                            </p>
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-2">
+                        <strong class="text-philo-gold block text-sm">Mặt trận Việt Minh ra đời (19/5/1941):</strong>
+                        <p class="text-philo-ivory/80 leading-relaxed">
+                            Thành lập <strong>Việt Nam Độc lập Đồng minh (gọi tắt là Việt Minh)</strong> nhằm tập hợp hết thảy các tầng lớp nhân dân yêu nước không phân biệt tôn giáo, đảng phái trong các đoàn thể cứu quốc (Nông dân cứu quốc, Thanh niên cứu quốc, Phụ nữ cứu quốc...). Bầu đồng chí Trường Chinh làm Tổng Bí thư.
+                        </p>
+                    </div>
+                </div>
 
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Năm chức năng cơ bản của tiền tệ</h3>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 my-4">
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-xs uppercase mb-1">① Thước đo giá trị</h4>
-                                    <p class="text-[11px] text-philo-ivory/70">Dùng đo lường giá trị các hàng hóa. Giá trị biểu hiện bằng tiền gọi là <strong>giá cả</strong>.</p>
-                                </div>
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-xs uppercase mb-1">② Phương tiện lưu thông</h4>
-                                    <p class="text-[11px] text-philo-ivory/70">Môi giới trao đổi ($H - T - H$). Đòi hỏi có tiền mặt (kim loại, tiền giấy).</p>
-                                </div>
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-xs uppercase mb-1">③ Phương tiện cất trữ</h4>
-                                    <p class="text-[11px] text-philo-ivory/70">Rút khỏi lưu thông để cất giữ của cải (phải là tiền đủ giá trị như vàng, bạc).</p>
-                                </div>
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-xs uppercase mb-1">④ Phương tiện thanh toán</h4>
-                                    <p class="text-[11px] text-philo-ivory/70">Trả nợ, trả tiền mua chịu, nộp thuế, thanh toán không dùng tiền mặt, tiền điện tử.</p>
-                                </div>
-                                <div class="p-4 rounded-xl bg-black/30 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-xs uppercase mb-1">⑤ Tiền tệ thế giới</h4>
-                                    <p class="text-[11px] text-philo-ivory/70">Thanh toán quốc tế giữa các quốc gia (tiền vàng hoặc các ngoại tệ mạnh được thừa nhận).</p>
-                                </div>
-                            </div>
-
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">3. Dịch vụ và Các yếu tố đặc biệt ngày nay (Trang 45 - 49)</h3>
-                            <ul class="text-philo-ivory/80 space-y-2 list-disc pl-6 text-sm">
-                                <li><strong>Dịch vụ:</strong> Là hàng hóa vô hình. Quá trình sản xuất và tiêu dùng diễn ra đồng thời, không thể cất trữ.</li>
-                                <li><strong>Quyền sử dụng đất:</strong> Có giá cả nhưng không do hao phí lao động trực tiếp tạo ra. Mua bán đất là sự dịch chuyển tiền tệ và của cải giữa các cá nhân chứ không tạo thêm giá trị mới cho xã hội.</li>
-                                <li><strong>Thương hiệu, danh tiếng:</strong> Phản ánh hao phí lao động quản trị, uy tín và sự khan hiếm tài năng kết hợp với lợi ích kỳ vọng.</li>
-                                <li><strong>Chứng khoán, chứng quyền (Tư bản giả):</strong> Có tính hàng hóa phái sinh, mua bán quyền hưởng thu nhập trên thị trường chứng khoán, dựa trên doanh nghiệp sản xuất thực tế.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Reflection Question -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.4
-                            </h3>
-                            <div class="reflection-item">
-                                <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                    <span>Tại sao việc buôn bán chứng khoán hoặc quyền sử dụng đất có thể làm giàu cho cá nhân nhưng không làm tăng thêm giá trị xã hội?</span>
-                                    <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                </button>
-                                <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                    <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 47-49):</strong> Bản chất số tiền chênh lệch mà cá nhân kiếm được là sự chuyển dịch tiền tệ từ túi người này sang túi người khác (tiền làm phương tiện thanh toán). Đất đai tự nhiên và chứng khoán (tư bản giả) không trực tiếp hao phí lao động sống tạo ra giá trị mới. Xã hội chỉ thực sự giàu có khi dựa trên nền sản xuất vật chất và dịch vụ có thực.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M2-L3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.4
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Hội nghị Trung ương VIII (5/1941) đã hoàn chỉnh đường lối chiến lược cách mạng của Đảng như thế nào?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
                             </button>
-                            <button onclick="completeLesson('M2-L4')" id="btn-complete-M2-L4" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Hội nghị đã hoàn thành việc chuyển hướng chỉ đạo chiến lược, đưa nhiệm vụ giải phóng dân tộc trở lại vị trí số một, giải quyết triệt để hạn chế của Luận cương 10/1930 và trở về đúng với tư tưởng đúng đắn của Cương lĩnh chính trị đầu tiên 2/1930.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M2-L3')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M2-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M2-L4')" id="btn-complete-M2-L4" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 2.5: THỊ TRƯỜNG VÀ 4 QUY LUẬT KINH TẾ CHỦ YẾU -->
-            <div id="lesson-M2-L5" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">📊</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 2.5 — Chương 2 (Trang 49 - 68)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Thị Trường, Cơ Chế Thị Trường &amp; 4 Quy Luật Kinh Tế Chủ Yếu</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Phân tích sâu 4 quy luật nền tảng: Quy luật giá trị, Quy luật cung - cầu, Quy luật lưu thông tiền tệ và Quy luật cạnh tranh.</p>
+        </article>
+        <!-- LESSON 2.5: Cao trào Kháng Nhật cứu nước & Chuẩn bị khởi nghĩa vũ trang -->
+        <article id="lesson-M2-L5" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 2.5 • SESSION 9 CHƯƠNG 2</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Cao trào kháng Nhật cứu nước & Chuẩn bị khởi nghĩa vũ trang
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Nhật đảo chính Pháp đêm 9/3/1945, Chỉ thị lịch sử của Đảng và phong trào phá kho thóc giải quyết nạn đói</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                        <strong class="text-philo-gold block mb-1">Chỉ thị 'Nhật - Pháp bắn nhau và hành động của chúng ta' (12/3/1945):</strong>
+                        <p class="leading-relaxed">
+                            Đêm 9/3/1945, Nhật nổ súng đảo chính lật đổ Pháp. Ngày 12/3/1945, Ban Thường vụ Trung ương Đảng ra bản Chỉ thị lịch sử, xác định kẻ thù cụ thể trước mắt là phát xít Nhật, phát động cao trào "Kháng Nhật cứu nước" làm tiền đề cho Tổng khởi nghĩa.
+                        </p>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">1. Thị trường và Cơ chế thị trường</h3>
-                            <p class="text-philo-ivory/80 leading-relaxed">
-                                <strong>Thị trường:</strong> Là tổng hòa những quan hệ kinh tế, trong đó nhu cầu của các chủ thể được đáp ứng thông qua việc trao đổi, mua bán với sự xác định giá cả và số lượng hàng hóa, dịch vụ.<br>
-                                <strong>Cơ chế thị trường:</strong> Là hệ thống các quan hệ mang tính tự điều chỉnh tuân theo yêu cầu của các quy luật kinh tế (ví như "bàn tay vô hình" của Adam Smith).
-                            </p>
-
-                            <h3 class="font-heading text-xl font-bold text-philo-gold">2. Bốn quy luật kinh tế chủ yếu của nền kinh tế thị trường</h3>
-                            <div class="space-y-4 my-4">
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-1">① Quy luật giá trị (Quy luật kinh tế cơ bản của sản xuất hàng hóa)</h4>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed mb-2">
-                                        • <em>Yêu cầu:</em> Sản xuất và trao đổi phải tiến hành trên cơ sở <strong>hao phí lao động xã hội cần thiết</strong>. Trao đổi theo nguyên tắc ngang giá.<br>
-                                        • <em>Cơ chế vận động:</em> Giá cả thị trường lên xuống xoay quanh giá trị dưới tác động cung - cầu.<br>
-                                        • <em>3 Tác động:</em> (1) Điều tiết sản xuất và lưu thông hàng hóa; (2) Kích thích cải tiến kỹ thuật, tăng năng suất lao động; (3) Phân hóa những người sản xuất thành người giàu, người nghèo tự nhiên.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-1">② Quy luật cung - cầu</h4>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        Điều tiết quan hệ giữa cung (bên bán) và cầu (bên mua). Nếu Cung &gt; Cầu -> Giá cả &lt; Giá trị; Cung &lt; Cầu -> Giá cả &gt; Giá trị; Cung = Cầu -> Giá cả = Giá trị. Có tác dụng điều tiết sản xuất và lưu thông, thay đổi cơ cấu thị trường.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-1">③ Quy luật lưu thông tiền tệ</h4>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        Xác định số lượng tiền cần thiết cho lưu thông hàng hóa:
-                                        <br><code class="text-philo-gold font-bold text-xs bg-black/50 px-2 py-1 rounded inline-block my-1">M = [P.Q - (G1 + G2) + G3] / V</code>
-                                        <br>Trong đó: $P.Q$ là tổng giá cả; $G1$ là bán chịu; $G2$ là khấu trừ; $G3$ là đến kỳ thanh toán; $V$ là số vòng quay đồng tiền. Nếu phát hành tiền giấy vượt quá mức cần thiết sẽ dẫn đến mất giá và lạm phát.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/20">
-                                    <h4 class="font-bold text-philo-gold text-base mb-1">④ Quy luật cạnh tranh</h4>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        • <em>Cạnh tranh nội bộ ngành:</em> Giữa các chủ thể cùng ngành nhằm hạ giá trị cá biệt -> <strong>Hình thành giá trị thị trường</strong>.<br>
-                                        • <em>Cạnh tranh giữa các ngành:</em> Tự do di chuyển vốn tìm nơi đầu tư có lợi nhất -> <strong>Hình thành tỷ suất lợi nhuận bình quân</strong>.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                        <div class="p-3 bg-white/5 border border-white/10 rounded-xl space-y-1">
+                            <strong class="text-philo-gold">Phá kho thóc Nhật:</strong>
+                            <p class="text-philo-ivory/80">Phát động phong trào "Phá kho thóc của Nhật để giải quyết nạn đói", thổi bùng ngọn lửa cách mạng trong hàng triệu quần chúng nhân dân.</p>
                         </div>
-
-                        <!-- Reflection Question -->
-                        <div class="border-t border-philo-warmGold/20 pt-6">
-                            <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
-                                <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.5
-                            </h3>
-                            <div class="reflection-item">
-                                <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
-                                    <span>Người sản xuất muốn đứng vững trong cạnh tranh phải làm gì theo yêu cầu của quy luật giá trị?</span>
-                                    <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
-                                </button>
-                                <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
-                                    <strong class="text-philo-gold block mb-1">Gợi ý trả lời (Giáo trình Trang 59-60):</strong> Người sản xuất phải tìm mọi cách hạ thấp hao phí lao động cá biệt của mình xuống nhỏ hơn hoặc bằng hao phí lao động xã hội cần thiết bằng cách cải tiến công nghệ, nâng cao tay nghề, đổi mới quản lý và tiết kiệm chi phí sản xuất.
-                                </div>
-                            </div>
+                        <div class="p-3 bg-white/5 border border-white/10 rounded-xl space-y-1">
+                            <strong class="text-philo-gold">Thống nhất lực lượng vũ trang:</strong>
+                            <p class="text-philo-ivory/80">Tháng 5/1945, Việt Nam Tuyên truyền Giải phóng quân và Cứu quốc quân hợp nhất thành <strong>Việt Nam Giải phóng quân</strong>.</p>
                         </div>
+                        <div class="p-3 bg-white/5 border border-white/10 rounded-xl space-y-1">
+                            <strong class="text-philo-gold">Khu giải phóng Việt Bắc:</strong>
+                            <p class="text-philo-ivory/80">Tháng 6/1945, thành lập Khu giải phóng Việt Bắc gồm 6 tỉnh (Cao - Bắc - Lạng - Hà - Tuyên - Thái), trở thành căn cứ địa cách mạng của cả nước.</p>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M2-L4')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.5
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Vì sao khẩu hiệu 'Phá kho thóc Nhật giải quyết nạn đói' có sức hiệu triệu và lôi cuốn mãnh liệt hàng triệu quần chúng nhân dân?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
                             </button>
-                            <button onclick="completeLesson('M2-L5')" id="btn-complete-M2-L5" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Khẩu hiệu đã đáp ứng trúng nguyện vọng cấp bách sinh tử nhất của nhân dân trong nạn đói khủng khiếp năm 1945, biến nỗi đau mất nước và căm thù giặc thành hành động cách mạng cụ thể giành quyền sống.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M2-L4')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M2-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M2-L5')" id="btn-complete-M2-L5" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- BÀI 2.6: CÁC CHỦ THỂ THAM GIA THỊ TRƯỜNG & TỔNG KẾT -->
-            <div id="lesson-M2-L6" class="lesson-content hidden">
-                <div class="bg-philo-blackBurgundy rounded-3xl border border-philo-warmGold/20 shadow-sm overflow-hidden">
-                    <div class="lesson-header-academic">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-3xl">🤝</span>
-                            <span class="text-philo-gold text-sm font-semibold uppercase tracking-wider">Bài 2.6 — Chương 2 (Trang 68 - 74)</span>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-white mb-2">Vai Trò Của Các Chủ Thể Tham Gia Thị Trường &amp; Tổng Kết</h2>
-                        <p class="text-philo-ivory/80 text-sm">🎯 <strong>Mục tiêu:</strong> Làm rõ vai trò và trách nhiệm của Người sản xuất, Người tiêu dùng, Các chủ thể trung gian và Nhà nước trong nền kinh tế thị trường.</p>
+        </article>
+        <!-- LESSON 2.6: Tổng khởi nghĩa CMT8 1945 & Bài học lịch sử -->
+        <article id="lesson-M2-L6" class="lesson-content space-y-6 hidden">
+            <div class="rounded-2xl border border-philo-gold/20 overflow-hidden glass-panel">
+                <div class="lesson-header-academic">
+                    <span class="philo-badge mb-2 inline-flex">BÀI HỌC 2.6 • SESSION 10 CHƯƠNG 2</span>
+                    <h2 class="font-heading text-2xl md:text-3xl font-bold text-philo-ivory">
+                        Tổng khởi nghĩa Cách mạng Tháng Tám 1945 & Bài học lịch sử
+                    </h2>
+                    <p class="text-sm text-philo-ivory/70 mt-1">Chớp thời cơ nghìn năm có một, Tổng khởi nghĩa thần tốc và bản Tuyên ngôn Độc lập ngày 2/9/1945</p>
+                </div>
+                <div class="p-6 md:p-8 space-y-6 text-philo-ivory/90 leading-relaxed font-light">
+                    
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl border border-philo-gold/30 bg-philo-gold/5 text-sm">
+                        <p class="font-bold text-philo-gold mb-1">Thời cơ ngàn năm có một & Lệnh Tổng khởi nghĩa:</p>
+                        <p class="leading-relaxed">
+                            Ngày 15/8/1945, phát xít Nhật tuyên bố đầu hàng Đồng minh không điều kiện. Hội nghị toàn quốc của Đảng họp tại Tân Trào (14 - 15/8/1945) quyết định phát động Tổng khởi nghĩa giành chính quyền trước khi quân Đồng minh vào tước khí giới phát xít Nhật. Đại hội Quốc dân Tân Trào (16/8/1945) bầu Ủy ban Dân tộc giải phóng Việt Nam do Hồ Chí Minh làm Chủ tịch.
+                        </p>
                     </div>
-                    <div class="p-8 space-y-8">
-                        <div class="prose prose-lg dark:prose-invert max-w-none space-y-5">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <h4 class="font-bold text-philo-gold text-base mb-1">1. Người sản xuất</h4>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        Trực tiếp tạo ra của cải vật chất, sử dụng các yếu tố đầu vào để sản xuất cung ứng hàng hóa cho xã hội và tìm kiếm lợi nhuận. Cần có trách nhiệm cung cấp hàng hóa an toàn, không gây hại sức khỏe và môi trường.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <h4 class="font-bold text-philo-gold text-base mb-1">2. Người tiêu dùng</h4>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        Mua hàng hóa, dịch vụ để thỏa mãn nhu cầu. Sức mua của người tiêu dùng là yếu tố quyết định sự tồn tại của người sản xuất, có vai trò định hướng sản xuất. Cần tiêu dùng có trách nhiệm đối với sự phát triển bền vững.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <h4 class="font-bold text-philo-gold text-base mb-1">3. Các chủ thể trung gian</h4>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        Cầu nối giữa sản xuất và tiêu dùng (môi giới thương mại, chứng khoán, bất động sản, khoa học công nghệ...). Giúp lưu thông hàng hóa trơn tru, giảm chi phí giao dịch. Cần loại bỏ trung gian lừa đảo, bất hợp pháp.
-                                    </p>
-                                </div>
-                                <div class="p-5 rounded-2xl bg-black/40 border border-philo-warmGold/30">
-                                    <h4 class="font-bold text-philo-gold text-base mb-1">4. Nhà nước</h4>
-                                    <p class="text-xs text-philo-ivory/80 leading-relaxed">
-                                        Thực hiện chức năng quản lý nhà nước về kinh tế: kiến tạo môi trường thể chế pháp luật minh bạch, ổn định kinh tế vĩ mô và sử dụng công cụ kinh tế để khắc phục những khuyết tật của thị trường (khủng hoảng, ô nhiễm, phân hóa giàu nghèo).
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1.5">
+                            <strong class="text-philo-gold block text-sm">Tiến trình Tổng khởi nghĩa thần tốc:</strong>
+                            <p>• <strong>19/8/1945:</strong> Khởi nghĩa thắng lợi vang dội tại Hà Nội.</p>
+                            <p>• <strong>23/8/1945:</strong> Khởi nghĩa thắng lợi ở Huế; vua Bảo Đại thoái vị.</p>
+                            <p>• <strong>25/8/1945:</strong> Khởi nghĩa thắng lợi rực rỡ ở Sài Gòn.</p>
+                            <p>Chỉ trong vòng 15 ngày (từ 14 đến 28/8/1945), Tổng khởi nghĩa đã thành công trên phạm vi cả nước.</p>
                         </div>
-
-                        <!-- Completion Banner -->
-                        <div id="module-quiz-banner" class="p-6 rounded-2xl bg-gradient-to-r from-amber-500/20 via-yellow-500/10 to-transparent border border-philo-gold/40 flex flex-col md:flex-row items-center justify-between gap-4">
-                            <div>
-                                <h4 class="font-bold text-philo-gold text-lg mb-1">🏆 Bạn đã sẵn sàng làm Bài kiểm tra Tổng kết Chương 2?</h4>
-                                <p class="text-xs text-philo-ivory/70">Đạt ≥ 75% trong bài thi 12 câu để mở khóa huy hiệu <strong>"Chuyên Gia Thị Trường &amp; Hàng Hóa"</strong> 🥈 và +15 XP.</p>
-                            </div>
-                            <button onclick="openModuleQuiz()" class="btn-academic-gold px-6 py-3 font-bold text-xs uppercase tracking-wider shrink-0">
-                                Làm bài kiểm tra Chương 2
-                            </button>
-                        </div>
-
-                        <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
-                            <button onclick="showLesson('M2-L5')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước
-                            </button>
-                            <button onclick="completeLesson('M2-L6')" id="btn-complete-M2-L6" class="bg-philo-warmGold hover:bg-philo-gold text-black font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
-                                <span class="material-symbols-outlined">check_circle</span> Đã hoàn thành chương
-                            </button>
+                        <div class="p-4 bg-white/5 border border-white/10 rounded-xl space-y-1.5">
+                            <strong class="text-philo-gold block text-sm">Ngày 2/9/1945 & Tuyên ngôn Độc lập:</strong>
+                            <p class="text-philo-ivory/80 leading-relaxed">
+                                Tại Quảng trường Ba Đình (Hà Nội), Chủ tịch Hồ Chí Minh thay mặt Chính phủ lâm thời đọc bản <em>Tuyên ngôn Độc lập</em>, khai sinh nước <strong>Việt Nam Dân chủ Cộng hòa</strong>: <em>"Nước Việt Nam có quyền hưởng tự do và độc lập, và sự thật đã thành một nước tự do, độc lập"</em>.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
+                    <!-- Reflection Question -->
+                    <div class="border-t border-philo-warmGold/20 pt-6">
+                        <h3 class="font-heading text-lg font-bold mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-philo-warmGold">psychology</span> Câu hỏi phản tư Bài 2.6
+                        </h3>
+                        <div class="reflection-item">
+                            <button onclick="toggleReflection(this)" class="w-full text-left p-4 bg-black/30 rounded-xl hover:bg-philo-warmGold/10 transition-colors text-sm font-medium flex justify-between items-center">
+                                <span>Bài học lớn nhất về nghệ thuật chớp thời cơ trong Cách mạng Tháng Tám năm 1945 là gì?</span>
+                                <span class="material-symbols-outlined text-gray-400 flex-shrink-0 ml-2">expand_more</span>
+                            </button>
+                            <div class="reflection-answer p-4 text-sm text-philo-ivory/70">
+                                <strong class="text-philo-gold block mb-1">Gợi ý trả lời:</strong> Thời cơ ngàn năm có một chỉ xuất hiện trong khoảng thời gian rất ngắn từ khi phát xít Nhật đầu hàng đến trước khi quân Đồng minh vào. Đảng đã dự báo chính xác, chuẩn bị lực lượng chu đáo và kịp thời phát động toàn dân đứng lên chớp lấy thời cơ nghìn năm có một.
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- ===== FLOATING / SIDE AI TUTOR DRAWER ===== -->
-        <div id="ai-panel" class="hidden-panel fixed top-24 right-6 w-96 max-w-[90vw] bg-philo-blackBurgundy border border-philo-warmGold/30 shadow-2xl rounded-2xl z-50 p-6 flex flex-col max-h-[80vh]">
-            <div class="flex items-center justify-between mb-4 border-b border-philo-warmGold/20 pb-3">
-                <div class="flex items-center gap-2 text-philo-gold font-bold">
-                    <span class="material-symbols-outlined">smart_toy</span>
-                    <span>AI Trợ Giảng — Chương 2</span>
-                </div>
-                <button onclick="toggleAIPanel()" class="text-philo-ivory/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
-            </div>
-            <div id="ai-chat-history" class="flex-1 overflow-y-auto space-y-3 text-xs mb-4">
-                <div class="p-3 bg-black/40 rounded-xl text-philo-ivory/80">
-                    👋 Chào bạn! Mình sẵn sàng giải đáp toàn bộ kiến thức Chương 2: Hàng hóa, hai thuộc tính, lao động trừu tượng, tiền tệ và 4 quy luật thị trường.
-                </div>
-            </div>
-            <div class="space-y-2">
-                <div class="flex gap-2">
-                    <input id="ai-quick-input" type="text" placeholder="Hỏi về Chương 2..." class="flex-1 bg-black/50 border border-philo-warmGold/30 rounded-xl px-3 py-2 text-xs text-philo-ivory focus:outline-none focus:border-philo-gold" onkeydown="if(event.key==='Enter') sendQuickAI();" />
-                    <button onclick="sendQuickAI()" class="p-2 bg-philo-gold text-black rounded-xl hover:bg-philo-warmGold transition-colors"><span class="material-symbols-outlined text-sm">send</span></button>
-                </div>
-                <div class="flex flex-wrap gap-1 text-[10px]">
-                    <button onclick="quickPrompt('Điều kiện ra đời sản xuất hàng hóa là gì?')" class="px-2 py-1 bg-philo-gold/10 text-philo-gold rounded border border-philo-gold/20 hover:bg-philo-gold/20">Điều kiện ra đời?</button>
-                    <button onclick="quickPrompt('Phân biệt lao động cụ thể và lao động trừu tượng?')" class="px-2 py-1 bg-philo-gold/10 text-philo-gold rounded border border-philo-gold/20 hover:bg-philo-gold/20">LĐ cụ thể &amp; trừu tượng?</button>
+                    <div class="flex items-center justify-between pt-4 border-t border-philo-warmGold/20">
+                        <button onclick="showLesson('M2-L5')" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5 flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">arrow_back</span> Bài trước</button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="openFormativeQuiz('M2-FQ3')" class="px-5 py-2.5 rounded-xl border border-philo-gold/40 text-philo-gold text-xs font-bold hover:bg-philo-gold/10 transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">quiz</span> Trắc nghiệm nhanh
+                            </button>
+                            <button onclick="completeLesson('M2-L6')" id="btn-complete-M2-L6" class="philo-btn-gold px-8 py-3 rounded-xl transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined">check_circle</span> Đánh dấu hoàn thành
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </article>
+
+        <!-- MODULE FINAL EXAM BANNER -->
+        <div id="module-quiz-banner" class="hidden mt-8 p-6 rounded-2xl glass-panel border border-philo-gold/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <h3 class="font-heading text-xl font-bold text-philo-gold">Chúc mừng bạn đã hoàn thành 6 bài học Chương 2!</h3>
+                <p class="text-xs text-philo-ivory/80 mt-1">Hãy tham gia bài thi tổng kết để củng cố toàn diện kiến thức và mở khóa danh hiệu vinh dự.</p>
+            </div>
+            <button onclick="openModuleQuiz()" class="philo-btn-gold shrink-0">Bắt đầu thi tổng kết</button>
         </div>
-
     </main>
 
-    <!-- ===== QUIZ MODAL ===== -->
-    <div id="quiz-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <div class="bg-philo-blackBurgundy border border-philo-warmGold/40 rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="p-6 border-b border-philo-warmGold/30 flex items-center justify-between">
+    <!-- SLIDE-OVER AI PANEL -->
+    <aside id="ai-panel" class="fixed top-0 right-0 w-full sm:w-96 h-full bg-[#120202] border-l border-philo-gold/30 shadow-2xl z-50 p-6 flex flex-col hidden-panel">
+        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-philo-gold">smart_toy</span>
+                <h3 class="font-heading font-bold text-philo-ivory">Trợ Lý AI Chương 2</h3>
+            </div>
+            <button onclick="toggleAIPanel()" class="text-philo-ivory/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
+        </div>
+        <div class="py-3 flex flex-wrap gap-1.5 border-b border-white/10">
+            <button onclick="sendAIPrompt('Ý nghĩa Xô Viết Nghệ Tĩnh?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Ý nghĩa Xô Viết Nghệ Tĩnh?</button>
+<button onclick="sendAIPrompt('Hội nghị Pác Bó tháng 5/1941?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Hội nghị Pác Bó tháng 5/1941?</button>
+<button onclick="sendAIPrompt('Chỉ thị Nhật - Pháp bắn nhau 12/3/1945?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Chỉ thị Nhật - Pháp bắn nhau 12/3/1945?</button>
+<button onclick="sendAIPrompt('Thời cơ Cách mạng Tháng Tám 1945?')" class="text-[10px] bg-white/5 hover:bg-philo-gold/20 text-philo-gold px-2.5 py-1 rounded-full border border-philo-gold/20">Thời cơ Cách mạng Tháng Tám 1945?</button>
+
+        </div>
+        <div id="ai-chat-history" class="flex-grow overflow-y-auto py-4 space-y-3 text-xs">
+            <div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20">
+                <p class="font-bold text-philo-gold mb-1">🤖 AI Giáo trình VNR202</p>
+                <p class="text-philo-ivory/80">Chào bạn! Tôi là trợ lý AI chuyên sâu môn Lịch sử Đảng Cộng sản Việt Nam (VNR202) Chương 2. Bạn cần giải đáp câu hỏi hay tài liệu nào?</p>
+            </div>
+        </div>
+        <div class="pt-3 border-t border-white/10 flex gap-2">
+            <input type="text" id="ai-input" placeholder="Hỏi AI về Chương 2..." class="flex-grow bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-philo-gold" onkeydown="if(event.key==='Enter') sendAIMessage()" />
+            <button onclick="sendAIMessage()" class="philo-btn-gold px-3 py-2 rounded-xl text-xs"><span class="material-symbols-outlined text-[16px]">send</span></button>
+        </div>
+    </aside>
+
+    <!-- QUIZ MODAL -->
+    <div id="quiz-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glass-panel border border-philo-gold/40 rounded-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden">
+            <div class="p-5 border-b border-white/10 flex items-center justify-between">
                 <div>
-                    <h2 id="quiz-modal-title" class="text-xl font-bold text-philo-gold">Kiểm tra Chương 2</h2>
-                    <p id="quiz-modal-sub" class="text-xs text-philo-ivory/70"></p>
+                    <h3 id="quiz-modal-title" class="font-heading font-bold text-lg text-philo-gold">Bài kiểm tra trắc nghiệm</h3>
+                    <p id="quiz-modal-sub" class="text-xs text-philo-ivory/60 mt-0.5">VNR202 Lịch sử Đảng</p>
                 </div>
-                <button onclick="closeQuizModal()" class="p-2 hover:bg-philo-warmGold/20 rounded-full text-philo-ivory/60 hover:text-white">
-                    <span class="material-symbols-outlined">close</span>
-                </button>
+                <button onclick="closeQuizModal()" class="text-white/60 hover:text-white"><span class="material-symbols-outlined">close</span></button>
             </div>
-            <div id="quiz-modal-body" class="p-6 space-y-6"></div>
+            <div id="quiz-modal-body" class="p-6 overflow-y-auto space-y-6 flex-grow"></div>
         </div>
     </div>
 
-    <!-- ===== ACHIEVEMENT TOAST ===== -->
-    <div id="achievement-toast" class="hidden fixed top-6 right-6 z-50 max-w-sm">
-        <div class="bg-gradient-to-r from-amber-400 to-yellow-300 rounded-2xl p-4 shadow-2xl flex items-center gap-4 achievement-earned">
-            <span id="achievement-icon" class="text-4xl">🥈</span>
-            <div>
-                <p class="font-bold text-amber-900 text-sm">Thành tích mới!</p>
-                <p id="achievement-name" class="font-heading font-bold text-amber-900"></p>
-                <p id="achievement-desc" class="text-xs text-amber-800"></p>
-            </div>
+    <!-- ACHIEVEMENT TOAST -->
+    <div id="achievement-toast" class="fixed bottom-6 right-6 glass-panel border border-philo-gold p-4 rounded-2xl shadow-2xl flex items-center gap-4 z-50 hidden">
+        <span class="text-3xl" id="achievement-icon">🎖️</span>
+        <div>
+            <h4 class="font-bold text-philo-gold text-sm" id="achievement-name">Mở khóa danh hiệu</h4>
+            <p class="text-xs text-philo-ivory/80" id="achievement-desc">Mô tả danh hiệu</p>
         </div>
     </div>
 
-    <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
 
-    <!-- Scripts -->
+    <!-- Component Loaders -->
     <script src="js/search-data-global.js"></script>
     <script src="js/load-components.js"></script>
     <script src="js/search-init.js"></script>
 
     <script>
-        const M2_STATE = {
+        const M_LESSONS = ["M2-L1","M2-L2","M2-L3","M2-L4","M2-L5","M2-L6"];
+        let M_STATE = {
             completedLessons: new Set(),
-            currentLesson: 'M2-L1'
+            quizResults: {}
         };
 
-        const M2_LESSONS = ['M2-L1', 'M2-L2', 'M2-L3', 'M2-L4', 'M2-L5', 'M2-L6'];
+        const STORAGE_KEY = 'vnr202_m2_state';
 
-        function loadM2State() {
+        function loadMState() {
             try {
-                const saved = JSON.parse(localStorage.getItem('mln131_quiz_results') || '{}');
-                if (saved.M2_completed) {
-                    saved.M2_completed.forEach(id => M2_STATE.completedLessons.add(id));
+                const s = localStorage.getItem(STORAGE_KEY);
+                if (s) {
+                    const parsed = JSON.parse(s);
+                    M_STATE.completedLessons = new Set(parsed.completedLessons || []);
+                    M_STATE.quizResults = parsed.quizResults || {};
                 }
-            } catch (e) { }
+            } catch(e) {}
         }
 
-        function saveM2State() {
-            try {
-                const saved = JSON.parse(localStorage.getItem('mln131_quiz_results') || '{}');
-                saved.M2_completed = [...M2_STATE.completedLessons];
-                localStorage.setItem('mln131_quiz_results', JSON.stringify(saved));
-            } catch (e) { }
+        function saveMState() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                completedLessons: Array.from(M_STATE.completedLessons),
+                quizResults: M_STATE.quizResults
+            }));
         }
 
-        function showLesson(lessonId) {
-            document.querySelectorAll('.lesson-content').forEach(el => el.classList.add('hidden'));
-            document.querySelectorAll('.lesson-tab').forEach(el => {
-                el.classList.remove('active-tab');
-                el.style.borderColor = 'rgba(217,166,46,0.2)';
-                const label = el.querySelectorAll('span')[2];
-                if (label) {
-                    label.classList.remove('text-philo-gold');
-                    label.classList.add('text-philo-ivory/80');
-                }
+        function showLesson(id) {
+            M_LESSONS.forEach(l => {
+                const el = document.getElementById('lesson-' + l);
+                const tab = document.getElementById('tab-' + l);
+                if (el) el.classList.add('hidden');
+                if (tab) tab.classList.remove('active-tab');
             });
-
-            const target = document.getElementById('lesson-' + lessonId);
-            if (target) {
-                target.classList.remove('hidden');
-                M2_STATE.currentLesson = lessonId;
-            }
-
-            const tab = document.getElementById('tab-' + lessonId);
-            if (tab) {
-                tab.classList.add('active-tab');
-                tab.style.borderColor = '#FFD34E';
-                const label = tab.querySelectorAll('span')[2];
-                if (label) {
-                    label.classList.remove('text-philo-ivory/80');
-                    label.classList.add('text-philo-gold');
-                }
-            }
-
-            const area = document.getElementById('lesson-area');
-            if (area) {
-                area.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            const activeEl = document.getElementById('lesson-' + id);
+            const activeTab = document.getElementById('tab-' + id);
+            if (activeEl) activeEl.classList.remove('hidden');
+            if (activeTab) activeTab.classList.add('active-tab');
+            window.scrollTo({ top: 380, behavior: 'smooth' });
         }
 
-        function completeLesson(lessonId) {
-            M2_STATE.completedLessons.add(lessonId);
-            saveM2State();
+        function completeLesson(id) {
+            M_STATE.completedLessons.add(id);
+            saveMState();
             updateProgress();
-
-            const dot = document.getElementById('dot-' + lessonId);
-            if (dot) { dot.classList.add('completed'); }
-
-            const btn = document.getElementById('btn-complete-' + lessonId);
+            const btn = document.getElementById('btn-complete-' + id);
             if (btn) {
-                btn.className = "bg-green-600 text-white font-bold px-8 py-3 rounded-xl transition-colors flex items-center gap-2";
-                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Đã hoàn thành ✓';
+                btn.classList.remove('philo-btn-gold');
+                btn.classList.add('bg-emerald-600', 'text-white');
+                btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span> Đã hoàn thành ✓';
             }
-
-            const idx = M2_LESSONS.indexOf(lessonId);
-            if (idx >= 0 && idx < M2_LESSONS.length - 1) {
-                setTimeout(() => showLesson(M2_LESSONS[idx + 1]), 400);
+            const idx = M_LESSONS.indexOf(id);
+            if (idx < M_LESSONS.length - 1) {
+                setTimeout(() => showLesson(M_LESSONS[idx + 1]), 400);
             }
         }
 
         function updateProgress() {
-            const count = M2_STATE.completedLessons.size;
+            const count = M_STATE.completedLessons.size;
             const pct = Math.round((count / 6) * 100);
-            document.getElementById('m2-progress-label').textContent = count + ' / 6 bài hoàn thành';
-            document.getElementById('m2-progress-pct').textContent = pct + '%';
-            document.getElementById('m2-progress-bar').style.width = pct + '%';
+            const bar = document.getElementById('m2-progress-bar');
+            const txt = document.getElementById('m2-progress-text');
+            if (bar) bar.style.width = pct + '%';
+            if (txt) txt.textContent = count + ' / 6 bài (' + pct + '%)';
+            M_LESSONS.forEach(l => {
+                const dot = document.getElementById('dot-' + l);
+                if (dot) {
+                    if (M_STATE.completedLessons.has(l)) dot.classList.add('completed');
+                    else dot.classList.remove('completed');
+                }
+            });
+            if (count === 6) {
+                const banner = document.getElementById('module-quiz-banner');
+                if (banner) banner.classList.remove('hidden');
+            }
         }
 
         function toggleReflection(btn) {
             const answer = btn.nextElementSibling;
-            const icon = btn.querySelector('.material-symbols-outlined');
-            if (answer.classList.contains('open')) {
-                answer.classList.remove('open');
-                icon.textContent = 'expand_more';
-            } else {
-                answer.classList.add('open');
-                icon.textContent = 'expand_less';
+            if (answer) {
+                answer.classList.toggle('open');
+                const icon = btn.querySelector('.material-symbols-outlined');
+                if (icon) icon.textContent = answer.classList.contains('open') ? 'expand_less' : 'expand_more';
             }
         }
 
-        // =============================================
-        // QUIZ DATA CHƯƠNG 2
-        // =============================================
+        // QUIZ DATA
+        const FORMATIVE_QUIZZES = {
+  "M2-FQ1": {
+    "id": "M2-FQ1",
+    "title": "Trắc nghiệm nhanh: Cao trào 1930-1931 & Xô Viết Nghệ Tĩnh",
+    "passingScore": 75,
+    "questions": [
+      {
+        "id": "fq2_1",
+        "text": "Đỉnh cao của phong trào cách mạng 1930 - 1931 diễn ra ở hai tỉnh nào?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Quảng Nam và Quảng Ngãi"
+          },
+          {
+            "id": "b",
+            "text": "Nghệ An và Hà Tĩnh"
+          },
+          {
+            "id": "c",
+            "text": "Cao Bằng và Lạng Sơn"
+          },
+          {
+            "id": "d",
+            "text": "Hà Nội và Hải Phòng"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Xô Viết Nghệ Tĩnh là đỉnh cao của phong trào 1930 - 1931 tại hai tỉnh Nghệ An và Hà Tĩnh."
+      },
+      {
+        "id": "fq2_2",
+        "text": "Hội nghị Trung ương lần thứ nhất (10/1930) đã cử ai làm Tổng Bí thư đầu tiên của Đảng?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nguyễn Ái Quốc"
+          },
+          {
+            "id": "b",
+            "text": "Trần Phú"
+          },
+          {
+            "id": "c",
+            "text": "Lê Hồng Phong"
+          },
+          {
+            "id": "d",
+            "text": "Hà Huy Tập"
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Đồng chí Trần Phú được bầu làm Tổng Bí thư đầu tiên của Đảng vào tháng 10/1930."
+      },
+      {
+        "id": "fq2_3",
+        "text": "Lời nhắn nhủ bất hủ của đồng chí Trần Phú trước lúc hy sinh trong nhà tù đế quốc là gì?",
+        "options": [
+          {
+            "id": "a",
+            "text": "\"Không có gì quý hơn độc lập, tự do!\""
+          },
+          {
+            "id": "b",
+            "text": "\"Hãy giữ vững chí khí chiến đấu!\""
+          },
+          {
+            "id": "c",
+            "text": "\"Dù phải đốt cháy cả dãy Trường Sơn\""
+          },
+          {
+            "id": "d",
+            "text": "\"Không thành công thì thành nhân\""
+          }
+        ],
+        "correctOptionId": "b",
+        "rationale": "Trước lúc hy sinh tại nhà thương Chợ Quán, đồng chí Trần Phú dặn lại: \"Hãy giữ vững chí khí chiến đấu!\"."
+      }
+    ]
+  }
+};
+        const MODULE_QUIZ = {
+  "id": "MODULE_QUIZ_M2",
+  "title": "Kiểm tra Tổng kết Chương 2: Đấu tranh giành chính quyền & CMT8",
+  "passingScore": 70,
+  "achievement": "m2-hero",
+  "questions": [
+    {
+      "id": "mq2_1",
+      "text": "Hội nghị Trung ương lần thứ 8 (5/1941) của Đảng họp ở đâu và do ai chủ trì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tân Trào (Tuyên Quang) do Trường Chinh chủ trì"
+        },
+        {
+          "id": "b",
+          "text": "Pác Bó (Cao Bằng) do Nguyễn Ái Quốc chủ trì"
+        },
+        {
+          "id": "c",
+          "text": "Bà Điểm (Hóc Môn) do Nguyễn Văn Cừ chủ trì"
+        },
+        {
+          "id": "d",
+          "text": "Vạn Phúc (Hà Đông) do Hồ Chí Minh chủ trì"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Hội nghị TW VIII họp tháng 5/1941 tại Pác Bó (Cao Bằng) dưới sự chủ trì của lãnh tụ Nguyễn Ái Quốc."
+    },
+    {
+      "id": "mq2_2",
+      "text": "Mặt trận Việt Minh (Việt Nam Độc lập Đồng minh) được thành lập vào ngày tháng năm nào?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2/1930"
+        },
+        {
+          "id": "b",
+          "text": "19/5/1941"
+        },
+        {
+          "id": "c",
+          "text": "22/12/1944"
+        },
+        {
+          "id": "d",
+          "text": "2/9/1945"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Mặt trận Việt Minh được thành lập ngày 19/5/1941 theo quyết định của Hội nghị Trung ương VIII."
+    },
+    {
+      "id": "mq2_3",
+      "text": "Bản Chỉ thị lịch sử ngày 12/3/1945 của Ban Thường vụ Trung ương Đảng có tên gọi là gì?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toàn dân kháng chiến"
+        },
+        {
+          "id": "b",
+          "text": "Kháng chiến kiến quốc"
+        },
+        {
+          "id": "c",
+          "text": "Nhật - Pháp bắn nhau và hành động của chúng ta"
+        },
+        {
+          "id": "d",
+          "text": "Tuyên ngôn Độc lập"
+        }
+      ],
+      "correctOptionId": "c",
+      "rationale": "Bản chỉ thị \"Nhật - Pháp bắn nhau và hành động của chúng ta\" ban hành ngày 12/3/1945."
+    },
+    {
+      "id": "mq2_4",
+      "text": "Khẩu hiệu nào đã thổi bùng lên ngọn lửa cách mạng và đáp ứng trúng nguyện vọng cấp bách của nhân dân đầu năm 1945?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Phá kho thóc của Nhật để giải quyết nạn đói"
+        },
+        {
+          "id": "b",
+          "text": "Không một tấc đất bỏ hoang"
+        },
+        {
+          "id": "c",
+          "text": "Tăng gia sản xuất ngay"
+        },
+        {
+          "id": "d",
+          "text": "Đòi tự do, cơm áo, hòa bình"
+        }
+      ],
+      "correctOptionId": "a",
+      "rationale": "Khẩu hiệu phá kho thóc Nhật giải quyết nạn đói đã huy động hàng triệu người tham gia đấu tranh."
+    },
+    {
+      "id": "mq2_5",
+      "text": "Ủy ban Dân tộc Giải phóng Việt Nam được thành lập tại Đại hội nào?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hội nghị Quân sự Bắc Kỳ"
+        },
+        {
+          "id": "b",
+          "text": "Đại hội Quốc dân Tân Trào (16/8/1945)"
+        },
+        {
+          "id": "c",
+          "text": "Hội nghị Trung ương lần thứ nhất"
+        },
+        {
+          "id": "d",
+          "text": "Đại hội đại biểu lần thứ I của Đảng"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Đại hội Quốc dân Tân Trào (16/8/1945) thành lập Ủy ban Dân tộc Giải phóng do Hồ Chí Minh làm Chủ tịch."
+    },
+    {
+      "id": "mq2_6",
+      "text": "Ngày 2/9/1945 tại Quảng trường Ba Đình Hà Nội, sự kiện lịch sử trọng đại nào đã diễn ra?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Đại hội toàn quốc lần thứ II của Đảng"
+        },
+        {
+          "id": "b",
+          "text": "Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa"
+        },
+        {
+          "id": "c",
+          "text": "Thành lập Mặt trận Tổ quốc Việt Nam"
+        },
+        {
+          "id": "d",
+          "text": "Hiệp định Sơ bộ được ký kết"
+        }
+      ],
+      "correctOptionId": "b",
+      "rationale": "Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập ngày 2/9/1945."
+    }
+  ]
+};
+        const ACHIEVEMENT = {"id":"m2-hero","name":"Chiến Sĩ Cách Mạng Tháng Tám","desc":"Đạt kết quả xuất sắc bài thi tổng kết Chương 2 VNR202!"};
+
         let currentQuizData = null;
         let currentQuizAnswers = {};
 
-        window.FORMATIVE_QUIZZES_M2 = {
-            'M2-FQ1': {
-                title: 'Kiểm tra nhanh — Bài 2.1 & 2.2 (Sản xuất hàng hóa & Tính 2 mặt)',
-                passingScore: 75,
-                questions: [
-                    {
-                        id: 'fq2_1',
-                        text: 'Điều kiện nào đóng vai trò là điều kiện ĐỦ để nền sản xuất hàng hóa ra đời?',
-                        options: [
-                            { id: 'a', text: 'Phân công lao động xã hội' },
-                            { id: 'b', text: 'Sự tách biệt về mặt kinh tế giữa các chủ thể sản xuất' },
-                            { id: 'c', text: 'Sự xuất hiện của tiền tệ' },
-                            { id: 'd', text: 'Sự hình thành các tổ chức độc quyền' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Theo Giáo trình MLN131 (trang 30-31), phân công LĐXH là điều kiện cần; sự tách biệt về mặt kinh tế giữa các chủ thể sản xuất (dựa trên sở hữu) là điều kiện đủ để sản xuất hàng hóa ra đời.'
-                    },
-                    {
-                        id: 'fq2_2',
-                        text: 'Thuộc tính nào của hàng hóa là một phạm trù vĩnh viễn?',
-                        options: [
-                            { id: 'a', text: 'Giá trị' },
-                            { id: 'b', text: 'Giá trị trao đổi' },
-                            { id: 'c', text: 'Giá trị sử dụng' },
-                            { id: 'd', text: 'Giá cả' }
-                        ],
-                        correctOptionId: 'c',
-                        rationale: 'Giá trị sử dụng là thuộc tính tự nhiên của vật phẩm thỏa mãn nhu cầu con người, do đó nó tồn tại vĩnh viễn trong mọi hình thái xã hội (trang 32).'
-                    },
-                    {
-                        id: 'fq2_3',
-                        text: 'Lao động trừu tượng tạo ra thuộc tính nào của hàng hóa?',
-                        options: [
-                            { id: 'a', text: 'Giá trị sử dụng' },
-                            { id: 'b', text: 'Giá trị của hàng hóa' },
-                            { id: 'c', text: 'Hình dáng hiện vật' },
-                            { id: 'd', text: 'Độ bền cơ học' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Lao động trừu tượng là sự hao phí sức lao động nói chung, nó kết tinh và tạo nên giá trị của hàng hóa (trang 35).'
-                    },
-                    {
-                        id: 'fq2_4',
-                        text: 'Mâu thuẫn cơ bản của sản xuất hàng hóa giản đơn là mâu thuẫn giữa:',
-                        options: [
-                            { id: 'a', text: 'Người mua và người bán' },
-                            { id: 'b', text: 'Lao động cụ thể và lao động trừu tượng (Lao động tư nhân và Lao động xã hội)' },
-                            { id: 'c', text: 'Tiền mặt và tiền tín dụng' },
-                            { id: 'd', text: 'Chủ xí nghiệp và công nhân' }
-                        ],
-                        correctOptionId: 'b',
-                        rationale: 'Mâu thuẫn giữa lao động cụ thể (tư nhân) và lao động trừu tượng (xã hội) là mầm mống tiềm ẩn của khủng hoảng sản xuất hàng hóa (trang 36).'
-                    }
-                ]
-            }
-        };
-
-        window.MODULE_QUIZ_M2 = {
-            title: 'Bài Kiểm Tra Tổng Kết Chương 2 — Hàng Hóa, Thị Trường & Chủ Thể',
-            passingScore: 75,
-            achievement: 'm2-master',
-            questions: [
-                {
-                    id: 'mq2_1',
-                    text: 'Giá trị của hàng hóa được định nghĩa chính xác là gì?',
-                    options: [
-                        { id: 'a', text: 'Công dụng của hàng hóa thỏa mãn nhu cầu tiêu dùng' },
-                        { id: 'b', text: 'Lao động xã hội của người sản xuất kết tinh trong hàng hóa' },
-                        { id: 'c', text: 'Số lượng tiền cần để mua hàng hóa đó' },
-                        { id: 'd', text: 'Độ khan hiếm của vật phẩm trong tự nhiên' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Giá trị là lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa (trang 33).'
-                },
-                {
-                    id: 'mq2_2',
-                    text: 'Thước đo lượng giá trị của một đơn vị hàng hóa là gì?',
-                    options: [
-                        { id: 'a', text: 'Thời gian lao động cá biệt của doanh nghiệp tiên tiến nhất' },
-                        { id: 'b', text: 'Thời gian lao động xã hội cần thiết' },
-                        { id: 'c', text: 'Số tiền in trên nhãn giá' },
-                        { id: 'd', text: 'Chi phí nguyên vật liệu đầu vào' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Lượng giá trị được đo lường bằng thời gian lao động xã hội cần thiết để sản xuất ra hàng hóa đó (trang 36-37).'
-                },
-                {
-                    id: 'mq2_3',
-                    text: 'Khi năng suất lao động tăng lên thì lượng giá trị trong một đơn vị hàng hóa sẽ:',
-                    options: [
-                        { id: 'a', text: 'Tăng lên tỷ lệ thuận' },
-                        { id: 'b', text: 'Giảm xuống' },
-                        { id: 'c', text: 'Không thay đổi' },
-                        { id: 'd', text: 'Tăng gấp đôi' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Năng suất lao động tăng làm giảm thời gian lao động cần thiết cho một đơn vị sản phẩm, do đó lượng giá trị của 1 đơn vị hàng hóa giảm xuống (trang 37).'
-                },
-                {
-                    id: 'mq2_4',
-                    text: 'Khi tăng cường độ lao động thì lượng giá trị của một đơn vị hàng hóa sẽ:',
-                    options: [
-                        { id: 'a', text: 'Tăng lên' },
-                        { id: 'b', text: 'Giảm xuống' },
-                        { id: 'c', text: 'Không thay đổi' },
-                        { id: 'd', text: 'Tùy thuộc vào thời tiết' }
-                    ],
-                    correctOptionId: 'c',
-                    rationale: 'Tăng cường độ lao động làm tổng số sản phẩm tăng và tổng giá trị tăng, nhưng thời gian hao phí cho một đơn vị sản phẩm không đổi, nên lượng giá trị một đơn vị không đổi (trang 38).'
-                },
-                {
-                    id: 'mq2_5',
-                    text: 'Bản chất của tiền tệ là gì?',
-                    options: [
-                        { id: 'a', text: 'Là một phương tiện thanh toán do Nhà nước tự quy ước' },
-                        { id: 'b', text: 'Là một loại hàng hóa đặc biệt đóng vai trò làm vật ngang giá chung' },
-                        { id: 'c', text: 'Là tài sản sinh lời tự nhiên' },
-                        { id: 'd', text: 'Là cổ phiếu có tính thanh khoản cao' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Về bản chất, tiền là một loại hàng hóa đặc biệt, là kết quả của quá trình phát triển sản xuất và trao đổi, là vật ngang giá chung cho thế giới hàng hóa (trang 42).'
-                },
-                {
-                    id: 'mq2_6',
-                    text: 'Để thực hiện chức năng thước đo giá trị, tiền tệ cần điều kiện gì?',
-                    options: [
-                        { id: 'a', text: 'Bắt buộc phải có tiền mặt bằng giấy' },
-                        { id: 'b', text: 'Bản thân tiền phải có giá trị (so sánh với lượng vàng nhất định một cách tưởng tượng)' },
-                        { id: 'c', text: 'Phải thông qua tài khoản ngân hàng' },
-                        { id: 'd', text: 'Phải có chữ ký của Thống đốc ngân hàng trung ương' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Để đo lường giá trị các hàng hóa khác, bản thân tiền phải có giá trị, chỉ cần so sánh với một lượng vàng nhất định một cách tưởng tượng (trang 42-43).'
-                },
-                {
-                    id: 'mq2_7',
-                    text: 'Theo C. Mác, chứng khoán (cổ phiếu, trái phiếu) được gọi là gì?',
-                    options: [
-                        { id: 'a', text: 'Tư bản khả biến' },
-                        { id: 'b', text: 'Tư bản giả' },
-                        { id: 'c', text: 'Tư bản cố định' },
-                        { id: 'd', text: 'Hàng hóa thông thường' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'C. Mác gọi chứng khoán, chứng quyền là tư bản giả vì nó tách biệt tương đối với quá trình sản xuất kinh doanh thực (trang 48).'
-                },
-                {
-                    id: 'mq2_8',
-                    text: 'Quy luật kinh tế cơ bản của sản xuất và trao đổi hàng hóa là quy luật nào?',
-                    options: [
-                        { id: 'a', text: 'Quy luật lưu thông tiền tệ' },
-                        { id: 'b', text: 'Quy luật cạnh tranh' },
-                        { id: 'c', text: 'Quy luật giá trị' },
-                        { id: 'd', text: 'Quy luật cung - cầu' }
-                    ],
-                    correctOptionId: 'c',
-                    rationale: 'Quy luật giá trị là quy luật kinh tế cơ bản của sản xuất hàng hóa, ở đâu có sản xuất và trao đổi hàng hóa thì ở đó có sự hoạt động của quy luật giá trị (trang 59).'
-                },
-                {
-                    id: 'mq2_9',
-                    text: 'Cơ chế tác động phát huy tác dụng của Quy luật giá trị trên thị trường là gì?',
-                    options: [
-                        { id: 'a', text: 'Sự biến động của giá cả thị trường xoay quanh giá trị' },
-                        { id: 'b', text: 'Sự ấn định giá cố định của Nhà nước' },
-                        { id: 'c', text: 'Sự thỏa thuận giữa người mua và người bán' },
-                        { id: 'd', text: 'Chỉ số lạm phát hàng tháng' }
-                    ],
-                    correctOptionId: 'a',
-                    rationale: 'Giá cả thị trường lên xuống xoay quanh giá trị hàng hóa trở thành cơ chế tác động của quy luật giá trị (trang 59).'
-                },
-                {
-                    id: 'mq2_10',
-                    text: 'Kết quả của quá trình cạnh tranh trong nội bộ ngành là gì?',
-                    options: [
-                        { id: 'a', text: 'Hình thành tỷ suất lợi nhuận bình quân' },
-                        { id: 'b', text: 'Hình thành giá trị thị trường của từng loại hàng hóa' },
-                        { id: 'c', text: 'Triệt tiêu hoàn toàn các doanh nghiệp nhỏ' },
-                        { id: 'd', text: 'Hình thành giá cả sản xuất' }
-                    ],
-                    correctOptionId: 'b',
-                    rationale: 'Kết quả của cạnh tranh trong nội bộ ngành là hình thành giá trị thị trường của từng loại hàng hóa (trang 64).'
-                },
-                {
-                    id: 'mq2_11',
-                    text: 'Chủ thể nào đóng vai trò cầu nối gắn kết giữa sản xuất và tiêu dùng trên thị trường?',
-                    options: [
-                        { id: 'a', text: 'Người sản xuất' },
-                        { id: 'b', text: 'Người tiêu dùng' },
-                        { id: 'c', text: 'Các chủ thể trung gian' },
-                        { id: 'd', text: 'Người xuất nhập khẩu' }
-                    ],
-                    correctOptionId: 'c',
-                    rationale: 'Chủ thể trung gian là những cá nhân, tổ chức đảm nhiệm vai trò cầu nối giữa sản xuất và tiêu dùng, làm cho sản xuất và tiêu dùng ăn khớp với nhau (trang 69-70).'
-                },
-                {
-                    id: 'mq2_12',
-                    text: 'Trong nền kinh tế thị trường hiện đại, vai trò kinh tế cốt lõi của Nhà nước là gì?',
-                    options: [
-                        { id: 'a', text: 'Trực tiếp quyết định toàn bộ giá cả các mặt hàng' },
-                        { id: 'b', text: 'Bao cấp toàn bộ vốn cho doanh nghiệp tư nhân' },
-                        { id: 'c', text: 'Quản lý, kiến tạo môi trường thuận lợi và khắc phục các khuyết tật của thị trường' },
-                        { id: 'd', text: 'Cấm đoán hoàn toàn các giao dịch thương mại quốc tế' }
-                    ],
-                    correctOptionId: 'c',
-                    rationale: 'Nhà nước thực hiện chức năng quản lý, kiến tạo môi trường kinh tế thuận lợi, ổn định vĩ mô và sửa chữa những thất bại, khuyết tật của thị trường (trang 70-72).'
-                }
-            ]
-        };
-
-        function openFormativeQuiz(quizId) {
-            const quiz = window.FORMATIVE_QUIZZES_M2[quizId];
-            if (!quiz) return;
-            renderQuiz(quiz);
+        function openFormativeQuiz(id) {
+            const q = FORMATIVE_QUIZZES[id] || FORMATIVE_QUIZZES['M2-FQ1'];
+            if (q) renderQuizModal(q);
         }
 
         function openModuleQuiz() {
-            renderQuiz(window.MODULE_QUIZ_M2);
+            renderQuizModal(MODULE_QUIZ);
         }
 
-        function renderQuiz(quiz) {
+        function renderQuizModal(quiz) {
             currentQuizData = quiz;
             currentQuizAnswers = {};
             document.getElementById('quiz-modal-title').textContent = quiz.title;
-            document.getElementById('quiz-modal-sub').textContent = 'Điểm đạt yêu cầu: ' + quiz.passingScore + '% (' + quiz.questions.length + ' câu hỏi)';
-            
-            let html = '';
-            quiz.questions.forEach((q, idx) => {
-                html += `
-                    <div class="p-4 bg-black/40 rounded-2xl border border-philo-warmGold/20 space-y-3" id="q-block-${q.id}">
-                        <p class="font-semibold text-sm text-philo-ivory"><span class="text-philo-gold font-bold">Câu ${idx + 1}:</span> ${q.text}</p>
-                        <div class="space-y-2">
-                            ${q.options.map(opt => `
-                                <label class="flex items-center gap-3 p-3 rounded-xl border border-philo-warmGold/20 hover:bg-philo-warmGold/10 cursor-pointer text-xs transition-colors" id="label-${q.id}-${opt.id}">
-                                    <input type="radio" name="question-${q.id}" value="${opt.id}" onchange="selectOption('${q.id}', '${opt.id}')" class="text-philo-gold focus:ring-philo-gold" />
-                                    <span><strong>${opt.id.toUpperCase()}.</strong> ${opt.text}</span>
-                                </label>
-                            `).join('')}
-                        </div>
-                        <div id="explanation-${q.id}" class="hidden p-3 rounded-xl bg-blue-900/30 border border-blue-500/30 text-xs text-blue-200 mt-2"></div>
-                    </div>
-                `;
+            document.getElementById('quiz-modal-sub').textContent = 'Cần đạt ' + quiz.passingScore + '% • ' + quiz.questions.length + ' câu hỏi trắc nghiệm';
+            let h = '<div class="space-y-6">';
+            quiz.questions.forEach((q, i) => {
+                h += '<div class="quiz-question" data-qid="' + q.id + '">' +
+                    '<p class="font-medium text-sm mb-3">' + (i + 1) + '. ' + q.text + '</p>' +
+                    '<div class="space-y-2">';
+                q.options.forEach(o => {
+                    h += '<label class="quiz-option flex items-start gap-3 p-3 rounded-xl border border-white/10 cursor-pointer hover:border-philo-gold/50 hover:bg-white/5 transition-all">' +
+                        '<input type="radio" name="q_' + q.id + '" value="' + o.id + '" onclick="selectAnswer(\'' + q.id + '\',\'' + o.id + '\')" class="mt-0.5 flex-shrink-0 text-philo-gold focus:ring-philo-gold">' +
+                        '<span class="text-xs md:text-sm text-philo-ivory/90">' + o.text + '</span>' +
+                    '</label>';
+                });
+                h += '</div></div>';
             });
-
-            html += `
-                <div class="flex items-center justify-between pt-4">
-                    <span id="quiz-result-summary" class="text-sm font-bold text-philo-gold"></span>
-                    <button id="btn-submit-quiz" onclick="submitCurrentQuiz()" class="btn-academic-gold px-8 py-3 font-bold text-xs uppercase tracking-wider">
-                        Nộp bài kiểm tra
-                    </button>
-                </div>
-            `;
-
-            document.getElementById('quiz-modal-body').innerHTML = html;
+            h += '</div>' +
+            '<div class="mt-6 flex justify-end gap-3 pt-4 border-t border-white/10">' +
+                '<button onclick="closeQuizModal()" class="px-5 py-2.5 rounded-xl border border-white/20 text-xs text-philo-ivory/70 hover:bg-white/5">Đóng</button>' +
+                '<button onclick="submitQuiz()" id="btn-submit-quiz" class="bg-white/10 text-white/40 font-bold px-8 py-2.5 rounded-xl cursor-not-allowed text-xs" data-ready="false">Nộp bài</button>' +
+            '</div>';
+            document.getElementById('quiz-modal-body').innerHTML = h;
             document.getElementById('quiz-modal').classList.remove('hidden');
         }
 
-        function selectOption(qId, optId) {
-            currentQuizAnswers[qId] = optId;
+        function selectAnswer(q, o) {
+            currentQuizAnswers[q] = o;
+            const all = currentQuizData.questions.every(x => currentQuizAnswers[x.id]);
+            const b = document.getElementById('btn-submit-quiz');
+            if (b) {
+                if (all) {
+                    b.setAttribute('data-ready', 'true');
+                    b.className = 'philo-btn-gold font-bold px-8 py-2.5 rounded-xl cursor-pointer text-xs';
+                } else {
+                    b.setAttribute('data-ready', 'false');
+                    b.className = 'bg-white/10 text-white/40 font-bold px-8 py-2.5 rounded-xl cursor-not-allowed text-xs';
+                }
+            }
         }
 
-        function submitCurrentQuiz() {
-            if (!currentQuizData) return;
+        function submitQuiz() {
+            const b = document.getElementById('btn-submit-quiz');
+            if (b && b.getAttribute('data-ready') !== 'true') return;
+            const quiz = currentQuizData;
             let correct = 0;
-            currentQuizData.questions.forEach(q => {
-                const selected = currentQuizAnswers[q.id];
-                const expBox = document.getElementById('explanation-' + q.id);
-                if (expBox) {
-                    expBox.innerHTML = '<strong>Giải thích:</strong> ' + q.rationale;
-                    expBox.classList.remove('hidden');
-                }
 
-                q.options.forEach(opt => {
-                    const label = document.getElementById(`label-${q.id}-${opt.id}`);
-                    if (!label) return;
-                    if (opt.id === q.correctOptionId) {
-                        label.classList.add('bg-green-900/40', 'border-green-500', 'text-green-300');
-                    } else if (opt.id === selected && selected !== q.correctOptionId) {
-                        label.classList.add('bg-red-900/40', 'border-red-500', 'text-red-300');
+            quiz.questions.forEach(q => {
+                const u = currentQuizAnswers[q.id], ok = u === q.correctOptionId;
+                if (ok) correct++;
+                const qEl = document.querySelector('[data-qid="' + q.id + '"]');
+                if (!qEl) return;
+                qEl.querySelectorAll('.quiz-option').forEach(l => {
+                    const r = l.querySelector('input');
+                    if (!r) return;
+                    if (r.value === q.correctOptionId) {
+                        l.classList.add('border-emerald-500', 'bg-emerald-950/30');
+                    }
+                    if (r.value === u && !ok) {
+                        l.classList.add('border-red-500', 'bg-red-950/30');
                     }
                 });
-
-                if (selected === q.correctOptionId) {
-                    correct++;
-                }
+                const re = document.createElement('div');
+                re.className = 'mt-2 p-3 bg-philo-gold/10 border border-philo-gold/20 rounded-lg text-xs';
+                re.innerHTML = '<strong class="text-philo-gold">📖 Trích dẫn Giáo trình VNR202:</strong> ' + q.rationale;
+                qEl.appendChild(re);
             });
 
-            const score = Math.round((correct / currentQuizData.questions.length) * 100);
-            const passed = score >= currentQuizData.passingScore;
-            const summary = document.getElementById('quiz-result-summary');
-            summary.innerHTML = passed 
-                ? `<span class="text-green-400">🎉 Xuất sắc! Bạn đạt ${score}% (${correct}/${currentQuizData.questions.length} câu đúng)</span>`
-                : `<span class="text-red-400">⚠️ Bạn đạt ${score}% (${correct}/${currentQuizData.questions.length} câu đúng). Cần ≥ ${currentQuizData.passingScore}% để đạt.</span>`;
+            const score = Math.round((correct / quiz.questions.length) * 100);
+            const passed = score >= quiz.passingScore;
+            M_STATE.quizResults[quiz.id || 'module_quiz'] = { score, correct, total: quiz.questions.length, passed, timestamp: Date.now() };
+            saveMState();
 
-            const btn = document.getElementById('btn-submit-quiz');
-            btn.textContent = passed ? 'Đóng lại' : 'Thử lại';
-            btn.onclick = passed ? closeQuizModal : () => renderQuiz(currentQuizData);
+            const rh = '<div class="mb-6 p-4 rounded-2xl text-center border ' + (passed ? 'bg-emerald-950/30 border-emerald-500/50' : 'bg-red-950/30 border-red-500/50') + '">' +
+                '<p class="text-3xl mb-1">' + (passed ? '🎉' : '📚') + '</p>' +
+                '<p class="text-xl font-bold ' + (passed ? 'text-emerald-400' : 'text-red-400') + '">' + score + '% (' + correct + '/' + quiz.questions.length + ' câu đúng)</p>' +
+                '<p class="text-xs mt-1 ' + (passed ? 'text-emerald-400' : 'text-red-400') + '">' + (passed ? '✅ Đạt yêu cầu kiến thức Chương 2!' : '❌ Chưa đạt (Yêu cầu ' + quiz.passingScore + '%). Hãy xem lại giải thích và thử lại!') + '</p>' +
+            '</div>';
+            document.getElementById('quiz-modal-body').insertAdjacentHTML('afterbegin', rh);
 
-            if (passed && currentQuizData.achievement) {
-                showAchievement('Chuyên Gia Thị Trường & Hàng Hóa', 'Hoàn thành xuất sắc bài thi tổng kết Chương 2 MLN131!');
+            b.textContent = passed ? 'Hoàn tất ✓' : 'Làm lại';
+            b.onclick = passed ? closeQuizModal : () => {
+                closeQuizModal();
+                setTimeout(() => openModuleQuiz(), 300);
+            };
+
+            if (passed && ACHIEVEMENT) {
+                showAchievement(ACHIEVEMENT.name, ACHIEVEMENT.desc);
             }
         }
 
@@ -1114,59 +1068,77 @@
         }
 
         function showAchievement(name, desc) {
-            const toast = document.getElementById('achievement-toast');
+            const t = document.getElementById('achievement-toast');
             document.getElementById('achievement-name').textContent = name;
             document.getElementById('achievement-desc').textContent = desc;
-            toast.classList.remove('hidden');
-            setTimeout(() => toast.classList.add('hidden'), 4000);
+            t.classList.remove('hidden');
+            setTimeout(() => t.classList.add('hidden'), 4000);
         }
 
-        let aiOpen = false;
+        let aiPanelOpen = false;
         function toggleAIPanel() {
-            aiOpen = !aiOpen;
+            aiPanelOpen = !aiPanelOpen;
             const p = document.getElementById('ai-panel');
-            if (aiOpen) p.classList.remove('hidden-panel');
+            if (aiPanelOpen) p.classList.remove('hidden-panel');
             else p.classList.add('hidden-panel');
         }
 
-        function quickPrompt(txt) {
-            document.getElementById('ai-quick-input').value = txt;
-            sendQuickAI();
+        const AI_RESPONSES = {
+  "xô viết": {
+    "answer": "Xô Viết Nghệ Tĩnh (1930 - 1931) là đỉnh cao phong trào cách mạng do Đảng lãnh đạo, lập nên chính quyền sơ khai của dân, do dân, vì dân, là cuộc tổng diễn tập đầu tiên chuẩn bị cho Cách mạng Tháng Tám.",
+    "sourceRef": "Giáo trình VNR202 — Chương 1, Mục II.1"
+  },
+  "pác bó": {
+    "answer": "Hội nghị Trung ương VIII (5/1941) tại Pác Bó do Nguyễn Ái Quốc chủ trì đã hoàn thành việc chuyển hướng chỉ đạo chiến lược: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu và thành lập Mặt trận Việt Minh.",
+    "sourceRef": "Giáo trình VNR202 — Chương 1, Mục II.3"
+  },
+  "nhật - pháp": {
+    "answer": "Chỉ thị \"Nhật - Pháp bắn nhau và hành động của chúng ta\" (12/3/1945) nhận định cuộc đảo chính đã tạo ra khủng hoảng chính trị sâu sắc, xác định phát xít Nhật là kẻ thù chính duy nhất và phát động cao trào kháng Nhật cứu nước.",
+    "sourceRef": "Giáo trình VNR202 — Chương 1, Mục II.4"
+  },
+  "thời cơ": {
+    "answer": "Thời cơ Cách mạng Tháng Tám xuất hiện khi phát xít Nhật tuyên bố đầu hàng vô điều kiện (15/8/1945). Đảng đã chớp đúng thời điểm trước khi quân Đồng minh vào tước khí giới để phát động Tổng khởi nghĩa giành chính quyền thần tốc trong 15 ngày.",
+    "sourceRef": "Giáo trình VNR202 — Chương 1, Mục II.5"
+  }
+};
+
+        function getAIResponse(q) {
+            const l = q.toLowerCase();
+            for (const [k, r] of Object.entries(AI_RESPONSES)) {
+                if (l.includes(k)) return r;
+            }
+            return {
+                answer: 'Trọng tâm Chương 2 VNR202 bám sát giáo trình Lịch sử Đảng: các kỳ Đại hội, đường lối chiến lược, các bước đột phá và bài học lịch sử cốt lõi.',
+                sourceRef: 'Giáo trình Lịch sử Đảng Cộng sản Việt Nam (VNR202) — Chương 2'
+            };
         }
 
-        async function sendQuickAI() {
-            const inp = document.getElementById('ai-quick-input');
-            const q = inp.value.trim();
+        function sendAIPrompt(p) {
+            document.getElementById('ai-input').value = p;
+            sendAIMessage();
+        }
+
+        function sendAIMessage() {
+            const i = document.getElementById('ai-input'), q = i.value.trim();
             if (!q) return;
-            const hist = document.getElementById('ai-chat-history');
-            hist.innerHTML += `<div class="p-3 bg-philo-gold/20 rounded-xl text-philo-gold"><strong>Bạn:</strong> ${q}</div>`;
-            inp.value = '';
-
-            const loadEl = document.createElement('div');
-            loadEl.className = "p-3 bg-black/40 rounded-xl text-philo-ivory/60 italic";
-            loadEl.textContent = "AI đang tra cứu Giáo trình MLN131 Chương 2...";
-            hist.appendChild(loadEl);
-            hist.scrollTop = hist.scrollHeight;
-
-            try {
-                const res = await fetch("/api/ask-mln131", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ question: q })
-                });
-                const data = await res.json();
-                loadEl.className = "p-3 bg-black/40 rounded-xl text-philo-ivory/90";
-                loadEl.innerHTML = `<strong>AI Trợ Giảng:</strong><br>${data.answer || "Không nhận được phản hồi."}`;
-            } catch (err) {
-                loadEl.className = "p-3 bg-black/40 rounded-xl text-philo-ivory/90";
-                loadEl.innerHTML = `<strong>AI Trợ Giảng (Offline):</strong><br>Theo Giáo trình Kinh tế chính trị Mác - Lênin Chương 2: Hàng hóa có 2 thuộc tính là Giá trị sử dụng và Giá trị. Nguồn gốc của 2 thuộc tính này là tính 2 mặt của lao động sản xuất hàng hóa: Lao động cụ thể tạo ra GTSD, Lao động trừu tượng tạo ra Giá trị.`;
-            }
-            hist.scrollTop = hist.scrollHeight;
+            i.value = '';
+            const h = document.getElementById('ai-chat-history');
+            h.insertAdjacentHTML('beforeend', '<div class="flex justify-end"><div class="bg-philo-gold text-black font-medium rounded-xl p-3 max-w-[85%] text-xs"><p>' + q + '</p></div></div>');
+            const lid = 'l' + Date.now();
+            h.insertAdjacentHTML('beforeend', '<div id="' + lid + '" class="bg-white/5 rounded-xl p-3 text-xs"><p>⏳ Đang tra cứu Giáo trình VNR202...</p></div>');
+            h.scrollTop = h.scrollHeight;
+            setTimeout(() => {
+                const r = getAIResponse(q);
+                const le = document.getElementById(lid);
+                if (le) le.outerHTML = '<div class="bg-white/5 rounded-xl p-3 border border-philo-gold/20 text-xs"><p class="text-xs font-bold text-philo-gold mb-1">🤖 AI Giáo trình VNR202</p><p class="text-philo-ivory/90 leading-relaxed mb-2">' + r.answer + '</p><p class="text-[10px] text-philo-gold/70 border-t border-white/10 pt-1">📖 <em>' + r.sourceRef + '</em></p></div>';
+                h.scrollTop = h.scrollHeight;
+            }, 500);
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadM2State();
+            loadMState();
             updateProgress();
+            showLesson('M2-L1');
         });
     </script>
 </body>

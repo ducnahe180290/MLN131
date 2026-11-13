@@ -1,4 +1,4 @@
-# Đặc tả ngắn — PhiloVerse MLN131
+# Đặc tả ngắn — PhiloVerse VNR202
 
 ## Mục tiêu
 
@@ -19,7 +19,7 @@ Giúp sinh viên ôn tập Kinh tế chính trị Mác - Lênin bằng bài họ
 - `practice.html`, `js/quiz-fe-review.js`: ôn thi FE và thi thử.
 - `games.html`, `js/games-config.js`: danh sách bốn game.
 - `server.js`: máy chủ Express, API trò chơi và API hỏi đáp.
-- `data/mln131-curriculum.json`: 16 mục tóm tắt dùng để tra cứu AI.
+- `data/vnr202-curriculum.json`: 16 mục tóm tắt dùng để tra cứu AI.
 - `localStorage`: tiến độ cục bộ, không đồng bộ giữa thiết bị.
 
 ## Quy tắc nội dung
@@ -31,5 +31,5 @@ Không giới thiệu các mục tóm tắt như bản đầy đủ của giáo 
 - Người học đi từ trang chủ đến sáu chương, ôn thi và bốn game bằng liên kết hoạt động.
 - Game Ghế nóng tạo đủ 15 câu mỗi lượt và không nạp câu hỏi của môn khác.
 - AI hoạt động khi cấu hình key, và có thông báo rõ ràng khi chỉ tra cứu dữ liệu tóm tắt.
-- Nội dung hiển thị công khai nhất quán với môn MLN131.
+- Nội dung hiển thị công khai nhất quán với môn VNR202.
 - Đáp án và trích dẫn được đối chiếu với PDF giáo trình trước khi dùng làm học liệu chính thức.
